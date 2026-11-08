@@ -48,3 +48,12 @@ Site static HTML/CSS/JS (regenerat și verificat pe 8 noiembrie 2026): `style.cs
 - Pentru Owner INTRO, configurați în Cloudflare Pages variabilele `ETALON_ACCESS_TEAM_DOMAIN` (de forma `echipa.cloudflareaccess.com`), `ETALON_ACCESS_AUD` (Application AUD Tag), `ETALON_OWNER_EMAIL` (adresa Owner verificată). Adăugați o politică Zero Trust Access pentru `/admin/intro/*`, exclusiv Owner, și testați accesul autorizat/neautorizat. Fără configurație, pagina rămâne inaccesibilă.
 - Nu pretindem implementarea funcțiilor HOLMES.AI, AI Voice sau transmiterea efectivă a cererilor prin backend; acestea necesită servicii dedicate și integrare ulterioară.
 - Toate paginile site-ului fictiv păstrează `noindex,nofollow`. Publicarea pe un domeniu real trebuie verificată separat față de commitul GitHub.
+
+
+## Tema și cardurile — actualizare 2026-11-08
+
+- Site-ul public etalon folosește **Dark** ca temă implicită, inclusiv homepage, servicii, produse, formulare și paginile informaționale.
+- Butonul **☀ Light / ☾ Dark** din antet permite schimbarea manuală a temei; preferința se păstrează în `localStorage` per browser. Dacă nu există preferință salvată, se pornește în Dark.
+- Listele de servicii și produse folosesc carduri late cu **fotografie/ilustrație în stânga** și **nume, cod, descriere și acces la fișă în dreapta**, după referința vizuală furnizată.
+- Nu se inventează prețuri: în lipsa unor tarife verificate se afișează „Preț la cerere” / „Preț stabilit la ofertare”.
+- Schimbările sunt limitate la `GPT-ETALON-4322-V10` și nu activează automat vreun deployment Cloudflare.
