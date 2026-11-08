@@ -183,3 +183,12 @@ input,select,textarea{color-scheme:inherit}
 :root[data-theme="dark"] .tile .num{color:var(--gold)}
 :root[data-theme="dark"] .assistantBtn{border-color:#d5b070;background:#111820;color:#e8b17a}
 :root[data-theme="dark"] .form input,:root[data-theme="dark"] .form textarea,:root[data-theme="dark"] .form select{background:var(--input-bg);color:var(--ink);border-color:var(--line)}
+
+/* Owner-supplied animated assistant avatar: two-second welcome and smile hold. */
+.assistantBtn.avatarBtn{display:grid;place-items:center;overflow:visible;padding:0;background:#17212a;border:3px solid #d6ad69;isolation:isolate}
+.assistantAvatarVideo{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center 21%;pointer-events:none;z-index:1;background:#17212a;overflow:hidden}
+.avatarFallback{position:absolute;inset:0;display:grid;place-items:center;z-index:0;font-size:2.1rem;color:#f1d5b5;border-radius:50%}
+.avatarWave{position:absolute;right:-13px;top:-15px;z-index:2;font-size:23px;line-height:1;transform-origin:70% 85%;pointer-events:none;animation:avatar-wave-hello .48s ease-in-out 4 alternate forwards,avatar-wave-hide .1s linear 2s forwards}
+@keyframes avatar-wave-hello{0%{transform:rotate(-22deg)}100%{transform:rotate(25deg)}}
+@keyframes avatar-wave-hide{to{opacity:0;visibility:hidden}}
+@media(prefers-reduced-motion:reduce){.avatarWave{animation:none;display:none}}
