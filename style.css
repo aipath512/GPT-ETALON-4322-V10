@@ -168,3 +168,18 @@ body{transition:background .18s ease,color .18s ease}
  .entry .entry-content button{font-size:.76rem}
  .catalog{grid-template-columns:1fr}
 }
+
+/* Remaining content modules and controls inherit the selected theme. */
+.legal-panel,.product-crosssell,.offer-result,.catalog-tools .intent-examples button,.intent-examples button{
+ background:var(--panel-bg)!important;color:var(--ink)!important;border-color:var(--line)!important
+}
+.legal-panel p,.legal-panel dd,.product-crosssell p{color:var(--muted)}
+.catalog-tools .intent-examples button:hover,.intent-examples button:hover{border-color:var(--teal)!important}
+.detail a,.product-crosssell a{color:var(--teal)}
+input,select,textarea{color-scheme:inherit}
+:root[data-theme="dark"] .btn.light{background:#eff4f1;color:#102e30}
+:root[data-theme="dark"] .btn.ghost{color:var(--ink);border-color:var(--line)}
+:root[data-theme="light"] .btn.dark{background:#102e30;color:white}
+:root[data-theme="dark"] .tile .num{color:var(--gold)}
+:root[data-theme="dark"] .assistantBtn{border-color:#d5b070;background:#111820;color:#e8b17a}
+:root[data-theme="dark"] .form input,:root[data-theme="dark"] .form textarea,:root[data-theme="dark"] .form select{background:var(--input-bg);color:var(--ink);border-color:var(--line)}
