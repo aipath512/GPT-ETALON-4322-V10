@@ -13,6 +13,7 @@
 - `oferta.html`: formular local de compunere a cererii, copiere text și deschidere email
 - `legal.html`: Termeni, Cookies, Confidențialitate, GDPR, AI Act
 - `contact.html`: date demonstrative de contact
+- `faq.html`: **500 perechi întrebare–răspuns**, filtrabile, cu căutare și Schema.org FAQPage JSON-LD, din aceeași bază folosită de asistent
 
 Include **asistent conversațional automat** pe toate paginile. Funcționează pe reguli locale și caută în catalog; **nu** este conectat la un model generativ AI.
 
@@ -81,3 +82,13 @@ Site static HTML/CSS/JS (regenerat și verificat pe 8 noiembrie 2026): `style.cs
 - Aceasta este o **regenerare a codului**, nu o confirmare a deploymentului `1clic-ia.eu` sau `cl4322b.pages.dev`.
 - Limitări: video-ul avatarului și fotografiile de ambient sunt încă găzduite extern; prețurile, certificările, AI Voice, HOLMES.AI și un flux real de transmitere a cererilor de ofertă **nu sunt active** în acest prototip.
 
+
+## FAQ V1.0 — 500 perechi, o singură bază de răspunsuri
+
+- `faq-data.js` generează determinist **230 Q&A** pentru 46 servicii, **245 Q&A** pentru 49 produse și **25 Q&A** generale.
+- FAQ-urile sunt derivate din `catalog.js`, nu din informații inventate; nu afirmă prețuri, stocuri, autorizări ori termene neconfirmate.
+- `faq.html` prezintă toate întrebările cu `<details>`/`<summary>`, filtrează și caută în client fără API extern.
+- JSON-LD `FAQPage` cu aceleași 500 de întrebări și răspunsuri este creat din același corpus. **Nu garantează afișarea de rich results în Google** și pagina rămâne `noindex,nofollow` cât timp este demonstrativă.
+- Asistentul automat folosește `C4322FAQ.search()` și indică ID-ul FAQ, în plus față de regulile de siguranță și răspunsurile de rezervă.
+- Număr pagini după adăugare: **11 publice + 2 administrative = 13 HTML**.
+- Test: `node --test tests/site.test.mjs`. Validarea browser/live deploy trebuie efectuată separat.
