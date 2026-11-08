@@ -175,9 +175,23 @@ function answer(q){const s=q.toLowerCase();if(/ofert|pret|preț|cost|deviz/.test
 function chat(){const toggle=$('#assistantToggle'),pane=$('#assistantPane'),close=$('#assistantClose');
 const video=$('#assistantAvatarVideo');
 if(video){
-  const stopAtSmile=()=>{if(video.currentTime>=2){video.pause();video.removeEventListener('timeupdate',stopAtSmile)}};
-  video.addEventListener('timeupdate',stopAtSmile);
-  video.addEventListener('loadedmetadata',()=>{if(video.duration&&video.duration<2){video.loop=false}});
+  // The source clip smiles with teeth showing around second 5.
+  // Show the first 2 seconds once, then freeze on that smiling frame.
+  // No loop and no transition back to a closed mouth.
+  const WAVE_SECONDS=2,SMILE_FRAME_SECONDS=5;
+  let frozen=false;
+  const freezeOnSmile=()=>{
+    if(frozen||video.currentTime<WAVE_SECONDS)return;
+    frozen=true;
+    video.pause();
+    video.removeEventListener('timeupdate',freezeOnSmile);
+    const smileTime=Number.isFinite(video.duration)?Math.min(SMILE_FRAME_SECONDS,Math.max(0,video.duration-.12)):SMILE_FRAME_SECONDS;
+    const hold=()=>{video.pause();video.removeEventListener('seeked',hold);toggle.classList.add('avatar-smiling')};
+    video.addEventListener('seeked',hold);
+    try{video.currentTime=smileTime}catch{video.removeEventListener('seeked',hold);toggle.classList.add('avatar-smiling')}
+  };
+  video.loop=false;
+  video.addEventListener('timeupdate',freezeOnSmile);
   video.addEventListener('error',()=>{video.style.display='none';toggle.classList.add('avatar-unavailable')});
   video.play().catch(()=>{video.style.display='none';toggle.classList.add('avatar-unavailable')});
 }
