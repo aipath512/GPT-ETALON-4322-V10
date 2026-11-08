@@ -57,3 +57,11 @@ Site static HTML/CSS/JS (regenerat și verificat pe 8 noiembrie 2026): `style.cs
 - Listele de servicii și produse folosesc carduri late cu **fotografie/ilustrație în stânga** și **nume, cod, descriere și acces la fișă în dreapta**, după referința vizuală furnizată.
 - Nu se inventează prețuri: în lipsa unor tarife verificate se afișează „Preț la cerere” / „Preț stabilit la ofertare”.
 - Schimbările sunt limitate la `GPT-ETALON-4322-V10` și nu activează automat vreun deployment Cloudflare.
+
+
+## Avatar animat în bula asistentului (8 noiembrie 2026)
+
+- Bula publică a asistentului conține avatarul din materialul video furnizat de Owner, în locul simbolului static.
+- Clipul este redat fără sunet (autoplay muted playsinline), oprit automat la secunda 2, pe cadrul zâmbitor; salutul „wave” este animat în CSS timp de 2 secunde. Respectă setarea `prefers-reduced-motion` pentru gest.
+- **Limită importantă:** sursa video este momentan pe un URL extern `assets.x.ai` și disponibilitatea lui nu a fost confirmată. La indisponibilitate, interfața afișează un avatar de rezervă; pentru producție, copiați assetul cu drepturi corespunzătoare în storage propriu (R2 sau GitHub) și schimbați `src` în `app.js`.
+- Un GIF de 2 secunde a fost generat din atașament în spațiul de lucru, dar nu a fost încă încărcat ca fișier binar în repository. Integrarea actuală a site-ului redă clipul video original, nu fișierul GIF local.
