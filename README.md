@@ -6,7 +6,7 @@
 - `index.html`: homepage premium cu hero, categorii, avantaje și FAQ
 - `despre.html`: identitatea demonstrativă a companiei
 - `servicii.html`: **46 servicii** grupate în trei familii, cu fișe și filtrare
-- `produse.html`: **49 familii de produse**, descriere și criterii de alegere
+- `produse.html`: **49 familii de produse**, cod de catalog, ilustrație SVG locală, descriere și criterii de alegere
 - `mentenanta.html`: revizii și contract de mentenanță (model)
 - `garantii.html`: produs, manoperă și reparații
 - `certificari.html`: verificarea cerințelor ISCIR, ANRE și F-gaze (fără certificate revendicate)
@@ -23,11 +23,11 @@ Include **asistent conversațional automat** pe toate paginile. Funcționează p
 - Nu se inventează persoane, CUI, nr. Registrul Comerțului, certificări sau prețuri.
 
 ## Fișiere și deploy
-Site static HTML/CSS/JS: `style.css` (design), `catalog.js` (date), `app.js` (rendering, interacțiuni), 10 fișiere HTML. Nu necesită npm sau build. Cloudflare Pages: conectare repository, build command gol, output directory `.` (rădăcina).
+Site static HTML/CSS/JS (regenerat și verificat pe 8 noiembrie 2026): `style.css` (design), `catalog.js` (date), `app.js` (rendering, interacțiuni), 10 fișiere HTML. Nu necesită npm sau build. Cloudflare Pages: conectare repository, build command gol, output directory `.` (rădăcina).
 
 ## Important înainte de a-l folosi comercial
 - Site-ul demonstrativ are `noindex,nofollow` și `robots.txt` cu `Disallow: /`. Actualizează numai după eliminarea datelor fictive.
-- Imaginile de atmosferă sunt referințe externe Unsplash, fonturile sunt de la Google Fonts: verifică licențele și solicitările către furnizori.
+- Imaginile HERO/de atmosferă și cele ale familiilor de servicii folosesc încă referințe externe Unsplash; ilustrațiile celor 49 de produse sunt SVG-uri locale demonstrative, nu fotografii ale modelelor comerciale. Fonturile sunt de la Google Fonts: verificați licențele și solicitările către furnizori.
 - Prețuri, contracte, garanții comerciale, urgențe și autorizări: **neconfirmate**, necesită dovezi.
 - Formularul **nu trimite și nu stochează pe server**; `mailto:` deschide aplicația email a utilizatorului.
 - Textele legale sunt **exemple**, nu atestă conformitatea juridică.
@@ -35,3 +35,16 @@ Site static HTML/CSS/JS: `style.css` (design), `catalog.js` (date), `app.js` (re
 - Catalogul este model de ofertă, nu afirmația că o firmă reală prestează toate operațiunile.
 
 © 2026 C4322B — prototip demonstrativ.
+
+
+## Regenerare completă C4322B — 2026-11-08
+
+- **Repository unic de lucru:** `aipath512/GPT-ETALON-4322-V10`. Nicio modificare necesară în `scara-valorii`.
+- **Backup înaintea regenerării:** ramura `backup-before-regeneration-2026-11-08`.
+- Homepage cu titlul „Casa ta merită confortul potrivit. În fiecare anotimp.”, design mobil, meniu, contact, navigare și asistent local.
+- 10 pagini HTML publice (fără /admin), 46 de servicii organizate în 3 familii, **49 de produse cu 49 ilustrații SVG proprii** și coduri de catalog. Cele 46 de servicii sunt fișe într-o pagină cu căutare, nu 46 de URL-uri distincte.
+- Căutare după termeni și intenții în Servicii / Produse; deep linkurile `?familie=...` și `?q=...` sunt acceptate.
+- Pagina `/admin/` rămâne **DEMO PUBLIC, fără autentificare**; nu introduceți date private. Modulul `/admin/intro/` este separat și FAIL-CLOSED prin Cloudflare Access.
+- Pentru Owner INTRO, configurați în Cloudflare Pages variabilele `ETALON_ACCESS_TEAM_DOMAIN` (de forma `echipa.cloudflareaccess.com`), `ETALON_ACCESS_AUD` (Application AUD Tag), `ETALON_OWNER_EMAIL` (adresa Owner verificată). Adăugați o politică Zero Trust Access pentru `/admin/intro/*`, exclusiv Owner, și testați accesul autorizat/neautorizat. Fără configurație, pagina rămâne inaccesibilă.
+- Nu pretindem implementarea funcțiilor HOLMES.AI, AI Voice sau transmiterea efectivă a cererilor prin backend; acestea necesită servicii dedicate și integrare ulterioară.
+- Toate paginile site-ului fictiv păstrează `noindex,nofollow`. Publicarea pe un domeniu real trebuie verificată separat față de commitul GitHub.
