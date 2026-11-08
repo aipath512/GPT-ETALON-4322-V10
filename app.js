@@ -56,12 +56,11 @@ function productIntentSignals(query){const q=normalizeSearch(query);return [
  ].filter(rule=>rule.pattern.test(q))}
 function productScore(item,query,signals){let score=searchScore(item,query,[]);if(!query.trim())return score;
  const name=normalizeSearch(item.name),desc=normalizeSearch(item.description+' '+item.choose);
- for(const r of signals){iffunction productPhoto(product){
- // Every catalog product is backed by a local, deterministic illustration, keyed by ID.
- // These are generic SVG placeholders, NOT verified photos of branded products.
+ for(const r of signals){if(item.family===r.family)score+=3;for(const t of r.tags){if(name.includes(t))score+=14;else if(desc.includes(t))score+=2}}
+ return score}
+function productPhoto(product){
  return {src:'img/products/'+encodeURIComponent(product.id)+'.svg',
          alt:'Ilustrație schematică demonstrativă pentru '+product.name+' (cod '+product.id+')'};
-}ash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=640&q=80',alt:'Baie ilustrativă pentru obiecte și accesorii sanitare'};
 }
 function relatedService(product){
  const n=normalizeSearch(product.name),s=SERVICES;
@@ -113,7 +112,7 @@ const docs=isS?'<dt>Ce cuprinde lucrarea</dt><dd>'+esc(x.scope)+'</dd><dt>Când 
 '<dt>Cod produs etalon</dt><dd>'+esc(x.id)+'</dd><dt>Descriere și utilizare</dt><dd>'+esc(x.description)+'</dd><dt>Criterii de alegere</dt><dd>'+esc(x.choose)+'</dd><dt>Fișă tehnică și documente</dt><dd>Marca, modelul, codul SKU/EAN, dimensiunile, puterea/capacitatea, fișa tehnică și documentele producătorului se verifică la produsul ofertat. Etalonul nu indică un model comercial verificat.</dd><dt>Compatibilitate și montaj</dt><dd>Compatibilitatea cu instalația existentă, normele tehnice, dimensionarea și condițiile de instalare trebuie confirmate de specialist înaintea achiziției.</dd><dt>Disponibilitate și preț</dt><dd>Neconfirmate. Nu sunt afișate stocuri sau prețuri inventate.</dd>';
 const related=services.length?'<div class="product-crosssell"><h3>Serviciu compatibil de verificat</h3><p>Asocierea este orientativă; necesarul real de montaj se stabilește la evaluarea instalației.</p>'+services.map(s=>'<a href="servicii.html?familie='+encodeURIComponent(s.family)+'&q='+encodeURIComponent(s.name)+'">'+esc(s.name)+' ↗</a>').join('')+'</div>':'';
 const offerUrl=isS?'oferta.html?interes='+encodeURIComponent(x.name):productOfferUrl(x,services[0]);
-const photoBlock=photo?'<img class="product-detail-photo" src="'+esc(photo.src)+'" alt="'+esc(photo.alt)+'" loading="lazy" decoding="async"><p class="product-preview-note">Ilustrație schematică demonstrativă; nu este fotografia unui produs comercial verificat.</p>':'';
+const photoBlock=photo?'<img class="product-detail-photo" src="'+esc(photo.src)+'" alt="'+esc(photo.alt)+'" loading="lazy" decoding="async"><p class="product-preview-note">Ilustrație schematică demonstrativă; nu reprezintă un model comercial verificat.</p>':'';
 const block='<div id="itemDetail" class="detail" tabindex="-1">'+family+'<h2>'+esc(x.name)+'</h2>'+photoBlock+'<p>'+esc(x.summary||x.description)+'</p><dl>'+docs+'<dt>Garanție / termen de execuție</dt><dd>Se confirmă în oferta și documentele prestatorului real.</dd></dl>'+related+'<div class="actions"><a class="btn" href="'+esc(offerUrl)+'">'+(isS?'Adaugă în cererea de ofertă →':'Cere ofertă: produs'+(services.length?' + montaj':'')+' →')+'</a><button type="button" class="btn ghost" id="closeDetail">Închide fișa</button></div></div>';
 let old=$('#itemDetail');if(old)old.remove();$('#catalogGrid').insertAdjacentHTML('afterend',block);$('#closeDetail').onclick=()=>$('#itemDetail').remove();$('#itemDetail').focus();$('#itemDetail').scrollIntoView({behavior:'smooth',block:'center'});}
 function maintenance(){return title('Mentenanță','Ai grijă de instalații înainte să apară probleme.','Verificări planificate, revizii, curățare și intervenții documentate pentru confort pe termen lung.')+
@@ -128,11 +127,11 @@ function contact(){return title('Contact','Spune-ne ce ai nevoie pentru casa ta.
 section('<div class="grid"><div class="tile"><h3>Adresă</h3><p>Strada Exemplului nr. 24, București, România<br><strong>Adresă demonstrativă, nu sediu verificat.</strong></p></div><div class="tile"><h3>Email</h3><p>email@etalon.com<br><strong>Adresă demonstrativă; livrarea nu este garantată.</strong></p></div><div class="tile"><h3>Program</h3><p>Programul de lucru, deplasările și urgențele se stabilesc de prestatorul real.</p></div></div>')+cta}
 function legal(){return title('Legal','C4322B — informații legale și transparență','Datele firmei, politicile website-ului, protecția datelor și transparența asistentului automat — reunite într-o singură pagină.')+
 section(
-'<div class="notice warn"><strong>ETALON DEMONSTRATIV.</strong> C4322B este identitatea demonstrativă a firmei-model din proiectul C4322B. Datele indicate ca exemple sau „de completat” NU identifică un operator real. Această pagină este un model de documentație, nu dovadă de înregistrare, autorizare sau conformitate juridică.</div>'+
+'<div class="notice warn"><strong>ETALON DEMONSTRATIV.</strong> C4322B este numele comercial al firmei-model din proiectul C4322B. Datele indicate ca exemple sau „de completat” NU identifică un operator real. Această pagină este un model de documentație, nu dovadă de înregistrare, autorizare sau conformitate juridică.</div>'+
 '<nav class="legal-nav" aria-label="Cuprinsul paginii Legal"><strong>Cuprins — mergi direct la secțiune</strong><div><a href="#identitate">Datele firmei</a><a href="#termeni">Termeni</a><a href="#confidentialitate">Confidențialitate</a><a href="#gdpr">GDPR</a><a href="#cookies">Cookies</a><a href="#ai-act">AI Act</a><a href="#raspundere">Răspundere</a><a href="#consumatori">Consumatori</a><a href="#accesibilitate">Accesibilitate</a><a href="#securitate">Securitate</a><a href="#contact-legal">Contact juridic</a></div></nav>'+
 '<div class="legal-sections">'+
 '<section id="identitate" class="legal-panel"><span class="micro">01 / DATE DE IDENTIFICARE</span><h2>Fișa completă a firmei</h2><p>Referențialul de identitate al tuturor paginilor. Câmpurile necompletate trebuie confirmate din documente înainte de lansarea unui site comercial.</p><dl class="legal-details">'+
-'<dt>Denumire comercială</dt><dd><strong>TSC INSTAL</strong> — nume de exemplu</dd>'+
+'<dt>Denumire comercială</dt><dd><strong>C4322B</strong> — nume de exemplu</dd>'+
 '<dt>Denumire juridică</dt><dd>C4322B S.R.L. — <strong>denumire demonstrativă, nevalidată</strong></dd>'+
 '<dt>Cod CAEN</dt><dd><strong>4322</strong> — Lucrări de instalații sanitare, de încălzire și de aer condiționat (CAEN Rev. 3)</dd>'+
 '<dt>CUI / CIF</dt><dd><strong>De completat</strong> după verificarea în registrul oficial</dd>'+
