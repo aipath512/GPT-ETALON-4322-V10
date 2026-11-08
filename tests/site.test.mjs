@@ -37,3 +37,23 @@ test('theme, horizontal cards and two-second avatar are wired',()=>{
  assert.match(css,/:root\[data-theme="light"\]/);
  assert.match(css,/\.entry\.service-entry,\.entry\.product-entry/);
 });
+
+test('FAQ page contains theme bootstrap and script launcher',()=>{
+ const html=read('faq.html');assert.match(html,/data-page="faq"/);assert.match(html,/noindex,nofollow/);assert.match(html,/src="app.js"/);
+});
+test('500 FAQ entries use the 46 services and 49 products as their sources',()=>{
+ const src=read('catalog.js')+'\n'+read('faq-data.js')+'\nconsole.log(JSON.stringify({rows:globalThis.C4322FAQ.items,services:SERVICES,products:PRODUCTS}))';
+ const d=JSON.parse(execFileSync(process.execPath,['-e',src],{cwd:root,encoding:'utf8'}));
+ assert.equal(d.rows.length,500);
+ assert.equal(d.rows.filter(x=>x.category.startsWith('Servicii')).length,230);
+ assert.equal(d.rows.filter(x=>x.category.startsWith('Produse')).length,245);
+ assert.equal(d.rows.filter(x=>x.category==='General').length,25);
+ assert.equal(new Set(d.rows.map(x=>x.id)).size,500);
+ assert.equal(new Set(d.rows.map(x=>x.question)).size,500);
+ const ids=new Set([...d.services,...d.products].map(x=>x.id));
+ for(const x of d.rows){assert.ok(x.question.length>12);assert.ok(x.answer.length>20);if(x.sourceId)assert.ok(ids.has(x.sourceId))}
+});
+test('FAQ markup and assistant share a single knowledge base',()=>{
+ const app=read('app.js');assert.match(app,/C4322FAQ.items.map/);assert.match(app,/C4322FAQ.search/);
+ assert.match(app,/faq-jsonld/);assert.match(app,/faq-data.js/);assert.match(app,/if\(page==='faq'\)initFaq\(\)/);
+});
