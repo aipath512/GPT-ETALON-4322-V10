@@ -65,3 +65,19 @@ Site static HTML/CSS/JS (regenerat și verificat pe 8 noiembrie 2026): `style.cs
 - Clipul este redat fără sunet (autoplay muted playsinline), redat pentru primele 2 secunde, apoi mutat automat pe cadrul cu zâmbet larg de la secunda 5 a clipului și oprit acolo fără reluare; salutul „wave” este animat în CSS timp de 2 secunde. Respectă setarea `prefers-reduced-motion` pentru gest.
 - **Limită importantă:** sursa video este momentan pe un URL extern `assets.x.ai` și disponibilitatea lui nu a fost confirmată. La indisponibilitate, interfața afișează un avatar de rezervă; pentru producție, copiați assetul cu drepturi corespunzătoare în storage propriu (R2 sau GitHub) și schimbați `src` în `app.js`.
 - Un GIF de 2 secunde a fost generat din atașament în spațiul de lucru, dar nu a fost încă încărcat ca fișier binar în repository. Integrarea actuală a site-ului redă clipul video original, nu fișierul GIF local.
+
+
+## Regenerare integrală — Dark-first / Avatar Smile (8 noiembrie 2026)
+
+**Singurul repository modificat:** `aipath512/GPT-ETALON-4322-V10`.
+**Punct de restaurare:** `backup-before-full-regeneration-2026-11-08-v2`.
+
+- Toate cele **10 pagini publice** preîncarcă tema preferată înainte de stiluri. Tema inițială este **Dark**, iar toggle-ul `Light/Dark` din antet se păstrează între pagini.
+- Cardurile din cataloage sunt orizontale, responsive, cu imagine stânga, denumire, cod, descriere, link „VEZI FIȘA” și preț neconfirmat explicit.
+- Catalogul păstrează **46 de fișe de servicii și 49 de fișe de produse** cu ilustrații SVG individuale, filtrare după familie și căutare după cuvinte/intenții.
+- Bula asistentului redă salutul de **2 secunde** (video extern), apoi caută cadrul cu **zâmbet deschis** la secunda 5 și oprește acolo redarea, fără buclă. Un timer suplimentar ajută în browserele care limitează evenimentele `timeupdate`. În caz de eroare video se afișează un avatar fallback.
+- Asistentul are suport de închidere la `Escape` și refocalizare pe buton.
+- Testele de regresie sunt în `tests/site.test.mjs`, executabile local cu `node --test tests/site.test.mjs` și configurate în `.github/workflows/site-check.yml`.
+- Aceasta este o **regenerare a codului**, nu o confirmare a deploymentului `1clic-ia.eu` sau `cl4322b.pages.dev`.
+- Limitări: video-ul avatarului și fotografiile de ambient sunt încă găzduite extern; prețurile, certificările, AI Voice, HOLMES.AI și un flux real de transmitere a cererilor de ofertă **nu sunt active** în acest prototip.
+
