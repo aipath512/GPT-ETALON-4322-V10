@@ -180,9 +180,12 @@ if(video){
   // No loop and no transition back to a closed mouth.
   const WAVE_SECONDS=2,SMILE_FRAME_SECONDS=5;
   let frozen=false;
+  // Browsers can throttle timeupdate; use an independent timeout as backup.
+  const stopTimer=setTimeout(freezeOnSmile,WAVE_SECONDS*1000+180);
   const freezeOnSmile=()=>{
     if(frozen||video.currentTime<WAVE_SECONDS)return;
     frozen=true;
+    clearTimeout(stopTimer);
     video.pause();
     video.removeEventListener('timeupdate',freezeOnSmile);
     const smileTime=Number.isFinite(video.duration)?Math.min(SMILE_FRAME_SECONDS,Math.max(0,video.duration-.12)):SMILE_FRAME_SECONDS;
@@ -192,10 +195,11 @@ if(video){
   };
   video.loop=false;
   video.addEventListener('timeupdate',freezeOnSmile);
-  video.addEventListener('error',()=>{video.style.display='none';toggle.classList.add('avatar-unavailable')});
-  video.play().catch(()=>{video.style.display='none';toggle.classList.add('avatar-unavailable')});
+  video.addEventListener('error',()=>{clearTimeout(stopTimer);video.style.display='none';toggle.classList.add('avatar-unavailable')});
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){freezeOnSmile();}
+  else video.play().catch(()=>{clearTimeout(stopTimer);video.style.display='none';toggle.classList.add('avatar-unavailable')});
 }
-const set=v=>{pane.classList.toggle('open',v);toggle.setAttribute('aria-expanded',String(v));if(v)$('#chatInput').focus()};toggle.onclick=()=>set(!pane.classList.contains('open'));close.onclick=()=>set(false);$('#chatform').onsubmit=e=>{e.preventDefault();const input=$('#chatInput'),v=input.value.trim();if(!v)return;const log=$('#chatlog');for(const [txt,cl] of [[v,'you'],[answer(v),'']]){const div=document.createElement('div');div.className='msg '+cl;div.textContent=txt;log.appendChild(div)}log.scrollTop=log.scrollHeight;input.value=''}}
+const set=v=>{pane.classList.toggle('open',v);toggle.setAttribute('aria-expanded',String(v));if(v)$('#chatInput').focus();else toggle.focus()};toggle.onclick=()=>set(!pane.classList.contains('open'));close.onclick=()=>set(false);document.addEventListener('keydown',e=>{if(e.key==='Escape'&&pane.classList.contains('open'))set(false)});$('#chatform').onsubmit=e=>{e.preventDefault();const input=$('#chatInput'),v=input.value.trim();if(!v)return;const log=$('#chatlog');for(const [txt,cl] of [[v,'you'],[answer(v),'']]){const div=document.createElement('div');div.className='msg '+cl;div.textContent=txt;log.appendChild(div)}log.scrollTop=log.scrollHeight;input.value=''}}
 function offerForm(){const p=new URLSearchParams(location.search);if(p.get('interes'))$('#interest').value=p.get('interes');if(p.get('serviciu')){$('#details').value='Serviciu asociat solicitat (de confirmat): '+p.get('serviciu');}$('#offerForm').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);const s='CERERE DE OFERTĂ — MODEL C4322B\nLocuință: '+f.get('homeType')+'\nZonă: '+(f.get('area')||'Nespecificată')+'\nFamilie: '+f.get('kind')+'\nLucrare / produs: '+f.get('interest')+'\nDescriere: '+(f.get('details')||'Nespecificată')+'\nMoment: '+f.get('deadline')+'\n\nSolicit deviz cu: servicii și materiale separate, cantități, produs (marcă/model), preț TVA inclus, deplasare, termen, garanție, plăți și excluderi.\n\nAcesta este un model demonstrativ, fără comandă reală.';$('#offerText').textContent=s;$('#offerResult').classList.remove('hidden');$('#copyOffer').onclick=()=>navigator.clipboard.writeText(s).then(()=>$('#copyOffer').textContent='Copiat ✓').catch(()=>$('#copyOffer').textContent='Selectează și copiază textul');$('#mailOffer').href='mailto:email@etalon.com?subject='+encodeURIComponent('Cerere oferta demonstrativa C4322B')+'&body='+encodeURIComponent(s);$('#offerResult').focus()}}
 function main(){const contents={home,despre:about,servicii:()=>catalog('servicii'),produse:()=>catalog('produse'),mentenanta:maintenance,garantii:warranties,certificari:certifications,oferta:offer,legal,contact};$('#app').innerHTML=header+'<main id="main">'+(contents[page]||home)()+'</main>'+footer+assistant;const themeButton=$('#themeToggle');
 const applyTheme=mode=>{document.documentElement.dataset.theme=mode;themeButton.setAttribute('aria-pressed',String(mode==='light'));themeButton.setAttribute('aria-label',mode==='dark'?'Schimbă tema în Light':'Schimbă tema în Dark');$('#themeIcon').textContent=mode==='dark'?'☀':'☾';themeButton.querySelector('.theme-label').textContent=mode==='dark'?'Light':'Dark'};
