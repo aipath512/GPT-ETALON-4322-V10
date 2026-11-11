@@ -156,6 +156,7 @@ def from_dictionary():
     return mods, gt
 
 MODS, GT = from_dictionary()
+REL_OK = all(r.get('status') == 'validat' for r in REL['relatii'] if r['type'] == 'FOLOSESTE_PRODUS')
 def load(fid):
     return MODS[fid]
 
@@ -329,7 +330,7 @@ def detail(fid, d, x, kind, S, P):
     blocks.append(f'<div class="dblock"><h2>Cât costă</h2><div class="pricebig"><span>min<b>{mn}</b></span><span class="rec">recomandat<b>{av}</b></span><span>max<b>{mx}</b></span></div><p class="muted">lei / {esc(u)}, cu TVA</p><p>{basis} Prețul recomandat este media orientativă din București; intervalul min–max arată diferența dintre o lucrare simplă și una complexă. Prețul final se stabilește după evaluare.</p>{"<p><strong>Ce influențează prețul:</strong> " + esc(gt["pret"]) + "</p>" if gt.get("pret") else ""}<p class="muted">{esc(x.get("priceSource", ""))}</p></div>')
     if gt.get('reguli'): blocks.append(f'<div class="dblock"><h2>Reguli și siguranță</h2><p>{esc(gt["reguli"])}</p></div>')
     if gt.get('sfat'): blocks.append(f'<div class="dblock tip"><h2>Sfatul instalatorului</h2><p>{esc(gt["sfat"])}</p></div>')
-    if rel: blocks.append(f'<div class="dblock"><h2>{"Produse folosite" if is_s else "Servicii pentru acest produs"}</h2><ul class="rel">{li(rel)}</ul><p class="muted">Relație din dicționarul de date ({"FOLOSESTE_PRODUS" if is_s else "FOLOSIT_IN"}, 0..* : 0..*), propusă — de validat.</p></div>')
+    if rel: blocks.append(f'<div class="dblock"><h2>{"Produse folosite" if is_s else "Servicii pentru acest produs"}</h2><ul class="rel">{li(rel)}</ul><p class="muted">Relație din dicționarul de date ({"FOLOSESTE_PRODUS" if is_s else "FOLOSIT_IN"}, 0..* : 0..*){", validată de inginerul instalator" if REL_OK else ", propusă — de validat"}.</p></div>')
     if same: blocks.append(f'<div class="dblock"><h2>Alte {"servicii" if is_s else "produse"} din grupa {esc(g)}</h2><ul class="rel">{li(same)}</ul></div>')
     crumbs = f'<nav class="crumbs" aria-label="Navigare"><a href="/" data-i18n="home">Acasă</a> › <a href="/{kind}/">{label if False else ("Servicii" if is_s else "Produse")}</a> › <a href="/{kind}/?grupa={esc(x["group"])}">{esc(x["group"])}</a> › <span>{esc(x["name"])}</span></nav>'
     return f"""<section class="hero small"><div class="container">{crumbs}
@@ -362,7 +363,7 @@ def dict_page(fid, d, S, P):
 <h1>Dicționar entitate–relație</h1><p>Sursa unică a site-ului: {len(mine) + len(grp_e) + len(brands) + 1} entități și {len(rels)} relații pentru {esc(d['title'])}. Fiecare relație are inversă, cardinalitate și sesiune; paginile site-ului sunt generate din el.</p></div></section>
 <section class="section"><div class="container">
 <div class="dblock"><h2>Tipuri de relații și cardinalități</h2><div class="tw"><table class="dt"><tr><th>Relație</th><th>De la → la</th><th>Cardinalitate</th><th>Sens</th><th>Pe acest site</th></tr>{types}</table></div>
-<p class="muted">Cardinalitatea „sursă : țintă” — ex. GRUPA_CONTINE 1 : 0..* = o fișă are exact o grupă, o grupă are zero sau mai multe fișe. Relațiile FOLOSESTE_PRODUS sunt propuse și așteaptă validarea inginerului instalator.</p></div>
+<p class="muted">Cardinalitatea „sursă : țintă” — ex. GRUPA_CONTINE 1 : 0..* = o fișă are exact o grupă, o grupă are zero sau mai multe fișe. {'Relațiile FOLOSESTE_PRODUS au fost validate de inginerul instalator.' if REL_OK else 'Relațiile FOLOSESTE_PRODUS sunt propuse și așteaptă validarea inginerului instalator.'}</p></div>
 {sec('Familie și grupe', [fam_e['id']] + sorted(grp_e))}{sec('Servicii', svc)}{sec('Produse', prd)}{sec('Mărci', sorted(brands, key=lambda i: E[i]['name'].lower()))}
 <p class="muted">Fișiere sursă în GitHub: <code>etalons/C4322/dictionar/entitati.json</code> și <code>relatii.json</code> — metamodel AiVenture Semantic Data Dictionary (ENTITY / PROPERTY / RELATIONSHIP / VALUE / SESSION).</p>
 </div></section>"""

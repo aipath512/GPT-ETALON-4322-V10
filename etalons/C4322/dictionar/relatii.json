@@ -7114,8 +7114,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0034",
    "target": "ENT-C4322-0068",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7123,8 +7123,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0034",
    "target": "ENT-C4322-0077",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7132,8 +7132,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0034",
    "target": "ENT-C4322-0134",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7141,8 +7141,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0034",
    "target": "ENT-C4322-0137",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7150,8 +7150,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0035",
    "target": "ENT-C4322-0068",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7159,8 +7159,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0035",
    "target": "ENT-C4322-0164",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7168,8 +7168,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0035",
    "target": "ENT-C4322-0129",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7177,8 +7177,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0035",
    "target": "ENT-C4322-0119",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7186,8 +7186,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0035",
    "target": "ENT-C4322-0237",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7195,8 +7195,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0036",
    "target": "ENT-C4322-0068",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7204,8 +7204,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0036",
    "target": "ENT-C4322-0164",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7213,8 +7213,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0036",
    "target": "ENT-C4322-0129",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7222,8 +7222,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0036",
    "target": "ENT-C4322-0175",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7231,8 +7231,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0037",
    "target": "ENT-C4322-0068",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7240,8 +7240,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0037",
    "target": "ENT-C4322-0134",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7249,8 +7249,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0038",
    "target": "ENT-C4322-0068",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7258,8 +7258,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0039",
    "target": "ENT-C4322-0068",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7267,8 +7267,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0039",
    "target": "ENT-C4322-0129",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7276,8 +7276,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0040",
    "target": "ENT-C4322-0068",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7285,8 +7285,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0040",
    "target": "ENT-C4322-0124",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7294,8 +7294,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0040",
    "target": "ENT-C4322-0119",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7303,8 +7303,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0041",
    "target": "ENT-C4322-0085",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7312,8 +7312,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0041",
    "target": "ENT-C4322-0090",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7321,8 +7321,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0041",
    "target": "ENT-C4322-0146",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7330,8 +7330,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0041",
    "target": "ENT-C4322-0110",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7339,8 +7339,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0042",
    "target": "ENT-C4322-0110",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7348,8 +7348,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0042",
    "target": "ENT-C4322-0162",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7357,8 +7357,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0043",
    "target": "ENT-C4322-0095",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7366,8 +7366,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0043",
    "target": "ENT-C4322-0100",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7375,8 +7375,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0043",
    "target": "ENT-C4322-0166",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7384,8 +7384,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0044",
    "target": "ENT-C4322-0077",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7393,8 +7393,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0044",
    "target": "ENT-C4322-0082",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7402,8 +7402,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0044",
    "target": "ENT-C4322-0084",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7411,8 +7411,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0044",
    "target": "ENT-C4322-0163",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7420,8 +7420,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0044",
    "target": "ENT-C4322-0119",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7429,8 +7429,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0045",
    "target": "ENT-C4322-0117",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7438,8 +7438,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0045",
    "target": "ENT-C4322-0119",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7447,8 +7447,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0046",
    "target": "ENT-C4322-0175",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7456,8 +7456,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0046",
    "target": "ENT-C4322-0129",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7465,8 +7465,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0047",
    "target": "ENT-C4322-0110",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7474,8 +7474,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0047",
    "target": "ENT-C4322-0124",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7483,8 +7483,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0047",
    "target": "ENT-C4322-0100",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7492,8 +7492,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0048",
    "target": "ENT-C4322-0102",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7501,8 +7501,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0048",
    "target": "ENT-C4322-0107",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7510,8 +7510,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0048",
    "target": "ENT-C4322-0160",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7519,8 +7519,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0049",
    "target": "ENT-C4322-0132",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7528,8 +7528,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0049",
    "target": "ENT-C4322-0117",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7537,8 +7537,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0050",
    "target": "ENT-C4322-0068",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7546,8 +7546,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0050",
    "target": "ENT-C4322-0164",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7555,8 +7555,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0050",
    "target": "ENT-C4322-0181",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7564,8 +7564,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0050",
    "target": "ENT-C4322-0177",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7573,8 +7573,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0051",
    "target": "ENT-C4322-0137",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7582,8 +7582,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0051",
    "target": "ENT-C4322-0140",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7591,8 +7591,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0051",
    "target": "ENT-C4322-0163",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7600,8 +7600,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0051",
    "target": "ENT-C4322-0119",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7609,8 +7609,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0052",
    "target": "ENT-C4322-0134",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7618,8 +7618,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0052",
    "target": "ENT-C4322-0119",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7627,8 +7627,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0053",
    "target": "ENT-C4322-0142",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7636,8 +7636,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0053",
    "target": "ENT-C4322-0163",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7645,8 +7645,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0053",
    "target": "ENT-C4322-0124",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7654,8 +7654,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0054",
    "target": "ENT-C4322-0149",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7663,8 +7663,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0054",
    "target": "ENT-C4322-0251",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7672,8 +7672,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0055",
    "target": "ENT-C4322-0093",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7681,8 +7681,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0056",
    "target": "ENT-C4322-0151",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7690,8 +7690,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0057",
    "target": "ENT-C4322-0156",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7699,8 +7699,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0057",
    "target": "ENT-C4322-0102",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7708,8 +7708,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0058",
    "target": "ENT-C4322-0159",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7717,8 +7717,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0058",
    "target": "ENT-C4322-0160",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7726,8 +7726,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0059",
    "target": "ENT-C4322-0163",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7735,8 +7735,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0060",
    "target": "ENT-C4322-0164",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7744,8 +7744,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0061",
    "target": "ENT-C4322-0170",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7753,8 +7753,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0062",
    "target": "ENT-C4322-0166",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7762,8 +7762,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0062",
    "target": "ENT-C4322-0124",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7771,8 +7771,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0063",
    "target": "ENT-C4322-0181",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7780,8 +7780,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0063",
    "target": "ENT-C4322-0177",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7789,8 +7789,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0064",
    "target": "ENT-C4322-0177",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7798,8 +7798,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0065",
    "target": "ENT-C4322-0175",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7807,8 +7807,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0065",
    "target": "ENT-C4322-0129",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7816,8 +7816,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0066",
    "target": "ENT-C4322-0119",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7825,8 +7825,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0067",
    "target": "ENT-C4322-0068",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7834,8 +7834,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0067",
    "target": "ENT-C4322-0124",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7843,8 +7843,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0067",
    "target": "ENT-C4322-0119",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7852,8 +7852,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0184",
    "target": "ENT-C4322-0209",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7861,8 +7861,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0184",
    "target": "ENT-C4322-0212",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7870,8 +7870,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0184",
    "target": "ENT-C4322-0213",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7879,8 +7879,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0184",
    "target": "ENT-C4322-0214",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7888,8 +7888,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0184",
    "target": "ENT-C4322-0215",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7897,8 +7897,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0185",
    "target": "ENT-C4322-0209",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7906,8 +7906,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0185",
    "target": "ENT-C4322-0212",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7915,8 +7915,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0185",
    "target": "ENT-C4322-0230",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7924,8 +7924,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0185",
    "target": "ENT-C4322-0234",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7933,8 +7933,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0186",
    "target": "ENT-C4322-0213",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7942,8 +7942,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0186",
    "target": "ENT-C4322-0214",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7951,8 +7951,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0186",
    "target": "ENT-C4322-0230",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7960,8 +7960,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0186",
    "target": "ENT-C4322-0234",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7969,8 +7969,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0187",
    "target": "ENT-C4322-0215",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7978,8 +7978,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0187",
    "target": "ENT-C4322-0243",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7987,8 +7987,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0187",
    "target": "ENT-C4322-0230",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -7996,8 +7996,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0188",
    "target": "ENT-C4322-0216",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8005,8 +8005,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0188",
    "target": "ENT-C4322-0218",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8014,8 +8014,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0188",
    "target": "ENT-C4322-0257",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8023,8 +8023,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0189",
    "target": "ENT-C4322-0246",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8032,8 +8032,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0189",
    "target": "ENT-C4322-0267",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8041,8 +8041,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0190",
    "target": "ENT-C4322-0223",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8050,8 +8050,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0190",
    "target": "ENT-C4322-0257",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8059,8 +8059,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0191",
    "target": "ENT-C4322-0270",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8068,8 +8068,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0192",
    "target": "ENT-C4322-0270",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8077,8 +8077,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0192",
    "target": "ENT-C4322-0268",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8086,8 +8086,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0193",
    "target": "ENT-C4322-0268",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8095,8 +8095,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0194",
    "target": "ENT-C4322-0268",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8104,8 +8104,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0195",
    "target": "ENT-C4322-0268",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8113,8 +8113,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0196",
    "target": "ENT-C4322-0230",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8122,8 +8122,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0196",
    "target": "ENT-C4322-0234",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8131,8 +8131,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0197",
    "target": "ENT-C4322-0230",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8140,8 +8140,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0197",
    "target": "ENT-C4322-0237",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8149,8 +8149,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0198",
    "target": "ENT-C4322-0240",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8158,8 +8158,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0198",
    "target": "ENT-C4322-0267",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8167,8 +8167,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0199",
    "target": "ENT-C4322-0241",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8176,8 +8176,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0199",
    "target": "ENT-C4322-0230",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8185,8 +8185,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0200",
    "target": "ENT-C4322-0255",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8194,8 +8194,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0201",
    "target": "ENT-C4322-0247",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8203,8 +8203,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0201",
    "target": "ENT-C4322-0251",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8212,8 +8212,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0202",
    "target": "ENT-C4322-0257",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8221,8 +8221,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0203",
    "target": "ENT-C4322-0219",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8230,8 +8230,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0203",
    "target": "ENT-C4322-0260",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8239,8 +8239,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0204",
    "target": "ENT-C4322-0261",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8248,8 +8248,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0204",
    "target": "ENT-C4322-0264",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8257,8 +8257,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0205",
    "target": "ENT-C4322-0237",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8266,8 +8266,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0206",
    "target": "ENT-C4322-0230",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8275,8 +8275,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0206",
    "target": "ENT-C4322-0237",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8284,8 +8284,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0207",
    "target": "ENT-C4322-0257",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8293,8 +8293,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0208",
    "target": "ENT-C4322-0268",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8302,8 +8302,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0271",
    "target": "ENT-C4322-0331",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8311,8 +8311,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0271",
    "target": "ENT-C4322-0335",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8320,8 +8320,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0271",
    "target": "ENT-C4322-0336",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8329,8 +8329,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0271",
    "target": "ENT-C4322-0364",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8338,8 +8338,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0272",
    "target": "ENT-C4322-0359",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8347,8 +8347,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0272",
    "target": "ENT-C4322-0322",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8356,8 +8356,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0273",
    "target": "ENT-C4322-0301",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8365,8 +8365,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0273",
    "target": "ENT-C4322-0306",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8374,8 +8374,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0274",
    "target": "ENT-C4322-0309",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8383,8 +8383,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0274",
    "target": "ENT-C4322-0326",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8392,8 +8392,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0274",
    "target": "ENT-C4322-0310",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8401,8 +8401,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0274",
    "target": "ENT-C4322-0363",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8410,8 +8410,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0275",
    "target": "ENT-C4322-0315",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8419,8 +8419,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0275",
    "target": "ENT-C4322-0319",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8428,8 +8428,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0275",
    "target": "ENT-C4322-0321",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8437,8 +8437,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0275",
    "target": "ENT-C4322-0314",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8446,8 +8446,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0276",
    "target": "ENT-C4322-0310",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8455,8 +8455,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0276",
    "target": "ENT-C4322-0314",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8464,8 +8464,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0276",
    "target": "ENT-C4322-0363",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8473,8 +8473,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0276",
    "target": "ENT-C4322-0362",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8482,8 +8482,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0277",
    "target": "ENT-C4322-0113",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8491,8 +8491,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0277",
    "target": "ENT-C4322-0119",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8500,8 +8500,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0278",
    "target": "ENT-C4322-0338",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8509,8 +8509,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0278",
    "target": "ENT-C4322-0342",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8518,8 +8518,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0279",
    "target": "ENT-C4322-0336",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8527,8 +8527,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0280",
    "target": "ENT-C4322-0331",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8536,8 +8536,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0280",
    "target": "ENT-C4322-0335",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8545,8 +8545,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0280",
    "target": "ENT-C4322-0336",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8554,8 +8554,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0281",
    "target": "ENT-C4322-0359",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8563,8 +8563,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0281",
    "target": "ENT-C4322-0322",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8572,8 +8572,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0282",
    "target": "ENT-C4322-0345",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8581,8 +8581,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0282",
    "target": "ENT-C4322-0367",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8590,8 +8590,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0283",
    "target": "ENT-C4322-0364",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8599,8 +8599,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0283",
    "target": "ENT-C4322-0336",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8608,8 +8608,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0284",
    "target": "ENT-C4322-0331",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8617,8 +8617,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0284",
    "target": "ENT-C4322-0359",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8626,8 +8626,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0284",
    "target": "ENT-C4322-0369",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8635,8 +8635,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0285",
    "target": "ENT-C4322-0336",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8644,8 +8644,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0285",
    "target": "ENT-C4322-0364",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8653,8 +8653,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0286",
    "target": "ENT-C4322-0331",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8662,8 +8662,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0286",
    "target": "ENT-C4322-0359",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8671,8 +8671,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0286",
    "target": "ENT-C4322-0301",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8680,8 +8680,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0286",
    "target": "ENT-C4322-0306",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8689,8 +8689,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0286",
    "target": "ENT-C4322-0309",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8698,8 +8698,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0286",
    "target": "ENT-C4322-0314",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8707,8 +8707,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0287",
    "target": "ENT-C4322-0326",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8716,8 +8716,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0287",
    "target": "ENT-C4322-0363",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8725,8 +8725,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0287",
    "target": "ENT-C4322-0364",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8734,8 +8734,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0288",
    "target": "ENT-C4322-0322",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8743,8 +8743,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0288",
    "target": "ENT-C4322-0357",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8752,8 +8752,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0289",
    "target": "ENT-C4322-0359",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8761,8 +8761,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0290",
    "target": "ENT-C4322-0351",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8770,8 +8770,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0290",
    "target": "ENT-C4322-0352",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8779,8 +8779,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0291",
    "target": "ENT-C4322-0353",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8788,8 +8788,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0291",
    "target": "ENT-C4322-0310",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8797,8 +8797,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0292",
    "target": "ENT-C4322-0355",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8806,8 +8806,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0292",
    "target": "ENT-C4322-0321",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8815,8 +8815,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0293",
    "target": "ENT-C4322-0347",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8824,8 +8824,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0294",
    "target": "ENT-C4322-0365",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8833,8 +8833,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0295",
    "target": "ENT-C4322-0366",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8842,8 +8842,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0295",
    "target": "ENT-C4322-0119",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8851,8 +8851,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0296",
    "target": "ENT-C4322-0369",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8860,8 +8860,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0296",
    "target": "ENT-C4322-0374",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8869,8 +8869,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0297",
    "target": "ENT-C4322-0359",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8878,8 +8878,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0297",
    "target": "ENT-C4322-0369",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8887,8 +8887,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0298",
    "target": "ENT-C4322-0376",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8896,8 +8896,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0298",
    "target": "ENT-C4322-0359",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   },
   {
@@ -8905,8 +8905,8 @@
    "type": "FOLOSESTE_PRODUS",
    "source": "ENT-C4322-0299",
    "target": "ENT-C4322-0380",
-   "status": "propus",
-   "provenance": "propunere Claude 2026-11-11 — de validat de inginerul instalator",
+   "status": "validat",
+   "provenance": "propunere Claude 2026-11-11; validat de Dan Ionescu, inginer instalator, 2026-11-11",
    "session": "0006H"
   }
  ]
