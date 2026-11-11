@@ -1202,5 +1202,123 @@
       "noDefaultClaim": true
     },
     "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "garantiiFLI": {
+    "capturedAt": "2026-11-11",
+    "source": "Text pagina «Garanții» Future Line Instal furnizat de utilizator",
+    "sourceStatus": "competitor_statement_unverified",
+    "classification": "CONTRACTUAL_TERMS_AND_CREDENTIALS_NOT_NEW_SERVICE",
+    "claimsFromFLI": {
+      "extendedWarranty": {
+        "duration": "până la 5 ani de la PIF",
+        "condition": "contract de întreținere cu prelungirea garanției",
+        "equipment": [
+          "preparatoare instantanee apă caldă menajeră",
+          "microcentrale murale pe gaz",
+          "grupuri termice pe gaz",
+          "grupuri termice pe combustibil lichid",
+          "cazane din fontă sau oțel",
+          "arzătoare pe gaz",
+          "arzătoare pe combustibil lichid și mixt"
+        ]
+      },
+      "serviceWarranty": {
+        "replacementPartsMonths": 24,
+        "laborMonths": 6
+      },
+      "claimedRequirements": [
+        "racordare gaz de firmă autorizată ANRE",
+        "PIF/AF/VTP prin prestatori cu autorizări ISCIR și aprobări relevante producător",
+        "VTP la intervalul aplicabil, FLI afirmă 2 ani"
+      ]
+    },
+    "legalSafeguards": [
+      "Nu trata cele 24 luni piese sau 6 luni manoperă ca durate legale universale; sunt condiții comerciale declarate de FLI, supuse verificării.",
+      "Drepturile legale ale consumatorului nu pot fi limitate de o garanție comercială sau de termeni de întreținere.",
+      "Prelungirea până la 5 ani nu este automată, nici pentru toate produsele: cere contract, certificat, condiții, excluderi, emitent/garant și data pornirii.",
+      "Nu afirma că lipsa unei anumite autorizări anulează automat toate drepturile legale de garanție.",
+      "Separă garanția producătorului, garanția comercială suplimentară a prestatorului și răspunderea pentru manoperă.",
+      "VTP și întreținerea contractuală pot avea periodicitate diferită; nu condiționa abuziv drepturi legale de revizii comerciale."
+    ],
+    "ssotProposal": {
+      "entities": [
+        "PoliticaGarantie",
+        "GarantieComercialaExtinsa",
+        "ContractMentenanta",
+        "DovadaLucrare"
+      ],
+      "fields": [
+        "firmCUI",
+        "type",
+        "warrantor",
+        "coveredEquipment",
+        "coveredService",
+        "coveredBrand",
+        "durationMonths",
+        "startsAtEvent",
+        "conditions",
+        "exclusions",
+        "contractRequired",
+        "requiredCertifications",
+        "legalRightsNotice",
+        "documentUrl",
+        "effectiveFrom",
+        "effectiveTo",
+        "verifiedAt",
+        "status"
+      ],
+      "relations": [
+        "FIRMA_OFERA_GARANTIE",
+        "GARANTIE_ACOPERA_PRODUS",
+        "GARANTIE_ACOPERA_SERVICIU",
+        "GARANTIE_CONDITIONATA_DE_CONTRACT",
+        "LUCRARE_ARE_DOVADA"
+      ],
+      "publicationGate": "Only firm-confirmed valid written terms. Never inherit FLI's 24/6 months or 5-year duration."
+    },
+    "crosswalk": {
+      "existingPage": "Garanții",
+      "relatedServices": [
+        "S-I-04 PIF centrală",
+        "S-I-05 Verificare tehnică periodică centrală",
+        "S-I-06 Revizie și întreținere centrală",
+        "S-I-07 Diagnostic și reparații centrale"
+      ],
+      "status": "EXTEND_EXISTING_PAGE_NO_DUPLICATE"
+    },
+    "websiteProposal": {
+      "sections": [
+        "Garanția legală și drepturile clientului",
+        "Garanție comercială produs",
+        "Garanția lucrării și pieselor înlocuite",
+        "Opțiuni contractuale de extindere",
+        "Condiții și excluderi explicite",
+        "Cum soliciți o intervenție în garanție"
+      ],
+      "cta": "Solicită asistență în garanție",
+      "leadForm": [
+        "nume",
+        "telefon",
+        "email",
+        "marcă",
+        "model",
+        "seria echipamentului",
+        "data PIF",
+        "data intervenției",
+        "număr factură/contract opțional",
+        "descriere defecțiune",
+        "documente opționale",
+        "consimțământ"
+      ]
+    },
+    "evaQuestions": [
+      "Care este diferența dintre garanția legală și cea comercială?",
+      "Pot prelungi garanția centralei prin contract de mentenanță?",
+      "Ce acoperă piesele și manopera?",
+      "De când începe garanția extinsă?",
+      "Ce documente trebuie pentru o solicitare în garanție?",
+      "VTP la 2 ani este același lucru cu mentenanța anuală?"
+    ],
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
   }
 }
