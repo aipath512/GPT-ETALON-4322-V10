@@ -298,7 +298,7 @@
       ]
     }
   ],
-  "revisedInterpretation": "Pagina nouă confirmă că S-I-04 acoperă PIF; se adaugă detalii și câmpuri de cerere, fără duplicare. PIF, AF și VTP sunt concepte separate, iar simplul CAEN 4322 nu conferă dreptul de a executa orice PIF.",
+  "revisedInterpretation": "Revizia centrală S-I-06 există; noutatea este un produs contractual configurabil cu 3 niveluri, SLA, operațiuni tehnice, verificări incluse, conversie și preț. Nu se copiază tarifele/recenziile/studiul FLI în oferte SCARA și nu se creează fișă tehnică duplicată.",
   "consultantaTehnicaCentrale": {
     "source": "Text pagina FLI «Consultanță Tehnică Centrale» furnizat de utilizator",
     "capturedAt": "2026-11-11",
@@ -1319,6 +1319,217 @@
       "Ce documente trebuie pentru o solicitare în garanție?",
       "VTP la 2 ani este același lucru cu mentenanța anuală?"
     ],
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "revizieCentralaAbonamenteFLI": {
+    "source": "Textul paginii FLI «Revizie centrală termică | Preț & Abonament», furnizat de utilizator",
+    "capturedAt": "2026-11-11",
+    "independentlyVerified": false,
+    "classification": "COMPETITOR_OFFER_PRICING_CONTRACT_FUNNEL",
+    "canonicalServices": [
+      {
+        "code": "S-I-06",
+        "name": "Revizie și întreținere centrală",
+        "relation": "core"
+      },
+      {
+        "code": "S-I-05",
+        "name": "Verificare tehnică periodică centrală",
+        "relation": "distinct inclusion if duly authorized"
+      },
+      {
+        "code": "S-I-07",
+        "name": "Diagnostic și reparații centrale",
+        "relation": "intervention"
+      },
+      {
+        "code": "S-I-03",
+        "name": "Înlocuire centrală termică",
+        "relation": "contractual benefit"
+      },
+      {
+        "code": "S-I-04",
+        "name": "Punere în funcțiune centrală",
+        "relation": "related, not equivalent"
+      }
+    ],
+    "competitorPlans": [
+      {
+        "name": "ECONOMIC",
+        "advertisedFromRONPerYear": 300,
+        "responseSLA": "maximum 3 zile lucrătoare",
+        "includedIncidentInterventionsPerYear": 1,
+        "emergencyLabor": true,
+        "travelIncluded": null,
+        "annualMaintenance": true,
+        "gasCheckEveryTwoYears": true,
+        "iscirCheckEveryTwoYears": true,
+        "replacementLaborOnFLIPurchase": true
+      },
+      {
+        "name": "EFICIENT",
+        "advertisedFromRONPerYear": 400,
+        "responseSLA": "maximum 1 zi lucrătoare",
+        "includedIncidentInterventionsPerYear": 1,
+        "emergencyLabor": true,
+        "travelIncluded": null,
+        "annualMaintenance": true,
+        "gasCheckEveryTwoYears": true,
+        "iscirCheckEveryTwoYears": true,
+        "replacementLaborOnFLIPurchase": true
+      },
+      {
+        "name": "FĂRĂ GRIJI",
+        "advertisedFromRONPerYear": 500,
+        "responseSLA": "maximum 1 zi lucrătoare",
+        "includedIncidentInterventionsPerYear": "nelimitate",
+        "emergencyLabor": true,
+        "travelIncluded": true,
+        "annualMaintenance": true,
+        "gasCheckEveryTwoYears": true,
+        "iscirCheckEveryTwoYears": true,
+        "replacementLaborOnFLIPurchase": true
+      }
+    ],
+    "planCaveats": [
+      "Sunt tarife «de la» concurentului, nu tarife ale firmelor SCARA; configurația, puterea, localitatea și condițiile contractuale pot schimba prețul.",
+      "Termenii «gratuit» din FLI înseamnă inclus în abonamentul plătit, nu servicii fără cost pentru oricine.",
+      "Intervenții nelimitate / în 24 ore și manoperă de înlocuire sunt obligații contractuale ce trebuie documentate; nu sunt promisiuni implicite în ETALON.",
+      "Afișarea tuturor verificărilor în abonament presupune verificarea separat a autorizărilor ISCIR și ANRE și a domeniului exact."
+    ],
+    "technicalOperations": [
+      "curățarea schimbătorului de căldură pe circuitul de evacuare, cu demontarea arzătorului când este cazul",
+      "verificare și corectare presiune circuit",
+      "verificare etanșeitate hidraulică și, prin personal autorizat, etanșeitate gaz",
+      "analiza calității apei: pH, duritate, conductivitate când este aplicabil",
+      "verificare și curățare ventilator",
+      "verificarea dispozitivelor de control și siguranță: vană gaz, debitmetru/fluxostat, termostate, supapă siguranță, aerisitor automat",
+      "verificarea vanei deviatoare și pompei de circulație",
+      "verificarea și curățarea sifonului de condens",
+      "verificarea automatizării",
+      "analiza gazelor arse, emisii și randament în condițiile procedurii aplicabile"
+    ],
+    "contract": {
+      "competitorInitialTermMonths": 24,
+      "competitorRenewal": "prelungire automată pe perioade de 24 luni dacă nu este denunțat",
+      "scaraRule": "Nu reutiliza automat clauza de reînnoire; cere termeni proprii, transparență precontractuală și controlul reînnoirii/rezilierii."
+    },
+    "configurator": {
+      "sourceExample": {
+        "powerLabel": "până la 30 kW",
+        "plan": "EFICIENT",
+        "outputAnnualRON": 400
+      },
+      "fields": [
+        "putere_kW",
+        "marcă",
+        "model",
+        "combustibil",
+        "localitate",
+        "plan",
+        "condiții eligibilitate",
+        "echipament inclus",
+        "număr intervenții",
+        "SLA de la sesizare, unitate zile lucrătoare/ore",
+        "deplasare inclusă",
+        "manoperă inclusă",
+        "piese incluse/excluse",
+        "verificare ISCIR incluse",
+        "verificare instalație gaze ANRE inclusă",
+        "durată contract luni",
+        "reînnoire",
+        "preț anual RON cu TVA",
+        "CTA callback",
+        "CTA comandă",
+        "consimțământ"
+      ],
+      "rules": [
+        "calculate only from firm-validated offer; no guessed prices",
+        "eligibility and authorizations before checkout",
+        "show full total and renewal terms before contract",
+        "write contract/lead to backend only after explicit consent"
+      ]
+    },
+    "conversionSignals": {
+      "socialProofClaim": "peste 1700 familii abonate",
+      "reviewsClaim": "4,9/5 din 343 recenzii",
+      "buttons": [
+        "Configurează abonament",
+        "Vreau să fiu sunat",
+        "Finalizare comandă"
+      ],
+      "testimonials": "multiple user reviews embedded in supplied competitor page; do not copy into SCARA",
+      "companyClaimsNotReusable": [
+        "30 ani experiență",
+        "37.000 centrale instalate",
+        "1700 familii abonate",
+        "rating 4,9/343 recenzii"
+      ]
+    },
+    "evidenceQuality": {
+      "competitorStudy": {
+        "claimedSample": 1000,
+        "claimedPeriodYears": 2,
+        "withoutMaintenanceFailureRatePct": 13,
+        "withMaintenanceFailureRatePct": 4,
+        "claimedReductionPct": 70,
+        "arithmeticRelativeReductionPct": 69.23,
+        "status": "COMPETITOR_UNVERIFIED_OBSERVATIONAL",
+        "interpretation": "Do not present as causal effect or guaranteed risk reduction; selection bias, cohort definitions, attrition, methods and external validation unknown."
+      },
+      "annualMaintenanceLegalStatus": "Textul FLI precizează că întreținerea anuală nu este obligatorie în sine prin lege, spre deosebire de verificările reglementate la termenele aplicabile; verifică întotdeauna manualul producătorului și echipamentul.",
+      "warrantyClaims": "Garanții 10 ani Ariston / 7 ani Vaillant sunt exemple afirmate de concurent, variabile după model, producător, înregistrare și condițiile contractuale; DO NOT REUSE AS DEFAULT."
+    },
+    "modelProposals": {
+      "entityType": "PlanMentenanta",
+      "relations": [
+        "FIRMA_OFERA_PLAN",
+        "PLAN_INCLUDE_SERVICIU",
+        "PLAN_APLICABIL_ECHIPAMENT",
+        "PLAN_ARE_NIVEL_SLA",
+        "CONTRACT_FOLOSESTE_PLAN"
+      ],
+      "fields": [
+        "firmCUI",
+        "planId",
+        "planName",
+        "eligiblePowerRangeKW",
+        "eligibleBrands",
+        "eligibleLocations",
+        "annualPriceRON",
+        "priceIncludesVAT",
+        "visitsPerYear",
+        "incidentsIncluded",
+        "isUnlimitedSubjectToFairUse",
+        "responseTimeValue",
+        "responseTimeUnit",
+        "workingDaysOnly",
+        "travelIncluded",
+        "laborIncluded",
+        "partsIncluded",
+        "iscirIncluded",
+        "anreIncluded",
+        "centralReplacementLaborIncluded",
+        "initialTermMonths",
+        "renewalPolicy",
+        "cancellationTerms",
+        "authorizationProofs",
+        "activeAfterValidation"
+      ]
+    },
+    "evaFAQ": [
+      "Revizia anuală este obligatorie prin lege?",
+      "Care este diferența dintre revizie, verificarea ISCIR și verificarea ANRE?",
+      "Ce operațiuni include întreținerea centralei mele?",
+      "Cât costă abonamentul la firma mea și ce influențează tariful?",
+      "Intervenția în 24h este garantată contractual?",
+      "Sunt incluse deplasarea și piesele?",
+      "Cum se calculează prețul pentru centrala de peste 30 kW?",
+      "Care este durata contractului, reînnoirea și rezilierea?",
+      "Cum programez verificările la doi ani?",
+      "Ce înseamnă o intervenție gratuită în cadrul abonamentului?"
+    ],
+    "suggestedPlacement": "Site Încălzire / Mentenanță: prezentare beneficii + tabel de planuri configurate de firmă + configurator + cerere de apel; linkuri către S-I-06, S-I-05 și reparații",
     "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
   }
 }
