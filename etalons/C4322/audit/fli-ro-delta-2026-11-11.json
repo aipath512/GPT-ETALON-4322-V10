@@ -298,5 +298,113 @@
       ]
     }
   ],
-  "revisedInterpretation": "Pagina suplimentară confirmă majoritatea serviciilor de încălzire deja existente în dicționar; diferența majoră este în configurarea formularului, a mărcilor, ariei geografice, dovezilor și CTA. Nu adaugă automat 10 servicii noi. Revizia de conținut nu trebuie să imite afirmațiile sau textul FLI."
+  "revisedInterpretation": "Pagina suplimentară confirmă majoritatea serviciilor de încălzire deja existente în dicționar; diferența majoră este în configurarea formularului, a mărcilor, ariei geografice, dovezilor și CTA. Nu adaugă automat 10 servicii noi. Revizia de conținut nu trebuie să imite afirmațiile sau textul FLI.",
+  "consultantaTehnicaCentrale": {
+    "source": "Text pagina FLI «Consultanță Tehnică Centrale» furnizat de utilizator",
+    "capturedAt": "2026-11-11",
+    "serviceCrosswalk": {
+      "competitorService": "Consultanță tehnică centrale termice și instalații",
+      "existingId": "S-I-01",
+      "existingName": "Evaluare și dimensionare instalație termică",
+      "status": "ACOPERIT_PARTIAL_EXTINDE_FISA",
+      "noDuplicate": true
+    },
+    "existingRelated": [
+      "S-C-01 Consultanță și dimensionare aer condiționat",
+      "S-I-02 Montaj centrală termică",
+      "S-I-04 Punere în funcțiune centrală",
+      "S-I-16 Montaj colectoare solare termice",
+      "S-I-18 Montaj centrală pe peleți sau lemne",
+      "S-I-19 Montaj centrală termică electrică"
+    ],
+    "technicalScopeFromCompetitor": [
+      "evaluare energetică preliminară clădire civilă/industrială",
+      "comparație variante încălzire și cost operare",
+      "radiatoare și ventiloconvectoare",
+      "încălzire prin pardoseală cu apă",
+      "solar termic",
+      "panouri radiante infraroșu",
+      "centrale pe gaz, lichid, solid și peleți",
+      "cazane de abur industriale"
+    ],
+    "higherRiskTechnicalClaims": [
+      {
+        "claim": "centrale 24 kW–4,5 Gcal/h, PT A1/PT C9",
+        "policy": "Nu importa ca limită certificată a SCARA; supus verificării prescripțiilor și competenței firmei."
+      },
+      {
+        "claim": "cazane de abur Pmax 16 bar, Qmax 15 t/h, Tmax 350°C, PT C1",
+        "policy": "Industriale, în afara ofertei B2C implicite; categorie opțională validată tehnic și juridic."
+      }
+    ],
+    "newSubtopicsForService": [
+      "audit orientativ al necesarului termic",
+      "comparare soluții și eficiență energetică",
+      "estimare consum/cost de exploatare cu ipoteze explicite",
+      "compatibilitatea echipamentelor cu instalația existentă",
+      "listă recomandări și ofertă personalizată",
+      "consultare pentru soluții solare termice și radiatoare infraroșu"
+    ],
+    "newPotentialServiceCandidate": {
+      "name": "Consultanță pentru cazane de abur și instalații termice industriale",
+      "state": "EXTENSIE_INDUSTRIALA_DE_VALIDAT",
+      "reason": "nu se confundă cu consultanța B2C și impune competențe/autorizații specifice"
+    },
+    "brandSignals": [
+      "Ariston",
+      "Baxi",
+      "Beretta",
+      "Buderus",
+      "Bosch",
+      "De Dietrich",
+      "Ferroli",
+      "Immergas",
+      "Junkers",
+      "Motan",
+      "Protherm",
+      "Saunier Duval",
+      "Vaillant",
+      "Viessmann"
+    ],
+    "commercialSignals": [
+      {
+        "claim": "întreținere anuală de la 250 lei/an",
+        "owner": "FLI",
+        "notSCARAPrice": true
+      },
+      {
+        "claim": "peste 30 ani experiență, 37 angajați, peste 37.000 centrale instalate",
+        "owner": "FLI",
+        "notSCARACredentials": true
+      },
+      {
+        "claim": "dispecerat 08:00–20:00, stocuri piese, flotă și parteneriate producători",
+        "owner": "FLI",
+        "notSCARACredentials": true
+      }
+    ],
+    "recommendedConsultationForm": [
+      "nume",
+      "telefon",
+      "email",
+      "tip clădire",
+      "localitate",
+      "suprafață încălzită",
+      "izolație",
+      "număr băi",
+      "sistem existent",
+      "combustibil / sursă energie",
+      "obiectiv (consum/confort/modernizare)",
+      "buget estimativ opțional",
+      "mesaj",
+      "consimțământ"
+    ],
+    "rules": [
+      "Nu afirma economii garantate, certificări, brand-partner sau experiență neconfirmată.",
+      "Nu reutiliza textul de marketing FLI în site-urile SCARA.",
+      "Condiții ANRE, ISCIR, proiectare/semnătură și CAEN verificate per firmă.",
+      "Consultanță și calcul orientativ nu sunt echivalente unui proiect tehnic avizat."
+    ],
+    "implementationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  }
 }
