@@ -12,6 +12,11 @@
   },
   "Public": true,
   "URL": {
+    "C43221": "https://c43221.scara.dev",
+    "C43222": "https://c43222.scara.dev",
+    "C43223": "https://c43223.scara.dev"
+  },
+  "URLVechi_pagesdev": {
     "C43221": "https://gpt-etalon-4322-v10.pages.dev",
     "C43222": "https://gpt-etalon-4322-v10-88z.pages.dev",
     "C43223": "https://gpt-etalon-4322-v10-bfs.pages.dev"

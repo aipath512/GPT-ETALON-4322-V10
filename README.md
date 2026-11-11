@@ -1,9 +1,9 @@
 # SCARA C4322 — trei etaloane autonome, o singură fabrică
 
 **Stare (11 nov 2026, v2.2):** trei site-uri independente, unul pe subclasă internă SCARA, sub clasa-părinte comună CAEN 4322 (Rev.3):
-- C43221 Încălzire → proiect Cloudflare `scara-c43221` → https://gpt-etalon-4322-v10.pages.dev (output `cloudflare-pages/C43221`)
-- C43222 Climatizare → `scara-c43222` → https://gpt-etalon-4322-v10-88z.pages.dev (output `cloudflare-pages/C43222`)
-- C43223 Sanitare → `scara-c43223` → https://gpt-etalon-4322-v10-bfs.pages.dev (output `cloudflare-pages/C43223`)
+- C43221 Încălzire → proiect Cloudflare `scara-c43221` → https://c43221.scara.dev (output `cloudflare-pages/C43221`)
+- C43222 Climatizare → `scara-c43222` → https://c43222.scara.dev (output `cloudflare-pages/C43222`)
+- C43223 Sanitare → `scara-c43223` → https://c43223.scara.dev (output `cloudflare-pages/C43223`)
 
 Comune: dicționarul entitate–relație (`etalons/C4322/dictionar/`), ID-urile canonice, generatorul (`tools/build_c4322.py`), configurația firmei (`etalons/C4322/firma.json`), regulile de deduplicare și validare (teste în `tests/`).
 Fiecare fișă are **o singură pagină**, pe site-ul familiei ei; pe celelalte site-uri apare doar ca trimitere „Vezi pe site-ul X →” (relația REFERIT_PE).

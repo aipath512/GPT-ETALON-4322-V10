@@ -2,7 +2,7 @@
  "protocolVersion": "0.3.0",
  "name": "SCARA C43222 — Instalații de climatizare (demonstrativ)",
  "description": "Catalog de referință instalații de climatizare în București: servicii, produse, mărci și prețuri orientative min / mediu / max. Firma afișată (TCE INSTAL SRL) este fictivă. Acces numai citire, prin resurse JSON statice.",
- "url": "https://gpt-etalon-4322-v10-88z.pages.dev/",
+ "url": "https://c43222.scara.dev/",
  "version": "v2.2",
  "provider": {
   "organization": "AiVenture S.R.L.",
@@ -23,7 +23,7 @@
   {
    "id": "catalog",
    "name": "Catalog servicii și produse",
-   "description": "Lista completă a serviciilor și produselor, cu cod, grupă, mărci, relații serviciu–produs și preț min / mediu / max: https://gpt-etalon-4322-v10-88z.pages.dev/api/catalog.json",
+   "description": "Lista completă a serviciilor și produselor, cu cod, grupă, mărci, relații serviciu–produs și preț min / mediu / max: https://c43222.scara.dev/api/catalog.json",
    "tags": [
     "CAEN 4322",
     "instalații",
@@ -39,12 +39,12 @@
   {
    "id": "dictionar",
    "name": "Dicționar entitate–relație",
-   "description": "Entități și relații cu cardinalități (sesiune 0006H): https://gpt-etalon-4322-v10-88z.pages.dev/dictionar/entitati.json, https://gpt-etalon-4322-v10-88z.pages.dev/dictionar/relatii.json",
+   "description": "Entități și relații cu cardinalități (sesiune 0006H): https://c43222.scara.dev/dictionar/entitati.json, https://c43222.scara.dev/dictionar/relatii.json",
    "tags": [
     "dicționar de date",
     "knowledge graph"
    ]
   }
  ],
- "documentationUrl": "https://gpt-etalon-4322-v10-88z.pages.dev/llms.txt"
+ "documentationUrl": "https://c43222.scara.dev/llms.txt"
 }

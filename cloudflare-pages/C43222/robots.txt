@@ -28,4 +28,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://gpt-etalon-4322-v10-88z.pages.dev/sitemap.xml
+Sitemap: https://c43222.scara.dev/sitemap.xml

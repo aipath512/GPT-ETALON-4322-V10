@@ -3,72 +3,72 @@
 > Catalog de referință pentru instalații de climatizare în București: 26 servicii și 29 produse, fiecare cu cod, grupă, mărci și preț orientativ min / mediu (recomandat) / max în lei cu TVA (estimări nov. 2026). Firma afișată este fictivă; site realizat de AiVenture S.R.L. (CUI RO51415878). Clasa CAEN 4322 (Rev.3); C43221–C43223 sunt coduri interne SCARA.
 
 ## Pagini principale
-- [Acasă](https://gpt-etalon-4322-v10-88z.pages.dev/): grupele familiei
-- [Servicii](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/): toate serviciile cu prețuri
-- [Produse](https://gpt-etalon-4322-v10-88z.pages.dev/produse/): toate produsele cu mărci și prețuri
-- [Dicționar de date](https://gpt-etalon-4322-v10-88z.pages.dev/dictionar/): entități, relații, cardinalități
+- [Acasă](https://c43222.scara.dev/): grupele familiei
+- [Servicii](https://c43222.scara.dev/servicii/): toate serviciile cu prețuri
+- [Produse](https://c43222.scara.dev/produse/): toate produsele cu mărci și prețuri
+- [Dicționar de date](https://c43222.scara.dev/dictionar/): entități, relații, cardinalități
 
 ## Date pentru mașini
-- [Catalog JSON](https://gpt-etalon-4322-v10-88z.pages.dev/api/catalog.json)
-- [Entități](https://gpt-etalon-4322-v10-88z.pages.dev/dictionar/entitati.json)
-- [Relații](https://gpt-etalon-4322-v10-88z.pages.dev/dictionar/relatii.json)
-- [Agent card A2A](https://gpt-etalon-4322-v10-88z.pages.dev/.well-known/agent.json)
+- [Catalog JSON](https://c43222.scara.dev/api/catalog.json)
+- [Entități](https://c43222.scara.dev/dictionar/entitati.json)
+- [Relații](https://c43222.scara.dev/dictionar/relatii.json)
+- [Agent card A2A](https://c43222.scara.dev/.well-known/agent.json)
 
 ## Servicii
-- [Consultanță și dimensionare aer condiționat](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-01-consultanta-si-dimensionare-aer-conditionat/): 0–300 lei / vizită, recomandat 150 lei
-- [Montaj AC split 9000–12000 BTU](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-02-montaj-ac-split-900012000-btu/): 600–1100 lei / buc, recomandat 800 lei
-- [Montaj AC split 18000–24000 BTU](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-03-montaj-ac-split-1800024000-btu/): 900–1500 lei / buc, recomandat 1100 lei
-- [Montaj multisplit](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-04-montaj-multisplit/): 600–1200 lei / unitate interioară, recomandat 800 lei
-- [Montaj aer condiționat tip casetă / duct](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-05-montaj-aer-conditionat-tip-caseta-duct/): 1500–4500 lei / buc, recomandat 2500 lei
-- [Montaj sisteme VRF / VRV](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-06-montaj-sisteme-vrf-vrv/): 1200–3500 lei / unitate interioară, recomandat 2000 lei
-- [Montaj ventilație cu recuperare de căldură](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-07-montaj-ventilatie-cu-recuperare-de-caldura/): 3000–12000 lei / lucrare, recomandat 6000 lei
-- [Igienizare și curățare AC](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-08-igienizare-si-curatare-ac/): 150–400 lei / buc, recomandat 250 lei
-- [Revizie periodică AC](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-09-revizie-periodica-ac/): 200–450 lei / buc, recomandat 300 lei
-- [Diagnostic și reparații AC](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-10-diagnostic-si-reparatii-ac/): 150–600 lei / intervenție, fără piese, recomandat 300 lei
-- [Verificare pierderi agent frigorific](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-11-verificare-pierderi-agent-frigorific/): 150–500 lei / lucrare, recomandat 250 lei
-- [Încărcare agent frigorific](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-12-incarcare-agent-frigorific/): 250–800 lei / lucrare, cu agent, recomandat 450 lei
-- [Demontare și relocare AC](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-13-demontare-si-relocare-ac/): 200–900 lei / buc, recomandat 500 lei
-- [Traseu frigorific și evacuare condens](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-14-traseu-frigorific-si-evacuare-condens/): 100–180 lei / m, recomandat 130 lei
-- [Automatizări climatizare și Wi-Fi](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-15-automatizari-climatizare-si-wi-fi/): 100–400 lei / buc, recomandat 200 lei
-- [Montaj aer condiționat tip consolă](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-16-montaj-aer-conditionat-tip-consola/): 800–1500 lei / buc, recomandat 1100 lei
-- [Montaj perdele de aer](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-17-montaj-perdele-de-aer/): 400–1500 lei / buc, recomandat 800 lei
-- [Montaj chiller și ventiloconvectoare](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-18-montaj-chiller-si-ventiloconvectoare/): 8000–60000 lei / lucrare, recomandat 20000 lei
-- [Montaj sisteme rooftop pentru spații comerciale](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-19-montaj-sisteme-rooftop-pentru-spatii-comerciale/): 5000–30000 lei / lucrare, recomandat 12000 lei
-- [Montaj ventilatoare de extracție baie și bucătărie](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-20-montaj-ventilatoare-de-extractie-baie-si-bucatarie/): 150–600 lei / buc, recomandat 300 lei
-- [Montaj dezumidificatoare și umidificatoare](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-21-montaj-dezumidificatoare-si-umidificatoare/): 100–600 lei / buc, recomandat 250 lei
-- [Montaj pompă de condens](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-22-montaj-pompa-de-condens/): 150–400 lei / buc, recomandat 250 lei
-- [Pre-instalare climatizare în renovare](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-23-pre-instalare-climatizare-in-renovare/): 400–1200 lei / unitate, recomandat 700 lei
-- [Curățare și dezinfecție tubulatură ventilație](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-24-curatare-si-dezinfectie-tubulatura-ventilatie/): 15–60 lei / m, recomandat 30 lei
-- [Intervenții urgente climatizare](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-25-interventii-urgente-climatizare/): 250–800 lei / intervenție, recomandat 450 lei
-- [Montaj pompă de căldură aer-apă](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-11-montaj-pompa-de-caldura-aer-apa/): 3000–12000 lei / lucrare, recomandat 6000 lei
+- [Consultanță și dimensionare aer condiționat](https://c43222.scara.dev/servicii/s-c-01-consultanta-si-dimensionare-aer-conditionat/): 0–300 lei / vizită, recomandat 150 lei
+- [Montaj AC split 9000–12000 BTU](https://c43222.scara.dev/servicii/s-c-02-montaj-ac-split-900012000-btu/): 600–1100 lei / buc, recomandat 800 lei
+- [Montaj AC split 18000–24000 BTU](https://c43222.scara.dev/servicii/s-c-03-montaj-ac-split-1800024000-btu/): 900–1500 lei / buc, recomandat 1100 lei
+- [Montaj multisplit](https://c43222.scara.dev/servicii/s-c-04-montaj-multisplit/): 600–1200 lei / unitate interioară, recomandat 800 lei
+- [Montaj aer condiționat tip casetă / duct](https://c43222.scara.dev/servicii/s-c-05-montaj-aer-conditionat-tip-caseta-duct/): 1500–4500 lei / buc, recomandat 2500 lei
+- [Montaj sisteme VRF / VRV](https://c43222.scara.dev/servicii/s-c-06-montaj-sisteme-vrf-vrv/): 1200–3500 lei / unitate interioară, recomandat 2000 lei
+- [Montaj ventilație cu recuperare de căldură](https://c43222.scara.dev/servicii/s-c-07-montaj-ventilatie-cu-recuperare-de-caldura/): 3000–12000 lei / lucrare, recomandat 6000 lei
+- [Igienizare și curățare AC](https://c43222.scara.dev/servicii/s-c-08-igienizare-si-curatare-ac/): 150–400 lei / buc, recomandat 250 lei
+- [Revizie periodică AC](https://c43222.scara.dev/servicii/s-c-09-revizie-periodica-ac/): 200–450 lei / buc, recomandat 300 lei
+- [Diagnostic și reparații AC](https://c43222.scara.dev/servicii/s-c-10-diagnostic-si-reparatii-ac/): 150–600 lei / intervenție, fără piese, recomandat 300 lei
+- [Verificare pierderi agent frigorific](https://c43222.scara.dev/servicii/s-c-11-verificare-pierderi-agent-frigorific/): 150–500 lei / lucrare, recomandat 250 lei
+- [Încărcare agent frigorific](https://c43222.scara.dev/servicii/s-c-12-incarcare-agent-frigorific/): 250–800 lei / lucrare, cu agent, recomandat 450 lei
+- [Demontare și relocare AC](https://c43222.scara.dev/servicii/s-c-13-demontare-si-relocare-ac/): 200–900 lei / buc, recomandat 500 lei
+- [Traseu frigorific și evacuare condens](https://c43222.scara.dev/servicii/s-c-14-traseu-frigorific-si-evacuare-condens/): 100–180 lei / m, recomandat 130 lei
+- [Automatizări climatizare și Wi-Fi](https://c43222.scara.dev/servicii/s-c-15-automatizari-climatizare-si-wi-fi/): 100–400 lei / buc, recomandat 200 lei
+- [Montaj aer condiționat tip consolă](https://c43222.scara.dev/servicii/s-c-16-montaj-aer-conditionat-tip-consola/): 800–1500 lei / buc, recomandat 1100 lei
+- [Montaj perdele de aer](https://c43222.scara.dev/servicii/s-c-17-montaj-perdele-de-aer/): 400–1500 lei / buc, recomandat 800 lei
+- [Montaj chiller și ventiloconvectoare](https://c43222.scara.dev/servicii/s-c-18-montaj-chiller-si-ventiloconvectoare/): 8000–60000 lei / lucrare, recomandat 20000 lei
+- [Montaj sisteme rooftop pentru spații comerciale](https://c43222.scara.dev/servicii/s-c-19-montaj-sisteme-rooftop-pentru-spatii-comerciale/): 5000–30000 lei / lucrare, recomandat 12000 lei
+- [Montaj ventilatoare de extracție baie și bucătărie](https://c43222.scara.dev/servicii/s-c-20-montaj-ventilatoare-de-extractie-baie-si-bucatarie/): 150–600 lei / buc, recomandat 300 lei
+- [Montaj dezumidificatoare și umidificatoare](https://c43222.scara.dev/servicii/s-c-21-montaj-dezumidificatoare-si-umidificatoare/): 100–600 lei / buc, recomandat 250 lei
+- [Montaj pompă de condens](https://c43222.scara.dev/servicii/s-c-22-montaj-pompa-de-condens/): 150–400 lei / buc, recomandat 250 lei
+- [Pre-instalare climatizare în renovare](https://c43222.scara.dev/servicii/s-c-23-pre-instalare-climatizare-in-renovare/): 400–1200 lei / unitate, recomandat 700 lei
+- [Curățare și dezinfecție tubulatură ventilație](https://c43222.scara.dev/servicii/s-c-24-curatare-si-dezinfectie-tubulatura-ventilatie/): 15–60 lei / m, recomandat 30 lei
+- [Intervenții urgente climatizare](https://c43222.scara.dev/servicii/s-c-25-interventii-urgente-climatizare/): 250–800 lei / intervenție, recomandat 450 lei
+- [Montaj pompă de căldură aer-apă](https://c43221.scara.dev/servicii/s-i-11-montaj-pompa-de-caldura-aer-apa/): 3000–12000 lei / lucrare, recomandat 6000 lei
 
 ## Produse
-- [Aer condiționat split 9000 BTU](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-01-aer-conditionat-split-9000-btu/): 1500–4000 lei / buc, recomandat 2300 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG, Samsung, Midea
-- [Aer condiționat split 12000 BTU](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-02-aer-conditionat-split-12000-btu/): 1700–4500 lei / buc, recomandat 2700 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG, Samsung, Midea
-- [Aer condiționat split 18000 BTU](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-03-aer-conditionat-split-18000-btu/): 2700–7000 lei / buc, recomandat 4000 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG, Samsung
-- [Aer condiționat split 24000 BTU](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-04-aer-conditionat-split-24000-btu/): 3200–8500 lei / buc, recomandat 5000 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG, Samsung
-- [Sistem multisplit](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-05-sistem-multisplit/): 6000–18000 lei / sistem (2 unități), recomandat 10000 lei; mărci: Daikin, Mitsubishi Electric, LG, Samsung, Gree
-- [Aer condiționat tip casetă](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-06-aer-conditionat-tip-caseta/): 5000–15000 lei / buc, recomandat 8500 lei; mărci: Daikin, Mitsubishi Electric, Gree, Toshiba
-- [Aer condiționat duct](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-07-aer-conditionat-duct/): 5000–16000 lei / buc, recomandat 9000 lei; mărci: Daikin, Mitsubishi Electric, Gree, Toshiba
-- [Ventilator de baie](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-08-ventilator-de-baie/): 80–700 lei / buc, recomandat 250 lei; mărci: Vents, Vortice, Soler & Palau
-- [Recuperator de căldură](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-09-recuperator-de-caldura/): 2500–15000 lei / buc, recomandat 6000 lei; mărci: Zehnder, Komfovent, Vents, Blauberg
-- [Purificator / filtru de aer](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-10-purificator-filtru-de-aer/): 400–4000 lei / buc, recomandat 1200 lei; mărci: Philips, Xiaomi, Daikin, Blueair
-- [Traseu frigorific cupru](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-11-traseu-frigorific-cupru/): 40–120 lei / m, recomandat 70 lei; mărci: Halcor, KME, Wieland
-- [Kit console AC](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-12-kit-console-ac/): 60–200 lei / set, recomandat 100 lei; mărci: Sauermann, Fischer
-- [Pompă condens](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-13-pompa-condens/): 250–900 lei / buc, recomandat 450 lei; mărci: Sauermann, Aspen, Charlotte
-- [Modul Wi-Fi climatizare](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-14-modul-wi-fi-climatizare/): 150–600 lei / buc, recomandat 300 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG
-- [Aer condiționat consolă](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-15-aer-conditionat-consola/): 3500–9000 lei / buc, recomandat 5500 lei; mărci: Daikin, Mitsubishi Electric, Fujitsu
-- [Unitate exterioară multisplit](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-16-unitate-exterioara-multisplit/): 4000–13000 lei / buc, recomandat 7000 lei; mărci: Daikin, Mitsubishi Electric, LG, Samsung
-- [Aer condiționat mobil](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-17-aer-conditionat-mobil/): 1200–3500 lei / buc, recomandat 2000 lei; mărci: De'Longhi, Electrolux, Midea
-- [Sistem VRF / VRV](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-18-sistem-vrf-vrv/): 40000–250000 lei / sistem, recomandat 90000 lei; mărci: Daikin, Mitsubishi Electric, LG, Samsung
-- [Chiller](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-19-chiller/): 30000–200000 lei / buc, recomandat 70000 lei; mărci: Daikin, Carrier, Trane, Clivet
-- [Ventiloconvector](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-20-ventiloconvector/): 1500–5000 lei / buc, recomandat 2500 lei; mărci: Daikin, Sabiana, Aermec, Galletti
-- [Perdea de aer](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-21-perdea-de-aer/): 800–5000 lei / buc, recomandat 2000 lei; mărci: Sonniger, Frico, Flowair
-- [Tubulatură de ventilație și grile](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-22-tubulatura-de-ventilatie-si-grile/): 30–120 lei / m, recomandat 60 lei; mărci: Vents, Systemair, Lindab
-- [Ventilator de extracție pe canal](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-23-ventilator-de-extractie-pe-canal/): 300–1800 lei / buc, recomandat 700 lei; mărci: Vents, Systemair, Soler & Palau
-- [Dezumidificator](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-24-dezumidificator/): 700–3000 lei / buc, recomandat 1300 lei; mărci: De'Longhi, Meaco, Trotec
-- [Umidificator](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-25-umidificator/): 200–1500 lei / buc, recomandat 500 lei; mărci: Philips, Boneco, Beurer
-- [Controller central / telecomandă cablată](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-26-controller-central-telecomanda-cablata/): 300–3000 lei / buc, recomandat 800 lei; mărci: Daikin, Mitsubishi Electric, LG, Samsung
-- [Agent frigorific R32 / R410A](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-27-agent-frigorific-r32-r410a/): 80–300 lei / kg, recomandat 150 lei; mărci: Chemours, Honeywell, Daikin
-- [Filtre și consumabile pentru aer condiționat](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-28-filtre-si-consumabile-pentru-aer-conditionat/): 40–250 lei / set, recomandat 100 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG
-- [Pompă de căldură aer-apă](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-02-pompa-de-caldura-aer-apa/): 18000–55000 lei / buc, recomandat 32000 lei; mărci: Daikin, Viessmann, Vaillant, Panasonic, Mitsubishi Electric, Samsung
+- [Aer condiționat split 9000 BTU](https://c43222.scara.dev/produse/p-c-01-aer-conditionat-split-9000-btu/): 1500–4000 lei / buc, recomandat 2300 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG, Samsung, Midea
+- [Aer condiționat split 12000 BTU](https://c43222.scara.dev/produse/p-c-02-aer-conditionat-split-12000-btu/): 1700–4500 lei / buc, recomandat 2700 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG, Samsung, Midea
+- [Aer condiționat split 18000 BTU](https://c43222.scara.dev/produse/p-c-03-aer-conditionat-split-18000-btu/): 2700–7000 lei / buc, recomandat 4000 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG, Samsung
+- [Aer condiționat split 24000 BTU](https://c43222.scara.dev/produse/p-c-04-aer-conditionat-split-24000-btu/): 3200–8500 lei / buc, recomandat 5000 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG, Samsung
+- [Sistem multisplit](https://c43222.scara.dev/produse/p-c-05-sistem-multisplit/): 6000–18000 lei / sistem (2 unități), recomandat 10000 lei; mărci: Daikin, Mitsubishi Electric, LG, Samsung, Gree
+- [Aer condiționat tip casetă](https://c43222.scara.dev/produse/p-c-06-aer-conditionat-tip-caseta/): 5000–15000 lei / buc, recomandat 8500 lei; mărci: Daikin, Mitsubishi Electric, Gree, Toshiba
+- [Aer condiționat duct](https://c43222.scara.dev/produse/p-c-07-aer-conditionat-duct/): 5000–16000 lei / buc, recomandat 9000 lei; mărci: Daikin, Mitsubishi Electric, Gree, Toshiba
+- [Ventilator de baie](https://c43222.scara.dev/produse/p-c-08-ventilator-de-baie/): 80–700 lei / buc, recomandat 250 lei; mărci: Vents, Vortice, Soler & Palau
+- [Recuperator de căldură](https://c43222.scara.dev/produse/p-c-09-recuperator-de-caldura/): 2500–15000 lei / buc, recomandat 6000 lei; mărci: Zehnder, Komfovent, Vents, Blauberg
+- [Purificator / filtru de aer](https://c43222.scara.dev/produse/p-c-10-purificator-filtru-de-aer/): 400–4000 lei / buc, recomandat 1200 lei; mărci: Philips, Xiaomi, Daikin, Blueair
+- [Traseu frigorific cupru](https://c43222.scara.dev/produse/p-c-11-traseu-frigorific-cupru/): 40–120 lei / m, recomandat 70 lei; mărci: Halcor, KME, Wieland
+- [Kit console AC](https://c43222.scara.dev/produse/p-c-12-kit-console-ac/): 60–200 lei / set, recomandat 100 lei; mărci: Sauermann, Fischer
+- [Pompă condens](https://c43222.scara.dev/produse/p-c-13-pompa-condens/): 250–900 lei / buc, recomandat 450 lei; mărci: Sauermann, Aspen, Charlotte
+- [Modul Wi-Fi climatizare](https://c43222.scara.dev/produse/p-c-14-modul-wi-fi-climatizare/): 150–600 lei / buc, recomandat 300 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG
+- [Aer condiționat consolă](https://c43222.scara.dev/produse/p-c-15-aer-conditionat-consola/): 3500–9000 lei / buc, recomandat 5500 lei; mărci: Daikin, Mitsubishi Electric, Fujitsu
+- [Unitate exterioară multisplit](https://c43222.scara.dev/produse/p-c-16-unitate-exterioara-multisplit/): 4000–13000 lei / buc, recomandat 7000 lei; mărci: Daikin, Mitsubishi Electric, LG, Samsung
+- [Aer condiționat mobil](https://c43222.scara.dev/produse/p-c-17-aer-conditionat-mobil/): 1200–3500 lei / buc, recomandat 2000 lei; mărci: De'Longhi, Electrolux, Midea
+- [Sistem VRF / VRV](https://c43222.scara.dev/produse/p-c-18-sistem-vrf-vrv/): 40000–250000 lei / sistem, recomandat 90000 lei; mărci: Daikin, Mitsubishi Electric, LG, Samsung
+- [Chiller](https://c43222.scara.dev/produse/p-c-19-chiller/): 30000–200000 lei / buc, recomandat 70000 lei; mărci: Daikin, Carrier, Trane, Clivet
+- [Ventiloconvector](https://c43222.scara.dev/produse/p-c-20-ventiloconvector/): 1500–5000 lei / buc, recomandat 2500 lei; mărci: Daikin, Sabiana, Aermec, Galletti
+- [Perdea de aer](https://c43222.scara.dev/produse/p-c-21-perdea-de-aer/): 800–5000 lei / buc, recomandat 2000 lei; mărci: Sonniger, Frico, Flowair
+- [Tubulatură de ventilație și grile](https://c43222.scara.dev/produse/p-c-22-tubulatura-de-ventilatie-si-grile/): 30–120 lei / m, recomandat 60 lei; mărci: Vents, Systemair, Lindab
+- [Ventilator de extracție pe canal](https://c43222.scara.dev/produse/p-c-23-ventilator-de-extractie-pe-canal/): 300–1800 lei / buc, recomandat 700 lei; mărci: Vents, Systemair, Soler & Palau
+- [Dezumidificator](https://c43222.scara.dev/produse/p-c-24-dezumidificator/): 700–3000 lei / buc, recomandat 1300 lei; mărci: De'Longhi, Meaco, Trotec
+- [Umidificator](https://c43222.scara.dev/produse/p-c-25-umidificator/): 200–1500 lei / buc, recomandat 500 lei; mărci: Philips, Boneco, Beurer
+- [Controller central / telecomandă cablată](https://c43222.scara.dev/produse/p-c-26-controller-central-telecomanda-cablata/): 300–3000 lei / buc, recomandat 800 lei; mărci: Daikin, Mitsubishi Electric, LG, Samsung
+- [Agent frigorific R32 / R410A](https://c43222.scara.dev/produse/p-c-27-agent-frigorific-r32-r410a/): 80–300 lei / kg, recomandat 150 lei; mărci: Chemours, Honeywell, Daikin
+- [Filtre și consumabile pentru aer condiționat](https://c43222.scara.dev/produse/p-c-28-filtre-si-consumabile-pentru-aer-conditionat/): 40–250 lei / set, recomandat 100 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG
+- [Pompă de căldură aer-apă](https://c43221.scara.dev/produse/p-i-02-pompa-de-caldura-aer-apa/): 18000–55000 lei / buc, recomandat 32000 lei; mărci: Daikin, Viessmann, Vaillant, Panasonic, Mitsubishi Electric, Samsung

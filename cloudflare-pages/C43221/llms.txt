@@ -3,90 +3,90 @@
 > Catalog de referință pentru instalații de încălzire în București: 34 servicii și 39 produse, fiecare cu cod, grupă, mărci și preț orientativ min / mediu (recomandat) / max în lei cu TVA (estimări nov. 2026). Firma afișată este fictivă; site realizat de AiVenture S.R.L. (CUI RO51415878). Clasa CAEN 4322 (Rev.3); C43221–C43223 sunt coduri interne SCARA.
 
 ## Pagini principale
-- [Acasă](https://gpt-etalon-4322-v10.pages.dev/): grupele familiei
-- [Servicii](https://gpt-etalon-4322-v10.pages.dev/servicii/): toate serviciile cu prețuri
-- [Produse](https://gpt-etalon-4322-v10.pages.dev/produse/): toate produsele cu mărci și prețuri
-- [Dicționar de date](https://gpt-etalon-4322-v10.pages.dev/dictionar/): entități, relații, cardinalități
+- [Acasă](https://c43221.scara.dev/): grupele familiei
+- [Servicii](https://c43221.scara.dev/servicii/): toate serviciile cu prețuri
+- [Produse](https://c43221.scara.dev/produse/): toate produsele cu mărci și prețuri
+- [Dicționar de date](https://c43221.scara.dev/dictionar/): entități, relații, cardinalități
 
 ## Date pentru mașini
-- [Catalog JSON](https://gpt-etalon-4322-v10.pages.dev/api/catalog.json)
-- [Entități](https://gpt-etalon-4322-v10.pages.dev/dictionar/entitati.json)
-- [Relații](https://gpt-etalon-4322-v10.pages.dev/dictionar/relatii.json)
-- [Agent card A2A](https://gpt-etalon-4322-v10.pages.dev/.well-known/agent.json)
+- [Catalog JSON](https://c43221.scara.dev/api/catalog.json)
+- [Entități](https://c43221.scara.dev/dictionar/entitati.json)
+- [Relații](https://c43221.scara.dev/dictionar/relatii.json)
+- [Agent card A2A](https://c43221.scara.dev/.well-known/agent.json)
 
 ## Servicii
-- [Evaluare și dimensionare instalație termică](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-01-evaluare-si-dimensionare-instalatie-termica/): 150–500 lei / vizită, recomandat 250 lei
-- [Montaj centrală termică](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-02-montaj-centrala-termica/): 800–2000 lei / lucrare, recomandat 1200 lei
-- [Înlocuire centrală termică](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-03-inlocuire-centrala-termica/): 600–1600 lei / lucrare, recomandat 1000 lei
-- [Punere în funcțiune centrală](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-04-punere-in-functiune-centrala/): 250–500 lei / lucrare, recomandat 350 lei
-- [Verificare tehnică periodică centrală](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-05-verificare-tehnica-periodica-centrala/): 250–600 lei / lucrare, recomandat 400 lei
-- [Revizie și întreținere centrală](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-06-revizie-si-intretinere-centrala/): 200–450 lei / lucrare, recomandat 300 lei
-- [Diagnostic și reparații centrale](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-07-diagnostic-si-reparatii-centrale/): 150–900 lei / intervenție, fără piese, recomandat 350 lei
-- [Montaj radiatoare și calorifere](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-08-montaj-radiatoare-si-calorifere/): 250–600 lei / buc, recomandat 400 lei
-- [Înlocuire robineți termostatați](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-09-inlocuire-robineti-termostatati/): 80–250 lei / buc, recomandat 150 lei
-- [Încălzire în pardoseală cu apă](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-10-incalzire-in-pardoseala-cu-apa/): 60–140 lei / m², recomandat 90 lei
-- [Montaj pompă de căldură aer-apă](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-11-montaj-pompa-de-caldura-aer-apa/): 3000–12000 lei / lucrare, recomandat 6000 lei
-- [Montaj boiler indirect și rezervor ACM](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-12-montaj-boiler-indirect-si-rezervor-acm/): 500–1500 lei / lucrare, recomandat 900 lei
-- [Spălare instalație termică](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-13-spalare-instalatie-termica/): 600–1800 lei / lucrare, recomandat 1000 lei
-- [Echilibrare hidraulică](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-14-echilibrare-hidraulica/): 300–1200 lei / lucrare, recomandat 600 lei
-- [Montaj termostate și automatizări](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-15-montaj-termostate-si-automatizari/): 150–500 lei / lucrare, recomandat 250 lei
-- [Montaj colectoare solare termice](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-16-montaj-colectoare-solare-termice/): 1500–6000 lei / lucrare, recomandat 3000 lei
-- [Debranșare de la termoficare și individualizare](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-17-debransare-de-la-termoficare-si-individualizare/): 2500–8000 lei / apartament, fără centrală, recomandat 5000 lei
-- [Montaj centrală pe peleți sau lemne](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-18-montaj-centrala-pe-peleti-sau-lemne/): 1100–3500 lei / lucrare, recomandat 1800 lei
-- [Montaj centrală termică electrică](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-19-montaj-centrala-termica-electrica/): 500–1300 lei / lucrare, recomandat 800 lei
-- [Montaj termosemineu cu circuit de încălzire](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-20-montaj-termosemineu-cu-circuit-de-incalzire/): 1500–5000 lei / lucrare, recomandat 3000 lei
-- [Montaj convectoare de încălzire](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-21-montaj-convectoare-de-incalzire/): 150–500 lei / buc, recomandat 300 lei
-- [Montaj radiatoare de baie și portprosop](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-22-montaj-radiatoare-de-baie-si-portprosop/): 200–450 lei / buc, recomandat 300 lei
-- [Montaj aeroterme](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-23-montaj-aeroterme/): 400–1500 lei / buc, recomandat 800 lei
-- [Încălzire electrică în pardoseală](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-24-incalzire-electrica-in-pardoseala/): 40–120 lei / m², recomandat 70 lei
-- [Montaj senzori de temperatură exterioară și de cameră](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-25-montaj-senzori-de-temperatura-exterioara-si-de-camera/): 100–400 lei / lucrare, recomandat 200 lei
-- [Montaj puffer (rezervor de acumulare)](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-26-montaj-puffer-rezervor-de-acumulare/): 800–2500 lei / lucrare, recomandat 1500 lei
-- [Montaj tubulatură evacuare gaze arse](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-27-montaj-tubulatura-evacuare-gaze-arse/): 300–1200 lei / lucrare, recomandat 600 lei
-- [Montaj contoare și repartitoare de căldură](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-28-montaj-contoare-si-repartitoare-de-caldura/): 80–300 lei / buc, recomandat 150 lei
-- [Montaj vane de amestec și grupuri de pompare](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-29-montaj-vane-de-amestec-si-grupuri-de-pompare/): 400–1200 lei / lucrare, recomandat 700 lei
-- [Proiectare și execuție instalație de gaze interioară](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-30-proiectare-si-executie-instalatie-de-gaze-interioara/): 2500–8000 lei / proiect + execuție, recomandat 4500 lei
-- [Montaj detector de gaz cu electrovalvă](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-31-montaj-detector-de-gaz-cu-electrovalva/): 200–600 lei / lucrare, recomandat 350 lei
-- [Curățare chimică schimbător și instalație](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-32-curatare-chimica-schimbator-si-instalatie/): 300–900 lei / lucrare, recomandat 500 lei
-- [Aerisire, umplere și reglare presiune instalație](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-33-aerisire-umplere-si-reglare-presiune-instalatie/): 150–400 lei / lucrare, recomandat 250 lei
-- [Intervenții urgente încălzire](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-34-interventii-urgente-incalzire/): 250–800 lei / intervenție, recomandat 450 lei
+- [Evaluare și dimensionare instalație termică](https://c43221.scara.dev/servicii/s-i-01-evaluare-si-dimensionare-instalatie-termica/): 150–500 lei / vizită, recomandat 250 lei
+- [Montaj centrală termică](https://c43221.scara.dev/servicii/s-i-02-montaj-centrala-termica/): 800–2000 lei / lucrare, recomandat 1200 lei
+- [Înlocuire centrală termică](https://c43221.scara.dev/servicii/s-i-03-inlocuire-centrala-termica/): 600–1600 lei / lucrare, recomandat 1000 lei
+- [Punere în funcțiune centrală](https://c43221.scara.dev/servicii/s-i-04-punere-in-functiune-centrala/): 250–500 lei / lucrare, recomandat 350 lei
+- [Verificare tehnică periodică centrală](https://c43221.scara.dev/servicii/s-i-05-verificare-tehnica-periodica-centrala/): 250–600 lei / lucrare, recomandat 400 lei
+- [Revizie și întreținere centrală](https://c43221.scara.dev/servicii/s-i-06-revizie-si-intretinere-centrala/): 200–450 lei / lucrare, recomandat 300 lei
+- [Diagnostic și reparații centrale](https://c43221.scara.dev/servicii/s-i-07-diagnostic-si-reparatii-centrale/): 150–900 lei / intervenție, fără piese, recomandat 350 lei
+- [Montaj radiatoare și calorifere](https://c43221.scara.dev/servicii/s-i-08-montaj-radiatoare-si-calorifere/): 250–600 lei / buc, recomandat 400 lei
+- [Înlocuire robineți termostatați](https://c43221.scara.dev/servicii/s-i-09-inlocuire-robineti-termostatati/): 80–250 lei / buc, recomandat 150 lei
+- [Încălzire în pardoseală cu apă](https://c43221.scara.dev/servicii/s-i-10-incalzire-in-pardoseala-cu-apa/): 60–140 lei / m², recomandat 90 lei
+- [Montaj pompă de căldură aer-apă](https://c43221.scara.dev/servicii/s-i-11-montaj-pompa-de-caldura-aer-apa/): 3000–12000 lei / lucrare, recomandat 6000 lei
+- [Montaj boiler indirect și rezervor ACM](https://c43221.scara.dev/servicii/s-i-12-montaj-boiler-indirect-si-rezervor-acm/): 500–1500 lei / lucrare, recomandat 900 lei
+- [Spălare instalație termică](https://c43221.scara.dev/servicii/s-i-13-spalare-instalatie-termica/): 600–1800 lei / lucrare, recomandat 1000 lei
+- [Echilibrare hidraulică](https://c43221.scara.dev/servicii/s-i-14-echilibrare-hidraulica/): 300–1200 lei / lucrare, recomandat 600 lei
+- [Montaj termostate și automatizări](https://c43221.scara.dev/servicii/s-i-15-montaj-termostate-si-automatizari/): 150–500 lei / lucrare, recomandat 250 lei
+- [Montaj colectoare solare termice](https://c43221.scara.dev/servicii/s-i-16-montaj-colectoare-solare-termice/): 1500–6000 lei / lucrare, recomandat 3000 lei
+- [Debranșare de la termoficare și individualizare](https://c43221.scara.dev/servicii/s-i-17-debransare-de-la-termoficare-si-individualizare/): 2500–8000 lei / apartament, fără centrală, recomandat 5000 lei
+- [Montaj centrală pe peleți sau lemne](https://c43221.scara.dev/servicii/s-i-18-montaj-centrala-pe-peleti-sau-lemne/): 1100–3500 lei / lucrare, recomandat 1800 lei
+- [Montaj centrală termică electrică](https://c43221.scara.dev/servicii/s-i-19-montaj-centrala-termica-electrica/): 500–1300 lei / lucrare, recomandat 800 lei
+- [Montaj termosemineu cu circuit de încălzire](https://c43221.scara.dev/servicii/s-i-20-montaj-termosemineu-cu-circuit-de-incalzire/): 1500–5000 lei / lucrare, recomandat 3000 lei
+- [Montaj convectoare de încălzire](https://c43221.scara.dev/servicii/s-i-21-montaj-convectoare-de-incalzire/): 150–500 lei / buc, recomandat 300 lei
+- [Montaj radiatoare de baie și portprosop](https://c43221.scara.dev/servicii/s-i-22-montaj-radiatoare-de-baie-si-portprosop/): 200–450 lei / buc, recomandat 300 lei
+- [Montaj aeroterme](https://c43221.scara.dev/servicii/s-i-23-montaj-aeroterme/): 400–1500 lei / buc, recomandat 800 lei
+- [Încălzire electrică în pardoseală](https://c43221.scara.dev/servicii/s-i-24-incalzire-electrica-in-pardoseala/): 40–120 lei / m², recomandat 70 lei
+- [Montaj senzori de temperatură exterioară și de cameră](https://c43221.scara.dev/servicii/s-i-25-montaj-senzori-de-temperatura-exterioara-si-de-camera/): 100–400 lei / lucrare, recomandat 200 lei
+- [Montaj puffer (rezervor de acumulare)](https://c43221.scara.dev/servicii/s-i-26-montaj-puffer-rezervor-de-acumulare/): 800–2500 lei / lucrare, recomandat 1500 lei
+- [Montaj tubulatură evacuare gaze arse](https://c43221.scara.dev/servicii/s-i-27-montaj-tubulatura-evacuare-gaze-arse/): 300–1200 lei / lucrare, recomandat 600 lei
+- [Montaj contoare și repartitoare de căldură](https://c43221.scara.dev/servicii/s-i-28-montaj-contoare-si-repartitoare-de-caldura/): 80–300 lei / buc, recomandat 150 lei
+- [Montaj vane de amestec și grupuri de pompare](https://c43221.scara.dev/servicii/s-i-29-montaj-vane-de-amestec-si-grupuri-de-pompare/): 400–1200 lei / lucrare, recomandat 700 lei
+- [Proiectare și execuție instalație de gaze interioară](https://c43221.scara.dev/servicii/s-i-30-proiectare-si-executie-instalatie-de-gaze-interioara/): 2500–8000 lei / proiect + execuție, recomandat 4500 lei
+- [Montaj detector de gaz cu electrovalvă](https://c43221.scara.dev/servicii/s-i-31-montaj-detector-de-gaz-cu-electrovalva/): 200–600 lei / lucrare, recomandat 350 lei
+- [Curățare chimică schimbător și instalație](https://c43221.scara.dev/servicii/s-i-32-curatare-chimica-schimbator-si-instalatie/): 300–900 lei / lucrare, recomandat 500 lei
+- [Aerisire, umplere și reglare presiune instalație](https://c43221.scara.dev/servicii/s-i-33-aerisire-umplere-si-reglare-presiune-instalatie/): 150–400 lei / lucrare, recomandat 250 lei
+- [Intervenții urgente încălzire](https://c43221.scara.dev/servicii/s-i-34-interventii-urgente-incalzire/): 250–800 lei / intervenție, recomandat 450 lei
 
 ## Produse
-- [Centrală termică murală în condensare](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-01-centrala-termica-murala-in-condensare/): 5000–12000 lei / buc, recomandat 7500 lei; mărci: Viessmann, Vaillant, Bosch, Ariston, Baxi, Immergas, Buderus, Motan
-- [Pompă de căldură aer-apă](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-02-pompa-de-caldura-aer-apa/): 18000–55000 lei / buc, recomandat 32000 lei; mărci: Daikin, Viessmann, Vaillant, Panasonic, Mitsubishi Electric, Samsung
-- [Pompă de căldură monobloc](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-03-pompa-de-caldura-monobloc/): 16000–45000 lei / buc, recomandat 28000 lei; mărci: Panasonic, Samsung, LG, Daikin
-- [Pompă de căldură split](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-04-pompa-de-caldura-split/): 20000–55000 lei / buc, recomandat 35000 lei; mărci: Daikin, Mitsubishi Electric, Viessmann
-- [Radiator din oțel](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-05-radiator-din-otel/): 300–900 lei / buc, recomandat 500 lei; mărci: Purmo, Kermi, Radel, Ferroli
-- [Radiator din aluminiu](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-06-radiator-din-aluminiu/): 40–110 lei / element, recomandat 60 lei; mărci: Global, Fondital, Ferroli, Radel
-- [Portprosop baie](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-07-portprosop-baie/): 200–1200 lei / buc, recomandat 450 lei; mărci: Kermi, Zehnder, Purmo, Fondital
-- [Țeavă pentru pardoseală](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-08-teava-pentru-pardoseala/): 3–9 lei / m, recomandat 5 lei; mărci: Rehau, Uponor, Valrom, Kan-therm
-- [Distribuitor pardoseală](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-09-distribuitor-pardoseala/): 400–2000 lei / buc, recomandat 900 lei; mărci: Rehau, Uponor, Valrom, Herz
-- [Termostat programabil](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-10-termostat-programabil/): 120–450 lei / buc, recomandat 250 lei; mărci: Salus, Computherm, Honeywell, Tech
-- [Termostat smart Wi-Fi](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-11-termostat-smart-wi-fi/): 300–1200 lei / buc, recomandat 600 lei; mărci: Netatmo, tado°, Salus, Honeywell, Bosch
-- [Robinet termostatic](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-12-robinet-termostatic/): 60–250 lei / buc, recomandat 120 lei; mărci: Danfoss, Herz, Honeywell, Giacomini
-- [Boiler electric](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-13-boiler-electric/): 600–1800 lei / buc, recomandat 1000 lei; mărci: Ariston, Tesy, Electrolux, Gorenje
-- [Boiler indirect](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-14-boiler-indirect/): 1800–5000 lei / buc, recomandat 3000 lei; mărci: Viessmann, Ariston, Ferroli, Dražice
-- [Vas de expansiune](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-15-vas-de-expansiune/): 80–400 lei / buc, recomandat 180 lei; mărci: Zilmet, Elbi, Reflex, Fornello
-- [Pompă de circulație](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-16-pompa-de-circulatie/): 400–1500 lei / buc, recomandat 800 lei; mărci: Grundfos, Wilo, IBO, DAB
-- [Filtru magnetic instalație](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-17-filtru-magnetic-instalatie/): 150–600 lei / buc, recomandat 300 lei; mărci: Fernox, Sentinel, Ferroli
-- [Panou solar termic](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-18-panou-solar-termic/): 1500–4500 lei / panou, recomandat 2500 lei; mărci: Viessmann, Vaillant, Sunsystem, Ferroli
-- [Centrală termică electrică](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-19-centrala-termica-electrica/): 1800–5500 lei / buc, recomandat 3000 lei; mărci: Kospel, Protherm, Ferroli, Motan
-- [Cazan pe peleți](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-20-cazan-pe-peleti/): 8000–30000 lei / buc, recomandat 15000 lei; mărci: Viessmann, Ferroli, Burnit, Kostrzewa
-- [Cazan pe lemne cu gazeificare](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-21-cazan-pe-lemne-cu-gazeificare/): 6000–20000 lei / buc, recomandat 11000 lei; mărci: Atmos, Ferroli, Viessmann, Burnit
-- [Termosemineu](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-22-termosemineu/): 5000–18000 lei / buc, recomandat 9000 lei; mărci: Ferroli, Thermorossi, Edilkamin, Ravelli
-- [Calorifer din fontă](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-23-calorifer-din-fonta/): 80–300 lei / element, recomandat 150 lei; mărci: Viadrus, Fondital, Carron
-- [Convector de încălzire](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-24-convector-de-incalzire/): 800–3500 lei / buc, recomandat 1600 lei; mărci: Jaga, Kermi, Purmo, Zehnder
-- [Aerotermă](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-25-aeroterma/): 1500–6000 lei / buc, recomandat 3000 lei; mărci: Sonniger, Flowair, Reventon, Kampmann
-- [Sistem electric de încălzire în pardoseală](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-26-sistem-electric-de-incalzire-in-pardoseala/): 70–180 lei / m², recomandat 110 lei; mărci: Thermoval, Danfoss, Raychem
-- [Senzor de temperatură exterioară](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-27-senzor-de-temperatura-exterioara/): 60–250 lei / buc, recomandat 120 lei; mărci: Viessmann, Vaillant, Bosch, Ariston
-- [Senzor de cameră temperatură-umiditate](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-28-senzor-de-camera-temperatura-umiditate/): 80–350 lei / buc, recomandat 150 lei; mărci: Netatmo, tado°, Salus, Aqara
-- [Cap termostatic smart](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-29-cap-termostatic-smart/): 200–600 lei / buc, recomandat 350 lei; mărci: tado°, Netatmo, Danfoss, Honeywell
-- [Puffer (rezervor de acumulare)](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-30-puffer-rezervor-de-acumulare/): 2000–6000 lei / buc, recomandat 3500 lei; mărci: Sunsystem, Ferroli, Elbi, Viessmann
-- [Kit evacuare gaze arse coaxial](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-31-kit-evacuare-gaze-arse-coaxial/): 150–600 lei / kit, recomandat 300 lei; mărci: Ricom
-- [Grup de pompare cu vană de amestec](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-32-grup-de-pompare-cu-vana-de-amestec/): 1200–4000 lei / buc, recomandat 2200 lei; mărci: Watts, Meibes, Herz, Afriso
-- [Contor de energie termică / repartitor](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-33-contor-de-energie-termica-repartitor/): 80–900 lei / buc, recomandat 300 lei; mărci: Techem, ista, Kamstrup, Siemens
-- [Inhibitor și soluție de curățare instalație](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-34-inhibitor-si-solutie-de-curatare-instalatie/): 60–250 lei / buc, recomandat 120 lei; mărci: Fernox, Sentinel, Sotin
-- [Detector de gaz cu electrovalvă](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-35-detector-de-gaz-cu-electrovalva/): 250–800 lei / set, recomandat 450 lei; mărci: Seitron, Sinteco, Beca
-- [Țeavă de gaz și robinet de siguranță](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-36-teava-de-gaz-si-robinet-de-siguranta/): 40–150 lei / m de traseu, recomandat 80 lei; mărci: Geberit, Valrom, Kitec
-- [Pompă condens](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-13-pompa-condens/): 250–900 lei / buc, recomandat 450 lei; mărci: Sauermann, Aspen, Charlotte
-- [Ventiloconvector](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-20-ventiloconvector/): 1500–5000 lei / buc, recomandat 2500 lei; mărci: Daikin, Sabiana, Aermec, Galletti
-- [Țevi PEX/PE-RT pentru apă](https://gpt-etalon-4322-v10-bfs.pages.dev/produse/p-s-12-tevi-pex-pe-rt-pentru-apa/): 4–15 lei / m, recomandat 8 lei; mărci: Rehau, Uponor, Valrom
+- [Centrală termică murală în condensare](https://c43221.scara.dev/produse/p-i-01-centrala-termica-murala-in-condensare/): 5000–12000 lei / buc, recomandat 7500 lei; mărci: Viessmann, Vaillant, Bosch, Ariston, Baxi, Immergas, Buderus, Motan
+- [Pompă de căldură aer-apă](https://c43221.scara.dev/produse/p-i-02-pompa-de-caldura-aer-apa/): 18000–55000 lei / buc, recomandat 32000 lei; mărci: Daikin, Viessmann, Vaillant, Panasonic, Mitsubishi Electric, Samsung
+- [Pompă de căldură monobloc](https://c43221.scara.dev/produse/p-i-03-pompa-de-caldura-monobloc/): 16000–45000 lei / buc, recomandat 28000 lei; mărci: Panasonic, Samsung, LG, Daikin
+- [Pompă de căldură split](https://c43221.scara.dev/produse/p-i-04-pompa-de-caldura-split/): 20000–55000 lei / buc, recomandat 35000 lei; mărci: Daikin, Mitsubishi Electric, Viessmann
+- [Radiator din oțel](https://c43221.scara.dev/produse/p-i-05-radiator-din-otel/): 300–900 lei / buc, recomandat 500 lei; mărci: Purmo, Kermi, Radel, Ferroli
+- [Radiator din aluminiu](https://c43221.scara.dev/produse/p-i-06-radiator-din-aluminiu/): 40–110 lei / element, recomandat 60 lei; mărci: Global, Fondital, Ferroli, Radel
+- [Portprosop baie](https://c43221.scara.dev/produse/p-i-07-portprosop-baie/): 200–1200 lei / buc, recomandat 450 lei; mărci: Kermi, Zehnder, Purmo, Fondital
+- [Țeavă pentru pardoseală](https://c43221.scara.dev/produse/p-i-08-teava-pentru-pardoseala/): 3–9 lei / m, recomandat 5 lei; mărci: Rehau, Uponor, Valrom, Kan-therm
+- [Distribuitor pardoseală](https://c43221.scara.dev/produse/p-i-09-distribuitor-pardoseala/): 400–2000 lei / buc, recomandat 900 lei; mărci: Rehau, Uponor, Valrom, Herz
+- [Termostat programabil](https://c43221.scara.dev/produse/p-i-10-termostat-programabil/): 120–450 lei / buc, recomandat 250 lei; mărci: Salus, Computherm, Honeywell, Tech
+- [Termostat smart Wi-Fi](https://c43221.scara.dev/produse/p-i-11-termostat-smart-wi-fi/): 300–1200 lei / buc, recomandat 600 lei; mărci: Netatmo, tado°, Salus, Honeywell, Bosch
+- [Robinet termostatic](https://c43221.scara.dev/produse/p-i-12-robinet-termostatic/): 60–250 lei / buc, recomandat 120 lei; mărci: Danfoss, Herz, Honeywell, Giacomini
+- [Boiler electric](https://c43221.scara.dev/produse/p-i-13-boiler-electric/): 600–1800 lei / buc, recomandat 1000 lei; mărci: Ariston, Tesy, Electrolux, Gorenje
+- [Boiler indirect](https://c43221.scara.dev/produse/p-i-14-boiler-indirect/): 1800–5000 lei / buc, recomandat 3000 lei; mărci: Viessmann, Ariston, Ferroli, Dražice
+- [Vas de expansiune](https://c43221.scara.dev/produse/p-i-15-vas-de-expansiune/): 80–400 lei / buc, recomandat 180 lei; mărci: Zilmet, Elbi, Reflex, Fornello
+- [Pompă de circulație](https://c43221.scara.dev/produse/p-i-16-pompa-de-circulatie/): 400–1500 lei / buc, recomandat 800 lei; mărci: Grundfos, Wilo, IBO, DAB
+- [Filtru magnetic instalație](https://c43221.scara.dev/produse/p-i-17-filtru-magnetic-instalatie/): 150–600 lei / buc, recomandat 300 lei; mărci: Fernox, Sentinel, Ferroli
+- [Panou solar termic](https://c43221.scara.dev/produse/p-i-18-panou-solar-termic/): 1500–4500 lei / panou, recomandat 2500 lei; mărci: Viessmann, Vaillant, Sunsystem, Ferroli
+- [Centrală termică electrică](https://c43221.scara.dev/produse/p-i-19-centrala-termica-electrica/): 1800–5500 lei / buc, recomandat 3000 lei; mărci: Kospel, Protherm, Ferroli, Motan
+- [Cazan pe peleți](https://c43221.scara.dev/produse/p-i-20-cazan-pe-peleti/): 8000–30000 lei / buc, recomandat 15000 lei; mărci: Viessmann, Ferroli, Burnit, Kostrzewa
+- [Cazan pe lemne cu gazeificare](https://c43221.scara.dev/produse/p-i-21-cazan-pe-lemne-cu-gazeificare/): 6000–20000 lei / buc, recomandat 11000 lei; mărci: Atmos, Ferroli, Viessmann, Burnit
+- [Termosemineu](https://c43221.scara.dev/produse/p-i-22-termosemineu/): 5000–18000 lei / buc, recomandat 9000 lei; mărci: Ferroli, Thermorossi, Edilkamin, Ravelli
+- [Calorifer din fontă](https://c43221.scara.dev/produse/p-i-23-calorifer-din-fonta/): 80–300 lei / element, recomandat 150 lei; mărci: Viadrus, Fondital, Carron
+- [Convector de încălzire](https://c43221.scara.dev/produse/p-i-24-convector-de-incalzire/): 800–3500 lei / buc, recomandat 1600 lei; mărci: Jaga, Kermi, Purmo, Zehnder
+- [Aerotermă](https://c43221.scara.dev/produse/p-i-25-aeroterma/): 1500–6000 lei / buc, recomandat 3000 lei; mărci: Sonniger, Flowair, Reventon, Kampmann
+- [Sistem electric de încălzire în pardoseală](https://c43221.scara.dev/produse/p-i-26-sistem-electric-de-incalzire-in-pardoseala/): 70–180 lei / m², recomandat 110 lei; mărci: Thermoval, Danfoss, Raychem
+- [Senzor de temperatură exterioară](https://c43221.scara.dev/produse/p-i-27-senzor-de-temperatura-exterioara/): 60–250 lei / buc, recomandat 120 lei; mărci: Viessmann, Vaillant, Bosch, Ariston
+- [Senzor de cameră temperatură-umiditate](https://c43221.scara.dev/produse/p-i-28-senzor-de-camera-temperatura-umiditate/): 80–350 lei / buc, recomandat 150 lei; mărci: Netatmo, tado°, Salus, Aqara
+- [Cap termostatic smart](https://c43221.scara.dev/produse/p-i-29-cap-termostatic-smart/): 200–600 lei / buc, recomandat 350 lei; mărci: tado°, Netatmo, Danfoss, Honeywell
+- [Puffer (rezervor de acumulare)](https://c43221.scara.dev/produse/p-i-30-puffer-rezervor-de-acumulare/): 2000–6000 lei / buc, recomandat 3500 lei; mărci: Sunsystem, Ferroli, Elbi, Viessmann
+- [Kit evacuare gaze arse coaxial](https://c43221.scara.dev/produse/p-i-31-kit-evacuare-gaze-arse-coaxial/): 150–600 lei / kit, recomandat 300 lei; mărci: Ricom
+- [Grup de pompare cu vană de amestec](https://c43221.scara.dev/produse/p-i-32-grup-de-pompare-cu-vana-de-amestec/): 1200–4000 lei / buc, recomandat 2200 lei; mărci: Watts, Meibes, Herz, Afriso
+- [Contor de energie termică / repartitor](https://c43221.scara.dev/produse/p-i-33-contor-de-energie-termica-repartitor/): 80–900 lei / buc, recomandat 300 lei; mărci: Techem, ista, Kamstrup, Siemens
+- [Inhibitor și soluție de curățare instalație](https://c43221.scara.dev/produse/p-i-34-inhibitor-si-solutie-de-curatare-instalatie/): 60–250 lei / buc, recomandat 120 lei; mărci: Fernox, Sentinel, Sotin
+- [Detector de gaz cu electrovalvă](https://c43221.scara.dev/produse/p-i-35-detector-de-gaz-cu-electrovalva/): 250–800 lei / set, recomandat 450 lei; mărci: Seitron, Sinteco, Beca
+- [Țeavă de gaz și robinet de siguranță](https://c43221.scara.dev/produse/p-i-36-teava-de-gaz-si-robinet-de-siguranta/): 40–150 lei / m de traseu, recomandat 80 lei; mărci: Geberit, Valrom, Kitec
+- [Pompă condens](https://c43222.scara.dev/produse/p-c-13-pompa-condens/): 250–900 lei / buc, recomandat 450 lei; mărci: Sauermann, Aspen, Charlotte
+- [Ventiloconvector](https://c43222.scara.dev/produse/p-c-20-ventiloconvector/): 1500–5000 lei / buc, recomandat 2500 lei; mărci: Daikin, Sabiana, Aermec, Galletti
+- [Țevi PEX/PE-RT pentru apă](https://c43223.scara.dev/produse/p-s-12-tevi-pex-pe-rt-pentru-apa/): 4–15 lei / m, recomandat 8 lei; mărci: Rehau, Uponor, Valrom
