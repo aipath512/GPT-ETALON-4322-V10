@@ -1,0 +1,2037 @@
+{
+  "schema": "scara.c4322.competitor-gap.v1",
+  "date": "2026-11-11",
+  "competitor": "Future Line Instal",
+  "website": "https://www.fli.ro/",
+  "ssot": "etalons/C4322/dictionar/entitati.json",
+  "baseline": {
+    "services": 89,
+    "products": 98,
+    "distinctFamilies": 3
+  },
+  "sourcePages": [
+    "https://www.fli.ro/",
+    "https://www.fli.ro/punere-in-functiune-centrala-termica-pif/",
+    "https://www.fli.ro/autorizatii-de-functionare/",
+    "https://www.fli.ro/mentenanta-si-intrventii/",
+    "https://www.fli.ro/despre-noi/garantii/"
+  ],
+  "existingMatches": [
+    {
+      "fli": "Montaj centrală termică",
+      "c4322": "Montaj centrală termică",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "PIF centrală",
+      "c4322": "Punere în funcțiune centrală",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "VTU/VTP centrală",
+      "c4322": "Verificare tehnică periodică centrală",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Reparații centrale",
+      "c4322": "Diagnostic și reparații centrale",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Revizie centrală",
+      "c4322": "Revizie și întreținere centrală",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Montaj aer condiționat",
+      "c4322": "Montaj AC split 9000–12000 BTU",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Reparații aer condiționat",
+      "c4322": "Diagnostic și reparații AC",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Montaj boiler electric",
+      "c4322": "Montaj boiler electric",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Montaj hidrofor",
+      "c4322": "Montaj hidrofor și stație de pompare",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Consultanță instalații termice",
+      "c4322": "Evaluare și dimensionare instalație termică",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Proiectare/execuție instalație gaze",
+      "c4322": "Proiectare și execuție instalație de gaze interioară",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Montaj colectoare solare",
+      "c4322": "Montaj colectoare solare termice",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    }
+  ],
+  "proposedDeltas": [
+    {
+      "title": "Autorizație de funcționare centrală termică (AF)",
+      "family": "C43221",
+      "status": "PROPUS_DISTINCT",
+      "related": "Verificare tehnică periodică centrală",
+      "regulated": "ISCIR",
+      "note": "Separă documentarea autorizării de verificarea VTU/VTP; nu promite eliberarea fără autorizare și competență."
+    },
+    {
+      "title": "Verificare tehnică periodică instalație de utilizare gaze",
+      "family": "C43221",
+      "status": "PROPUS_DISTINCT",
+      "related": "Proiectare și execuție instalație de gaze interioară",
+      "regulated": "ANRE",
+      "note": "Alt obiect decât VTU centrală; condiții ANRE și periodicitate de confirmat juridic."
+    },
+    {
+      "title": "Revizie tehnică instalație de utilizare gaze",
+      "family": "C43221",
+      "status": "PROPUS_DISTINCT",
+      "related": "Proiectare și execuție instalație de gaze interioară",
+      "regulated": "ANRE",
+      "note": "Diferențiază revizia instalației de gaz de revizia anuală a centralei."
+    },
+    {
+      "title": "Proiectare instalații termice",
+      "family": "C43221",
+      "status": "PROPUS_DISTINCT",
+      "related": "Evaluare și dimensionare instalație termică",
+      "regulated": "calificări/autorizații aplicabile",
+      "note": "Proiect tehnic versus consultanță și dimensionare; ofertare numai dacă firma poate presta."
+    },
+    {
+      "title": "Proiectare instalații sanitare și canalizare",
+      "family": "C43223",
+      "status": "PROPUS_DISTINCT",
+      "related": "Instalații de alimentare cu apă",
+      "regulated": "calificări/autorizații aplicabile",
+      "note": "Separă proiectarea de execuție."
+    },
+    {
+      "title": "Diagnostic și reparații boilere electrice",
+      "family": "C43223",
+      "status": "PROPUS_DISTINCT",
+      "related": "Montaj boiler electric",
+      "regulated": "competențe electrice aplicabile",
+      "note": "Reparația nu este montaj; confirmați tipuri de echipamente."
+    },
+    {
+      "title": "Diagnostic și reparații instalații solare termice",
+      "family": "C43221",
+      "status": "PROPUS_DISTINCT",
+      "related": "Montaj colectoare solare termice",
+      "regulated": "competențe specifice",
+      "note": "Nu generaliza către panouri fotovoltaice; alt domeniu."
+    },
+    {
+      "title": "Contract de service și mentenanță preventivă centrale",
+      "family": "C43221",
+      "status": "PACHET_COMERCIAL",
+      "related": "Revizie și întreținere centrală",
+      "regulated": "în funcție de lucrările contractate",
+      "note": "Pachet contractual, nu dublură de operațiune tehnică. Condiții, frecvență și SLA configurabile."
+    },
+    {
+      "title": "Garanție comercială extinsă",
+      "family": "C43221",
+      "status": "OPTIUNE_CONTRACTUALA",
+      "related": "Revizie și întreținere centrală",
+      "regulated": "termeni contractuali și garanția producătorului",
+      "note": "Nu publica '10 ani' automat. Pagina FLI consultată descrie până la 5 ani pentru anumite echipamente, în condiții contractuale."
+    },
+    {
+      "title": "Montaj/racordare aragaz la gaze",
+      "family": "C43221",
+      "status": "EXTENSIE_DE_VALIDAT",
+      "related": "Proiectare și execuție instalație de gaze interioară",
+      "regulated": "ANRE, după operațiune",
+      "note": "Nu activa implicit; delimitare față de lucrările electrice și cerințe de autorizare."
+    }
+  ],
+  "publicationPolicy": {
+    "defaultEnabled": false,
+    "doNotAlterSSOTBeforeValidation": true,
+    "requireFirmServiceConfirmation": true,
+    "requireAuthorizationProofForRegulatedServices": true,
+    "doNotInventPricesOrGuarantees": true
+  },
+  "nextStep": "Revizuire tehnică și juridică, alocare coduri canonice noi, completare entități și relații, regenerare prin tools/build_c4322.py, rulare teste și verificare live pe cele trei domenii.",
+  "sourceEvidenceAdded": {
+    "origin": "Textul paginii «Reparații centrale termice» furnizat de utilizator, 2026-11-11",
+    "type": "user_supplied_page_content",
+    "verifiedLive": false,
+    "service": "Reparații centrale termice",
+    "competitorClaimOnly": true,
+    "commercialPositioning": [
+      "experiență peste 30 ani (afirmație FLI)",
+      "personal certificat ISCIR (afirmație FLI)",
+      "program dispecerat 08:00–20:00",
+      "preț întreținere anuală de la 250 lei/an (afirmație FLI, nu preț SCARA)",
+      "intervenții rapide, tarife transparente (fără SLA/preț concret pentru reparație)"
+    ],
+    "brandsMentioned": [
+      "Ariston",
+      "Beretta",
+      "Ferroli",
+      "Immergas",
+      "Viessmann",
+      "Vaillant",
+      "Chaffoteaux"
+    ],
+    "geographiesMentioned": {
+      "core": [
+        "București, sectoarele 1–6",
+        "Ilfov"
+      ],
+      "counties": [
+        "Călărași",
+        "Dâmbovița",
+        "Ialomița",
+        "Giurgiu",
+        "Prahova",
+        "Teleorman"
+      ],
+      "policy": "Acoperirea FLI nu devine implicit aria firmei generate de SCARA."
+    },
+    "contactFormFields": [
+      "nume",
+      "email",
+      "telefon",
+      "mesaj/defecțiune/marcă/model"
+    ],
+    "cta": "Vreau",
+    "crossSell": [
+      "întreținere anuală",
+      "service centrale",
+      "consultanță termică",
+      "mentenanță și intervenții",
+      "AF / VTU",
+      "punere în funcțiune",
+      "instalare și montaj",
+      "proiectare și execuție"
+    ],
+    "additionalCompetitorServices": [
+      "instalații electrice",
+      "ventilație",
+      "canalizare",
+      "apă-canal"
+    ],
+    "note": "Serviciile electrice nu se adaugă automat în CAEN 4322; verificare CAEN și autorizații."
+  },
+  "productRecommendationsForScara": [
+    {
+      "type": "FIELD_EXTENSIONS",
+      "target": "Diagnostic și reparații centrale",
+      "fields": [
+        "marca",
+        "model",
+        "cod_eroare",
+        "simptome_defectiune",
+        "vechime_echipament",
+        "localitate",
+        "interval_contact",
+        "fotografii_optional"
+      ],
+      "note": "Datele sunt input pentru cererea de ofertă, nu proprietăți ale fiecărei fișe generice."
+    },
+    {
+      "type": "CONVERSION",
+      "target": "Servicii / reparații",
+      "features": [
+        "CTA Solicită reparație",
+        "formular contextual",
+        "click-to-call",
+        "captare lead cu consimțământ GDPR"
+      ],
+      "status": "propunere, nu funcționalitate implementată"
+    },
+    {
+      "type": "GEOGRAPHIC",
+      "target": "FIRMA_OFERA + arie acoperire",
+      "features": [
+        "zone explicite selectate per firmă",
+        "localități filtrabile",
+        "fără copiere automată a județelor FLI"
+      ]
+    },
+    {
+      "type": "TRUST",
+      "target": "firm profile",
+      "features": [
+        "autorizări ISCIR verificabile",
+        "mărci deservite confirmate de firmă",
+        "orar real dispecerat",
+        "garanții reale fără afirmații inventate"
+      ]
+    },
+    {
+      "type": "MONETIZATION",
+      "target": "mentenanță anuală",
+      "features": [
+        "preț personalizat/cerere ofertă",
+        "abonamente opționale validate",
+        "niciun preț FLI copiat drept tarif SCARA"
+      ]
+    }
+  ],
+  "revisedInterpretation": "Revizia centrală S-I-06 există; noutatea este un produs contractual configurabil cu 3 niveluri, SLA, operațiuni tehnice, verificări incluse, conversie și preț. Nu se copiază tarifele/recenziile/studiul FLI în oferte SCARA și nu se creează fișă tehnică duplicată.",
+  "consultantaTehnicaCentrale": {
+    "source": "Text pagina FLI «Consultanță Tehnică Centrale» furnizat de utilizator",
+    "capturedAt": "2026-11-11",
+    "serviceCrosswalk": {
+      "competitorService": "Consultanță tehnică centrale termice și instalații",
+      "existingId": "S-I-01",
+      "existingName": "Evaluare și dimensionare instalație termică",
+      "status": "ACOPERIT_PARTIAL_EXTINDE_FISA",
+      "noDuplicate": true
+    },
+    "existingRelated": [
+      "S-C-01 Consultanță și dimensionare aer condiționat",
+      "S-I-02 Montaj centrală termică",
+      "S-I-04 Punere în funcțiune centrală",
+      "S-I-16 Montaj colectoare solare termice",
+      "S-I-18 Montaj centrală pe peleți sau lemne",
+      "S-I-19 Montaj centrală termică electrică"
+    ],
+    "technicalScopeFromCompetitor": [
+      "evaluare energetică preliminară clădire civilă/industrială",
+      "comparație variante încălzire și cost operare",
+      "radiatoare și ventiloconvectoare",
+      "încălzire prin pardoseală cu apă",
+      "solar termic",
+      "panouri radiante infraroșu",
+      "centrale pe gaz, lichid, solid și peleți",
+      "cazane de abur industriale"
+    ],
+    "higherRiskTechnicalClaims": [
+      {
+        "claim": "centrale 24 kW–4,5 Gcal/h, PT A1/PT C9",
+        "policy": "Nu importa ca limită certificată a SCARA; supus verificării prescripțiilor și competenței firmei."
+      },
+      {
+        "claim": "cazane de abur Pmax 16 bar, Qmax 15 t/h, Tmax 350°C, PT C1",
+        "policy": "Industriale, în afara ofertei B2C implicite; categorie opțională validată tehnic și juridic."
+      }
+    ],
+    "newSubtopicsForService": [
+      "audit orientativ al necesarului termic",
+      "comparare soluții și eficiență energetică",
+      "estimare consum/cost de exploatare cu ipoteze explicite",
+      "compatibilitatea echipamentelor cu instalația existentă",
+      "listă recomandări și ofertă personalizată",
+      "consultare pentru soluții solare termice și radiatoare infraroșu"
+    ],
+    "newPotentialServiceCandidate": {
+      "name": "Consultanță pentru cazane de abur și instalații termice industriale",
+      "state": "EXTENSIE_INDUSTRIALA_DE_VALIDAT",
+      "reason": "nu se confundă cu consultanța B2C și impune competențe/autorizații specifice"
+    },
+    "brandSignals": [
+      "Ariston",
+      "Baxi",
+      "Beretta",
+      "Buderus",
+      "Bosch",
+      "De Dietrich",
+      "Ferroli",
+      "Immergas",
+      "Junkers",
+      "Motan",
+      "Protherm",
+      "Saunier Duval",
+      "Vaillant",
+      "Viessmann"
+    ],
+    "commercialSignals": [
+      {
+        "claim": "întreținere anuală de la 250 lei/an",
+        "owner": "FLI",
+        "notSCARAPrice": true
+      },
+      {
+        "claim": "peste 30 ani experiență, 37 angajați, peste 37.000 centrale instalate",
+        "owner": "FLI",
+        "notSCARACredentials": true
+      },
+      {
+        "claim": "dispecerat 08:00–20:00, stocuri piese, flotă și parteneriate producători",
+        "owner": "FLI",
+        "notSCARACredentials": true
+      }
+    ],
+    "recommendedConsultationForm": [
+      "nume",
+      "telefon",
+      "email",
+      "tip clădire",
+      "localitate",
+      "suprafață încălzită",
+      "izolație",
+      "număr băi",
+      "sistem existent",
+      "combustibil / sursă energie",
+      "obiectiv (consum/confort/modernizare)",
+      "buget estimativ opțional",
+      "mesaj",
+      "consimțământ"
+    ],
+    "rules": [
+      "Nu afirma economii garantate, certificări, brand-partner sau experiență neconfirmată.",
+      "Nu reutiliza textul de marketing FLI în site-urile SCARA.",
+      "Condiții ANRE, ISCIR, proiectare/semnătură și CAEN verificate per firmă.",
+      "Consultanță și calcul orientativ nu sunt echivalente unui proiect tehnic avizat."
+    ],
+    "implementationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "mentenantaSiInterventiiCentrale": {
+    "source": "Text «Mentenanță și Intervenții Centrale Termice — Future Line Instal», furnizat de utilizator",
+    "capturedAt": "2026-11-11",
+    "sourceVerification": "user_supplied_not_independently_verified",
+    "canonicalService": {
+      "code": "S-I-06",
+      "name": "Revizie și întreținere centrală",
+      "status": "EXISTS_EXTEND_DETAILS_NO_DUPLICATE"
+    },
+    "otherExistingServiceLinks": [
+      {
+        "code": "S-I-05",
+        "name": "Verificare tehnică periodică centrală"
+      },
+      {
+        "code": "S-I-07",
+        "name": "Diagnostic și reparații centrale"
+      },
+      {
+        "code": "S-I-03",
+        "name": "Înlocuire centrală termică"
+      },
+      {
+        "code": "S-I-02",
+        "name": "Montaj centrală termică"
+      },
+      {
+        "code": "S-I-04",
+        "name": "Punere în funcțiune centrală"
+      }
+    ],
+    "maintenanceOperationsFromCompetitor": [
+      "verificarea etanșeității instalației de gaz (numai personal autorizat pentru operațiunea aplicabilă)",
+      "controlul presiunii vasului de expansiune",
+      "curățare arzător",
+      "curățare schimbător de căldură",
+      "testare termostat și sisteme de siguranță",
+      "analiza gazelor arse",
+      "control presiune apă",
+      "verificare temperatură agent termic",
+      "remedierea defecțiunilor minore"
+    ],
+    "commercialContracts": [
+      "pachet personalizat de mentenanță preventivă",
+      "prioritate contractuală la intervenții urgente",
+      "discount contractual la piese de schimb",
+      "reparații cu piese originale când sunt disponibile",
+      "garanție pentru reparații conform contractului",
+      "înlocuire centrală și consultanță pentru noul echipament"
+    ],
+    "competitorClaimsNotReusable": [
+      {
+        "claim": "Revizie anuală obligatorie",
+        "caveat": "NU publica automat «obligatorie»: verificarea tehnică periodică (VTP/VTU) și întreținerea anuală contractuală sunt proceduri diferite; temeiul legal și condițiile producătorului trebuie verificate."
+      },
+      {
+        "claim": "Intervenție în maximum 24 ore",
+        "caveat": "SLA FLI neconfirmat contractual; nu este disponibilitate implicită pentru SCARA."
+      },
+      {
+        "claim": "De la 250 lei/an",
+        "caveat": "Preț concurent, nu ofertă sau tarif implicit al firmei generate."
+      },
+      {
+        "claim": "Tehnicieni autorizați ISCIR",
+        "caveat": "Trebuie verificată autorizarea fiecărei firme."
+      },
+      {
+        "claim": "Economii de energie și prelungirea duratei de viață",
+        "caveat": "Beneficii potențiale, nu rezultate garantate."
+      }
+    ],
+    "serviceAreaCompetitorOnly": [
+      "București",
+      "Ilfov",
+      "Călărași",
+      "Dâmbovița",
+      "Ialomița",
+      "Giurgiu",
+      "Prahova",
+      "Teleorman"
+    ],
+    "proposedFieldModel": {
+      "maintenanceChecklist": [
+        {
+          "key": "operation",
+          "type": "string"
+        },
+        {
+          "key": "requiredCompetence",
+          "type": "string"
+        },
+        {
+          "key": "applicability",
+          "type": "enum:all/conditional"
+        },
+        {
+          "key": "documentedResult",
+          "type": "string"
+        }
+      ],
+      "contract": {
+        "planName": "string",
+        "annualPriceRON": "nullable",
+        "visitsPerYear": "nullable",
+        "prioritySLAHours": "nullable",
+        "partsDiscountPct": "nullable",
+        "coveredBrands": "array",
+        "coveredModels": "array",
+        "serviceArea": "array",
+        "warrantyTerms": "string",
+        "active": "false by default"
+      },
+      "leadForm": [
+        "nume",
+        "telefon",
+        "email",
+        "marca",
+        "model",
+        "cod_eroare",
+        "simptome",
+        "localitate",
+        "tip solicitare (revizie/intervenție/contract/înlocuire)",
+        "consimțământ"
+      ]
+    },
+    "additionalQAForEVA": [
+      "Care este diferența dintre revizia anuală și verificarea tehnică periodică?",
+      "Ce verificări cuprinde mentenanța?",
+      "Când se curăță arzătorul și schimbătorul?",
+      "Ce informații trebuie trimise pentru intervenție?",
+      "Există contract anual și ce include?",
+      "Care este timpul de răspuns în localitatea mea?",
+      "Când este mai economică înlocuirea decât reparația?"
+    ],
+    "status": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "autorizatieFunctionareVTU": {
+    "source": "Text «Autorizație de Funcționare Centrală Termică (AF / VTU)» furnizat de utilizator",
+    "capturedAt": "2026-11-11",
+    "canonicalMatch": {
+      "code": "S-I-05",
+      "name": "Verificare tehnică periodică centrală",
+      "status": "EXISTS_EXTEND_NO_DUPLICATE"
+    },
+    "relatedCodes": [
+      "S-I-04 Punere în funcțiune centrală",
+      "S-I-06 Revizie și întreținere centrală"
+    ],
+    "classification": [
+      {
+        "concept": "Admiterea/autorizarea inițială de funcționare",
+        "purpose": "punerea în exploatare conform regimului aplicabil",
+        "separateFrom": "PIF și verificare periodică; fluxurile pot fi legate, nu echivalente"
+      },
+      {
+        "concept": "Verificare tehnică periodică (VTP)/VTU",
+        "purpose": "verificare siguranță centrală la 2 ani în domeniul PT A1-2010",
+        "separateFrom": "verificarea instalației de utilizare a gazelor ANRE"
+      },
+      {
+        "concept": "Verificare/revizie instalație de gaze",
+        "purpose": "operațiuni asupra instalației de gaze",
+        "separateFrom": "ISCIR VTP centrală; regim ANRE distinct"
+      }
+    ],
+    "verifiedReferences": [
+      {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/121883",
+        "citation": "PT A1-2010, art. 21: VTP la 2 ani de persoane juridice autorizate; art. 39 obligații utilizator",
+        "verified": "2026-11-11"
+      },
+      {
+        "url": "https://anpc.ro/download/373/centrale-termice-boilere/60572/ordinu1-5.pdf",
+        "citation": "PT A1-2010 aplicabilitate și limite: centrale/aparate în domeniul indicat, în general <=400 kW",
+        "verified": "2026-11-11"
+      },
+      {
+        "url": "https://serviciipublice.gov.ro/serviciu/autorizarea-functionarii-si-verificarea-tehnica-in-utilizare-a-instalatiilor-echipamentelor",
+        "citation": "Fișă instituțională ISCIR actualizată iulie 2026, autorizarea funcționării",
+        "verified": "2026-11-11"
+      }
+    ],
+    "claimsRequiringFurtherLegalVerification": [
+      {
+        "claim": "Amendă între 2.000 și 25.000 lei",
+        "status": "DO_NOT_PUBLISH",
+        "reason": "Intervalul nu a fost confirmat din articolul/sancțiunea specifică a Legii 64/2008, inclusiv modificările actuale."
+      },
+      {
+        "claim": "Lipsa VTP conduce automat la deconectare",
+        "status": "DO_NOT_PUBLISH_AS_AUTOMATIC",
+        "reason": "Consecințele depind de temei, actori și procedură; nu promite automatism."
+      },
+      {
+        "claim": "Instalarea neautorizată conduce automat la pierderea garanției",
+        "status": "DO_NOT_PUBLISH_AS_AUTOMATIC",
+        "reason": "Depinde de legislație, producător și garanții legale; nu generaliza."
+      },
+      {
+        "claim": "ANRE sau ISCIR după caz",
+        "status": "REQUIRES_OPERATION_MAPPING",
+        "reason": "Autorizările nu sunt interschimbabile; diferențiază aparatul de instalația de gaze."
+      }
+    ],
+    "recommendedPublicPage": {
+      "title": "Verificare tehnică periodică (VTP/VTU) centrală termică",
+      "serviceCode": "S-I-05",
+      "sections": [
+        "Ce înseamnă VTP/VTU",
+        "Când se efectuează",
+        "Ce verifică tehnicianul",
+        "Documente și rezultatul verificării",
+        "Diferența dintre VTP centrală, verificarea instalației de gaze și revizia de întreținere",
+        "Cine poate presta serviciul",
+        "Solicită verificare"
+      ],
+      "leadForm": [
+        "nume",
+        "telefon",
+        "email",
+        "localitate",
+        "marca",
+        "model",
+        "putere_kW opțional",
+        "combustibil",
+        "data_ultimei_verificari",
+        "documente_existente opțional",
+        "mesaj",
+        "consimțământ"
+      ],
+      "seoSynonyms": [
+        "autorizație funcționare centrală termică",
+        "AF centrală termică",
+        "VTU centrală",
+        "VTP centrală",
+        "verificare ISCIR centrală"
+      ]
+    },
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED",
+    "disclaimer": "Nu acorda certificat ISCIR și nu atribui autorizări firmelor generate fără documente verificabile."
+  },
+  "punereInFunctiuneCentralaTermica": {
+    "source": "Text «Punere în Funcțiune Centrală Termică / PIF Centrale Termice» transmis de utilizator",
+    "capturedAt": "2026-11-11",
+    "independentWebsiteVerification": false,
+    "canonicalMatch": {
+      "code": "S-I-04",
+      "name": "Punere în funcțiune centrală",
+      "status": "ALREADY_EXISTS_EXTEND_WITHOUT_DUPLICATING"
+    },
+    "relatedServices": [
+      {
+        "code": "S-I-02",
+        "name": "Montaj centrală termică"
+      },
+      {
+        "code": "S-I-05",
+        "name": "Verificare tehnică periodică centrală"
+      },
+      {
+        "code": "S-I-06",
+        "name": "Revizie și întreținere centrală"
+      }
+    ],
+    "distinctConcepts": [
+      {
+        "term": "PIF",
+        "name": "Punere în funcțiune",
+        "meaning": "Operațiuni la prima utilizare a aparatului nou, în condițiile prescripției tehnice și instrucțiunilor producătorului",
+        "notEquivalentTo": "Montajul fizic, autorizarea de funcționare sau VTP ulterioară"
+      },
+      {
+        "term": "AF",
+        "name": "Autorizarea funcționării",
+        "meaning": "Procedura/documentația aplicabilă autorizării inițiale în regimul tehnic corespunzător",
+        "notEquivalentTo": "PIF; pot exista legături procedural-juridice care trebuie verificate"
+      },
+      {
+        "term": "VTP/VTU",
+        "name": "Verificare tehnică periodică / în utilizare",
+        "meaning": "Control tehnic după punerea în exploatare, la intervalele aplicabile",
+        "notEquivalentTo": "PIF inițial sau verificarea instalației de gaze reglementată ANRE"
+      }
+    ],
+    "technicalChecklistCandidate": [
+      "identificarea mărcii, modelului, seriei și puterii echipamentului",
+      "verificarea documentației și a condițiilor de instalare",
+      "verificarea parametrilor circuitului termic și evacuării gazelor arse, după echipament",
+      "verificări de siguranță și de funcționare conform manualului producătorului și prescripțiilor aplicabile",
+      "reglaje și testarea regimurilor de funcționare numai de personal competent/autorizat",
+      "înregistrarea rezultatelor și predarea documentației corespunzătoare utilizatorului",
+      "explicarea utilizării sigure și întreținerii, conform producătorului"
+    ],
+    "brandSignals": [
+      "Ariston",
+      "Viessmann",
+      "Bosch",
+      "Motan",
+      "Buderus"
+    ],
+    "brandPolicy": "Enumerarea mărcilor de către FLI nu dovedește că firma generată prin SCARA este partener service ori autorizată de producător.",
+    "leadFormFields": [
+      "nume",
+      "telefon",
+      "email",
+      "localitate",
+      "marca",
+      "model",
+      "serie_echipament_optional",
+      "putere_kW_optional",
+      "combustibil",
+      "data_montajului",
+      "documente_disponibile",
+      "mesaj",
+      "consimtamant"
+    ],
+    "evaQuestions": [
+      "Ce este PIF și când se efectuează?",
+      "Care este diferența dintre PIF, AF și VTP/VTU?",
+      "PIF este același lucru cu montajul?",
+      "Ce documente trebuie pregătite pentru punerea în funcțiune?",
+      "Firma poate efectua PIF pentru marca și modelul meu?",
+      "Ce urmează după punerea în funcțiune?",
+      "Este necesară verificarea separată a instalației de gaze?"
+    ],
+    "sourceClaimsToValidate": [
+      {
+        "claim": "Executăm PIF pentru toată gama de produse conform CAEN 4322",
+        "status": "DO_NOT_REUSE",
+        "reason": "CAEN nu conferă automat autorizări ISCIR/ANRE sau agreere de producător; eligibilitatea este per firmă, echipament și operațiune."
+      },
+      {
+        "claim": "Tehnicieni autorizați ISCIR",
+        "status": "VERIFY_PER_FIRM",
+        "reason": "Nu afirma autorizare fără documente verificabile."
+      },
+      {
+        "claim": "PT A1-2010 definește PIF",
+        "status": "VERIFY_CURRENT_APPLICABILITY",
+        "reason": "Verifică domeniul prescripției și versiunea aplicabilă fiecărui aparat; nu extinde automat la toate tipurile."
+      },
+      {
+        "claim": "Prescripții comune tiraj natural și forțat, document .doc",
+        "status": "SOURCE_DOCUMENT_MISSING",
+        "reason": "Textul menționează un document descărcabil, dar acesta nu a fost furnizat; nu se poate integra ca sursă primară."
+      }
+    ],
+    "designRecommendation": {
+      "targetService": "S-I-04",
+      "cta": "Solicită punerea în funcțiune",
+      "sections": [
+        "Ce este PIF",
+        "Când aveți nevoie de PIF",
+        "Etapele verificării",
+        "Acte și informații necesare",
+        "Mărci și modele eligibile confirmate",
+        "PIF versus AF versus VTP",
+        "Solicită programare"
+      ],
+      "offerVisibility": "only after firm confirms eligibility and authorizations"
+    },
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "proiectareSiExecutie": {
+    "source": "Text «Proiectare și Execuție» de la FLI furnizat de utilizator",
+    "capturedAt": "2026-11-11",
+    "canonicalMapping": {
+      "existingService": "S-I-30 Proiectare și execuție instalație de gaze interioară",
+      "status": "EXISTS_PARTIAL",
+      "note": "Execuția instalațiilor termice/sanitare/AC/ventilație există în alte fișe; proiectarea trebuie distinctă și condiționată de calificări."
+    },
+    "disciplines": [
+      {
+        "name": "Gaze naturale",
+        "scope": "proiectare și execuție",
+        "existing": "S-I-30",
+        "regulator": "ANRE",
+        "action": "Clarifică faptul că dreptul de proiectare și cel de execuție se verifică separat."
+      },
+      {
+        "name": "Instalații termice",
+        "scope": "proiectare și execuție",
+        "existing": "servicii montaj și consultanță",
+        "action": "Propunere proiectare distinctă deja în audit; relații cu execuția."
+      },
+      {
+        "name": "Instalații sanitare și apă-canal",
+        "scope": "proiectare și execuție",
+        "existing": "instalații alimentare apă/canalizare",
+        "action": "Proiectare distinctă deja în audit."
+      },
+      {
+        "name": "Ventilare și climatizare",
+        "scope": "proiectare și execuție",
+        "existing": "S-C-01 consultanță/dimensionare și multiple servicii montaj",
+        "action": "Nou candidat proiectare ventilație/HVAC, fără duplicarea montajului."
+      },
+      {
+        "name": "Instalații electrice",
+        "scope": "proiectare și execuție",
+        "existing": "nu sunt parte explicită a referențialului 4322",
+        "action": "Extensie multi-CAEN condiționată de cod CAEN și autorizații ANRE electrice. Nu activa implicit."
+      }
+    ],
+    "legalCorrection": {
+      "fliClaim": "NTPEE/2009",
+      "status": "OUTDATED",
+      "currentInstrument": "Ordinul ANRE nr. 89/2018 și normele tehnice aferente, cu modificările ulterioare",
+      "primarySource": "https://legislatie.just.ro/Public/DetaliiDocument/201309",
+      "basis": "Art. 3 din Ordinul 89/2018 abrogă Ordinul 5/2009",
+      "checked": "2026-11-11",
+      "publicationRule": "Nu reproduce NTPEE/2009 ca normă în vigoare; verifică forma consolidată la publicare."
+    },
+    "newCandidate": {
+      "name": "Proiectare instalații de ventilare și climatizare (HVAC)",
+      "family": "C43222",
+      "status": "PROPUS_DISTINCT_DE_VALIDAT",
+      "notSameAs": "S-C-01 Consultanță și dimensionare aer condiționat"
+    },
+    "leadFormProposal": [
+      "nume",
+      "telefon",
+      "email",
+      "localitate",
+      "tip_clădire",
+      "destinație spațiu",
+      "suprafață",
+      "discipline solicitate",
+      "proiect nou sau renovare",
+      "există documentație",
+      "etapă (studiu/proiect/execuție)",
+      "buget opțional",
+      "fișiere opționale",
+      "mesaj",
+      "consimțământ"
+    ],
+    "validationRules": [
+      "Nu afirma că o firmă deține autorizări ANRE numai pentru că are CAEN 4322.",
+      "Proiectarea și execuția sunt capabilități distincte și se declară/verifică per firmă.",
+      "Serviciile electrice se oferă doar cu activitate și autorizări relevante, nu implicit 4322.",
+      "Nu copia descrieri ale concurentului; folosește datele ca semnal de acoperire și diferențiere."
+    ],
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "certificariISO": {
+    "source": "Text «Certificări ISO» Future Line Instal furnizat de utilizator",
+    "capturedAt": "2026-11-11",
+    "verification": "Declarațiile FLI nu constituie verificarea certificatelor propriu-zise",
+    "classification": "FIRMA_CREDENTIALS_NOT_TECHNICAL_SERVICE",
+    "competitorClaims": [
+      {
+        "standard": "ISO 9001:2015",
+        "subject": "managementul calității",
+        "currentEdition": "ISO 9001:2026",
+        "validation": "verificare certificat, tranziție și domeniu"
+      },
+      {
+        "standard": "ISO 14001:2015",
+        "subject": "management de mediu",
+        "currentEdition": "ISO 14001:2026",
+        "validation": "verificare certificat, tranziție și domeniu"
+      },
+      {
+        "standard": "ISO 27001:2018",
+        "subject": "securitatea informației",
+        "currentEdition": "ISO/IEC 27001:2022",
+        "validation": "ediția 2018 din text nu corespunde ediției ISO/IEC 27001 utilizate; cere certificatul original"
+      },
+      {
+        "standard": "ISO 45001:2018",
+        "subject": "securitate și sănătate în muncă",
+        "currentEdition": "ISO 45001:2018",
+        "validation": "verificare certificat, emitent și valabilitate"
+      }
+    ],
+    "insuranceClaim": {
+      "name": "Poliță răspundere civilă",
+      "status": "COMPETITOR_CLAIM_NOT_VERIFIED",
+      "requiredMetadata": [
+        "asigurător",
+        "număr poliță",
+        "perioadă valabilitate",
+        "riscuri acoperite",
+        "limită de despăgubire",
+        "arie teritorială"
+      ],
+      "disclosure": "Nu publica automat existența poliței pentru firmele generate."
+    },
+    "certificationEntityModel": {
+      "entityType": "CertificareFirma",
+      "fields": [
+        "firmCUI",
+        "standardCode",
+        "edition",
+        "certificateNumber",
+        "issuer",
+        "accreditationBody",
+        "scope",
+        "issueDate",
+        "expiryDate",
+        "verificationUrl",
+        "documentLocation",
+        "verifiedAt",
+        "status"
+      ],
+      "states": [
+        "claimed",
+        "pending_document",
+        "verified",
+        "expired",
+        "suspended",
+        "rejected"
+      ],
+      "relations": [
+        "FIRMA_DETINE_CERTIFICARE",
+        "CERTIFICARE_ARE_DOMENIU",
+        "CERTIFICARE_EMISA_DE"
+      ],
+      "publishingCondition": "Only verified, in-scope and currently valid certifications appear as achievements of the generated firm."
+    },
+    "insuranceEntityModel": {
+      "entityType": "PolitaRaspundereCivila",
+      "fields": [
+        "firmCUI",
+        "insurer",
+        "policyNumber",
+        "coverageDescription",
+        "coverageLimit",
+        "startDate",
+        "endDate",
+        "verifiedAt",
+        "status"
+      ],
+      "publishingCondition": "verified active policy only"
+    },
+    "scopeClaimedByCompetitor": [
+      "instalații sanitare, încălzire și climatizare",
+      "montaj, PIF, service, reparații și verificări tehnice",
+      "proiectare și execuție instalații gaze, verificări și revizii"
+    ],
+    "importantDistinctions": [
+      "Certificarea ISO a sistemului de management nu înlocuiește autorizarea ISCIR sau ANRE.",
+      "Certificările ISO nu demonstrează automat competența individuală a tehnicienilor ori acoperirea tuturor lucrărilor.",
+      "ISO nu este în mod normal emitentul certificatelor firmei; verifică organismul emitent și acreditarea.",
+      "Standardele ediția 2026 pot coexista temporar cu certificate pentru 2015 în perioade de tranziție, dacă certificatele sunt valabile."
+    ],
+    "sourceReferences": [
+      {
+        "url": "https://www.iso.org/management-system-standards-list.html",
+        "description": "ISO management standards, editions 2026 for 9001/14001"
+      },
+      {
+        "url": "https://committee.iso.org/standard/27001",
+        "description": "ISO/IEC 27001:2022"
+      },
+      {
+        "url": "https://www.asro.ro/iso-14001/",
+        "description": "ASRO ISO 14001:2026"
+      }
+    ],
+    "pageDesign": {
+      "page": "Certificări",
+      "sections": [
+        "Certificări de management verificate",
+        "Autorizații profesionale ISCIR/ANRE",
+        "Polițe de asigurare verificate",
+        "Domeniu și valabilitate",
+        "Documente de verificare"
+      ],
+      "fallback": "Nu sunt încă disponibile certificate verificate public pentru această firmă."
+    },
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "autorizatiiISCIR_ANRE": {
+    "capturedAt": "2026-11-11",
+    "source": "Două pagini FLI «Autorizații I.S.C.I.R.» și «Autorizații A.N.R.E.» furnizate de utilizator",
+    "sourceVerification": "declarațiile și domeniile FLI nu sunt verificate prin certificate originale",
+    "kind": "FIRM_CREDENTIALS_REGULATED_CAPABILITIES",
+    "iscir": {
+      "prescriptions": [
+        {
+          "code": "PT A1",
+          "domainFromFLI": "aparate și cazane până la 400 kW; cazane de abur joasă presiune până la 0,6 t/h",
+          "activitiesFromFLI": [
+            "instalare",
+            "montare",
+            "reparare",
+            "întreținere",
+            "verificări tehnice în utilizare"
+          ]
+        },
+        {
+          "code": "PT C1",
+          "domainFromFLI": "cazane abur max 16 bar, 15 t/h, 350°C; apă fierbinte max 16 bar, 10 Gcal/h",
+          "activitiesFromFLI": [
+            "instalare",
+            "montare",
+            "reparare"
+          ]
+        },
+        {
+          "code": "PT C2",
+          "domainFromFLI": "arzătoare gaze/lichide până la 4000 kW",
+          "activitiesFromFLI": [
+            "instalare",
+            "montare",
+            "reparare",
+            "întreținere",
+            "verificare"
+          ]
+        },
+        {
+          "code": "PT C4",
+          "domainFromFLI": "întreținere regim chimic cazane",
+          "validationNote": "ATENȚIE: PT C4-2010 privește recipientele metalice stabile sub presiune; asocierea FLI cu regimul chimic al cazanelor pare greșită și nu trebuie reprodusă."
+        },
+        {
+          "code": "PT C6",
+          "domainFromFLI": "conducte metalice abur/apă fierbinte max 25 bar și 250°C",
+          "validationNote": "ATENȚIE: PT C6 este pentru conducte metalice sub presiune pentru fluide; verificați separat limitele și încadrarea."
+        },
+        {
+          "code": "PT C7",
+          "domainFromFLI": "dispozitive de siguranță max 20 bar, DN 65 mm"
+        },
+        {
+          "code": "PT C9",
+          "domainFromFLI": "cazane apă caldă max 4,5 Gcal/h și abur joasă presiune max 4 t/h"
+        },
+        {
+          "code": "PT C10",
+          "domainFromFLI": "conducte metalice fluide max 200 bar, -40°C până la +400°C",
+          "validationNote": "ATENȚIE: PT C10-2010 privește conductele de abur și apă fierbinte sub presiune; descrierea FLI a conductelor pentru fluide poate corespunde altui cod."
+        },
+        {
+          "code": "PT C11",
+          "domainFromFLI": "instalații de ardere și automatizare aferente centralelor termice/cazanelor"
+        },
+        {
+          "code": "RSVTI",
+          "domainFromFLI": "supraveghere și verificare echipamente ISCIR la deținător/utilizator",
+          "validationNote": "Funcția/autorizația RSVTI trebuie modelată distinct de autorizările pentru lucrările pe echipamente."
+        }
+      ],
+      "warnings": [
+        "Nu accepta limitele tehnice numerice ca verificate până la consultarea autorizațiilor ISCIR efective.",
+        "Nu afirma că o firmă privată eliberează autorizații în numele ISCIR; precizați responsabilitatea și documentul emis în fluxul legal aplicabil.",
+        "Domeniul autorizării este per tip activitate, tip echipament și limită tehnică; valabilitate și titular de verificat."
+      ],
+      "primaryChecks": [
+        "https://legislatie.just.ro/",
+        "https://iscir.ro/"
+      ]
+    },
+    "anre": {
+      "authorizations": [
+        {
+          "code": "PDIB",
+          "activity": "proiectare",
+          "domain": "instalații de utilizare gaze naturale, presiune medie/redusă/joasă"
+        },
+        {
+          "code": "EDIB",
+          "activity": "execuție",
+          "domain": "instalații de utilizare gaze naturale, presiune medie/redusă/joasă",
+          "additionalScope": "verificare/revizie instalații de utilizare gaze în condițiile procedurii aplicabile"
+        }
+      ],
+      "verifiedUsing": [
+        "https://anre.ro/consumatori/gaze-naturale/care-sunt-operatorii-economici-autorizati-pentru-efectuarea-verificarilor-la-instalatiile-de-gaze/",
+        "https://legislatie.just.ro/Public/DetaliiDocumentAfis/269180"
+      ],
+      "rules": [
+        "PDIB nu echivalează cu EDIB; proiectarea și execuția sunt capabilități separate.",
+        "ANRE gaz nu este același regim cu ISCIR centrală.",
+        "Valabilitatea fiecărei autorizații și titularul trebuie verificată în registrele ANRE."
+      ]
+    },
+    "ssotExtension": {
+      "entityType": "AutorizatieProfesionala",
+      "requiredFields": [
+        "cuiTitular",
+        "autoritate",
+        "codAutorizatie",
+        "numarDocument",
+        "tipActivitate",
+        "tipEchipament",
+        "limiteTehnice",
+        "dataEmiterii",
+        "dataExpirarii",
+        "statutRegistru",
+        "documentDovada",
+        "sursaVerificare",
+        "verificatLa"
+      ],
+      "relations": [
+        "FIRMA_DETINE_AUTORIZATIE",
+        "AUTORIZATIE_ACOPERA_ACTIVITATE",
+        "AUTORIZATIE_ACOPERA_ECHIPAMENT",
+        "AUTORIZATIE_PERMITE_SERVICIU"
+      ],
+      "gate": "Firma poate publica un serviciu reglementat ca ofertă proprie doar dacă tipul de activitate, echipamentul, limitele și starea autorizării sunt validate."
+    },
+    "pageModel": {
+      "page": "Certificări și autorizații",
+      "sections": [
+        "Autorizații ISCIR",
+        "Autorizații ANRE",
+        "ISO și poliță de răspundere civilă",
+        "Domeniu autorizat, limitări și valabilitate",
+        "Documente de verificare"
+      ],
+      "default": "Nu afirma autorizații fără dovezi verificate"
+    },
+    "status": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "autorizatieAGFR": {
+    "capturedAt": "2026-11-11",
+    "source": "Text FLI «Autorizație A.G.F.R.» transmis de utilizator",
+    "statusOfCompetitorDocument": "DECLARED_NOT_VERIFIED",
+    "credentialType": "CERTIFICARE_F_GAZE_FIRMA",
+    "category": "C43222 Climatizare",
+    "domainClaimed": "instalare, reparare, întreținere și service echipamente staționare de refrigerare, climatizare și pompe de căldură cu gaze fluorurate cu efect de seră",
+    "regulatoryFramework": [
+      {
+        "act": "Regulamentul (UE) 2024/573",
+        "url": "https://eur-lex.europa.eu/eli/reg/2024/573/oj?locale=ro",
+        "note": "certificarea persoanelor fizice și juridice; acoperă după caz agenți frigorifici alternativi"
+      },
+      {
+        "act": "Regulamentul de punere în aplicare (UE) 2024/2215",
+        "url": "https://eur-lex.europa.eu/legal-content/ro/TXT/?uri=CELEX%3A32024R2215",
+        "note": "cerințe de certificare pentru refrigerare staționară, climatizare și pompe de căldură; a abrogat (UE) 2015/2067"
+      }
+    ],
+    "crosswalk": {
+      "existing": [
+        {
+          "code": "S-C-02",
+          "service": "Montaj AC split"
+        },
+        {
+          "code": "S-C-09",
+          "service": "Diagnostic și reparații AC"
+        },
+        {
+          "code": "S-C-11",
+          "service": "Încărcare agent frigorific"
+        },
+        {
+          "code": "S-I-11",
+          "service": "Montaj pompă de căldură aer-apă"
+        }
+      ],
+      "logic": "Nu adăuga dubluri; certificarea limitează eligibilitatea prestării, nu constituie ea însăși serviciu.",
+      "verifyCodesAgainstSSOT": true
+    },
+    "requirements": [
+      "Verificarea separat a certificării persoanei juridice și a certificatelor personalului care execută efectiv lucrările",
+      "Domeniu exact: tip echipament, activități, substanțe/categorii și eventual limite cantitative",
+      "Certificare/organism emitent, număr, titular CUI, dată, statut, dovadă, posibilitate verificare",
+      "Nu publica autorizări sau competențe de firmă doar din apartenența la CAEN 4322",
+      "Nu confunda certificarea AGFR/F-gaze cu ISCIR, ANRE sau certificări ISO"
+    ],
+    "suggestedFields": {
+      "entity": "AutorizatieProfesionala",
+      "authorityOrBody": "AGFR / organism competent, de confirmat pe document",
+      "regulatoryRegime": "F_GAZE",
+      "scopeActivities": [
+        "instalare",
+        "reparare",
+        "întreținere",
+        "service"
+      ],
+      "equipmentClasses": [
+        "refrigerare staționară",
+        "climatizare staționară",
+        "pompe de căldură"
+      ],
+      "substanceCategories": "de completat după document",
+      "holderType": "persoană juridică / persoană fizică",
+      "certificateId": null,
+      "issueDate": null,
+      "expiryDate": null,
+      "status": "pending_document",
+      "verifiedAt": null
+    },
+    "websitePresentation": {
+      "section": "Certificări și autorizații > F-gaze / AGFR",
+      "visibility": "doar după validare",
+      "cta": "Solicită intervenție climatizare",
+      "noDefaultClaim": true
+    },
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "garantiiFLI": {
+    "capturedAt": "2026-11-11",
+    "source": "Text pagina «Garanții» Future Line Instal furnizat de utilizator",
+    "sourceStatus": "competitor_statement_unverified",
+    "classification": "CONTRACTUAL_TERMS_AND_CREDENTIALS_NOT_NEW_SERVICE",
+    "claimsFromFLI": {
+      "extendedWarranty": {
+        "duration": "până la 5 ani de la PIF",
+        "condition": "contract de întreținere cu prelungirea garanției",
+        "equipment": [
+          "preparatoare instantanee apă caldă menajeră",
+          "microcentrale murale pe gaz",
+          "grupuri termice pe gaz",
+          "grupuri termice pe combustibil lichid",
+          "cazane din fontă sau oțel",
+          "arzătoare pe gaz",
+          "arzătoare pe combustibil lichid și mixt"
+        ]
+      },
+      "serviceWarranty": {
+        "replacementPartsMonths": 24,
+        "laborMonths": 6
+      },
+      "claimedRequirements": [
+        "racordare gaz de firmă autorizată ANRE",
+        "PIF/AF/VTP prin prestatori cu autorizări ISCIR și aprobări relevante producător",
+        "VTP la intervalul aplicabil, FLI afirmă 2 ani"
+      ]
+    },
+    "legalSafeguards": [
+      "Nu trata cele 24 luni piese sau 6 luni manoperă ca durate legale universale; sunt condiții comerciale declarate de FLI, supuse verificării.",
+      "Drepturile legale ale consumatorului nu pot fi limitate de o garanție comercială sau de termeni de întreținere.",
+      "Prelungirea până la 5 ani nu este automată, nici pentru toate produsele: cere contract, certificat, condiții, excluderi, emitent/garant și data pornirii.",
+      "Nu afirma că lipsa unei anumite autorizări anulează automat toate drepturile legale de garanție.",
+      "Separă garanția producătorului, garanția comercială suplimentară a prestatorului și răspunderea pentru manoperă.",
+      "VTP și întreținerea contractuală pot avea periodicitate diferită; nu condiționa abuziv drepturi legale de revizii comerciale."
+    ],
+    "ssotProposal": {
+      "entities": [
+        "PoliticaGarantie",
+        "GarantieComercialaExtinsa",
+        "ContractMentenanta",
+        "DovadaLucrare"
+      ],
+      "fields": [
+        "firmCUI",
+        "type",
+        "warrantor",
+        "coveredEquipment",
+        "coveredService",
+        "coveredBrand",
+        "durationMonths",
+        "startsAtEvent",
+        "conditions",
+        "exclusions",
+        "contractRequired",
+        "requiredCertifications",
+        "legalRightsNotice",
+        "documentUrl",
+        "effectiveFrom",
+        "effectiveTo",
+        "verifiedAt",
+        "status"
+      ],
+      "relations": [
+        "FIRMA_OFERA_GARANTIE",
+        "GARANTIE_ACOPERA_PRODUS",
+        "GARANTIE_ACOPERA_SERVICIU",
+        "GARANTIE_CONDITIONATA_DE_CONTRACT",
+        "LUCRARE_ARE_DOVADA"
+      ],
+      "publicationGate": "Only firm-confirmed valid written terms. Never inherit FLI's 24/6 months or 5-year duration."
+    },
+    "crosswalk": {
+      "existingPage": "Garanții",
+      "relatedServices": [
+        "S-I-04 PIF centrală",
+        "S-I-05 Verificare tehnică periodică centrală",
+        "S-I-06 Revizie și întreținere centrală",
+        "S-I-07 Diagnostic și reparații centrale"
+      ],
+      "status": "EXTEND_EXISTING_PAGE_NO_DUPLICATE"
+    },
+    "websiteProposal": {
+      "sections": [
+        "Garanția legală și drepturile clientului",
+        "Garanție comercială produs",
+        "Garanția lucrării și pieselor înlocuite",
+        "Opțiuni contractuale de extindere",
+        "Condiții și excluderi explicite",
+        "Cum soliciți o intervenție în garanție"
+      ],
+      "cta": "Solicită asistență în garanție",
+      "leadForm": [
+        "nume",
+        "telefon",
+        "email",
+        "marcă",
+        "model",
+        "seria echipamentului",
+        "data PIF",
+        "data intervenției",
+        "număr factură/contract opțional",
+        "descriere defecțiune",
+        "documente opționale",
+        "consimțământ"
+      ]
+    },
+    "evaQuestions": [
+      "Care este diferența dintre garanția legală și cea comercială?",
+      "Pot prelungi garanția centralei prin contract de mentenanță?",
+      "Ce acoperă piesele și manopera?",
+      "De când începe garanția extinsă?",
+      "Ce documente trebuie pentru o solicitare în garanție?",
+      "VTP la 2 ani este același lucru cu mentenanța anuală?"
+    ],
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "revizieCentralaAbonamenteFLI": {
+    "source": "Textul paginii FLI «Revizie centrală termică | Preț & Abonament», furnizat de utilizator",
+    "capturedAt": "2026-11-11",
+    "independentlyVerified": false,
+    "classification": "COMPETITOR_OFFER_PRICING_CONTRACT_FUNNEL",
+    "canonicalServices": [
+      {
+        "code": "S-I-06",
+        "name": "Revizie și întreținere centrală",
+        "relation": "core"
+      },
+      {
+        "code": "S-I-05",
+        "name": "Verificare tehnică periodică centrală",
+        "relation": "distinct inclusion if duly authorized"
+      },
+      {
+        "code": "S-I-07",
+        "name": "Diagnostic și reparații centrale",
+        "relation": "intervention"
+      },
+      {
+        "code": "S-I-03",
+        "name": "Înlocuire centrală termică",
+        "relation": "contractual benefit"
+      },
+      {
+        "code": "S-I-04",
+        "name": "Punere în funcțiune centrală",
+        "relation": "related, not equivalent"
+      }
+    ],
+    "competitorPlans": [
+      {
+        "name": "ECONOMIC",
+        "advertisedFromRONPerYear": 300,
+        "responseSLA": "maximum 3 zile lucrătoare",
+        "includedIncidentInterventionsPerYear": 1,
+        "emergencyLabor": true,
+        "travelIncluded": null,
+        "annualMaintenance": true,
+        "gasCheckEveryTwoYears": true,
+        "iscirCheckEveryTwoYears": true,
+        "replacementLaborOnFLIPurchase": true
+      },
+      {
+        "name": "EFICIENT",
+        "advertisedFromRONPerYear": 400,
+        "responseSLA": "maximum 1 zi lucrătoare",
+        "includedIncidentInterventionsPerYear": 1,
+        "emergencyLabor": true,
+        "travelIncluded": null,
+        "annualMaintenance": true,
+        "gasCheckEveryTwoYears": true,
+        "iscirCheckEveryTwoYears": true,
+        "replacementLaborOnFLIPurchase": true
+      },
+      {
+        "name": "FĂRĂ GRIJI",
+        "advertisedFromRONPerYear": 500,
+        "responseSLA": "maximum 1 zi lucrătoare",
+        "includedIncidentInterventionsPerYear": "nelimitate",
+        "emergencyLabor": true,
+        "travelIncluded": true,
+        "annualMaintenance": true,
+        "gasCheckEveryTwoYears": true,
+        "iscirCheckEveryTwoYears": true,
+        "replacementLaborOnFLIPurchase": true
+      }
+    ],
+    "planCaveats": [
+      "Sunt tarife «de la» concurentului, nu tarife ale firmelor SCARA; configurația, puterea, localitatea și condițiile contractuale pot schimba prețul.",
+      "Termenii «gratuit» din FLI înseamnă inclus în abonamentul plătit, nu servicii fără cost pentru oricine.",
+      "Intervenții nelimitate / în 24 ore și manoperă de înlocuire sunt obligații contractuale ce trebuie documentate; nu sunt promisiuni implicite în ETALON.",
+      "Afișarea tuturor verificărilor în abonament presupune verificarea separat a autorizărilor ISCIR și ANRE și a domeniului exact."
+    ],
+    "technicalOperations": [
+      "curățarea schimbătorului de căldură pe circuitul de evacuare, cu demontarea arzătorului când este cazul",
+      "verificare și corectare presiune circuit",
+      "verificare etanșeitate hidraulică și, prin personal autorizat, etanșeitate gaz",
+      "analiza calității apei: pH, duritate, conductivitate când este aplicabil",
+      "verificare și curățare ventilator",
+      "verificarea dispozitivelor de control și siguranță: vană gaz, debitmetru/fluxostat, termostate, supapă siguranță, aerisitor automat",
+      "verificarea vanei deviatoare și pompei de circulație",
+      "verificarea și curățarea sifonului de condens",
+      "verificarea automatizării",
+      "analiza gazelor arse, emisii și randament în condițiile procedurii aplicabile"
+    ],
+    "contract": {
+      "competitorInitialTermMonths": 24,
+      "competitorRenewal": "prelungire automată pe perioade de 24 luni dacă nu este denunțat",
+      "scaraRule": "Nu reutiliza automat clauza de reînnoire; cere termeni proprii, transparență precontractuală și controlul reînnoirii/rezilierii."
+    },
+    "configurator": {
+      "sourceExample": {
+        "powerLabel": "până la 30 kW",
+        "plan": "EFICIENT",
+        "outputAnnualRON": 400
+      },
+      "fields": [
+        "putere_kW",
+        "marcă",
+        "model",
+        "combustibil",
+        "localitate",
+        "plan",
+        "condiții eligibilitate",
+        "echipament inclus",
+        "număr intervenții",
+        "SLA de la sesizare, unitate zile lucrătoare/ore",
+        "deplasare inclusă",
+        "manoperă inclusă",
+        "piese incluse/excluse",
+        "verificare ISCIR incluse",
+        "verificare instalație gaze ANRE inclusă",
+        "durată contract luni",
+        "reînnoire",
+        "preț anual RON cu TVA",
+        "CTA callback",
+        "CTA comandă",
+        "consimțământ"
+      ],
+      "rules": [
+        "calculate only from firm-validated offer; no guessed prices",
+        "eligibility and authorizations before checkout",
+        "show full total and renewal terms before contract",
+        "write contract/lead to backend only after explicit consent"
+      ]
+    },
+    "conversionSignals": {
+      "socialProofClaim": "peste 1700 familii abonate",
+      "reviewsClaim": "4,9/5 din 343 recenzii",
+      "buttons": [
+        "Configurează abonament",
+        "Vreau să fiu sunat",
+        "Finalizare comandă"
+      ],
+      "testimonials": "multiple user reviews embedded in supplied competitor page; do not copy into SCARA",
+      "companyClaimsNotReusable": [
+        "30 ani experiență",
+        "37.000 centrale instalate",
+        "1700 familii abonate",
+        "rating 4,9/343 recenzii"
+      ]
+    },
+    "evidenceQuality": {
+      "competitorStudy": {
+        "claimedSample": 1000,
+        "claimedPeriodYears": 2,
+        "withoutMaintenanceFailureRatePct": 13,
+        "withMaintenanceFailureRatePct": 4,
+        "claimedReductionPct": 70,
+        "arithmeticRelativeReductionPct": 69.23,
+        "status": "COMPETITOR_UNVERIFIED_OBSERVATIONAL",
+        "interpretation": "Do not present as causal effect or guaranteed risk reduction; selection bias, cohort definitions, attrition, methods and external validation unknown."
+      },
+      "annualMaintenanceLegalStatus": "Textul FLI precizează că întreținerea anuală nu este obligatorie în sine prin lege, spre deosebire de verificările reglementate la termenele aplicabile; verifică întotdeauna manualul producătorului și echipamentul.",
+      "warrantyClaims": "Garanții 10 ani Ariston / 7 ani Vaillant sunt exemple afirmate de concurent, variabile după model, producător, înregistrare și condițiile contractuale; DO NOT REUSE AS DEFAULT."
+    },
+    "modelProposals": {
+      "entityType": "PlanMentenanta",
+      "relations": [
+        "FIRMA_OFERA_PLAN",
+        "PLAN_INCLUDE_SERVICIU",
+        "PLAN_APLICABIL_ECHIPAMENT",
+        "PLAN_ARE_NIVEL_SLA",
+        "CONTRACT_FOLOSESTE_PLAN"
+      ],
+      "fields": [
+        "firmCUI",
+        "planId",
+        "planName",
+        "eligiblePowerRangeKW",
+        "eligibleBrands",
+        "eligibleLocations",
+        "annualPriceRON",
+        "priceIncludesVAT",
+        "visitsPerYear",
+        "incidentsIncluded",
+        "isUnlimitedSubjectToFairUse",
+        "responseTimeValue",
+        "responseTimeUnit",
+        "workingDaysOnly",
+        "travelIncluded",
+        "laborIncluded",
+        "partsIncluded",
+        "iscirIncluded",
+        "anreIncluded",
+        "centralReplacementLaborIncluded",
+        "initialTermMonths",
+        "renewalPolicy",
+        "cancellationTerms",
+        "authorizationProofs",
+        "activeAfterValidation"
+      ]
+    },
+    "evaFAQ": [
+      "Revizia anuală este obligatorie prin lege?",
+      "Care este diferența dintre revizie, verificarea ISCIR și verificarea ANRE?",
+      "Ce operațiuni include întreținerea centralei mele?",
+      "Cât costă abonamentul la firma mea și ce influențează tariful?",
+      "Intervenția în 24h este garantată contractual?",
+      "Sunt incluse deplasarea și piesele?",
+      "Cum se calculează prețul pentru centrala de peste 30 kW?",
+      "Care este durata contractului, reînnoirea și rezilierea?",
+      "Cum programez verificările la doi ani?",
+      "Ce înseamnă o intervenție gratuită în cadrul abonamentului?"
+    ],
+    "suggestedPlacement": "Site Încălzire / Mentenanță: prezentare beneficii + tabel de planuri configurate de firmă + configurator + cerere de apel; linkuri către S-I-06, S-I-05 și reparații",
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "protectieInteligentaAriston": {
+    "capturedAt": "2026-11-11",
+    "source": "Textul paginii FLI «Protecția Inteligentă» furnizat de utilizator",
+    "independentlyVerified": false,
+    "classification": "BRAND_SPECIFIC_EXTENDED_COMMERCIAL_WARRANTY_BUNDLED_WITH_MAINTENANCE",
+    "crosswalk": {
+      "relatedExistingPage": "Garanții",
+      "relatedServices": [
+        "S-I-04 Punere în funcțiune centrală",
+        "S-I-05 Verificare tehnică periodică centrală",
+        "S-I-06 Revizie și întreținere centrală",
+        "S-I-07 Diagnostic și reparații centrale"
+      ],
+      "newGenericService": false
+    },
+    "competitorClaims": {
+      "programName": "Protecția Inteligentă",
+      "brand": "Ariston",
+      "eligibleFamilies": [
+        "ONE",
+        "ONE+"
+      ],
+      "explicitExcludedExamples": [
+        "HS",
+        "Cares",
+        "Matis",
+        "Genus Premium"
+      ],
+      "eligibility": {
+        "maximumTimeSincePIF": "2 ani și 8 luni",
+        "cannotBeEnrolledInAnotherCommercialWarranty": true,
+        "activationFromPIF": true,
+        "annualMaintenanceRequired": true
+      },
+      "promisedDurations": {
+        "headline": "până la 10 ani",
+        "specificClaim": [
+          "7 ani pentru Clas și Genus",
+          "5 ani pentru Alteas"
+        ],
+        "conflict": "Textul menționează Clas, Genus și Alteas, dar tabelul de eligibilitate restrânge programul la ONE/ONE+ și exclude Genus Premium. Eligibilitatea pe model/serie și durata sunt NECLARE până la termenii oficiali."
+      },
+      "prices": {
+        "addonFromRONPerYear": 200,
+        "exampleConfiguredTotalRON": 550,
+        "exampleTotalPeriod": "neprecizată explicit în totalul afișat",
+        "rule": "Nu deduce că totalul de 550 lei este universal sau că include toate taxele/serviciile."
+      },
+      "benefits": [
+        "decontare piese de schimb conform contractului",
+        "mentenanță anuală",
+        "verificări ISCIR/ANRE incluse conform eligibilității și autorizărilor",
+        "acces prioritar la intervenții",
+        "informare status contract",
+        "plată anuală și prelungire contractuală"
+      ],
+      "claimsNotToReuse": [
+        "economii garantate pe termen lung",
+        "creșterea valorii de revânzare a proprietății",
+        "protecție absolută contra tuturor reparațiilor",
+        "calitatea de service autorizat Ariston fără dovadă"
+      ]
+    },
+    "competitorConfigurator": {
+      "equipmentPowerExamplesKW": [
+        24,
+        30
+      ],
+      "planExample": "Eficient",
+      "responseTimeClaim": "maxim 24h",
+      "includedInterventionsPerYear": 1,
+      "pifDateRequired": true,
+      "modelRequired": true,
+      "checkoutCTA": "Finalizare Comandă"
+    },
+    "candidateDataModel": {
+      "entity": "ProgramGarantieComerciala",
+      "fields": [
+        "programId",
+        "firmCUI",
+        "brand",
+        "eligibleModels",
+        "excludedModels",
+        "eligibleSerialRanges",
+        "pifDate",
+        "activationDeadlineMonths",
+        "maxDurationMonthsByModel",
+        "baseWarrantyReference",
+        "contractRequired",
+        "maintenancePlanId",
+        "annualProgramFeeRON",
+        "maintenanceFeeRON",
+        "allInAnnualPriceRON",
+        "partsCovered",
+        "laborCovered",
+        "excludedEvents",
+        "responseSLAHours",
+        "verificationProvider",
+        "manufacturerAuthorizationProof",
+        "offerSourceUrl",
+        "termsDocument",
+        "validFrom",
+        "validUntil",
+        "verifiedAt",
+        "state"
+      ],
+      "relations": [
+        "FIRMA_OFERA_PROGRAM_GARANTIE",
+        "PROGRAM_ELIGIBIL_PRODUS",
+        "PROGRAM_CONDITIONAT_DE_MENTENANTA",
+        "PROGRAM_SE_BAZEAZA_PE_GARANTIA_COMERCIALA",
+        "CONTRACT_ACTIVEAZA_PROGRAM"
+      ],
+      "states": [
+        "unverified_competitor_example",
+        "pending_firm_confirmation",
+        "pending_manufacturer_terms",
+        "eligible",
+        "ineligible",
+        "active",
+        "expired"
+      ]
+    },
+    "validationGates": [
+      "Nu afirma că toate centralele Ariston sunt eligibile.",
+      "Nu prelua durata 10/7/5 ani ca garanție oferită de o firmă SCARA.",
+      "Confirmați în documentele oficiale fabricantului sau ale garantului identitatea modelelor eligibile, termenul maxim de activare și excluderile.",
+      "Verificați reprezentarea contractuală a costurilor: 200 lei/an supliment + mentenanță versus total 550 lei afișat în exemplu.",
+      "Drepturile legale ale cumpărătorului rămân independente de achiziția acestui program.",
+      "Garanția comercială este distinctă de asigurare și de contractul de service; menționați garantul și procedura de reclamații.",
+      "Verificările ISCIR/ANRE sunt operațiuni distincte, de prestatori cu drepturi corespunzătoare."
+    ],
+    "scaraPresentation": {
+      "page": "Garanții / Mentenanță",
+      "type": "optional brand-specific add-on",
+      "cta": "Verifică eligibilitatea pentru garanție extinsă",
+      "requiredUserInputs": [
+        "marcă",
+        "model exact",
+        "serie (opțional inițial)",
+        "data PIF",
+        "program existent",
+        "localitate",
+        "plan mentenanță",
+        "telefon/email",
+        "consimțământ"
+      ],
+      "displayCondition": "Numai pentru ofertă validată expres de firma generată, confirmată de garant/producător."
+    },
+    "evaQA": [
+      "Ce modele Ariston sunt eligibile pentru Protecția Inteligentă?",
+      "Cât timp după PIF poate fi activată garanția extinsă?",
+      "Cei 200 lei/an includ întreținerea anuală?",
+      "De ce totalul exemplului este 550 lei?",
+      "Care este diferența între garanția legală și extensia comercială?",
+      "Ce reparații și piese sunt efectiv acoperite?",
+      "Pot activa dacă am deja o altă garanție comercială?",
+      "Ce se întâmplă dacă renunț la întreținerea anuală?"
+    ],
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "ofertaLuniiFLI": {
+    "capturedAt": "2026-11-11",
+    "source": "Textul paginii «Alege oferta lunii» furnizat de utilizator",
+    "independentlyVerified": false,
+    "classification": "COMPETITOR_PRODUCT_BUNDLES_AND_ECOMMERCE",
+    "currency": "RON",
+    "pricesAreCompetitorSnapshot": true,
+    "offerItems": [
+      {
+        "id": "FLI-OFFER-01",
+        "type": "equipment_installation_bundle",
+        "brand": "Ariston",
+        "label": "Clas One Plus WiFi 24 kW + kit evacuare + montaj",
+        "listedPriceRON": 4580,
+        "productCode": "3302123 (apare în text, de verificat)",
+        "notes": "Denumirea de prezentare conține și «Clas One WiFi»; verificați identitatea exactă a modelului și prețul componentei centrală."
+      },
+      {
+        "id": "FLI-OFFER-02",
+        "type": "equipment_installation_bundle",
+        "brand": "Ariston",
+        "label": "Cares S 24 kW + kit evacuare + montaj",
+        "listedPriceRON": 3920
+      },
+      {
+        "id": "FLI-OFFER-03",
+        "type": "equipment_installation_bundle",
+        "brand": "Beretta",
+        "label": "CIAO X 30 C + kit evacuare + montaj",
+        "productCode": "20187765",
+        "listedPriceRON": 4880
+      },
+      {
+        "id": "FLI-OFFER-04",
+        "type": "equipment_installation_bundle",
+        "brand": "Beretta",
+        "label": "CIAO X 25 + kit evacuare + montaj",
+        "productCode": "20187761",
+        "listedPriceRON": 4020
+      },
+      {
+        "id": "FLI-OFFER-05",
+        "type": "equipment_only",
+        "brand": "Homplex",
+        "label": "Termostat inteligent NX1 Black Edition",
+        "listedPriceRON": 560
+      },
+      {
+        "id": "FLI-OFFER-06",
+        "type": "equipment_installation_bundle",
+        "brand": "Ariston",
+        "label": "PRIOS / KIOS 35, 12000 BTU, R32, + montaj + kit instalare",
+        "originalPriceRON": 2950,
+        "listedPriceRON": 2750,
+        "notes": "Denumirea PRIOS / KIOS este ambiguă; modelul exact trebuie verificat."
+      },
+      {
+        "id": "FLI-OFFER-07",
+        "type": "equipment_only",
+        "brand": "Homplex",
+        "label": "Termostat inteligent NX1 Cream White",
+        "listedPriceRON": 560
+      },
+      {
+        "id": "FLI-OFFER-08",
+        "type": "equipment_only",
+        "brand": "Homplex",
+        "label": "Termostat inteligent NX1 Graphite Gray",
+        "listedPriceRON": 560
+      },
+      {
+        "id": "FLI-OFFER-09",
+        "type": "equipment_only",
+        "brand": "Salus",
+        "label": "iT500 termostat cu control prin internet",
+        "originalPriceRON": 845,
+        "listedPriceRON": 710
+      }
+    ],
+    "existingCatalogRelation": {
+      "families": [
+        "C43221 Încălzire",
+        "C43222 Climatizare"
+      ],
+      "categories": [
+        "centrală în condensare",
+        "termostat inteligent",
+        "aparat aer condiționat"
+      ],
+      "policy": "Corespondența se stabilește întâi la nivelul familiei de produs și serviciu existent, apoi SKU individual distinct numai dacă există dovadă.",
+      "noDuplicateServices": true
+    },
+    "proposedModel": {
+      "entities": [
+        "OfertaComerciala",
+        "LinieOferta",
+        "SKUProdus",
+        "PachetProdusServiciu",
+        "Promotie"
+      ],
+      "fields": [
+        "offerId",
+        "firmCUI",
+        "sku",
+        "manufacturer",
+        "model",
+        "manufacturerCode",
+        "productId",
+        "serviceIds",
+        "bundleComponents",
+        "priceRON",
+        "currency",
+        "originalPriceRON",
+        "taxStatus",
+        "installationIncluded",
+        "installationScope",
+        "installationLocationEligibility",
+        "materialsIncluded",
+        "materialsExcluded",
+        "warrantyTerms",
+        "stockStatus",
+        "imageEvidence",
+        "sourceURL",
+        "validFrom",
+        "validUntil",
+        "lastChecked",
+        "provenance",
+        "verificationStatus"
+      ],
+      "relations": [
+        "FIRMA_PUBLICA_OFERTA",
+        "OFERTA_INCLUDE_PRODUS",
+        "OFERTA_INCLUDE_SERVICIU",
+        "OFERTA_VALABILA_IN_ZONA",
+        "OFERTA_ARE_PROMOTIE"
+      ]
+    },
+    "safetyAndQuality": [
+      "Montaj inclus numai în aria declarată și verificată a firmei; nu transfera zona FLI la firme SCARA.",
+      "Nu atribui disponibilitate în stoc ori preț final fără verificare actuală.",
+      "Nu deduce sau inventa prețul separat al echipamentului dacă sursa indică doar prețul pachetului.",
+      "Nu inventa TVA, valabilitate promoțională, durata garanției, consumabile incluse sau condiții de montaj.",
+      "Prețuri de referință FLI, nu prețuri standard sau recomandate pentru site-urile SCARA.",
+      "Comenzile și plata cu cardul necesită backend, termeni contractuali și prestator de plăți confirmat; «Adaugă în coș» nu înseamnă că SCARA are magazin funcțional."
+    ],
+    "proposedFrontend": {
+      "pages": [
+        "Oferte",
+        "Produse"
+      ],
+      "features": [
+        "card de produs cu imagine, marcă, model și cod",
+        "preț curent și vechi dacă promoția e verificată",
+        "etichete «montaj inclus» și condiții clare",
+        "localitate eligibilă pentru montaj",
+        "cerere de ofertă / intenție comandă",
+        "actualizare promoții din surse publice prin HOLMES, cu proveniență și dată verificare"
+      ],
+      "status": "PROPOSED_NOT_IMPLEMENTED"
+    },
+    "evaQuestions": [
+      "Montajul este inclus în prețul pachetului?",
+      "În ce localități este valabilă oferta cu montaj?",
+      "Ce include kitul de evacuare sau instalare?",
+      "Care este modelul și codul exact al centralei?",
+      "Care este prețul final cu TVA și materiale suplimentare?",
+      "Oferta mai este valabilă și produsul este în stoc?",
+      "Ce garanție se acordă produsului și montajului?"
+    ],
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "blogFLI": {
+    "capturedAt": "2026-11-11",
+    "source": "Text pagină «Blog» FLI furnizat de utilizator",
+    "independentlyVerified": false,
+    "classification": "EDITORIAL_CONTENT_STRATEGY_NOT_SERVICE",
+    "visibleArticles": [
+      {
+        "date": "2025-09-29",
+        "title": "Ghidul complet al performanței și siguranței centralei termice în București",
+        "topic": "siguranță/performanță",
+        "geo": "București"
+      },
+      {
+        "date": "2025-01-02",
+        "title": "Servicii de garanție și post-garanție pentru centrale termice în județul Prahova",
+        "topic": "garanții",
+        "geo": "Prahova"
+      },
+      {
+        "date": "2024-10-09",
+        "title": "Servicii de întreținere HVAC în Teleorman",
+        "topic": "mentenanță HVAC",
+        "geo": "Teleorman"
+      },
+      {
+        "date": "2024-10-01",
+        "title": "Servicii de garanție și post-garanție pentru centrale termice în județul Călărași",
+        "topic": "garanții",
+        "geo": "Călărași"
+      },
+      {
+        "date": "2024-09-25",
+        "title": "Întreținere centrale Dâmbovița: servicii profesionale și dedicate",
+        "topic": "mentenanță",
+        "geo": "Dâmbovița"
+      },
+      {
+        "date": "2024-09-23",
+        "title": "Service centrale termice Ilfov",
+        "topic": "service",
+        "geo": "Ilfov"
+      },
+      {
+        "date": "2024-08-26",
+        "title": "Instalare și montaj centrale termice: ghid complet pentru eficiență și siguranță",
+        "topic": "montaj",
+        "geo": null
+      },
+      {
+        "date": "2024-08-21",
+        "title": "Întreținerea anuală a centralei termice: de ce este crucială și cum să o abordezi",
+        "topic": "mentenanță",
+        "geo": null
+      },
+      {
+        "date": "2024-08-17",
+        "title": "Ventilatoarele cu recuperare de căldură: beneficii și dezavantaje",
+        "topic": "ventilație",
+        "geo": null
+      }
+    ],
+    "paginationObserved": "1 2 Next",
+    "totalArticlesUnknown": true,
+    "observations": [
+      "9 titluri vizibile în text, cel puțin o pagină următoare menționată",
+      "strategie editorială combină ghiduri practice cu pagini orientate către județe",
+      "conținutul se leagă de serviciile existente și de nevoile clienților B2C",
+      "data de publicare nu reprezintă automat data ultimei actualizări"
+    ],
+    "mapping": [
+      {
+        "group": "încălzire",
+        "serviceCodes": [
+          "S-I-02",
+          "S-I-05",
+          "S-I-06",
+          "S-I-07"
+        ]
+      },
+      {
+        "group": "climatizare",
+        "topic": "ventilație cu recuperare de căldură",
+        "family": "C43222"
+      },
+      {
+        "group": "garanție",
+        "type": "contractual/explanatory"
+      }
+    ],
+    "proposedSSOT": {
+      "entityTypes": [
+        "ArticolEditorial",
+        "TemaEditoriala",
+        "SursaEditoriala"
+      ],
+      "fields": [
+        "articleId",
+        "canonicalSlug",
+        "title",
+        "summary",
+        "body",
+        "topic",
+        "familyCode",
+        "relatedServiceIds",
+        "relatedProductIds",
+        "targetGeography",
+        "evidenceSources",
+        "author",
+        "reviewer",
+        "publishedAt",
+        "updatedAt",
+        "lastReviewedAt",
+        "editorialStatus",
+        "legalTechnicalReview",
+        "imageAsset",
+        "faqIds",
+        "canonicalUrl",
+        "language"
+      ],
+      "relations": [
+        "ARTICOL_EXPLICA_SERVICIU",
+        "ARTICOL_RECOMANDA_PRODUS",
+        "ARTICOL_VIZEAZA_ZONA",
+        "ARTICOL_FOLOSESTE_SURSA",
+        "ARTICOL_RASPUNDE_INTENTIE"
+      ],
+      "statuses": [
+        "draft",
+        "technical_review",
+        "approved",
+        "published",
+        "archived"
+      ]
+    },
+    "recommendations": [
+      "Generați articole originale pornind din operațiuni și FAQ proprii; nu reproduceți conținutul concurentului.",
+      "Afișați localități numai dacă firma prestează acolo, nu generați pagini geografice de tip doorway.",
+      "Titlu clar, autor/revizor, date, surse primare pentru afirmații ISCIR/ANRE și actualizare periodică.",
+      "Legături bidirecționale între Blog, Servicii, Produse, EVA FAQ și Oferte.",
+      "SEO: canonical, sitemap, breadcrumbs, Article/BlogPosting JSON-LD doar pentru conținut vizibil și real.",
+      "Nu creați automat articole generice repetitive pentru fiecare oraș sau CUI; folosiți diferențiere editorială verificabilă.",
+      "Publicați doar după verificare editorială și tehnică; noindex pentru drafturi."
+    ],
+    "websiteProposal": {
+      "section": "Blog / Ghiduri și sfaturi",
+      "families": [
+        "Încălzire",
+        "Climatizare",
+        "Sanitare"
+      ],
+      "filters": [
+        "subiect",
+        "tip echipament",
+        "zonă deservită dacă e relevantă",
+        "întrebare/intenție"
+      ],
+      "cta": "Solicită o evaluare sau intervenție",
+      "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+    },
+    "evaIntegration": {
+      "intentRouting": "Din răspunsurile EVA către ghiduri originale, apoi către fișa serviciului și formular",
+      "faqSeeds": [
+        "Când trebuie făcută întreținerea centralei?",
+        "Ce diferență este între verificare ISCIR, ANRE și revizie?",
+        "Cum aleg un ventilator cu recuperare de căldură?",
+        "Când este mai rentabilă înlocuirea centralei?",
+        "Cum verific dacă o firmă deservește localitatea mea?"
+      ]
+    }
+  }
+}
