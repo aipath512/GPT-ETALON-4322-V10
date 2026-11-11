@@ -93,6 +93,20 @@ footer{background:#041214;color:#d1e9df;padding:38px 0;font-size:13px;line-heigh
 def esc(s):
     return html.escape(str(s), quote=True)
 
+FAQ_DATA = json.loads((ROOT / 'etalons/C4322/faq.json').read_text(encoding='utf-8'))
+assert set(FAQ_DATA['families']) == set(FAMILIES), 'FAQ family mismatch'
+for _fid, _faq in FAQ_DATA['families'].items():
+    assert len(_faq) == 10, f'{_fid}: expected exactly 10 FAQ'
+    assert len({q['id'] for q in _faq}) == 10, 'FAQ IDs duplicated'
+    assert all(q['question'].strip() and q['answer'].strip() for q in _faq), 'Empty FAQ'
+
+def faq_section(fid):
+    entries = FAQ_DATA['families'][fid]
+    return '<section class="section" id="faq"><div class="container"><div class="eyebrow">ÎNTREBĂRI FRECVENTE · ' + esc(fid) + '</div><h2>10 întrebări și răspunsuri</h2><div class="faq-list">' + ''.join('<details class="dblock" id="' + esc(q['id']) + '"><summary>' + esc(q['question']) + '</summary><p>' + esc(q['answer']) + '</p></details>' for q in entries) + '</div></div></section>'
+
+def faq_schema(fid):
+    return {'@type': 'FAQPage', 'inLanguage': 'ro', 'mainEntity': [{'@type': 'Question', 'name': q['question'], 'acceptedAnswer': {'@type': 'Answer', 'text': q['answer']}} for q in FAQ_DATA['families'][fid]]}
+
 DIC_DIR = ROOT / 'etalons/C4322/dictionar'
 ENT = json.loads((DIC_DIR / 'entitati.json').read_text(encoding='utf-8'))
 REL = json.loads((DIC_DIR / 'relatii.json').read_text(encoding='utf-8'))
@@ -244,6 +258,10 @@ def group_svg(g, fid):
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d5a55"/><stop offset="1" stop-color="#0b2528"/></linearGradient></defs><rect width="400" height="400" fill="url(#g)"/><circle cx="320" cy="80" r="90" fill="#91ddd0" opacity=".12"/><circle cx="80" cy="330" r="120" fill="#bdf2dc" opacity=".08"/><text x="200" y="215" font-family="Arial,sans-serif" font-size="120" fill="#bdf2dc" text-anchor="middle">{FAMILIES[fid]["icon"]}</text><text x="200" y="330" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">{esc(g)[:30]}</text></svg>\n'
 
 def shell(fid, d, page_id, title_txt, desc, body, depth, path='/', ld=None):
+    if page_id in ('home', 'servicii', 'produse'):
+        body = body + faq_section(fid)
+        if ld and '@graph' in ld:
+            ld = {**ld, '@graph': [*ld['@graph'], faq_schema(fid)]}
     ld_html = ('<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace('<', '\\u003c') + '</script>') if ld else ''
     """Pagină completă: antet standard, căutare comună, conținut, subsol, scripturi."""
     f = FAMILIES[fid]; title = d['title']; sub = CFG['SubtitluFamilie'][fid]
