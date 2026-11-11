@@ -851,5 +851,134 @@
       "Nu copia descrieri ale concurentului; folosește datele ca semnal de acoperire și diferențiere."
     ],
     "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "certificariISO": {
+    "source": "Text «Certificări ISO» Future Line Instal furnizat de utilizator",
+    "capturedAt": "2026-11-11",
+    "verification": "Declarațiile FLI nu constituie verificarea certificatelor propriu-zise",
+    "classification": "FIRMA_CREDENTIALS_NOT_TECHNICAL_SERVICE",
+    "competitorClaims": [
+      {
+        "standard": "ISO 9001:2015",
+        "subject": "managementul calității",
+        "currentEdition": "ISO 9001:2026",
+        "validation": "verificare certificat, tranziție și domeniu"
+      },
+      {
+        "standard": "ISO 14001:2015",
+        "subject": "management de mediu",
+        "currentEdition": "ISO 14001:2026",
+        "validation": "verificare certificat, tranziție și domeniu"
+      },
+      {
+        "standard": "ISO 27001:2018",
+        "subject": "securitatea informației",
+        "currentEdition": "ISO/IEC 27001:2022",
+        "validation": "ediția 2018 din text nu corespunde ediției ISO/IEC 27001 utilizate; cere certificatul original"
+      },
+      {
+        "standard": "ISO 45001:2018",
+        "subject": "securitate și sănătate în muncă",
+        "currentEdition": "ISO 45001:2018",
+        "validation": "verificare certificat, emitent și valabilitate"
+      }
+    ],
+    "insuranceClaim": {
+      "name": "Poliță răspundere civilă",
+      "status": "COMPETITOR_CLAIM_NOT_VERIFIED",
+      "requiredMetadata": [
+        "asigurător",
+        "număr poliță",
+        "perioadă valabilitate",
+        "riscuri acoperite",
+        "limită de despăgubire",
+        "arie teritorială"
+      ],
+      "disclosure": "Nu publica automat existența poliței pentru firmele generate."
+    },
+    "certificationEntityModel": {
+      "entityType": "CertificareFirma",
+      "fields": [
+        "firmCUI",
+        "standardCode",
+        "edition",
+        "certificateNumber",
+        "issuer",
+        "accreditationBody",
+        "scope",
+        "issueDate",
+        "expiryDate",
+        "verificationUrl",
+        "documentLocation",
+        "verifiedAt",
+        "status"
+      ],
+      "states": [
+        "claimed",
+        "pending_document",
+        "verified",
+        "expired",
+        "suspended",
+        "rejected"
+      ],
+      "relations": [
+        "FIRMA_DETINE_CERTIFICARE",
+        "CERTIFICARE_ARE_DOMENIU",
+        "CERTIFICARE_EMISA_DE"
+      ],
+      "publishingCondition": "Only verified, in-scope and currently valid certifications appear as achievements of the generated firm."
+    },
+    "insuranceEntityModel": {
+      "entityType": "PolitaRaspundereCivila",
+      "fields": [
+        "firmCUI",
+        "insurer",
+        "policyNumber",
+        "coverageDescription",
+        "coverageLimit",
+        "startDate",
+        "endDate",
+        "verifiedAt",
+        "status"
+      ],
+      "publishingCondition": "verified active policy only"
+    },
+    "scopeClaimedByCompetitor": [
+      "instalații sanitare, încălzire și climatizare",
+      "montaj, PIF, service, reparații și verificări tehnice",
+      "proiectare și execuție instalații gaze, verificări și revizii"
+    ],
+    "importantDistinctions": [
+      "Certificarea ISO a sistemului de management nu înlocuiește autorizarea ISCIR sau ANRE.",
+      "Certificările ISO nu demonstrează automat competența individuală a tehnicienilor ori acoperirea tuturor lucrărilor.",
+      "ISO nu este în mod normal emitentul certificatelor firmei; verifică organismul emitent și acreditarea.",
+      "Standardele ediția 2026 pot coexista temporar cu certificate pentru 2015 în perioade de tranziție, dacă certificatele sunt valabile."
+    ],
+    "sourceReferences": [
+      {
+        "url": "https://www.iso.org/management-system-standards-list.html",
+        "description": "ISO management standards, editions 2026 for 9001/14001"
+      },
+      {
+        "url": "https://committee.iso.org/standard/27001",
+        "description": "ISO/IEC 27001:2022"
+      },
+      {
+        "url": "https://www.asro.ro/iso-14001/",
+        "description": "ASRO ISO 14001:2026"
+      }
+    ],
+    "pageDesign": {
+      "page": "Certificări",
+      "sections": [
+        "Certificări de management verificate",
+        "Autorizații profesionale ISCIR/ANRE",
+        "Polițe de asigurare verificate",
+        "Domeniu și valabilitate",
+        "Documente de verificare"
+      ],
+      "fallback": "Nu sunt încă disponibile certificate verificate public pentru această firmă."
+    },
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
   }
 }
