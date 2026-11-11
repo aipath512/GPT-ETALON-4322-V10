@@ -298,7 +298,7 @@
       ]
     }
   ],
-  "revisedInterpretation": "Pagina de mentenanță consolidează serviciul existent S-I-06 și introduce operațiuni/checklist, plan contractual și SLA ca proprietăți configurabile; nu necesită o nouă fișă tehnică duplicată. Menține verificările de gaz separate de VTP centrală și nu transformă prețurile/obligațiile/SLA FLI în afirmații SCARA.",
+  "revisedInterpretation": "S-I-05 acoperă VTP; AF inițial trebuie modelată ca proces/document/serviciu distinct după verificare juridică. Nu duplica VTP, nu confunda cu ANRE gaz sau mentenanța anuală, nu reutiliza amenda ori anularea garanției ca fapt verificat.",
   "consultantaTehnicaCentrale": {
     "source": "Text pagina FLI «Consultanță Tehnică Centrale» furnizat de utilizator",
     "capturedAt": "2026-11-11",
@@ -543,5 +543,110 @@
       "Când este mai economică înlocuirea decât reparația?"
     ],
     "status": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "autorizatieFunctionareVTU": {
+    "source": "Text «Autorizație de Funcționare Centrală Termică (AF / VTU)» furnizat de utilizator",
+    "capturedAt": "2026-11-11",
+    "canonicalMatch": {
+      "code": "S-I-05",
+      "name": "Verificare tehnică periodică centrală",
+      "status": "EXISTS_EXTEND_NO_DUPLICATE"
+    },
+    "relatedCodes": [
+      "S-I-04 Punere în funcțiune centrală",
+      "S-I-06 Revizie și întreținere centrală"
+    ],
+    "classification": [
+      {
+        "concept": "Admiterea/autorizarea inițială de funcționare",
+        "purpose": "punerea în exploatare conform regimului aplicabil",
+        "separateFrom": "PIF și verificare periodică; fluxurile pot fi legate, nu echivalente"
+      },
+      {
+        "concept": "Verificare tehnică periodică (VTP)/VTU",
+        "purpose": "verificare siguranță centrală la 2 ani în domeniul PT A1-2010",
+        "separateFrom": "verificarea instalației de utilizare a gazelor ANRE"
+      },
+      {
+        "concept": "Verificare/revizie instalație de gaze",
+        "purpose": "operațiuni asupra instalației de gaze",
+        "separateFrom": "ISCIR VTP centrală; regim ANRE distinct"
+      }
+    ],
+    "verifiedReferences": [
+      {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/121883",
+        "citation": "PT A1-2010, art. 21: VTP la 2 ani de persoane juridice autorizate; art. 39 obligații utilizator",
+        "verified": "2026-11-11"
+      },
+      {
+        "url": "https://anpc.ro/download/373/centrale-termice-boilere/60572/ordinu1-5.pdf",
+        "citation": "PT A1-2010 aplicabilitate și limite: centrale/aparate în domeniul indicat, în general <=400 kW",
+        "verified": "2026-11-11"
+      },
+      {
+        "url": "https://serviciipublice.gov.ro/serviciu/autorizarea-functionarii-si-verificarea-tehnica-in-utilizare-a-instalatiilor-echipamentelor",
+        "citation": "Fișă instituțională ISCIR actualizată iulie 2026, autorizarea funcționării",
+        "verified": "2026-11-11"
+      }
+    ],
+    "claimsRequiringFurtherLegalVerification": [
+      {
+        "claim": "Amendă între 2.000 și 25.000 lei",
+        "status": "DO_NOT_PUBLISH",
+        "reason": "Intervalul nu a fost confirmat din articolul/sancțiunea specifică a Legii 64/2008, inclusiv modificările actuale."
+      },
+      {
+        "claim": "Lipsa VTP conduce automat la deconectare",
+        "status": "DO_NOT_PUBLISH_AS_AUTOMATIC",
+        "reason": "Consecințele depind de temei, actori și procedură; nu promite automatism."
+      },
+      {
+        "claim": "Instalarea neautorizată conduce automat la pierderea garanției",
+        "status": "DO_NOT_PUBLISH_AS_AUTOMATIC",
+        "reason": "Depinde de legislație, producător și garanții legale; nu generaliza."
+      },
+      {
+        "claim": "ANRE sau ISCIR după caz",
+        "status": "REQUIRES_OPERATION_MAPPING",
+        "reason": "Autorizările nu sunt interschimbabile; diferențiază aparatul de instalația de gaze."
+      }
+    ],
+    "recommendedPublicPage": {
+      "title": "Verificare tehnică periodică (VTP/VTU) centrală termică",
+      "serviceCode": "S-I-05",
+      "sections": [
+        "Ce înseamnă VTP/VTU",
+        "Când se efectuează",
+        "Ce verifică tehnicianul",
+        "Documente și rezultatul verificării",
+        "Diferența dintre VTP centrală, verificarea instalației de gaze și revizia de întreținere",
+        "Cine poate presta serviciul",
+        "Solicită verificare"
+      ],
+      "leadForm": [
+        "nume",
+        "telefon",
+        "email",
+        "localitate",
+        "marca",
+        "model",
+        "putere_kW opțional",
+        "combustibil",
+        "data_ultimei_verificari",
+        "documente_existente opțional",
+        "mesaj",
+        "consimțământ"
+      ],
+      "seoSynonyms": [
+        "autorizație funcționare centrală termică",
+        "AF centrală termică",
+        "VTU centrală",
+        "VTP centrală",
+        "verificare ISCIR centrală"
+      ]
+    },
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED",
+    "disclaimer": "Nu acorda certificat ISCIR și nu atribui autorizări firmelor generate fără documente verificabile."
   }
 }
