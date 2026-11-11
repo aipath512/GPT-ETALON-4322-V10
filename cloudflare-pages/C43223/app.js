@@ -1,4 +1,4 @@
-// SCARA C4322 — v2.2 2026-11-11
+// SCARA C4322 — v2.3 2026-11-11
 (function(){
 'use strict';
 const page=document.body.dataset.page;let lang='ro';

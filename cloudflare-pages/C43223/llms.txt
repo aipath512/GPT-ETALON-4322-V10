@@ -6,6 +6,7 @@
 - [Acasă](https://c43223.scara.dev/): grupele familiei
 - [Servicii](https://c43223.scara.dev/servicii/): toate serviciile cu prețuri
 - [Produse](https://c43223.scara.dev/produse/): toate produsele cu mărci și prețuri
+- [Despre](https://c43223.scara.dev/despre/): cum lucrăm, program, autorizații, zonă, contract de mentenanță, contact
 - [Dicționar de date](https://c43223.scara.dev/dictionar/): entități, relații, cardinalități
 
 ## Date pentru mașini

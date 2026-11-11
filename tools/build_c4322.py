@@ -8,7 +8,7 @@ C43221/C43222/C43223 sunt coduri interne SCARA; codul CAEN oficial (Rev.3) este 
 import json, html, pathlib, re, shutil
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-VERSION = 'v2.2'
+VERSION = 'v2.3'
 DATE = '2026-11-11'
 SESSION = '0006H'
 CFG = json.loads((ROOT / 'etalons/C4322/firma.json').read_text(encoding='utf-8'))
@@ -266,7 +266,7 @@ def shell(fid, d, page_id, title_txt, desc, body, depth, path='/', ld=None):
 <body data-page="{page_id}">
 <button id="themeToggle" type="button" aria-label="Schimbă tema"><b id="themeIcon">☀</b><span id="themeLabel">Light</span></button>
 <header><div class="container bar"><a class="logo" id="logoFirm" href="/" style="text-decoration:none">{FIRM}<small>{esc(sub).upper()} · FIRMĂ FICTIVĂ · CAEN 4322</small></a>
-<nav>{nav('/', 'home', 'Acasă', 'home')}{nav('/servicii/', 'services', 'Servicii', 'servicii')}{nav('/produse/', 'products', 'Produse', 'produse')}<a href="/dictionar/"{AC if page_id == 'dictionar' else ''}>Dicționar</a></nav>
+<nav>{nav('/', 'home', 'Acasă', 'home')}{nav('/servicii/', 'services', 'Servicii', 'servicii')}{nav('/produse/', 'products', 'Produse', 'produse')}{nav('/despre/', 'about', 'Despre', 'despre')}<a href="/dictionar/"{AC if page_id == 'dictionar' else ''}>Dicționar</a></nav>
 <div class="tools"><select id="langSel" aria-label="Limba">{opts}</select><span id="clock"></span><span>{VERSION} · {DATE} · sesiune {SESSION}</span></div></div></header>
 <main>{body}
 <section class="section" id="cauta"><div class="container">
@@ -419,6 +419,49 @@ def ld_item(fid, x, kind, base):
                                   (('preț minim orientativ', x['priceMinRON']), ('preț recomandat (medie)', x['priceAvgRON']), ('preț maxim orientativ', x['priceMaxRON']))]
     return {'@context': 'https://schema.org', '@graph': [main, crumbs_ld(base, [('Acasă', '/'), (kind.capitalize(), f'/{kind}/'), (x['name'], x['url'])])]}
 
+def despre(fid, d, S, P):
+    """Pagina Despre: blocul de încredere (model fli.ro) din firma.json → Incredere. Fără schema Review: recenziile sunt exemple."""
+    T = CFG.get('Incredere', {}); title = d['title']; sub = CFG['SubtitluFamilie'][fid]
+    demo = '<span class="tip">DEMONSTRATIV</span>' if T.get('Demonstrativ', True) else ''
+    val = lambda v: esc(v) if v else '<em class="muted">de completat</em>'
+    li = lambda xs: '<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in xs) + '</ul>'
+    cifre = ''.join(f'<span><strong>{esc(n)}</strong> {esc(t)}</span>' for n, t in T.get('Cifre', []))
+    tel = T.get('Telefon', ''); tel_href = re.sub(r'[^0-9+]', '', tel)
+    contract = next((x for x in S if not x.get('external') and re.search(r'revizi|întreținere|mentenan', x['name'], re.I)), None)
+    contract_html = (f'<p>Revizia anuală intră în contractul de mentenanță: <a href="{contract["url"]}">{esc(contract["name"])}</a> — '
+                     f'{contract["priceMinRON"]}–{contract["priceMaxRON"]} lei / {esc(contract["priceUnit"])}, recomandat <strong>{contract["priceAvgRON"]} lei</strong>.</p>') if contract else ''
+    autz = ''.join(f'<li><strong>{esc(a)}</strong> — {esc(b)}. Nr. autorizație: <em class="muted">de completat</em></li>' for a, b in T.get('Autorizatii', {}).get(fid, []))
+    iso = ''.join(f'<li>{esc(x)} — nr. certificat: <em class="muted">de completat</em></li>' for x in T.get('ISO', []))
+    prog = ''.join(f'<li><strong>{esc(a)}</strong>: {esc(b)}</li>' for a, b in T.get('Program', []))
+    zona = ''.join(f'<li><strong>{esc(a)}</strong>: {esc(b)}</li>' for a, b in T.get('Zona', []))
+    rec = ''.join(f'<div class="dblock"><p>„{esc(t)}”</p><p class="muted">— {esc(n)}, {esc(dt)} · exemplu fictiv</p></div>' for n, dt, t in T.get('Recenzii', []))
+    mail = T.get('Email', '')
+    subj = f'Vreau contract de mentenanță — {sub}'
+    return f"""<section class="hero" id="despre"><div class="container"><div class="eyebrow">{fid} · {esc(title)} · Despre firmă {demo}</div>
+<div class="firm"><span>{FIRM}</span><small>FICTIV</small></div><div class="subfam">{esc(sub)}</div>
+<h1>{esc(T.get('Hook', 'Despre noi'))}</h1>
+<div class="meta">{cifre}</div>
+<p><a class="btn" href="tel:{tel_href}">Dispecerat {esc(tel)}</a> <a class="btn" href="mailto:{esc(mail)}?subject={esc(subj)}">Vreau contract</a></p></div></section>
+<section class="section"><div class="container">
+<div class="dblock"><h2>Misiunea noastră</h2><p class="lead">{esc(T.get('Misiune', ''))}</p></div>
+<div class="dblock"><h2>Cum lucrăm</h2><ol>{''.join(f'<li>{esc(x)}</li>' for x in T.get('CumLucram', []))}</ol></div>
+<div class="dblock"><h2>De ce să ne alegeți</h2>{li(T.get('Avantaje', []))}</div>
+<div class="dblock"><h2>Program și urgențe</h2><ul>{prog}</ul><p>{esc(T.get('Urgente', ''))}</p></div>
+<div class="dblock"><h2>Contract de mentenanță</h2>{contract_html}<p><a class="btn" href="mailto:{esc(mail)}?subject={esc(subj)}">Vreau contract</a></p></div>
+<div class="dblock"><h2>Autorizații</h2><ul>{autz}</ul></div>
+<div class="dblock"><h2>Certificări ISO</h2><ul>{iso}</ul></div>
+<div class="dblock"><h2>Zona de acoperire</h2><ul>{zona}</ul></div>
+<div class="dblock"><h2>Mărci</h2><p>Lucrăm cu mărcile din catalog; lista completă pe fiecare fișă de <a href="/produse/">produs</a>.</p></div>
+<h2>Ce spun clienții</h2><p class="muted">Model de afișare cu exemple fictive; la o firmă reală se preiau recenziile verificabile (ex. Google), cu dată.</p>{rec}
+<div class="dblock"><h2>Date de contact și juridice</h2><ul>
+<li><strong>Firmă:</strong> {FIRM} (fictivă)</li><li><strong>CUI:</strong> {esc(CFG.get('CUI'))}{' (exemplu)' if CFG.get('CUIExemplu') else ''}</li>
+<li><strong>Nr. Reg. Com.:</strong> {val(T.get('NrRegCom'))}</li><li><strong>Adresă:</strong> {esc(T.get('Adresa', ''))}</li>
+<li><strong>Telefon dispecerat:</strong> <a href="tel:{tel_href}">{esc(tel)}</a></li><li><strong>Email:</strong> <a href="mailto:{esc(mail)}">{esc(mail)}</a></li></ul></div>
+</div></section>"""
+
+def ld_despre(fid, base):
+    return {'@context': 'https://schema.org', '@type': 'AboutPage', 'name': f'Despre {FIRM} (firmă fictivă, site demonstrativ SCARA {fid})', 'url': base + '/despre/', 'inLanguage': 'ro', 'publisher': AIVENTURE}
+
 def ld_dict(fid, base):
     return {'@context': 'https://schema.org', '@type': 'Dataset', 'name': f'Dicționar entitate–relație C4322 ({fid})', 'url': base + '/dictionar/', 'inLanguage': 'ro',
             'description': 'Entități (familii, grupe, servicii, produse, mărci) și relații cu cardinalități pentru instalații CAEN 4322, sesiune ' + ENT['sesiune'] + '.',
@@ -436,7 +479,7 @@ def llms(fid, d, S, P, base):
     sub = CFG['SubtitluFamilie'][fid]
     lines = [f'# {FIRM} — {sub} (site demonstrativ SCARA {fid})', '',
              f'> Catalog de referință pentru {sub.lower()} în București: {len(S)} servicii și {len(P)} produse, fiecare cu cod, grupă, mărci și preț orientativ min / mediu (recomandat) / max în lei cu TVA (estimări nov. 2026). Firma afișată este fictivă; site realizat de AiVenture S.R.L. (CUI RO51415878). Clasa CAEN 4322 (Rev.3); C43221–C43223 sunt coduri interne SCARA.', '',
-             '## Pagini principale', f'- [Acasă]({base}/): grupele familiei', f'- [Servicii]({base}/servicii/): toate serviciile cu prețuri', f'- [Produse]({base}/produse/): toate produsele cu mărci și prețuri', f'- [Dicționar de date]({base}/dictionar/): entități, relații, cardinalități', '',
+             '## Pagini principale', f'- [Acasă]({base}/): grupele familiei', f'- [Servicii]({base}/servicii/): toate serviciile cu prețuri', f'- [Produse]({base}/produse/): toate produsele cu mărci și prețuri', f'- [Despre]({base}/despre/): cum lucrăm, program, autorizații, zonă, contract de mentenanță, contact', f'- [Dicționar de date]({base}/dictionar/): entități, relații, cardinalități', '',
              '## Date pentru mașini', f'- [Catalog JSON]({base}/api/catalog.json)', f'- [Entități]({base}/dictionar/entitati.json)', f'- [Relații]({base}/dictionar/relatii.json)', f'- [Agent card A2A]({base}/.well-known/agent.json)', '',
              '## Servicii'] + [f'- [{x["name"]}]({ABS(base, x["url"])}): {x["priceMinRON"]}–{x["priceMaxRON"]} lei / {x["priceUnit"]}, recomandat {x["priceAvgRON"]} lei' for x in S] + \
             ['', '## Produse'] + [f'- [{x["name"]}]({ABS(base, x["url"])}): {x["priceMinRON"]}–{x["priceMaxRON"]} lei / {x["priceUnit"]}, recomandat {x["priceAvgRON"]} lei; mărci: {x.get("brands", "")}' for x in P]
@@ -584,10 +627,12 @@ def main():
                 (dd / 'index.html').write_text(shell(fid, d, 'detail', x['name'], f"{x['name']} ({x['id']}) — {sub}, {FIRM}: ce este, ce presupune, preț min / mediu / max {x['priceMinRON']}–{x['priceMaxRON']} lei / {x['priceUnit']}.", detail(fid, d, x, kind, S, P), 2, x['url'], ld_item(fid, x, kind, base)), encoding='utf-8')
         (out / 'dictionar').mkdir(exist_ok=True)
         (out / 'dictionar' / 'index.html').write_text(shell(fid, d, 'dictionar', 'Dicționar de date', f'Dicționarul entitate–relație al site-ului {fid}: entități, relații, cardinalități, sesiune {ENT["sesiune"]}.', dict_page(fid, d, S, P), 1, '/dictionar/', ld_dict(fid, base)), encoding='utf-8')
+        (out / 'despre').mkdir(exist_ok=True)
+        (out / 'despre' / 'index.html').write_text(shell(fid, d, 'despre', 'Despre', f'{FIRM} — {sub}: cum lucrăm, program, autorizații, zonă de acoperire, contract de mentenanță și contact. Firmă fictivă, etalon SCARA {fid}.', despre(fid, d, S, P), 1, '/despre/', ld_despre(fid, base)), encoding='utf-8')
         (out / '404.html').write_text(not_found(fid, d), encoding='utf-8')
         (out / 'favicon.svg').write_text(favicon(fid), encoding='utf-8')
         (out / 'robots.txt').write_text(robots_txt(base), encoding='utf-8')
-        paths = ['/', '/servicii/', '/produse/', '/dictionar/'] + [x['url'] for x in S + P if not x.get('external')]
+        paths = ['/', '/servicii/', '/produse/', '/despre/', '/dictionar/'] + [x['url'] for x in S + P if not x.get('external')]
         (out / 'sitemap.xml').write_text(sitemap(base, paths), encoding='utf-8')
         (out / 'llms.txt').write_text(llms(fid, d, S, P, base), encoding='utf-8')
         (out / 'api').mkdir(exist_ok=True)

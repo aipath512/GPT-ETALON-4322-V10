@@ -20,5 +20,128 @@
     "C43221": "https://gpt-etalon-4322-v10.pages.dev",
     "C43222": "https://gpt-etalon-4322-v10-88z.pages.dev",
     "C43223": "https://gpt-etalon-4322-v10-bfs.pages.dev"
+  },
+  "Incredere": {
+    "_comentariu": "Blocul de încredere (model fli.ro, cu date proprii). Valorile sunt DEMONSTRATIVE pentru firma fictivă; la o firmă reală se înlocuiesc cu date verificabile. Câmpurile cu null apar ca «de completat».",
+    "Demonstrativ": true,
+    "Hook": "Instalații făcute corect, la prima vizită — cu preț spus dinainte și factură.",
+    "Cifre": [
+      [
+        "15",
+        "ani de experiență"
+      ],
+      [
+        "12",
+        "tehnicieni autorizați"
+      ],
+      [
+        "4.800",
+        "lucrări finalizate"
+      ],
+      [
+        "6",
+        "echipe mobile"
+      ]
+    ],
+    "Telefon": "021 000 00 00",
+    "Email": "email@etalon.com",
+    "Adresa": "Strada Exemplului nr. 24, București",
+    "NrRegCom": null,
+    "Program": [
+      [
+        "Luni–Vineri",
+        "08:00–20:00"
+      ],
+      [
+        "Sâmbătă",
+        "09:00–14:00"
+      ],
+      [
+        "Duminică",
+        "închis (urgențele se preiau luni de la 08:00)"
+      ]
+    ],
+    "Urgente": "Urgențele (scurgeri, centrală oprită iarna, miros de gaz după intervenția furnizorului) au prioritate în programul dispeceratului; ajungem de regulă în aceeași zi în București.",
+    "Misiune": "Spunem clientului adevărul despre instalația lui, chiar și atunci când răspunsul corect este «nu merită reparată». Lucrăm conform prescripțiilor tehnice, cu factură și garanție scrisă, și nu plecăm până nu verificăm împreună că totul funcționează.",
+    "CumLucram": [
+      "Sunați la dispecerat sau scrieți pe email.",
+      "Trimiteți 2–3 poze cu instalația și plăcuța aparatului.",
+      "Primiți prețul estimat (min / recomandat / max) înainte de deplasare.",
+      "Stabilim ziua și intervalul orar; vă sunăm cu o zi înainte.",
+      "Tehnicianul execută lucrarea, testează și vă explică ce a făcut.",
+      "Primiți factura, procesul-verbal și garanția scrisă."
+    ],
+    "Avantaje": [
+      "Mai multe echipe pe teren — și în vârf de sezon.",
+      "Piese uzuale în stoc pe mașină: reparația nu așteaptă furnizorul.",
+      "Preț comunicat înainte, fără surprize la final.",
+      "Factură și proces-verbal pentru fiecare intervenție.",
+      "Garanție scrisă pentru manoperă.",
+      "Același tehnician pentru revizia anuală, când e posibil."
+    ],
+    "Autorizatii": {
+      "C43221": [
+        [
+          "ISCIR",
+          "instalare, montare, punere în funcțiune, întreținere, reparare și verificare tehnică a centralelor termice"
+        ],
+        [
+          "ANRE",
+          "proiectare și execuție instalații de utilizare gaze naturale"
+        ]
+      ],
+      "C43222": [
+        [
+          "AGFR (F-gaze)",
+          "instalare, întreținere și reparare echipamente de climatizare, refrigerare și pompe de căldură"
+        ],
+        [
+          "ISCIR",
+          "pentru echipamentele de încălzire asociate, unde este cazul"
+        ]
+      ],
+      "C43223": [
+        [
+          "ANRE",
+          "pentru lucrările care ating instalația de gaze, unde este cazul"
+        ],
+        [
+          "Atestare operator de rețea apă-canal",
+          "branșamente și racorduri, unde operatorul o cere"
+        ]
+      ]
+    },
+    "ISO": [
+      "ISO 9001:2015 — calitate",
+      "ISO 14001:2015 — mediu",
+      "ISO 45001:2018 — sănătate și securitate în muncă"
+    ],
+    "Zona": [
+      [
+        "București",
+        "sectoarele 1–6"
+      ],
+      [
+        "Ilfov",
+        "Voluntari, Pipera, Otopeni, Pantelimon, Popești-Leordeni, Bragadiru, Chiajna, Chitila, Buftea, Măgurele"
+      ]
+    ],
+    "Recenzii": [
+      [
+        "Andrei M.",
+        "sep. 2026",
+        "Au venit la ora stabilită, au spus prețul înainte și au lăsat totul curat. Tehnicianul mi-a explicat ce a schimbat."
+      ],
+      [
+        "Ioana P.",
+        "oct. 2026",
+        "Revizia anuală făcută rapid; mi-au trimis factura și procesul-verbal pe email în aceeași zi."
+      ],
+      [
+        "Mihai D.",
+        "oct. 2026",
+        "Altă firmă nu găsise defectul. Ei l-au identificat la prima vizită și aveau piesa în mașină."
+      ]
+    ]
   }
 }

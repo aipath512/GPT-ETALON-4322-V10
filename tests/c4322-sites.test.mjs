@@ -47,11 +47,11 @@ for (const [fid, f] of Object.entries(FAM)) {
     assert.match(home, /href="\/servicii\/\?grupa=/); assert.match(home, /href="\/produse\/\?grupa=/);
     assert.equal(read(`${dir}/robots.txt`).includes('Disallow: /'), !firma.Public);
     const sm = read(`${dir}/sitemap.xml`); const own = [...siteCatalog(fid).services, ...siteCatalog(fid).products].filter(x => !x.external);
-    assert.equal((sm.match(/<url>/g) || []).length, 4 + own.length);
+    assert.equal((sm.match(/<url>/g) || []).length, 5 + own.length);
     assert.equal(own.length, moduleData(fid).services.length + moduleData(fid).products.length);
     const card = JSON.parse(read(`${dir}/.well-known/agent.json`)); assert.ok(card.name && card.skills.length);
     const api = JSON.parse(read(`${dir}/api/catalog.json`)); assert.equal(api.servicii.length, siteCatalog(fid).services.length);
-    for (const file of ['404.html', 'favicon.svg', 'robots.txt', '_headers', '_routes.json', 'dictionar/index.html', 'sitemap.xml', 'llms.txt', 'api/catalog.json', '.well-known/agent.json', 'dictionar/entitati.json', 'dictionar/relatii.json']) assert.ok(exists(`${dir}/${file}`), file);
+    for (const file of ['despre/index.html', '404.html', 'favicon.svg', 'robots.txt', '_headers', '_routes.json', 'dictionar/index.html', 'sitemap.xml', 'llms.txt', 'api/catalog.json', '.well-known/agent.json', 'dictionar/entitati.json', 'dictionar/relatii.json']) assert.ok(exists(`${dir}/${file}`), file);
   });
 
   test(`${fid} — catalogul publicat = fișe proprii + comune, cu preț, mărci și imagini`, () => {

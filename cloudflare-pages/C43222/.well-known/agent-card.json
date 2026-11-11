@@ -3,7 +3,7 @@
  "name": "SCARA C43222 — Instalații de climatizare (demonstrativ)",
  "description": "Catalog de referință instalații de climatizare în București: servicii, produse, mărci și prețuri orientative min / mediu / max. Firma afișată (TCE INSTAL SRL) este fictivă. Acces numai citire, prin resurse JSON statice.",
  "url": "https://c43222.scara.dev/",
- "version": "v2.2",
+ "version": "v2.3",
  "provider": {
   "organization": "AiVenture S.R.L.",
   "url": "https://5thelement.ai"

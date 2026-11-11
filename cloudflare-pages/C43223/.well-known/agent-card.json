@@ -3,7 +3,7 @@
  "name": "SCARA C43223 — Instalații sanitare (demonstrativ)",
  "description": "Catalog de referință instalații sanitare în București: servicii, produse, mărci și prețuri orientative min / mediu / max. Firma afișată (TCE INSTAL SRL) este fictivă. Acces numai citire, prin resurse JSON statice.",
  "url": "https://c43223.scara.dev/",
- "version": "v2.2",
+ "version": "v2.3",
  "provider": {
   "organization": "AiVenture S.R.L.",
   "url": "https://5thelement.ai"
