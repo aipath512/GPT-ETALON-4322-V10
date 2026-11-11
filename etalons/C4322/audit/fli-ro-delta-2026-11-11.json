@@ -1531,5 +1531,166 @@
     ],
     "suggestedPlacement": "Site Încălzire / Mentenanță: prezentare beneficii + tabel de planuri configurate de firmă + configurator + cerere de apel; linkuri către S-I-06, S-I-05 și reparații",
     "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "protectieInteligentaAriston": {
+    "capturedAt": "2026-11-11",
+    "source": "Textul paginii FLI «Protecția Inteligentă» furnizat de utilizator",
+    "independentlyVerified": false,
+    "classification": "BRAND_SPECIFIC_EXTENDED_COMMERCIAL_WARRANTY_BUNDLED_WITH_MAINTENANCE",
+    "crosswalk": {
+      "relatedExistingPage": "Garanții",
+      "relatedServices": [
+        "S-I-04 Punere în funcțiune centrală",
+        "S-I-05 Verificare tehnică periodică centrală",
+        "S-I-06 Revizie și întreținere centrală",
+        "S-I-07 Diagnostic și reparații centrale"
+      ],
+      "newGenericService": false
+    },
+    "competitorClaims": {
+      "programName": "Protecția Inteligentă",
+      "brand": "Ariston",
+      "eligibleFamilies": [
+        "ONE",
+        "ONE+"
+      ],
+      "explicitExcludedExamples": [
+        "HS",
+        "Cares",
+        "Matis",
+        "Genus Premium"
+      ],
+      "eligibility": {
+        "maximumTimeSincePIF": "2 ani și 8 luni",
+        "cannotBeEnrolledInAnotherCommercialWarranty": true,
+        "activationFromPIF": true,
+        "annualMaintenanceRequired": true
+      },
+      "promisedDurations": {
+        "headline": "până la 10 ani",
+        "specificClaim": [
+          "7 ani pentru Clas și Genus",
+          "5 ani pentru Alteas"
+        ],
+        "conflict": "Textul menționează Clas, Genus și Alteas, dar tabelul de eligibilitate restrânge programul la ONE/ONE+ și exclude Genus Premium. Eligibilitatea pe model/serie și durata sunt NECLARE până la termenii oficiali."
+      },
+      "prices": {
+        "addonFromRONPerYear": 200,
+        "exampleConfiguredTotalRON": 550,
+        "exampleTotalPeriod": "neprecizată explicit în totalul afișat",
+        "rule": "Nu deduce că totalul de 550 lei este universal sau că include toate taxele/serviciile."
+      },
+      "benefits": [
+        "decontare piese de schimb conform contractului",
+        "mentenanță anuală",
+        "verificări ISCIR/ANRE incluse conform eligibilității și autorizărilor",
+        "acces prioritar la intervenții",
+        "informare status contract",
+        "plată anuală și prelungire contractuală"
+      ],
+      "claimsNotToReuse": [
+        "economii garantate pe termen lung",
+        "creșterea valorii de revânzare a proprietății",
+        "protecție absolută contra tuturor reparațiilor",
+        "calitatea de service autorizat Ariston fără dovadă"
+      ]
+    },
+    "competitorConfigurator": {
+      "equipmentPowerExamplesKW": [
+        24,
+        30
+      ],
+      "planExample": "Eficient",
+      "responseTimeClaim": "maxim 24h",
+      "includedInterventionsPerYear": 1,
+      "pifDateRequired": true,
+      "modelRequired": true,
+      "checkoutCTA": "Finalizare Comandă"
+    },
+    "candidateDataModel": {
+      "entity": "ProgramGarantieComerciala",
+      "fields": [
+        "programId",
+        "firmCUI",
+        "brand",
+        "eligibleModels",
+        "excludedModels",
+        "eligibleSerialRanges",
+        "pifDate",
+        "activationDeadlineMonths",
+        "maxDurationMonthsByModel",
+        "baseWarrantyReference",
+        "contractRequired",
+        "maintenancePlanId",
+        "annualProgramFeeRON",
+        "maintenanceFeeRON",
+        "allInAnnualPriceRON",
+        "partsCovered",
+        "laborCovered",
+        "excludedEvents",
+        "responseSLAHours",
+        "verificationProvider",
+        "manufacturerAuthorizationProof",
+        "offerSourceUrl",
+        "termsDocument",
+        "validFrom",
+        "validUntil",
+        "verifiedAt",
+        "state"
+      ],
+      "relations": [
+        "FIRMA_OFERA_PROGRAM_GARANTIE",
+        "PROGRAM_ELIGIBIL_PRODUS",
+        "PROGRAM_CONDITIONAT_DE_MENTENANTA",
+        "PROGRAM_SE_BAZEAZA_PE_GARANTIA_COMERCIALA",
+        "CONTRACT_ACTIVEAZA_PROGRAM"
+      ],
+      "states": [
+        "unverified_competitor_example",
+        "pending_firm_confirmation",
+        "pending_manufacturer_terms",
+        "eligible",
+        "ineligible",
+        "active",
+        "expired"
+      ]
+    },
+    "validationGates": [
+      "Nu afirma că toate centralele Ariston sunt eligibile.",
+      "Nu prelua durata 10/7/5 ani ca garanție oferită de o firmă SCARA.",
+      "Confirmați în documentele oficiale fabricantului sau ale garantului identitatea modelelor eligibile, termenul maxim de activare și excluderile.",
+      "Verificați reprezentarea contractuală a costurilor: 200 lei/an supliment + mentenanță versus total 550 lei afișat în exemplu.",
+      "Drepturile legale ale cumpărătorului rămân independente de achiziția acestui program.",
+      "Garanția comercială este distinctă de asigurare și de contractul de service; menționați garantul și procedura de reclamații.",
+      "Verificările ISCIR/ANRE sunt operațiuni distincte, de prestatori cu drepturi corespunzătoare."
+    ],
+    "scaraPresentation": {
+      "page": "Garanții / Mentenanță",
+      "type": "optional brand-specific add-on",
+      "cta": "Verifică eligibilitatea pentru garanție extinsă",
+      "requiredUserInputs": [
+        "marcă",
+        "model exact",
+        "serie (opțional inițial)",
+        "data PIF",
+        "program existent",
+        "localitate",
+        "plan mentenanță",
+        "telefon/email",
+        "consimțământ"
+      ],
+      "displayCondition": "Numai pentru ofertă validată expres de firma generată, confirmată de garant/producător."
+    },
+    "evaQA": [
+      "Ce modele Ariston sunt eligibile pentru Protecția Inteligentă?",
+      "Cât timp după PIF poate fi activată garanția extinsă?",
+      "Cei 200 lei/an includ întreținerea anuală?",
+      "De ce totalul exemplului este 550 lei?",
+      "Care este diferența între garanția legală și extensia comercială?",
+      "Ce reparații și piese sunt efectiv acoperite?",
+      "Pot activa dacă am deja o altă garanție comercială?",
+      "Ce se întâmplă dacă renunț la întreținerea anuală?"
+    ],
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
   }
 }
