@@ -1,0 +1,183 @@
+{
+  "schema": "scara.c4322.competitor-gap.v1",
+  "date": "2026-11-11",
+  "competitor": "Future Line Instal",
+  "website": "https://www.fli.ro/",
+  "ssot": "etalons/C4322/dictionar/entitati.json",
+  "baseline": {
+    "services": 89,
+    "products": 98,
+    "distinctFamilies": 3
+  },
+  "sourcePages": [
+    "https://www.fli.ro/",
+    "https://www.fli.ro/punere-in-functiune-centrala-termica-pif/",
+    "https://www.fli.ro/autorizatii-de-functionare/",
+    "https://www.fli.ro/mentenanta-si-intrventii/",
+    "https://www.fli.ro/despre-noi/garantii/"
+  ],
+  "existingMatches": [
+    {
+      "fli": "Montaj centrală termică",
+      "c4322": "Montaj centrală termică",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "PIF centrală",
+      "c4322": "Punere în funcțiune centrală",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "VTU/VTP centrală",
+      "c4322": "Verificare tehnică periodică centrală",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Reparații centrale",
+      "c4322": "Diagnostic și reparații centrale",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Revizie centrală",
+      "c4322": "Revizie și întreținere centrală",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Montaj aer condiționat",
+      "c4322": "Montaj AC split 9000–12000 BTU",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Reparații aer condiționat",
+      "c4322": "Diagnostic și reparații AC",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Montaj boiler electric",
+      "c4322": "Montaj boiler electric",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Montaj hidrofor",
+      "c4322": "Montaj hidrofor și stație de pompare",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Consultanță instalații termice",
+      "c4322": "Evaluare și dimensionare instalație termică",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Proiectare/execuție instalație gaze",
+      "c4322": "Proiectare și execuție instalație de gaze interioară",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    },
+    {
+      "fli": "Montaj colectoare solare",
+      "c4322": "Montaj colectoare solare termice",
+      "status": "ACOPERIT",
+      "action": "Nu duplica; verifică doar sinonimele și intențiile de căutare."
+    }
+  ],
+  "proposedDeltas": [
+    {
+      "title": "Autorizație de funcționare centrală termică (AF)",
+      "family": "C43221",
+      "status": "PROPUS_DISTINCT",
+      "related": "Verificare tehnică periodică centrală",
+      "regulated": "ISCIR",
+      "note": "Separă documentarea autorizării de verificarea VTU/VTP; nu promite eliberarea fără autorizare și competență."
+    },
+    {
+      "title": "Verificare tehnică periodică instalație de utilizare gaze",
+      "family": "C43221",
+      "status": "PROPUS_DISTINCT",
+      "related": "Proiectare și execuție instalație de gaze interioară",
+      "regulated": "ANRE",
+      "note": "Alt obiect decât VTU centrală; condiții ANRE și periodicitate de confirmat juridic."
+    },
+    {
+      "title": "Revizie tehnică instalație de utilizare gaze",
+      "family": "C43221",
+      "status": "PROPUS_DISTINCT",
+      "related": "Proiectare și execuție instalație de gaze interioară",
+      "regulated": "ANRE",
+      "note": "Diferențiază revizia instalației de gaz de revizia anuală a centralei."
+    },
+    {
+      "title": "Proiectare instalații termice",
+      "family": "C43221",
+      "status": "PROPUS_DISTINCT",
+      "related": "Evaluare și dimensionare instalație termică",
+      "regulated": "calificări/autorizații aplicabile",
+      "note": "Proiect tehnic versus consultanță și dimensionare; ofertare numai dacă firma poate presta."
+    },
+    {
+      "title": "Proiectare instalații sanitare și canalizare",
+      "family": "C43223",
+      "status": "PROPUS_DISTINCT",
+      "related": "Instalații de alimentare cu apă",
+      "regulated": "calificări/autorizații aplicabile",
+      "note": "Separă proiectarea de execuție."
+    },
+    {
+      "title": "Diagnostic și reparații boilere electrice",
+      "family": "C43223",
+      "status": "PROPUS_DISTINCT",
+      "related": "Montaj boiler electric",
+      "regulated": "competențe electrice aplicabile",
+      "note": "Reparația nu este montaj; confirmați tipuri de echipamente."
+    },
+    {
+      "title": "Diagnostic și reparații instalații solare termice",
+      "family": "C43221",
+      "status": "PROPUS_DISTINCT",
+      "related": "Montaj colectoare solare termice",
+      "regulated": "competențe specifice",
+      "note": "Nu generaliza către panouri fotovoltaice; alt domeniu."
+    },
+    {
+      "title": "Contract de service și mentenanță preventivă centrale",
+      "family": "C43221",
+      "status": "PACHET_COMERCIAL",
+      "related": "Revizie și întreținere centrală",
+      "regulated": "în funcție de lucrările contractate",
+      "note": "Pachet contractual, nu dublură de operațiune tehnică. Condiții, frecvență și SLA configurabile."
+    },
+    {
+      "title": "Garanție comercială extinsă",
+      "family": "C43221",
+      "status": "OPTIUNE_CONTRACTUALA",
+      "related": "Revizie și întreținere centrală",
+      "regulated": "termeni contractuali și garanția producătorului",
+      "note": "Nu publica '10 ani' automat. Pagina FLI consultată descrie până la 5 ani pentru anumite echipamente, în condiții contractuale."
+    },
+    {
+      "title": "Montaj/racordare aragaz la gaze",
+      "family": "C43221",
+      "status": "EXTENSIE_DE_VALIDAT",
+      "related": "Proiectare și execuție instalație de gaze interioară",
+      "regulated": "ANRE, după operațiune",
+      "note": "Nu activa implicit; delimitare față de lucrările electrice și cerințe de autorizare."
+    }
+  ],
+  "publicationPolicy": {
+    "defaultEnabled": false,
+    "doNotAlterSSOTBeforeValidation": true,
+    "requireFirmServiceConfirmation": true,
+    "requireAuthorizationProofForRegulatedServices": true,
+    "doNotInventPricesOrGuarantees": true
+  },
+  "nextStep": "Revizuire tehnică și juridică, alocare coduri canonice noi, completare entități și relații, regenerare prin tools/build_c4322.py, rulare teste și verificare live pe cele trei domenii."
+}
