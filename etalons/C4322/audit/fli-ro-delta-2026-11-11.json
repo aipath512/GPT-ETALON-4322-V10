@@ -1863,5 +1863,175 @@
       "Ce garanție se acordă produsului și montajului?"
     ],
     "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "blogFLI": {
+    "capturedAt": "2026-11-11",
+    "source": "Text pagină «Blog» FLI furnizat de utilizator",
+    "independentlyVerified": false,
+    "classification": "EDITORIAL_CONTENT_STRATEGY_NOT_SERVICE",
+    "visibleArticles": [
+      {
+        "date": "2025-09-29",
+        "title": "Ghidul complet al performanței și siguranței centralei termice în București",
+        "topic": "siguranță/performanță",
+        "geo": "București"
+      },
+      {
+        "date": "2025-01-02",
+        "title": "Servicii de garanție și post-garanție pentru centrale termice în județul Prahova",
+        "topic": "garanții",
+        "geo": "Prahova"
+      },
+      {
+        "date": "2024-10-09",
+        "title": "Servicii de întreținere HVAC în Teleorman",
+        "topic": "mentenanță HVAC",
+        "geo": "Teleorman"
+      },
+      {
+        "date": "2024-10-01",
+        "title": "Servicii de garanție și post-garanție pentru centrale termice în județul Călărași",
+        "topic": "garanții",
+        "geo": "Călărași"
+      },
+      {
+        "date": "2024-09-25",
+        "title": "Întreținere centrale Dâmbovița: servicii profesionale și dedicate",
+        "topic": "mentenanță",
+        "geo": "Dâmbovița"
+      },
+      {
+        "date": "2024-09-23",
+        "title": "Service centrale termice Ilfov",
+        "topic": "service",
+        "geo": "Ilfov"
+      },
+      {
+        "date": "2024-08-26",
+        "title": "Instalare și montaj centrale termice: ghid complet pentru eficiență și siguranță",
+        "topic": "montaj",
+        "geo": null
+      },
+      {
+        "date": "2024-08-21",
+        "title": "Întreținerea anuală a centralei termice: de ce este crucială și cum să o abordezi",
+        "topic": "mentenanță",
+        "geo": null
+      },
+      {
+        "date": "2024-08-17",
+        "title": "Ventilatoarele cu recuperare de căldură: beneficii și dezavantaje",
+        "topic": "ventilație",
+        "geo": null
+      }
+    ],
+    "paginationObserved": "1 2 Next",
+    "totalArticlesUnknown": true,
+    "observations": [
+      "9 titluri vizibile în text, cel puțin o pagină următoare menționată",
+      "strategie editorială combină ghiduri practice cu pagini orientate către județe",
+      "conținutul se leagă de serviciile existente și de nevoile clienților B2C",
+      "data de publicare nu reprezintă automat data ultimei actualizări"
+    ],
+    "mapping": [
+      {
+        "group": "încălzire",
+        "serviceCodes": [
+          "S-I-02",
+          "S-I-05",
+          "S-I-06",
+          "S-I-07"
+        ]
+      },
+      {
+        "group": "climatizare",
+        "topic": "ventilație cu recuperare de căldură",
+        "family": "C43222"
+      },
+      {
+        "group": "garanție",
+        "type": "contractual/explanatory"
+      }
+    ],
+    "proposedSSOT": {
+      "entityTypes": [
+        "ArticolEditorial",
+        "TemaEditoriala",
+        "SursaEditoriala"
+      ],
+      "fields": [
+        "articleId",
+        "canonicalSlug",
+        "title",
+        "summary",
+        "body",
+        "topic",
+        "familyCode",
+        "relatedServiceIds",
+        "relatedProductIds",
+        "targetGeography",
+        "evidenceSources",
+        "author",
+        "reviewer",
+        "publishedAt",
+        "updatedAt",
+        "lastReviewedAt",
+        "editorialStatus",
+        "legalTechnicalReview",
+        "imageAsset",
+        "faqIds",
+        "canonicalUrl",
+        "language"
+      ],
+      "relations": [
+        "ARTICOL_EXPLICA_SERVICIU",
+        "ARTICOL_RECOMANDA_PRODUS",
+        "ARTICOL_VIZEAZA_ZONA",
+        "ARTICOL_FOLOSESTE_SURSA",
+        "ARTICOL_RASPUNDE_INTENTIE"
+      ],
+      "statuses": [
+        "draft",
+        "technical_review",
+        "approved",
+        "published",
+        "archived"
+      ]
+    },
+    "recommendations": [
+      "Generați articole originale pornind din operațiuni și FAQ proprii; nu reproduceți conținutul concurentului.",
+      "Afișați localități numai dacă firma prestează acolo, nu generați pagini geografice de tip doorway.",
+      "Titlu clar, autor/revizor, date, surse primare pentru afirmații ISCIR/ANRE și actualizare periodică.",
+      "Legături bidirecționale între Blog, Servicii, Produse, EVA FAQ și Oferte.",
+      "SEO: canonical, sitemap, breadcrumbs, Article/BlogPosting JSON-LD doar pentru conținut vizibil și real.",
+      "Nu creați automat articole generice repetitive pentru fiecare oraș sau CUI; folosiți diferențiere editorială verificabilă.",
+      "Publicați doar după verificare editorială și tehnică; noindex pentru drafturi."
+    ],
+    "websiteProposal": {
+      "section": "Blog / Ghiduri și sfaturi",
+      "families": [
+        "Încălzire",
+        "Climatizare",
+        "Sanitare"
+      ],
+      "filters": [
+        "subiect",
+        "tip echipament",
+        "zonă deservită dacă e relevantă",
+        "întrebare/intenție"
+      ],
+      "cta": "Solicită o evaluare sau intervenție",
+      "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+    },
+    "evaIntegration": {
+      "intentRouting": "Din răspunsurile EVA către ghiduri originale, apoi către fișa serviciului și formular",
+      "faqSeeds": [
+        "Când trebuie făcută întreținerea centralei?",
+        "Ce diferență este între verificare ISCIR, ANRE și revizie?",
+        "Cum aleg un ventilator cu recuperare de căldură?",
+        "Când este mai rentabilă înlocuirea centralei?",
+        "Cum verific dacă o firmă deservește localitatea mea?"
+      ]
+    }
   }
 }
