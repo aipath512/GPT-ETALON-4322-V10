@@ -118,4 +118,10 @@ Site static HTML/CSS/JS (regenerat și verificat pe 8 noiembrie 2026): `style.cs
 ## v1.5 (11 noiembrie 2026) — pagini de detaliu pe fiecare fișă
 - Fiecare serviciu și produs are pagina lui, pe înțelesul clientului: `/servicii/<cod-nume>/` și `/produse/<cod-nume>/` (195 de pagini pe cele trei site-uri).
 - Conținut: pe scurt, când aveți nevoie / cum alegeți, ce presupune lucrarea (pași), cât costă (min / recomandat / max, ce influențează prețul), mărci, reguli și siguranță (ISCIR, ANRE, F-gaze), sfatul instalatorului, servicii și produse legate.
-- Textele pe grupe sunt în `etalons/C4322/grupe-texte.json` — editabile din GitHub; paginile se regenerează automat.
+- Textele pe grupe sunt acum proprietăți ale entităților Grupă din dicționar (vezi v2.0).
+
+## v2.0 (11 noiembrie 2026) — dicționar entitate–relație, sursă unică (sesiune 0006H)
+- **Sursa unică (SSOT):** `etalons/C4322/dictionar/entitati.json` (383 entități: clasă CAEN 4322, 3 familii, 29 grupe, 89 servicii, 98 produse, 163 mărci) și `relatii.json` (982 relații, 7 tipuri, fiecare cu inversă, cardinalitate și sesiune 0006H).
+- Tipuri: CAEN_ARE_FAMILIE 1:1..*, FAMILIE_ARE_GRUPA 1:1..*, GRUPA_CONTINE 1:0..*, AFISAT_PE 0..*:1..*, FOLOSESTE_PRODUS 0..*:0..* (propuse, de validat), ARE_MARCA 0..*:1..*, FIRMA_OFERA 0..*:0..* (pentru SCARA per CUI).
+- Modulele `etalons/C4322/C4322x.mjs` și toate paginile sunt **generate** din dicționar; nu se editează manual. Generatorul și testele opresc publicarea dacă o cardinalitate sau un tip de relație e încălcat.
+- Pagina `/dictionar/` pe fiecare site arată entitățile și relațiile (directe și inverse).

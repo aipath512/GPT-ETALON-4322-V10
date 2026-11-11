@@ -1,4 +1,4 @@
-// Teste site-uri de familie SCARA C4322 — v1.5 2026-11-11
+// Teste site-uri de familie SCARA C4322 — v2.0 2026-11-11
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -34,7 +34,7 @@ for (const [fid, f] of Object.entries(FAM)) {
       assert.match(html, /name="robots" content="noindex,nofollow"/);
       for (const id of ['themeToggle', 'langSel', 'q', 'fBrand', 'fGroup', 'list']) assert.match(html, new RegExp(`id="${id}"`), page + ' ' + id);
       assert.equal((html.match(/<option value="[a-z]{2}">/g) || []).length, 24, page);
-      assert.match(html, /sesiune 0001C/);
+      assert.match(html, /sesiune 0006H/);
       assert.match(html, /src="\/catalog\.js"/); assert.match(html, /src="\/app\.js"/);
     }
     const home = read(`${dir}/index.html`);
@@ -42,7 +42,7 @@ for (const [fid, f] of Object.entries(FAM)) {
     assert.ok(home.includes(JSON.stringify(firma.CUI)));
     for (const g of moduleData(fid).groups) assert.ok(home.includes(`>${g} — `), 'grupă pe homepage: ' + g);
     assert.match(home, /href="\/servicii\/\?grupa=/); assert.match(home, /href="\/produse\/\?grupa=/);
-    for (const file of ['404.html', 'favicon.svg', 'robots.txt', '_headers', '_routes.json']) assert.ok(exists(`${dir}/${file}`), file);
+    for (const file of ['404.html', 'favicon.svg', 'robots.txt', '_headers', '_routes.json', 'dictionar/index.html']) assert.ok(exists(`${dir}/${file}`), file);
   });
 
   test(`${fid} — catalogul publicat = fișe proprii + comune, cu preț, mărci și imagini`, () => {

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generator SCARA C4322 — v1.5 2026-11-11.
+"""Generator SCARA C4322 — v2.0 2026-11-11 (sursa: dicționarul entitate-relație).
 
 Reconstruiește cele trei site-uri de familie (cloudflare-pages/C43221..C43223)
 din modulele de date etalons/C4322/C4322x.mjs. Rulare: python3 tools/build_c4322.py
@@ -8,11 +8,10 @@ C43221/C43222/C43223 sunt coduri interne SCARA; codul CAEN oficial (Rev.3) este 
 import json, html, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-VERSION = 'v1.5'
+VERSION = 'v2.0'
 DATE = '2026-11-11'
-SESSION = '0001C'
+SESSION = '0006H'
 CFG = json.loads((ROOT / 'etalons/C4322/firma.json').read_text(encoding='utf-8'))
-GT = json.loads((ROOT / 'etalons/C4322/grupe-texte.json').read_text(encoding='utf-8'))
 FIRM = CFG['NumeFirma']
 FAMILIES = {
     'C43221': {'icon': '♨', 'subtitle': 'Soluții de încălzire pentru apartamente și case'},
@@ -91,9 +90,74 @@ footer{background:#041214;color:#d1e9df;padding:38px 0;font-size:13px;line-heigh
 def esc(s):
     return html.escape(str(s), quote=True)
 
+DIC_DIR = ROOT / 'etalons/C4322/dictionar'
+ENT = json.loads((DIC_DIR / 'entitati.json').read_text(encoding='utf-8'))
+REL = json.loads((DIC_DIR / 'relatii.json').read_text(encoding='utf-8'))
+SLUGF = {'C43221': 'incalzire', 'C43222': 'climatizare', 'C43223': 'sanitare'}
+CARD = {'1': (1, 1), '0..1': (0, 1), '0..*': (0, None), '1..*': (1, None)}
+
+def check_dictionary():
+    """Oprește construcția dacă dicționarul încalcă tipurile sau cardinalitățile."""
+    E = {e['id']: e for e in ENT['entitati']}
+    assert len(E) == len(ENT['entitati']), 'ID de entitate duplicat'
+    codes = [e['code'] for e in ENT['entitati'] if e.get('code')]
+    assert len(codes) == len(set(codes)), 'cod duplicat'
+    T = {t['type']: t for t in REL['tipuri']}
+    ids = [r['id'] for r in REL['relatii']]; assert len(ids) == len(set(ids)), 'ID de relație duplicat'
+    seen = set()
+    for r in REL['relatii']:
+        t = T.get(r['type']); assert t, 'tip necunoscut ' + r['type']
+        assert r['source'] in E and r['target'] in E, 'capăt inexistent ' + r['id']
+        assert E[r['source']]['type'] in t['sourceType'].split('|'), 'tip sursă greșit ' + r['id']
+        assert E[r['target']]['type'] in t['targetType'].split('|'), 'tip țintă greșit ' + r['id']
+        k = (r['type'], r['source'], r['target']); assert k not in seen, 'relație dublă ' + r['id']; seen.add(k)
+        assert r.get('session'), 'relație fără sesiune ' + r['id']
+    for t in REL['tipuri']:
+        rs = [r for r in REL['relatii'] if r['type'] == t['type']]
+        for side, other, card in (('source', 'target', t['targetCard']), ('target', 'source', t['sourceCard'])):
+            types = t[side + 'Type'].split('|'); lo, hi = CARD[card]
+            for e in ENT['entitati']:
+                if e['type'] not in types: continue
+                n = sum(1 for r in rs if r[side] == e['id'])
+                assert n >= lo and (hi is None or n <= hi), f"cardinalitate {t['type']} {card} încălcată pentru {e.get('code') or e['id']} ({n})"
+    return len(ENT['entitati']), len(REL['relatii'])
+
+def from_dictionary():
+    E = {e['id']: e for e in ENT['entitati']}
+    out = lambda typ: [r for r in REL['relatii'] if r['type'] == typ]
+    fam = {e['code']: e for e in E.values() if e['type'] == 'Familie'}
+    fam_of_group = {r['target']: E[r['source']]['code'] for r in out('FAMILIE_ARE_GRUPA')}
+    group_of = {r['target']: E[r['source']] for r in out('GRUPA_CONTINE')}
+    shown = {}
+    for r in out('AFISAT_PE'): shown.setdefault(r['source'], []).append(E[r['target']]['code'])
+    brands = {}
+    for r in out('ARE_MARCA'): brands.setdefault(r['source'], []).append(E[r['target']]['name'])
+    uses, used_in = {}, {}
+    for r in out('FOLOSESTE_PRODUS'):
+        uses.setdefault(r['source'], []).append(E[r['target']]['code']); used_in.setdefault(r['target'], []).append(E[r['source']]['code'])
+    mods = {}
+    for fid, f in sorted(fam.items()):
+        groups = sorted([E[g] for g, fc in fam_of_group.items() if fc == fid], key=lambda g: g['properties'].get('ordine', 0))
+        d = {'classId': fid, 'parentClassId': 'C4322', 'caen': '4322', 'family': SLUGF[fid], 'title': f['name'], 'version': '2.0.0-dictionar',
+             'market': f['properties'].get('piata', 'București'), 'groups': [g['name'] for g in groups], 'services': [], 'products': [],
+             'sharedRefs': {'services': [], 'products': []}, 'notes': f['properties'].get('note', ''), 'dictionarySession': ENT['sesiune']}
+        mods[fid] = d
+    for e in ENT['entitati']:
+        if e['type'] not in ('Serviciu', 'Produs'): continue
+        g = group_of[e['id']]; home = fam_of_group[g['id']]; kind = 'services' if e['type'] == 'Serviciu' else 'products'
+        x = {'id': e['code'], 'group': g['name'], 'name': e['name'], **e['properties'], 'entityId': e['id']}
+        if kind == 'products': x['brands'] = ', '.join(brands.get(e['id'], [])); x['usedIn'] = used_in.get(e['id'], [])
+        else: x['uses'] = uses.get(e['id'], [])
+        mods[home][kind].append(x)
+        for fid in shown.get(e['id'], []):
+            if fid != home: mods[fid]['sharedRefs'][kind].append(e['code'])
+    gt = {E[g]['name']: E[g]['properties'] for g in fam_of_group}
+    assert len(gt) == len(fam_of_group), 'nume de grupă repetat între familii'
+    return mods, gt
+
+MODS, GT = from_dictionary()
 def load(fid):
-    s = (ROOT / 'etalons/C4322' / (fid + '.mjs')).read_text(encoding='utf-8')
-    return json.loads(s[s.index('{'):s.rindex('}') + 1])
+    return MODS[fid]
 
 ALL = {}
 def find(kind, iid):
@@ -154,8 +218,12 @@ def catalog(fid, d):
     by_group = {}
     for x in P:
         by_group.setdefault(x.get('homeGroup', x['group']), set()).update(x['brandList'])
+    pb = {}
+    for ofid in FAMILIES:
+        for y in load(ofid)['products']: pb[y['id']] = brand_list(y.get('brands'))
     for x in S:
-        x['brandList'] = sorted(by_group.get(x.get('homeGroup', x['group']), set()))
+        rel_b = sorted({b for pid in x.get('uses', []) for b in pb.get(pid, [])})
+        x['brandList'] = rel_b or sorted(by_group.get(x.get('homeGroup', x['group']), set()))
     for x in S: x['url'] = '/servicii/' + SLUG(x['id'] + ' ' + x['name']) + '/'
     for x in P: x['url'] = '/produse/' + SLUG(x['id'] + ' ' + x['name']) + '/'
     for x in S + P:
@@ -187,7 +255,7 @@ def shell(fid, d, page_id, title_txt, desc, body, depth):
 <body data-page="{page_id}">
 <button id="themeToggle" type="button" aria-label="Schimbă tema"><b id="themeIcon">☀</b><span id="themeLabel">Light</span></button>
 <header><div class="container bar"><a class="logo" id="logoFirm" href="/" style="text-decoration:none">{FIRM}<small>{esc(sub).upper()} · FIRMĂ FICTIVĂ · CAEN 4322</small></a>
-<nav>{nav('/', 'home', 'Acasă', 'home')}{nav('/servicii/', 'services', 'Servicii', 'servicii')}{nav('/produse/', 'products', 'Produse', 'produse')}</nav>
+<nav>{nav('/', 'home', 'Acasă', 'home')}{nav('/servicii/', 'services', 'Servicii', 'servicii')}{nav('/produse/', 'products', 'Produse', 'produse')}<a href="/dictionar/"{AC if page_id == 'dictionar' else ''}>Dicționar</a></nav>
 <div class="tools"><select id="langSel" aria-label="Limba">{opts}</select><span id="clock"></span><span>{VERSION} · {DATE} · sesiune {SESSION}</span></div></div></header>
 <main>{body}
 <section class="section" id="cauta"><div class="container">
@@ -235,9 +303,20 @@ def detail(fid, d, x, kind, S, P):
     basis = ('Prețul este pentru manoperă: materialele, piesele și echipamentul se plătesc separat.' if is_s
              else 'Prețul este pentru echipament sau material, fără montaj; montajul îl găsiți mai jos, la serviciile legate.')
     other = P if is_s else S
-    rel = [y for y in other if y.get('homeGroup', y['group']) == g][:6]
+    codes = x.get('uses', []) if is_s else x.get('usedIn', [])
+    byc = {}
+    for ofid in FAMILIES:
+        for y in load(ofid)['products' if is_s else 'services']: byc[y['id']] = y
+    known = {y['id']: y for y in other}
+    rel = []
+    for c in codes:
+        y = known.get(c)
+        if y is None and c in byc:
+            ofid = next(f for f in FAMILIES if any(z['id'] == c for z in load(f)['products' if is_s else 'services']))
+            y = dict(byc[c]); y['url'] = None; y['external'] = ofid
+        if y: rel.append(y)
     same = [y for y in (S if is_s else P) if y.get('homeGroup', y['group']) == g and y['id'] != x['id']][:6]
-    li = lambda ys: ''.join(f'<li><a href="{y["url"]}">{esc(y["name"])}</a> <span class="muted">· {esc(y["id"])} · {fmt_ro(y["priceAvgRON"])} lei / {esc(y["priceUnit"])}</span></li>' for y in ys)
+    li = lambda ys: ''.join((f'<li><a href="{y["url"]}">{esc(y["name"])}</a>' if y.get('url') else f'<li>{esc(y["name"])} <span class="grp">{esc(load(y["external"])["title"])}</span>') + f' <span class="muted">· {esc(y["id"])} · {fmt_ro(y["priceAvgRON"])} lei / {esc(y["priceUnit"])}</span></li>' for y in ys)
     brands = ''.join(f'<a class="chip" href="/produse/?marca={esc(b)}">{esc(b)}</a>' for b in x.get('brandList', []))
     shared = f'<span class="grp shared">Comun cu {esc(x["sharedFrom"])}</span> ' if x.get('sharedFrom') else ''
     blocks = [f'<div class="dblock"><h2>Pe scurt</h2><p class="lead">{esc(x["descriptionShort"])}</p>{"<p><strong>Despre " + esc(g.lower()) + ":</strong> " + esc(gt["intro"]) + "</p>" if gt.get("intro") else ""}</div>']
@@ -250,7 +329,7 @@ def detail(fid, d, x, kind, S, P):
     blocks.append(f'<div class="dblock"><h2>Cât costă</h2><div class="pricebig"><span>min<b>{mn}</b></span><span class="rec">recomandat<b>{av}</b></span><span>max<b>{mx}</b></span></div><p class="muted">lei / {esc(u)}, cu TVA</p><p>{basis} Prețul recomandat este media orientativă din București; intervalul min–max arată diferența dintre o lucrare simplă și una complexă. Prețul final se stabilește după evaluare.</p>{"<p><strong>Ce influențează prețul:</strong> " + esc(gt["pret"]) + "</p>" if gt.get("pret") else ""}<p class="muted">{esc(x.get("priceSource", ""))}</p></div>')
     if gt.get('reguli'): blocks.append(f'<div class="dblock"><h2>Reguli și siguranță</h2><p>{esc(gt["reguli"])}</p></div>')
     if gt.get('sfat'): blocks.append(f'<div class="dblock tip"><h2>Sfatul instalatorului</h2><p>{esc(gt["sfat"])}</p></div>')
-    if rel: blocks.append(f'<div class="dblock"><h2>{"Produse folosite" if is_s else "Servicii pentru acest produs"}</h2><ul class="rel">{li(rel)}</ul></div>')
+    if rel: blocks.append(f'<div class="dblock"><h2>{"Produse folosite" if is_s else "Servicii pentru acest produs"}</h2><ul class="rel">{li(rel)}</ul><p class="muted">Relație din dicționarul de date ({"FOLOSESTE_PRODUS" if is_s else "FOLOSIT_IN"}, 0..* : 0..*), propusă — de validat.</p></div>')
     if same: blocks.append(f'<div class="dblock"><h2>Alte {"servicii" if is_s else "produse"} din grupa {esc(g)}</h2><ul class="rel">{li(same)}</ul></div>')
     crumbs = f'<nav class="crumbs" aria-label="Navigare"><a href="/" data-i18n="home">Acasă</a> › <a href="/{kind}/">{label if False else ("Servicii" if is_s else "Produse")}</a> › <a href="/{kind}/?grupa={esc(x["group"])}">{esc(x["group"])}</a> › <span>{esc(x["name"])}</span></nav>'
     return f"""<section class="hero small"><div class="container">{crumbs}
@@ -258,6 +337,35 @@ def detail(fid, d, x, kind, S, P):
 <h1>{esc(x["name"])}</h1><p>{esc(x["descriptionShort"])}</p><p class="dprice">{mn} – <b>{av}</b> – {mx} lei / {esc(u)}</p></div></div></div></section>
 <section class="section"><div class="container detail">{''.join(blocks)}
 <p><a class="btn" href="/{kind}/">← Toate {"serviciile" if is_s else "produsele"}</a></p></div></section>"""
+
+def dict_page(fid, d, S, P):
+    E = {e['id']: e for e in ENT['entitati']}
+    mine = {x['entityId'] for x in S + P}
+    fam_e = next(e for e in ENT['entitati'] if e['type'] == 'Familie' and e['code'] == fid)
+    grp_e = {r['target'] for r in REL['relatii'] if r['type'] == 'FAMILIE_ARE_GRUPA' and r['source'] == fam_e['id']}
+    rels = [r for r in REL['relatii'] if r['source'] in mine | grp_e | {fam_e['id']} or r['target'] in mine]
+    brands = {r['target'] for r in rels if r['type'] == 'ARE_MARCA'}
+    lab = lambda e: (esc(e.get('code')) + ' · ' if e.get('code') else '') + esc(e['name'])
+    types = ''.join(f'<tr><td><b>{t["type"]}</b><br><span class="muted">invers: {t["inverse"]}</span></td><td>{t["sourceType"]} → {t["targetType"]}</td><td><b>{t["sourceCard"]} : {t["targetCard"]}</b></td><td>{esc(t["descriere"])}</td><td>{sum(1 for r in rels if r["type"] == t["type"])}</td></tr>' for t in REL['tipuri'])
+    def ent_rows(ids):
+        out = []
+        for i in ids:
+            e = E[i]
+            o = [f'{r["type"]} → {lab(E[r["target"]])}' + (' <i>(propus)</i>' if r.get('status') == 'propus' else '') for r in rels if r['source'] == i]
+            inv = {t['type']: t['inverse'] for t in REL['tipuri']}
+            n = [f'{inv[r["type"]]} → {lab(E[r["source"]])}' for r in rels if r['target'] == i]
+            out.append(f'<tr id="{e["id"]}"><td><code>{e["id"]}</code></td><td>{lab(e)}</td><td>{"<br>".join(o + n)}</td></tr>')
+        return ''.join(out)
+    sec = lambda title, ids: f'<details class="dblock"><summary><b>{title}</b> — {len(ids)}</summary><div class="tw"><table class="dt"><tr><th>ID entitate</th><th>Cod · nume</th><th>Relații (directe și inverse)</th></tr>{ent_rows(ids)}</table></div></details>'
+    svc = [x['entityId'] for x in S]; prd = [x['entityId'] for x in P]
+    return f"""<section class="hero small"><div class="container"><div class="eyebrow">DICȚIONAR DE DATE · {fid} · SESIUNE {ENT['sesiune']}</div>
+<h1>Dicționar entitate–relație</h1><p>Sursa unică a site-ului: {len(mine) + len(grp_e) + len(brands) + 1} entități și {len(rels)} relații pentru {esc(d['title'])}. Fiecare relație are inversă, cardinalitate și sesiune; paginile site-ului sunt generate din el.</p></div></section>
+<section class="section"><div class="container">
+<div class="dblock"><h2>Tipuri de relații și cardinalități</h2><div class="tw"><table class="dt"><tr><th>Relație</th><th>De la → la</th><th>Cardinalitate</th><th>Sens</th><th>Pe acest site</th></tr>{types}</table></div>
+<p class="muted">Cardinalitatea „sursă : țintă” — ex. GRUPA_CONTINE 1 : 0..* = o fișă are exact o grupă, o grupă are zero sau mai multe fișe. Relațiile FOLOSESTE_PRODUS sunt propuse și așteaptă validarea inginerului instalator.</p></div>
+{sec('Familie și grupe', [fam_e['id']] + sorted(grp_e))}{sec('Servicii', svc)}{sec('Produse', prd)}{sec('Mărci', sorted(brands, key=lambda i: E[i]['name'].lower()))}
+<p class="muted">Fișiere sursă în GitHub: <code>etalons/C4322/dictionar/entitati.json</code> și <code>relatii.json</code> — metamodel AiVenture Semantic Data Dictionary (ENTITY / PROPERTY / RELATIONSHIP / VALUE / SESSION).</p>
+</div></section>"""
 
 def listing(fid, d, kind, S, P):
     sub = CFG['SubtitluFamilie'][fid]; n = len(S) if kind == 'servicii' else len(P)
@@ -348,11 +456,16 @@ body.light-mode .rows{background:#ffffff}
 .steps{line-height:1.8;padding-left:22px}.rel{line-height:1.9;padding-left:20px}.tip{border-color:var(--accent)}
 .pricebig{display:flex;gap:10px;flex-wrap:wrap}.pricebig span{flex:1;min-width:0;border:1px solid var(--border);border-radius:14px;padding:12px 6px;text-align:center;font-size:10.5px;text-transform:uppercase;letter-spacing:.3px;overflow-wrap:anywhere}.pricebig b{display:block;font-size:26px;letter-spacing:0;text-transform:none;margin-top:4px}.pricebig .rec{border-color:var(--accent);background:var(--surface2)}.pricebig .rec b{color:var(--accent)}
 @media(max-width:700px){.dhead{flex-direction:column}.dimg{width:120px;height:120px;flex-basis:120px}}
+.tw{overflow-x:auto}.dt{border-collapse:collapse;width:100%;font-size:13px}.dt th,.dt td{border-bottom:1px solid var(--border);padding:8px;text-align:left;vertical-align:top}.dt code{font-size:11px}details.dblock summary{cursor:pointer;font-size:18px}
+@media(max-width:700px){.dt tr{display:block;border-bottom:1px solid var(--border);padding:8px 0}.dt tr:first-child{display:none}.dt td{display:block;border:none;padding:3px 4px}}
 nav a[aria-current=page]{text-decoration:underline;text-underline-offset:5px}
 @media(max-width:700px){.row{gap:14px;padding:16px}.rimg{width:92px;height:92px;flex-basis:92px;border-radius:16px}}
 """
 
 def main():
+    ne, nr = check_dictionary(); print('dicționar valid:', ne, 'entități,', nr, 'relații, sesiune', ENT['sesiune'])
+    for fid, d in MODS.items():
+        (ROOT / 'etalons/C4322' / (fid + '.mjs')).write_text(f'// GENERAT din etalons/C4322/dictionar (sesiune {ENT["sesiune"]}) de tools/build_c4322.py — nu editați manual; modificați dicționarul.\n// Catalog {fid} — {d["title"]}. Identificatorii C43221-3 sunt interni SCARA, nu subcoduri CAEN oficiale.\nexport const etalon = ' + json.dumps(d, ensure_ascii=False, indent=2) + ';\nexport default etalon;\n', encoding='utf-8')
     for fid in FAMILIES:
         d = load(fid); out = ROOT / 'cloudflare-pages' / fid
         (out / 'img' / 'grupe').mkdir(parents=True, exist_ok=True)
@@ -379,6 +492,8 @@ def main():
             for x in xs:
                 dd = out / x['url'].strip('/'); dd.mkdir(parents=True, exist_ok=True)
                 (dd / 'index.html').write_text(shell(fid, d, 'detail', x['name'], f"{x['name']} ({x['id']}) — {sub}, {FIRM}: ce este, ce presupune, preț min / mediu / max {x['priceMinRON']}–{x['priceMaxRON']} lei / {x['priceUnit']}.", detail(fid, d, x, kind, S, P), 2), encoding='utf-8')
+        (out / 'dictionar').mkdir(exist_ok=True)
+        (out / 'dictionar' / 'index.html').write_text(shell(fid, d, 'dictionar', 'Dicționar de date', f'Dicționarul entitate–relație al site-ului {fid}: entități, relații, cardinalități, sesiune {ENT["sesiune"]}.', dict_page(fid, d, S, P), 1), encoding='utf-8')
         (out / '404.html').write_text(not_found(fid, d), encoding='utf-8')
         (out / 'favicon.svg').write_text(favicon(fid), encoding='utf-8')
         (out / 'robots.txt').write_text('User-agent: *\nDisallow: /\n', encoding='utf-8')

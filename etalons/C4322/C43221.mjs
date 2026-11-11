@@ -1,13 +1,25 @@
-// Catalog autonom C43221. Sursă: catalog.js (versiunea existentă).
-// Identificatorii C43221-3 sunt interni SCARA, nu subcoduri CAEN oficiale.
+// GENERAT din etalons/C4322/dictionar (sesiune 0006H) de tools/build_c4322.py — nu editați manual; modificați dicționarul.
+// Catalog C43221 — Încălzire. Identificatorii C43221-3 sunt interni SCARA, nu subcoduri CAEN oficiale.
 export const etalon = {
   "classId": "C43221",
   "parentClassId": "C4322",
   "caen": "4322",
   "family": "incalzire",
   "title": "Încălzire",
-  "version": "1.3.0-draft",
+  "version": "2.0.0-dictionar",
   "market": "București",
+  "groups": [
+    "Centrale termice",
+    "Pompe de căldură",
+    "Calorifere și corpuri de încălzire",
+    "Încălzire în pardoseală",
+    "Termostate, senzori și automatizări",
+    "Apă caldă menajeră",
+    "Solar termic",
+    "Componente instalație",
+    "Instalații de gaze",
+    "Service, revizii și ISCIR"
+  ],
   "services": [
     {
       "id": "S-I-01",
@@ -21,7 +33,14 @@ export const etalon = {
       "priceMaxRON": 500,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "vizită",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0034",
+      "uses": [
+        "P-I-01",
+        "P-I-02",
+        "P-I-19",
+        "P-I-20"
+      ]
     },
     {
       "id": "S-I-02",
@@ -35,7 +54,15 @@ export const etalon = {
       "priceMaxRON": 2000,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0035",
+      "uses": [
+        "P-I-01",
+        "P-I-31",
+        "P-I-17",
+        "P-I-15",
+        "P-C-13"
+      ]
     },
     {
       "id": "S-I-03",
@@ -49,7 +76,14 @@ export const etalon = {
       "priceMaxRON": 1600,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0036",
+      "uses": [
+        "P-I-01",
+        "P-I-31",
+        "P-I-17",
+        "P-I-34"
+      ]
     },
     {
       "id": "S-I-04",
@@ -63,7 +97,12 @@ export const etalon = {
       "priceMaxRON": 500,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0037",
+      "uses": [
+        "P-I-01",
+        "P-I-19"
+      ]
     },
     {
       "id": "S-I-05",
@@ -77,7 +116,11 @@ export const etalon = {
       "priceMaxRON": 600,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0038",
+      "uses": [
+        "P-I-01"
+      ]
     },
     {
       "id": "S-I-06",
@@ -91,7 +134,12 @@ export const etalon = {
       "priceMaxRON": 450,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0039",
+      "uses": [
+        "P-I-01",
+        "P-I-17"
+      ]
     },
     {
       "id": "S-I-07",
@@ -105,7 +153,13 @@ export const etalon = {
       "priceMaxRON": 900,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "intervenție, fără piese",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0040",
+      "uses": [
+        "P-I-01",
+        "P-I-16",
+        "P-I-15"
+      ]
     },
     {
       "id": "S-I-08",
@@ -119,7 +173,14 @@ export const etalon = {
       "priceMaxRON": 600,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0041",
+      "uses": [
+        "P-I-05",
+        "P-I-06",
+        "P-I-23",
+        "P-I-12"
+      ]
     },
     {
       "id": "S-I-09",
@@ -133,7 +194,12 @@ export const etalon = {
       "priceMaxRON": 250,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0042",
+      "uses": [
+        "P-I-12",
+        "P-I-29"
+      ]
     },
     {
       "id": "S-I-10",
@@ -147,7 +213,13 @@ export const etalon = {
       "priceMaxRON": 140,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "m²",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0043",
+      "uses": [
+        "P-I-08",
+        "P-I-09",
+        "P-I-32"
+      ]
     },
     {
       "id": "S-I-11",
@@ -161,7 +233,15 @@ export const etalon = {
       "priceMaxRON": 12000,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0044",
+      "uses": [
+        "P-I-02",
+        "P-I-03",
+        "P-I-04",
+        "P-I-30",
+        "P-I-15"
+      ]
     },
     {
       "id": "S-I-12",
@@ -175,7 +255,12 @@ export const etalon = {
       "priceMaxRON": 1500,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0045",
+      "uses": [
+        "P-I-14",
+        "P-I-15"
+      ]
     },
     {
       "id": "S-I-13",
@@ -189,7 +274,12 @@ export const etalon = {
       "priceMaxRON": 1800,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0046",
+      "uses": [
+        "P-I-34",
+        "P-I-17"
+      ]
     },
     {
       "id": "S-I-14",
@@ -203,7 +293,13 @@ export const etalon = {
       "priceMaxRON": 1200,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0047",
+      "uses": [
+        "P-I-12",
+        "P-I-16",
+        "P-I-09"
+      ]
     },
     {
       "id": "S-I-15",
@@ -217,7 +313,13 @@ export const etalon = {
       "priceMaxRON": 500,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0048",
+      "uses": [
+        "P-I-10",
+        "P-I-11",
+        "P-I-28"
+      ]
     },
     {
       "id": "S-I-16",
@@ -231,7 +333,12 @@ export const etalon = {
       "priceMaxRON": 6000,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0049",
+      "uses": [
+        "P-I-18",
+        "P-I-14"
+      ]
     },
     {
       "id": "S-I-17",
@@ -245,7 +352,14 @@ export const etalon = {
       "priceMaxRON": 8000,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "apartament, fără centrală",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0050",
+      "uses": [
+        "P-I-01",
+        "P-I-31",
+        "P-I-36",
+        "P-I-35"
+      ]
     },
     {
       "id": "S-I-18",
@@ -259,7 +373,14 @@ export const etalon = {
       "priceMaxRON": 3500,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0051",
+      "uses": [
+        "P-I-20",
+        "P-I-21",
+        "P-I-30",
+        "P-I-15"
+      ]
     },
     {
       "id": "S-I-19",
@@ -273,7 +394,12 @@ export const etalon = {
       "priceMaxRON": 1300,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0052",
+      "uses": [
+        "P-I-19",
+        "P-I-15"
+      ]
     },
     {
       "id": "S-I-20",
@@ -287,7 +413,13 @@ export const etalon = {
       "priceMaxRON": 5000,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0053",
+      "uses": [
+        "P-I-22",
+        "P-I-30",
+        "P-I-16"
+      ]
     },
     {
       "id": "S-I-21",
@@ -301,7 +433,12 @@ export const etalon = {
       "priceMaxRON": 500,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0054",
+      "uses": [
+        "P-I-24",
+        "P-C-20"
+      ]
     },
     {
       "id": "S-I-22",
@@ -315,7 +452,11 @@ export const etalon = {
       "priceMaxRON": 450,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0055",
+      "uses": [
+        "P-I-07"
+      ]
     },
     {
       "id": "S-I-23",
@@ -329,7 +470,11 @@ export const etalon = {
       "priceMaxRON": 1500,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0056",
+      "uses": [
+        "P-I-25"
+      ]
     },
     {
       "id": "S-I-24",
@@ -343,7 +488,12 @@ export const etalon = {
       "priceMaxRON": 120,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "m²",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0057",
+      "uses": [
+        "P-I-26",
+        "P-I-10"
+      ]
     },
     {
       "id": "S-I-25",
@@ -357,7 +507,12 @@ export const etalon = {
       "priceMaxRON": 400,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0058",
+      "uses": [
+        "P-I-27",
+        "P-I-28"
+      ]
     },
     {
       "id": "S-I-26",
@@ -371,7 +526,11 @@ export const etalon = {
       "priceMaxRON": 2500,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0059",
+      "uses": [
+        "P-I-30"
+      ]
     },
     {
       "id": "S-I-27",
@@ -385,7 +544,11 @@ export const etalon = {
       "priceMaxRON": 1200,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0060",
+      "uses": [
+        "P-I-31"
+      ]
     },
     {
       "id": "S-I-28",
@@ -399,7 +562,11 @@ export const etalon = {
       "priceMaxRON": 300,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0061",
+      "uses": [
+        "P-I-33"
+      ]
     },
     {
       "id": "S-I-29",
@@ -413,7 +580,12 @@ export const etalon = {
       "priceMaxRON": 1200,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0062",
+      "uses": [
+        "P-I-32",
+        "P-I-16"
+      ]
     },
     {
       "id": "S-I-30",
@@ -427,7 +599,12 @@ export const etalon = {
       "priceMaxRON": 8000,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "proiect + execuție",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0063",
+      "uses": [
+        "P-I-36",
+        "P-I-35"
+      ]
     },
     {
       "id": "S-I-31",
@@ -441,7 +618,11 @@ export const etalon = {
       "priceMaxRON": 600,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0064",
+      "uses": [
+        "P-I-35"
+      ]
     },
     {
       "id": "S-I-32",
@@ -455,7 +636,12 @@ export const etalon = {
       "priceMaxRON": 900,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0065",
+      "uses": [
+        "P-I-34",
+        "P-I-17"
+      ]
     },
     {
       "id": "S-I-33",
@@ -469,7 +655,11 @@ export const etalon = {
       "priceMaxRON": 400,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "lucrare",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0066",
+      "uses": [
+        "P-I-15"
+      ]
     },
     {
       "id": "S-I-34",
@@ -483,7 +673,13 @@ export const etalon = {
       "priceMaxRON": 800,
       "priceBasis": "manoperă, fără materiale",
       "priceUnit": "intervenție",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0067",
+      "uses": [
+        "P-I-01",
+        "P-I-16",
+        "P-I-15"
+      ]
     }
   ],
   "products": [
@@ -496,10 +692,22 @@ export const etalon = {
       "priceMinRON": 5000,
       "priceAvgRON": 7500,
       "priceMaxRON": 12000,
-      "brands": "Viessmann, Vaillant, Bosch, Ariston, Baxi, Immergas, Buderus, Motan",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0068",
+      "brands": "Viessmann, Vaillant, Bosch, Ariston, Baxi, Immergas, Buderus, Motan",
+      "usedIn": [
+        "S-I-01",
+        "S-I-02",
+        "S-I-03",
+        "S-I-04",
+        "S-I-05",
+        "S-I-06",
+        "S-I-07",
+        "S-I-17",
+        "S-I-34"
+      ]
     },
     {
       "id": "P-I-02",
@@ -510,10 +718,15 @@ export const etalon = {
       "priceMinRON": 18000,
       "priceAvgRON": 32000,
       "priceMaxRON": 55000,
-      "brands": "Daikin, Viessmann, Vaillant, Panasonic, Mitsubishi Electric, Samsung",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0077",
+      "brands": "Daikin, Viessmann, Vaillant, Panasonic, Mitsubishi Electric, Samsung",
+      "usedIn": [
+        "S-I-01",
+        "S-I-11"
+      ]
     },
     {
       "id": "P-I-03",
@@ -524,10 +737,14 @@ export const etalon = {
       "priceMinRON": 16000,
       "priceAvgRON": 28000,
       "priceMaxRON": 45000,
-      "brands": "Panasonic, Samsung, LG, Daikin",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0082",
+      "brands": "Panasonic, Samsung, LG, Daikin",
+      "usedIn": [
+        "S-I-11"
+      ]
     },
     {
       "id": "P-I-04",
@@ -538,10 +755,14 @@ export const etalon = {
       "priceMinRON": 20000,
       "priceAvgRON": 35000,
       "priceMaxRON": 55000,
-      "brands": "Daikin, Mitsubishi Electric, Viessmann",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0084",
+      "brands": "Daikin, Mitsubishi Electric, Viessmann",
+      "usedIn": [
+        "S-I-11"
+      ]
     },
     {
       "id": "P-I-05",
@@ -552,10 +773,14 @@ export const etalon = {
       "priceMinRON": 300,
       "priceAvgRON": 500,
       "priceMaxRON": 900,
-      "brands": "Purmo, Kermi, Radel, Ferroli",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0085",
+      "brands": "Purmo, Kermi, Radel, Ferroli",
+      "usedIn": [
+        "S-I-08"
+      ]
     },
     {
       "id": "P-I-06",
@@ -566,10 +791,14 @@ export const etalon = {
       "priceMinRON": 40,
       "priceAvgRON": 60,
       "priceMaxRON": 110,
-      "brands": "Global, Fondital, Ferroli, Radel",
       "priceBasis": "echipament / material",
       "priceUnit": "element",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0090",
+      "brands": "Global, Fondital, Ferroli, Radel",
+      "usedIn": [
+        "S-I-08"
+      ]
     },
     {
       "id": "P-I-07",
@@ -580,10 +809,14 @@ export const etalon = {
       "priceMinRON": 200,
       "priceAvgRON": 450,
       "priceMaxRON": 1200,
-      "brands": "Kermi, Zehnder, Purmo, Fondital",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0093",
+      "brands": "Kermi, Zehnder, Purmo, Fondital",
+      "usedIn": [
+        "S-I-22"
+      ]
     },
     {
       "id": "P-I-08",
@@ -594,10 +827,14 @@ export const etalon = {
       "priceMinRON": 3,
       "priceAvgRON": 5,
       "priceMaxRON": 9,
-      "brands": "Rehau, Uponor, Valrom, Kan-therm",
       "priceBasis": "echipament / material",
       "priceUnit": "m",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0095",
+      "brands": "Rehau, Uponor, Valrom, Kan-therm",
+      "usedIn": [
+        "S-I-10"
+      ]
     },
     {
       "id": "P-I-09",
@@ -608,10 +845,15 @@ export const etalon = {
       "priceMinRON": 400,
       "priceAvgRON": 900,
       "priceMaxRON": 2000,
-      "brands": "Rehau, Uponor, Valrom, Herz",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0100",
+      "brands": "Rehau, Uponor, Valrom, Herz",
+      "usedIn": [
+        "S-I-10",
+        "S-I-14"
+      ]
     },
     {
       "id": "P-I-10",
@@ -622,10 +864,15 @@ export const etalon = {
       "priceMinRON": 120,
       "priceAvgRON": 250,
       "priceMaxRON": 450,
-      "brands": "Salus, Computherm, Honeywell, Tech",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0102",
+      "brands": "Salus, Computherm, Honeywell, Tech",
+      "usedIn": [
+        "S-I-15",
+        "S-I-24"
+      ]
     },
     {
       "id": "P-I-11",
@@ -636,10 +883,14 @@ export const etalon = {
       "priceMinRON": 300,
       "priceAvgRON": 600,
       "priceMaxRON": 1200,
-      "brands": "Netatmo, tado°, Salus, Honeywell, Bosch",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0107",
+      "brands": "Netatmo, tado°, Salus, Honeywell, Bosch",
+      "usedIn": [
+        "S-I-15"
+      ]
     },
     {
       "id": "P-I-12",
@@ -650,10 +901,16 @@ export const etalon = {
       "priceMinRON": 60,
       "priceAvgRON": 120,
       "priceMaxRON": 250,
-      "brands": "Danfoss, Herz, Honeywell, Giacomini",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0110",
+      "brands": "Danfoss, Herz, Honeywell, Giacomini",
+      "usedIn": [
+        "S-I-08",
+        "S-I-09",
+        "S-I-14"
+      ]
     },
     {
       "id": "P-I-13",
@@ -664,10 +921,14 @@ export const etalon = {
       "priceMinRON": 600,
       "priceAvgRON": 1000,
       "priceMaxRON": 1800,
-      "brands": "Ariston, Tesy, Electrolux, Gorenje",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0113",
+      "brands": "Ariston, Tesy, Electrolux, Gorenje",
+      "usedIn": [
+        "S-S-07"
+      ]
     },
     {
       "id": "P-I-14",
@@ -678,10 +939,15 @@ export const etalon = {
       "priceMinRON": 1800,
       "priceAvgRON": 3000,
       "priceMaxRON": 5000,
-      "brands": "Viessmann, Ariston, Ferroli, Dražice",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0117",
+      "brands": "Viessmann, Ariston, Ferroli, Dražice",
+      "usedIn": [
+        "S-I-12",
+        "S-I-16"
+      ]
     },
     {
       "id": "P-I-15",
@@ -692,10 +958,23 @@ export const etalon = {
       "priceMinRON": 80,
       "priceAvgRON": 180,
       "priceMaxRON": 400,
-      "brands": "Zilmet, Elbi, Reflex, Fornello",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0119",
+      "brands": "Zilmet, Elbi, Reflex, Fornello",
+      "usedIn": [
+        "S-I-02",
+        "S-I-07",
+        "S-I-11",
+        "S-I-12",
+        "S-I-18",
+        "S-I-19",
+        "S-I-33",
+        "S-I-34",
+        "S-S-07",
+        "S-S-25"
+      ]
     },
     {
       "id": "P-I-16",
@@ -706,10 +985,18 @@ export const etalon = {
       "priceMinRON": 400,
       "priceAvgRON": 800,
       "priceMaxRON": 1500,
-      "brands": "Grundfos, Wilo, IBO, DAB",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0124",
+      "brands": "Grundfos, Wilo, IBO, DAB",
+      "usedIn": [
+        "S-I-07",
+        "S-I-14",
+        "S-I-20",
+        "S-I-29",
+        "S-I-34"
+      ]
     },
     {
       "id": "P-I-17",
@@ -720,10 +1007,18 @@ export const etalon = {
       "priceMinRON": 150,
       "priceAvgRON": 300,
       "priceMaxRON": 600,
-      "brands": "Fernox, Sentinel, Ferroli",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0129",
+      "brands": "Fernox, Sentinel, Ferroli",
+      "usedIn": [
+        "S-I-02",
+        "S-I-03",
+        "S-I-06",
+        "S-I-13",
+        "S-I-32"
+      ]
     },
     {
       "id": "P-I-18",
@@ -734,10 +1029,14 @@ export const etalon = {
       "priceMinRON": 1500,
       "priceAvgRON": 2500,
       "priceMaxRON": 4500,
-      "brands": "Viessmann, Vaillant, Sunsystem, Ferroli",
       "priceBasis": "echipament / material",
       "priceUnit": "panou",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0132",
+      "brands": "Viessmann, Vaillant, Sunsystem, Ferroli",
+      "usedIn": [
+        "S-I-16"
+      ]
     },
     {
       "id": "P-I-19",
@@ -748,10 +1047,16 @@ export const etalon = {
       "priceMinRON": 1800,
       "priceAvgRON": 3000,
       "priceMaxRON": 5500,
-      "brands": "Kospel, Protherm, Ferroli, Motan",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0134",
+      "brands": "Kospel, Protherm, Ferroli, Motan",
+      "usedIn": [
+        "S-I-01",
+        "S-I-04",
+        "S-I-19"
+      ]
     },
     {
       "id": "P-I-20",
@@ -762,10 +1067,15 @@ export const etalon = {
       "priceMinRON": 8000,
       "priceAvgRON": 15000,
       "priceMaxRON": 30000,
-      "brands": "Viessmann, Ferroli, Burnit, Kostrzewa",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0137",
+      "brands": "Viessmann, Ferroli, Burnit, Kostrzewa",
+      "usedIn": [
+        "S-I-01",
+        "S-I-18"
+      ]
     },
     {
       "id": "P-I-21",
@@ -776,10 +1086,14 @@ export const etalon = {
       "priceMinRON": 6000,
       "priceAvgRON": 11000,
       "priceMaxRON": 20000,
-      "brands": "Atmos, Ferroli, Viessmann, Burnit",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0140",
+      "brands": "Atmos, Ferroli, Viessmann, Burnit",
+      "usedIn": [
+        "S-I-18"
+      ]
     },
     {
       "id": "P-I-22",
@@ -790,10 +1104,14 @@ export const etalon = {
       "priceMinRON": 5000,
       "priceAvgRON": 9000,
       "priceMaxRON": 18000,
-      "brands": "Ferroli, Thermorossi, Edilkamin, Ravelli",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0142",
+      "brands": "Ferroli, Thermorossi, Edilkamin, Ravelli",
+      "usedIn": [
+        "S-I-20"
+      ]
     },
     {
       "id": "P-I-23",
@@ -804,10 +1122,14 @@ export const etalon = {
       "priceMinRON": 80,
       "priceAvgRON": 150,
       "priceMaxRON": 300,
-      "brands": "Viadrus, Fondital, Carron",
       "priceBasis": "echipament / material",
       "priceUnit": "element",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0146",
+      "brands": "Viadrus, Fondital, Carron",
+      "usedIn": [
+        "S-I-08"
+      ]
     },
     {
       "id": "P-I-24",
@@ -818,10 +1140,14 @@ export const etalon = {
       "priceMinRON": 800,
       "priceAvgRON": 1600,
       "priceMaxRON": 3500,
-      "brands": "Jaga, Kermi, Purmo, Zehnder",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0149",
+      "brands": "Jaga, Kermi, Purmo, Zehnder",
+      "usedIn": [
+        "S-I-21"
+      ]
     },
     {
       "id": "P-I-25",
@@ -832,10 +1158,14 @@ export const etalon = {
       "priceMinRON": 1500,
       "priceAvgRON": 3000,
       "priceMaxRON": 6000,
-      "brands": "Sonniger, Flowair, Reventon, Kampmann",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0151",
+      "brands": "Sonniger, Flowair, Reventon, Kampmann",
+      "usedIn": [
+        "S-I-23"
+      ]
     },
     {
       "id": "P-I-26",
@@ -846,10 +1176,14 @@ export const etalon = {
       "priceMinRON": 70,
       "priceAvgRON": 110,
       "priceMaxRON": 180,
-      "brands": "Thermoval, Danfoss Devi, Raychem",
       "priceBasis": "echipament / material",
       "priceUnit": "m²",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0156",
+      "brands": "Thermoval, Danfoss, Raychem",
+      "usedIn": [
+        "S-I-24"
+      ]
     },
     {
       "id": "P-I-27",
@@ -860,10 +1194,14 @@ export const etalon = {
       "priceMinRON": 60,
       "priceAvgRON": 120,
       "priceMaxRON": 250,
-      "brands": "marca centralei: Viessmann, Vaillant, Bosch, Ariston",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0159",
+      "brands": "Viessmann, Vaillant, Bosch, Ariston",
+      "usedIn": [
+        "S-I-25"
+      ]
     },
     {
       "id": "P-I-28",
@@ -874,10 +1212,15 @@ export const etalon = {
       "priceMinRON": 80,
       "priceAvgRON": 150,
       "priceMaxRON": 350,
-      "brands": "Netatmo, tado°, Salus, Aqara",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0160",
+      "brands": "Netatmo, tado°, Salus, Aqara",
+      "usedIn": [
+        "S-I-15",
+        "S-I-25"
+      ]
     },
     {
       "id": "P-I-29",
@@ -888,10 +1231,14 @@ export const etalon = {
       "priceMinRON": 200,
       "priceAvgRON": 350,
       "priceMaxRON": 600,
-      "brands": "tado°, Netatmo, Danfoss, Honeywell",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0162",
+      "brands": "tado°, Netatmo, Danfoss, Honeywell",
+      "usedIn": [
+        "S-I-09"
+      ]
     },
     {
       "id": "P-I-30",
@@ -902,10 +1249,17 @@ export const etalon = {
       "priceMinRON": 2000,
       "priceAvgRON": 3500,
       "priceMaxRON": 6000,
-      "brands": "Sunsystem, Ferroli, Elbi, Viessmann",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0163",
+      "brands": "Sunsystem, Ferroli, Elbi, Viessmann",
+      "usedIn": [
+        "S-I-11",
+        "S-I-18",
+        "S-I-20",
+        "S-I-26"
+      ]
     },
     {
       "id": "P-I-31",
@@ -916,10 +1270,17 @@ export const etalon = {
       "priceMinRON": 150,
       "priceAvgRON": 300,
       "priceMaxRON": 600,
-      "brands": "marca centralei, Ricom",
       "priceBasis": "echipament / material",
       "priceUnit": "kit",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0164",
+      "brands": "Ricom",
+      "usedIn": [
+        "S-I-02",
+        "S-I-03",
+        "S-I-17",
+        "S-I-27"
+      ]
     },
     {
       "id": "P-I-32",
@@ -930,10 +1291,15 @@ export const etalon = {
       "priceMinRON": 1200,
       "priceAvgRON": 2200,
       "priceMaxRON": 4000,
-      "brands": "Watts, Meibes, Herz, Afriso",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0166",
+      "brands": "Watts, Meibes, Herz, Afriso",
+      "usedIn": [
+        "S-I-10",
+        "S-I-29"
+      ]
     },
     {
       "id": "P-I-33",
@@ -944,10 +1310,14 @@ export const etalon = {
       "priceMinRON": 80,
       "priceAvgRON": 300,
       "priceMaxRON": 900,
-      "brands": "Techem, ista, Kamstrup, Siemens",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0170",
+      "brands": "Techem, ista, Kamstrup, Siemens",
+      "usedIn": [
+        "S-I-28"
+      ]
     },
     {
       "id": "P-I-34",
@@ -958,10 +1328,16 @@ export const etalon = {
       "priceMinRON": 60,
       "priceAvgRON": 120,
       "priceMaxRON": 250,
-      "brands": "Fernox, Sentinel, Sotin",
       "priceBasis": "echipament / material",
       "priceUnit": "buc",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0175",
+      "brands": "Fernox, Sentinel, Sotin",
+      "usedIn": [
+        "S-I-03",
+        "S-I-13",
+        "S-I-32"
+      ]
     },
     {
       "id": "P-I-35",
@@ -972,10 +1348,16 @@ export const etalon = {
       "priceMinRON": 250,
       "priceAvgRON": 450,
       "priceMaxRON": 800,
-      "brands": "Seitron, Sinteco, Beca",
       "priceBasis": "echipament / material",
       "priceUnit": "set",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0177",
+      "brands": "Seitron, Sinteco, Beca",
+      "usedIn": [
+        "S-I-17",
+        "S-I-30",
+        "S-I-31"
+      ]
     },
     {
       "id": "P-I-36",
@@ -986,24 +1368,16 @@ export const etalon = {
       "priceMinRON": 40,
       "priceAvgRON": 80,
       "priceMaxRON": 150,
-      "brands": "Geberit Mapress, Valrom, Kitec",
       "priceBasis": "echipament / material",
       "priceUnit": "m de traseu",
-      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+      "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+      "entityId": "ENT-C4322-0181",
+      "brands": "Geberit, Valrom, Kitec",
+      "usedIn": [
+        "S-I-17",
+        "S-I-30"
+      ]
     }
-  ],
-  "notes": "Catalog etalon sectorial; serviciile și produsele concrete ale firmei sunt confirmate individual. Nu reprezintă stoc, ofertă contractuală ori certificare.",
-  "groups": [
-    "Centrale termice",
-    "Pompe de căldură",
-    "Calorifere și corpuri de încălzire",
-    "Încălzire în pardoseală",
-    "Termostate, senzori și automatizări",
-    "Apă caldă menajeră",
-    "Solar termic",
-    "Componente instalație",
-    "Instalații de gaze",
-    "Service, revizii și ISCIR"
   ],
   "sharedRefs": {
     "services": [],
@@ -1012,6 +1386,8 @@ export const etalon = {
       "P-C-20",
       "P-S-12"
     ]
-  }
+  },
+  "notes": "Catalog etalon sectorial; serviciile și produsele concrete ale firmei sunt confirmate individual. Nu reprezintă stoc, ofertă contractuală ori certificare.",
+  "dictionarySession": "0006H"
 };
 export default etalon;

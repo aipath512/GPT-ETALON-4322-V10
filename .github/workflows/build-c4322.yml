@@ -25,7 +25,7 @@ jobs:
       - name: Regenerare pagini
         run: python3 tools/build_c4322.py
       - name: Teste
-        run: node --test tests/c4322-sites.test.mjs etalons/C4322/C4322.test.mjs
+        run: node --test tests/c4322-dictionar.test.mjs tests/c4322-sites.test.mjs etalons/C4322/C4322.test.mjs
       - name: Urcare modificări
         run: |
           if [ -n "$(git status --porcelain cloudflare-pages)" ]; then
