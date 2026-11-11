@@ -4878,5 +4878,104 @@
       "properties": {},
       "session": "0006H"
     }
-  ]
+  ],
+  "extensiiComerciale": {
+    "version": "1.0",
+    "basedOn": "etalons/C4322/audit/fli-ro-delta-2026-11-11.json",
+    "status": "MODEL_PROPOSED_NOT_LIVE",
+    "categories": [
+      {
+        "category": "reparatii_centrale",
+        "kind": "service_enrichment",
+        "canonicalCodes": [
+          "S-I-07"
+        ]
+      },
+      {
+        "category": "consultanta_termica",
+        "kind": "service_enrichment",
+        "canonicalCodes": [
+          "S-I-01"
+        ]
+      },
+      {
+        "category": "mentenanta_interventii",
+        "kind": "service_enrichment",
+        "canonicalCodes": [
+          "S-I-06",
+          "S-I-07"
+        ]
+      },
+      {
+        "category": "af_vtu",
+        "kind": "regulated_service",
+        "canonicalCodes": [
+          "S-I-05"
+        ]
+      },
+      {
+        "category": "pif_centrala",
+        "kind": "regulated_service",
+        "canonicalCodes": [
+          "S-I-04"
+        ]
+      },
+      {
+        "category": "proiectare_executie",
+        "kind": "regulated_service",
+        "canonicalCodes": [
+          "S-I-30",
+          "S-C-01"
+        ]
+      },
+      {
+        "category": "certificari_iso",
+        "kind": "credential",
+        "requiresEvidence": true
+      },
+      {
+        "category": "autorizatii_iscir",
+        "kind": "credential",
+        "requiresEvidence": true
+      },
+      {
+        "category": "autorizatii_anre",
+        "kind": "credential",
+        "requiresEvidence": true
+      },
+      {
+        "category": "autorizatii_agfr",
+        "kind": "credential",
+        "requiresEvidence": true
+      },
+      {
+        "category": "garantii",
+        "kind": "contractual_offer",
+        "requiresFirmConfirmation": true
+      },
+      {
+        "category": "revizie_abonamente",
+        "kind": "recurring_commercial_offer",
+        "canonicalCodes": [
+          "S-I-06"
+        ],
+        "requiresFirmConfirmation": true
+      },
+      {
+        "category": "protectie_inteligenta",
+        "kind": "manufacturer_specific_warranty",
+        "requiresManufacturerVerification": true
+      },
+      {
+        "category": "oferte_lunare",
+        "kind": "product_service_bundle",
+        "requiresFirmConfirmation": true
+      },
+      {
+        "category": "blog",
+        "kind": "editorial",
+        "requiresTechnicalReview": true
+      }
+    ]
+  }
 }
