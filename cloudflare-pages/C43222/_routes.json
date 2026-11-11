@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "include": [
+    "/__functii-dezactivate__"
+  ],
+  "exclude": []
+}

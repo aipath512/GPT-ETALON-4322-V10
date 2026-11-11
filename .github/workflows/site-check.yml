@@ -12,4 +12,4 @@ jobs:
         with:
           node-version: '22'
       - name: Validate all pages, catalogs, assets and interaction wiring
-        run: node --test tests/site.test.mjs
+        run: node --test tests/site.test.mjs tests/c4322-sites.test.mjs etalons/C4322/C4322.test.mjs

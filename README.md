@@ -92,3 +92,14 @@ Site static HTML/CSS/JS (regenerat și verificat pe 8 noiembrie 2026): `style.cs
 - Asistentul automat folosește `C4322FAQ.search()` și indică ID-ul FAQ, în plus față de regulile de siguranță și răspunsurile de rezervă.
 - Număr pagini după adăugare: **11 publice + 2 administrative = 13 HTML**.
 - Test: `node --test tests/site.test.mjs`. Validarea browser/live deploy trebuie efectuată separat.
+
+## Site-uri de familie C43221 / C43222 / C43223 — v1.1 (11 noiembrie 2026)
+- Trei site-uri independente, câte unul per proiect Cloudflare Pages (Build output directory = `cloudflare-pages/C4322x`):
+  - C43221 Încălzire → gpt-etalon-4322-v10.pages.dev (proiect `scara-c43221`)
+  - C43222 Climatizare → gpt-etalon-4322-v10-88z.pages.dev (proiect `scara-c43222`)
+  - C43223 Sanitare → gpt-etalon-4322-v10-bfs.pages.dev (proiect `scara-c43223`)
+- Firmă fictivă afișată: **TCE INSTAL SRL**. Parametri în adresă: `?cui=` (validat cu cifra de control oficială) și `?firma=`.
+- C43221–C43223 sunt coduri interne SCARA; codul CAEN oficial (Rev.3) este clasa 4322.
+- Sursa datelor: `etalons/C4322/C4322x.mjs` (cu câmpuri `priceMinRON` / `priceAvgRON` / `priceMaxRON`, încă necompletate).
+- Paginile se regenerează din module cu `python3 tools/build_c4322.py`; testele `tests/c4322-sites.test.mjs` rulează în GitHub Actions.
+- Antet: comutator Dark/Light, selector 24 limbi UE (traduce interfața; catalogul rămâne în română), dată/oră, versiune, sesiune 0001C.
