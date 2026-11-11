@@ -8,7 +8,7 @@ C43221/C43222/C43223 sunt coduri interne SCARA; codul CAEN oficial (Rev.3) este 
 import json, html, pathlib, re, shutil
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-VERSION = 'v2.3'
+VERSION = 'v2.4'
 DATE = '2026-11-11'
 SESSION = '0006H'
 CFG = json.loads((ROOT / 'etalons/C4322/firma.json').read_text(encoding='utf-8'))
@@ -274,10 +274,49 @@ def shell(fid, d, page_id, title_txt, desc, body, depth, path='/', ld=None):
 <p id="count" class="muted" aria-live="polite"></p><div id="list" class="rows"></div>
 <div class="notice"><strong>{FIRM} este o firmă fictivă.</strong> Etalon intern SCARA. Prețuri orientative în lei cu TVA (min / mediu recomandat / max), estimări nov. 2026 de validat; serviciile = manoperă fără materiale. Conținutul catalogului este în limba română; selectorul de limbă traduce interfața.</div>
 </div></section></main>
-<footer><div class="container"><strong>SCARA · AiVenture</strong><br>{fid} — {esc(title)} · {FIRM} (fictivă) · {esc(sub)} · CAEN 4322 · {VERSION} · {DATE} · sesiune {SESSION}<br>{'Site demonstrativ public, realizat de AiVenture S.R.L.' if PUBLIC else 'Etalon intern, neindexat'}; firma afișată este fictivă și nu reprezintă ofertă comercială.</div></footer>
+<footer><div class="container"><strong>{FIRM}</strong> (fictivă) · Dispecerat <a href="tel:{TEL_HREF}">{esc(TEL)}</a> · {esc(MAIL)} · {esc(TR.get('Adresa', ''))} · CUI {esc(CFG.get('CUI'))}{' (exemplu)' if CFG.get('CUIExemplu') else ''} · {esc(' · '.join(a + ' ' + b for a, b in TR.get('Program', [])[:2]))} · <a href="/despre/">Despre</a><br><br><strong>SCARA · AiVenture</strong><br>{fid} — {esc(title)} · {FIRM} (fictivă) · {esc(sub)} · CAEN 4322 · {VERSION} · {DATE} · sesiune {SESSION}<br>{'Site demonstrativ public, realizat de AiVenture S.R.L.' if PUBLIC else 'Etalon intern, neindexat'}; firma afișată este fictivă și nu reprezintă ofertă comercială.</div></footer>
 <script>const I18N={json.dumps(i18n, ensure_ascii=False).replace('<', '\\u003c')};const CUI_DEF={json.dumps(CFG['CUI'])},CUI_EX={'true' if CFG.get('CUIExemplu') else 'false'},ICON="{f['icon']}";</script>
 <script src="/catalog.js"></script><script src="/app.js"></script></body></html>
 """
+
+TR = CFG.get('Incredere', {})
+TEL = TR.get('Telefon', ''); TEL_HREF = re.sub(r'[^0-9+]', '', TEL); MAIL = TR.get('Email', '')
+def contract_of(S):
+    return next((x for x in S if not x.get('external') and re.search(r'revizi|întreținere|mentenan', x['name'], re.I)), None)
+def cta_btns(fid):
+    subj = esc('Vreau contract de mentenanță — ' + CFG['SubtitluFamilie'][fid])
+    return f'<a class="btn" href="tel:{TEL_HREF}">Dispecerat {esc(TEL)}</a> <a class="btn" href="mailto:{esc(MAIL)}?subject={subj}">Vreau contract</a>'
+def cifre_html():
+    return ''.join(f'<span><strong>{esc(n)}</strong> {esc(t)}</span>' for n, t in TR.get('Cifre', []))
+def recenzii_html():
+    return ''.join(f'<div class="dblock"><p>„{esc(t)}”</p><p class="muted">— {esc(n)}, {esc(dt)} · exemplu fictiv</p></div>' for n, dt, t in TR.get('Recenzii', []))
+def home_trust(fid, S):
+    """Blocurile de încredere de pe homepage (model fli.ro), după grupele existente."""
+    c = contract_of(S)
+    ctr = (f'<p>Revizie și întreținere anuală <strong>de la {fmt_ro(c["priceMinRON"])} lei</strong> (recomandat {fmt_ro(c["priceAvgRON"])} lei / {esc(c["priceUnit"])}) — <a href="{c["url"]}">vezi fișa</a>.</p>') if c else ''
+    aut = ''.join(f'<li><strong>{esc(a)}</strong> — {esc(b)}</li>' for a, b in TR.get('Autorizatii', {}).get(fid, []))
+    iso = ', '.join(esc(x.split(' — ')[0]) for x in TR.get('ISO', []))
+    zona = ''.join(f'<li><strong>{esc(a)}</strong>: {esc(b)}</li>' for a, b in TR.get('Zona', []))
+    prog = ' · '.join(f'{esc(a)} {esc(b)}' for a, b in TR.get('Program', [])[:2])
+    return f"""<section class="section about" id="incredere"><div class="container">
+<div class="eyebrow">DE CE {FIRM} · DATE DEMONSTRATIVE</div><h2>{esc(TR.get('Hook', ''))}</h2>
+<div class="meta">{cifre_html()}</div><p>{cta_btns(fid)}</p>
+<div class="dblock"><h3>Contract de mentenanță</h3>{ctr}<p>Un singur număr de dispecerat, revizia programată din timp și același tehnician, când e posibil.</p></div>
+<div class="dblock"><h3>De ce să ne alegeți</h3><ul>{''.join(f'<li>{esc(x)}</li>' for x in TR.get('Avantaje', []))}</ul></div>
+<div class="dblock"><h3>Cum lucrăm</h3><ol>{''.join(f'<li>{esc(x)}</li>' for x in TR.get('CumLucram', []))}</ol></div>
+<div class="dblock"><h3>Program și urgențe</h3><p>Dispecerat <a href="tel:{TEL_HREF}">{esc(TEL)}</a> · {prog}.</p><p>{esc(TR.get('Urgente', ''))}</p></div>
+<div class="dblock"><h3>Autorizații și standarde</h3><ul>{aut}</ul><p>Sistem de management: {iso}. Numerele autorizațiilor și certificatelor: pe pagina <a href="/despre/">Despre</a>.</p></div>
+<div class="dblock"><h3>Mărci</h3><p>Lucrăm cu toate mărcile din catalog, indiferent de producător; filtrul „Mărci” de mai jos le arată pe toate.</p></div>
+<div class="dblock"><h3>Zona de acoperire</h3><ul>{zona}</ul></div>
+<div class="dblock"><h3>Misiunea noastră</h3><p>{esc(TR.get('Misiune', ''))}</p></div>
+<h3>Ce spun clienții</h3><p class="muted">Model de afișare cu exemple fictive; la o firmă reală se preiau recenziile verificabile, cu dată.</p>{recenzii_html()}
+<p><a class="btn" href="/despre/">Despre firmă, autorizații și date juridice →</a></p>
+</div></section>"""
+def detail_cta(fid, kind):
+    is_s = kind == 'servicii'
+    return f"""<div class="dblock tip"><h2>{"Programați lucrarea" if is_s else "Cereți oferta cu montaj"}</h2>
+<p>Trimiteți 2–3 poze cu instalația și primiți prețul înainte de deplasare. Lucrare cu factură, proces-verbal și garanție scrisă pentru manoperă; tehnicieni autorizați ({esc(", ".join(a for a, _ in TR.get("Autorizatii", {}).get(fid, [])))}).</p>
+<p>{cta_btns(fid)}</p><p class="muted">Program: {esc(" · ".join(a + " " + b for a, b in TR.get("Program", [])[:2]))}. Date demonstrative — firmă fictivă.</p></div>"""
 
 PL = lambda n, one, many: f'{n} {one if n == 1 else many}'
 
@@ -297,8 +336,10 @@ def home(fid, d, S, P):
 <div class="firm"><span id="firmName">{FIRM}</span><small>FICTIV</small></div><div class="subfam">{esc(sub)}</div>
 <h1>{esc(title)}</h1><p>{esc(f['subtitle'])}</p>
 <div class="cui-box" id="cuiBox" aria-live="polite"><div class="eyebrow">CUI firmă</div><div id="cuiView" class="cui-val">Fără CUI</div><div id="cuiMsg" style="font-size:13px;opacity:.85"></div><form id="cuiForm"><input id="cuiInput" inputmode="numeric" autocomplete="off" placeholder="CUI, ex. RO51415878" aria-label="CUI firmă"><button type="submit" data-i18n="show">Afișează</button></form></div>
-<div class="meta"><span>{f['icon']} {len(S)} servicii</span><span>{len(P)} produse</span><span>{len(d['groups'])} grupe</span></div></div></section>
-<section class="section"><div class="container"><div class="eyebrow">GRUPE · {esc(title).upper()}</div><h2>{esc(sub)}</h2><div class="rows">{''.join(rows)}</div></div></section>"""
+<div class="meta"><span>{f['icon']} {len(S)} servicii</span><span>{len(P)} produse</span><span>{len(d['groups'])} grupe</span></div>
+<div class="meta">{cifre_html()}</div><p>{cta_btns(fid)}</p></div></section>
+<section class="section"><div class="container"><div class="eyebrow">GRUPE · {esc(title).upper()}</div><h2>{esc(sub)}</h2><div class="rows">{''.join(rows)}</div></div></section>
+{home_trust(fid, S)}"""
 
 def fmt_ro(v):
     return f'{v:,}'.replace(',', '.')
@@ -347,7 +388,7 @@ def detail(fid, d, x, kind, S, P):
     return f"""<section class="hero small"><div class="container">{crumbs}
 <div class="eyebrow">{label} · {esc(x["id"])} · {fid}</div><div class="dhead"><img class="dimg" src="{x["img"]}" alt=""><div>{shared}<span class="grp">{esc(g)}</span>
 <h1>{esc(x["name"])}</h1><p>{esc(x["descriptionShort"])}</p><p class="dprice">{mn} – <b>{av}</b> – {mx} lei / {esc(u)}</p></div></div></div></section>
-<section class="section"><div class="container detail">{''.join(blocks)}
+<section class="section"><div class="container detail">{''.join(blocks)}{detail_cta(fid, kind)}
 <p><a class="btn" href="/{kind}/">← Toate {"serviciile" if is_s else "produsele"}</a></p></div></section>"""
 
 def dict_page(fid, d, S, P):
