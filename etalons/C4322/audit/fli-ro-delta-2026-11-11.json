@@ -770,5 +770,86 @@
       "offerVisibility": "only after firm confirms eligibility and authorizations"
     },
     "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "proiectareSiExecutie": {
+    "source": "Text «Proiectare și Execuție» de la FLI furnizat de utilizator",
+    "capturedAt": "2026-11-11",
+    "canonicalMapping": {
+      "existingService": "S-I-30 Proiectare și execuție instalație de gaze interioară",
+      "status": "EXISTS_PARTIAL",
+      "note": "Execuția instalațiilor termice/sanitare/AC/ventilație există în alte fișe; proiectarea trebuie distinctă și condiționată de calificări."
+    },
+    "disciplines": [
+      {
+        "name": "Gaze naturale",
+        "scope": "proiectare și execuție",
+        "existing": "S-I-30",
+        "regulator": "ANRE",
+        "action": "Clarifică faptul că dreptul de proiectare și cel de execuție se verifică separat."
+      },
+      {
+        "name": "Instalații termice",
+        "scope": "proiectare și execuție",
+        "existing": "servicii montaj și consultanță",
+        "action": "Propunere proiectare distinctă deja în audit; relații cu execuția."
+      },
+      {
+        "name": "Instalații sanitare și apă-canal",
+        "scope": "proiectare și execuție",
+        "existing": "instalații alimentare apă/canalizare",
+        "action": "Proiectare distinctă deja în audit."
+      },
+      {
+        "name": "Ventilare și climatizare",
+        "scope": "proiectare și execuție",
+        "existing": "S-C-01 consultanță/dimensionare și multiple servicii montaj",
+        "action": "Nou candidat proiectare ventilație/HVAC, fără duplicarea montajului."
+      },
+      {
+        "name": "Instalații electrice",
+        "scope": "proiectare și execuție",
+        "existing": "nu sunt parte explicită a referențialului 4322",
+        "action": "Extensie multi-CAEN condiționată de cod CAEN și autorizații ANRE electrice. Nu activa implicit."
+      }
+    ],
+    "legalCorrection": {
+      "fliClaim": "NTPEE/2009",
+      "status": "OUTDATED",
+      "currentInstrument": "Ordinul ANRE nr. 89/2018 și normele tehnice aferente, cu modificările ulterioare",
+      "primarySource": "https://legislatie.just.ro/Public/DetaliiDocument/201309",
+      "basis": "Art. 3 din Ordinul 89/2018 abrogă Ordinul 5/2009",
+      "checked": "2026-11-11",
+      "publicationRule": "Nu reproduce NTPEE/2009 ca normă în vigoare; verifică forma consolidată la publicare."
+    },
+    "newCandidate": {
+      "name": "Proiectare instalații de ventilare și climatizare (HVAC)",
+      "family": "C43222",
+      "status": "PROPUS_DISTINCT_DE_VALIDAT",
+      "notSameAs": "S-C-01 Consultanță și dimensionare aer condiționat"
+    },
+    "leadFormProposal": [
+      "nume",
+      "telefon",
+      "email",
+      "localitate",
+      "tip_clădire",
+      "destinație spațiu",
+      "suprafață",
+      "discipline solicitate",
+      "proiect nou sau renovare",
+      "există documentație",
+      "etapă (studiu/proiect/execuție)",
+      "buget opțional",
+      "fișiere opționale",
+      "mesaj",
+      "consimțământ"
+    ],
+    "validationRules": [
+      "Nu afirma că o firmă deține autorizări ANRE numai pentru că are CAEN 4322.",
+      "Proiectarea și execuția sunt capabilități distincte și se declară/verifică per firmă.",
+      "Serviciile electrice se oferă doar cu activitate și autorizări relevante, nu implicit 4322.",
+      "Nu copia descrieri ale concurentului; folosește datele ca semnal de acoperire și diferențiere."
+    ],
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
   }
 }
