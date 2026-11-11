@@ -109,3 +109,8 @@ Site static HTML/CSS/JS (regenerat și verificat pe 8 noiembrie 2026): `style.cs
 - O fișă relevantă pentru două familii există o singură dată și apare pe ambele site-uri prin `sharedRefs` (ex. P-I-13 Boiler electric și la Sanitare).
 - Fiecare fișă are grupă (filtre pe pagină), preț **min / recomandat (media) / max** în lei cu TVA, unitate, bază (manoperă sau echipament) și sursă; produsele au mărci uzuale. Prețurile sunt **estimări orientative nov. 2026, de validat**.
 - Parametri comuni în `etalons/C4322/firma.json` (NumeFirma, CUI, subtitluri de familie). La orice modificare, acțiunea `build-c4322.yml` regenerează paginile automat.
+
+## v1.4 (11 noiembrie 2026) — pagini Servicii / Produse, căutare comună
+- Fiecare site de familie are 3 pagini: `/` (grupele familiei, câte 3 exemple + „Vezi mai multe”), `/servicii/` și `/produse/` (toate fișele, în format rând: imagine, nume, cod, mărci, preț min / mediu / max, descriere).
+- Căutare pe toate paginile: cuvinte-cheie (fără diacritice, cu sinonime: AC, calorifer, PDC, ACM…) + filtru de marcă + filtru de grupă, combinabile; parametri în adresă `?q=&marca=&grupa=`.
+- Fotografii pe grupe: puneți `img/grupe/<grupa>.jpg` (ex. `img/grupe/centrale-termice.jpg`) în repo; acțiunea GitHub le preia automat în locul ilustrațiilor.

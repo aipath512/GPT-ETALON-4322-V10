@@ -748,7 +748,7 @@ export const etalon = {
       "priceMinRON": 40,
       "priceAvgRON": 100,
       "priceMaxRON": 250,
-      "brands": "marca aparatului",
+      "brands": "Daikin, Mitsubishi Electric, Gree, LG",
       "priceBasis": "echipament / material",
       "priceUnit": "set",
       "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
