@@ -5,10 +5,10 @@ Reconstruiește cele trei site-uri de familie (cloudflare-pages/C43221..C43223)
 din modulele de date etalons/C4322/C4322x.mjs. Rulare: python3 tools/build_c4322.py
 C43221/C43222/C43223 sunt coduri interne SCARA; codul CAEN oficial (Rev.3) este clasa 4322.
 """
-import json, html, pathlib, re
+import json, html, pathlib, re, shutil
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-VERSION = 'v2.1'
+VERSION = 'v2.2'
 DATE = '2026-11-11'
 SESSION = '0006H'
 CFG = json.loads((ROOT / 'etalons/C4322/firma.json').read_text(encoding='utf-8'))
@@ -132,7 +132,7 @@ def from_dictionary():
     fam_of_group = {r['target']: E[r['source']]['code'] for r in out('FAMILIE_ARE_GRUPA')}
     group_of = {r['target']: E[r['source']] for r in out('GRUPA_CONTINE')}
     shown = {}
-    for r in out('AFISAT_PE'): shown.setdefault(r['source'], []).append(E[r['target']]['code'])
+    for r in out('AFISAT_PE') + out('REFERIT_PE'): shown.setdefault(r['source'], []).append(E[r['target']]['code'])
     brands = {}
     for r in out('ARE_MARCA'): brands.setdefault(r['source'], []).append(E[r['target']]['name'])
     uses, used_in = {}, {}
@@ -164,6 +164,8 @@ def load(fid):
     return MODS[fid]
 
 ALL = {}
+ABS = lambda base, u: u if u.startswith('http') else base + u
+ITEM_URL = lambda kind, x: f'/{kind}/' + SLUG(x['id'] + ' ' + x['name']) + '/'
 def find(kind, iid):
     for ofid in FAMILIES:
         for x in load(ofid)[kind]:
@@ -174,7 +176,7 @@ def items(fid, d, kind):
     out = [dict(x) for x in d[kind]]
     for iid in d.get('sharedRefs', {}).get(kind, []):
         ofid, x = find(kind, iid); x = dict(x)
-        x['sharedFrom'] = load(ofid)['title']; x['homeGroup'] = x['group']; x['group'] = 'Comune cu alte familii'
+        x['sharedFrom'] = load(ofid)['title']; x['homeFid'] = ofid; x['homeGroup'] = x['group']; x['group'] = SHARED_G; x['external'] = True
         out.append(x)
     return out
 
@@ -203,7 +205,7 @@ ROUTES = json.dumps({'version': 1, 'include': ['/__functii-dezactivate__'], 'exc
 import re, unicodedata
 
 SLUG = lambda t: re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFD', t).encode('ascii', 'ignore').decode().lower()).strip('-')
-SHARED_G = 'Comune cu alte familii'
+SHARED_G = 'Vezi și — alte familii'
 
 def brand_list(s):
     out = []
@@ -228,8 +230,10 @@ def catalog(fid, d):
     for x in S:
         rel_b = sorted({b for pid in x.get('uses', []) for b in pb.get(pid, [])})
         x['brandList'] = rel_b or sorted(by_group.get(x.get('homeGroup', x['group']), set()))
-    for x in S: x['url'] = '/servicii/' + SLUG(x['id'] + ' ' + x['name']) + '/'
-    for x in P: x['url'] = '/produse/' + SLUG(x['id'] + ' ' + x['name']) + '/'
+    for kind, xs in (('servicii', S), ('produse', P)):
+        for x in xs:
+            x['url'] = ITEM_URL(kind, x)
+            if x.get('external'): x['url'] = BASE.get(x['homeFid'], '') + x['url']
     for x in S + P:
         g = x.get('homeGroup', x['group'])
         x['gimg'] = '/img/grupe/' + SLUG(g) + '.' + ('jpg' if (ROOT / 'img/grupe' / (SLUG(g) + '.jpg')).exists() else 'svg')
@@ -320,10 +324,11 @@ def detail(fid, d, x, kind, S, P):
         y = known.get(c)
         if y is None and c in byc:
             ofid = next(f for f in FAMILIES if any(z['id'] == c for z in load(f)['products' if is_s else 'services']))
-            y = dict(byc[c]); y['url'] = None; y['external'] = ofid
+            y = dict(byc[c]); y['url'] = BASE.get(ofid, '') + ITEM_URL('produse' if is_s else 'servicii', y); y['otherFid'] = ofid
         if y: rel.append(y)
     same = [y for y in (S if is_s else P) if y.get('homeGroup', y['group']) == g and y['id'] != x['id']][:6]
-    li = lambda ys: ''.join((f'<li><a href="{y["url"]}">{esc(y["name"])}</a>' if y.get('url') else f'<li>{esc(y["name"])} <span class="grp">{esc(load(y["external"])["title"])}</span>') + f' <span class="muted">· {esc(y["id"])} · {fmt_ro(y["priceAvgRON"])} lei / {esc(y["priceUnit"])}</span></li>' for y in ys)
+    other_site = lambda y: y.get('otherFid') or y.get('homeFid')
+    li = lambda ys: ''.join((f'<li><a href="{y["url"]}">{esc(y["name"])}</a>' + (f' <span class="grp shared">vezi pe site-ul {esc(load(other_site(y))["title"])}</span>' if other_site(y) else '')) + f' <span class="muted">· {esc(y["id"])} · {fmt_ro(y["priceAvgRON"])} lei / {esc(y["priceUnit"])}</span></li>' for y in ys)
     brands = ''.join(f'<a class="chip" href="/produse/?marca={esc(b)}">{esc(b)}</a>' for b in x.get('brandList', []))
     shared = f'<span class="grp shared">Comun cu {esc(x["sharedFrom"])}</span> ' if x.get('sharedFrom') else ''
     blocks = [f'<div class="dblock"><h2>Pe scurt</h2><p class="lead">{esc(x["descriptionShort"])}</p>{"<p><strong>Despre " + esc(g.lower()) + ":</strong> " + esc(gt["intro"]) + "</p>" if gt.get("intro") else ""}</div>']
@@ -378,12 +383,13 @@ AIVENTURE = {'@type': 'Organization', 'name': 'AiVenture S.R.L.', 'url': 'https:
 
 def py_row(x, kind):
     is_s = kind == 'servicii'
-    grp = (f'<span class="grp shared">Comun cu {esc(x["sharedFrom"])} · {esc(x["homeGroup"])}</span>' if x.get('sharedFrom') else f'<span class="grp">{esc(x["group"])}</span>')
+    grp = (f'<span class="grp shared">Vezi pe site-ul {esc(x["sharedFrom"])} · {esc(x["homeGroup"])}</span>' if x.get('sharedFrom') else f'<span class="grp">{esc(x["group"])}</span>')
+    more = f'Vezi pe site-ul {esc(x["sharedFrom"])} →' if x.get('external') else 'Detalii →'
     br = '' if is_s or not x.get('brands') else f'<div class="brands"><strong>Mărci:</strong> {esc(x["brands"])}</div>'
     av = fmt_ro(x['priceAvgRON'])
     price = f'<div class="price"><strong>Preț min / recomandat / max:</strong> {fmt_ro(x["priceMinRON"])} – <b>{av}</b> – {fmt_ro(x["priceMaxRON"])} lei / {esc(x["priceUnit"])}<small>recomandat: {av} lei · {esc(x.get("priceBasis", ""))}</small></div>'
     det = f'<details><summary>{"Operațiuni și recomandări" if is_s else "Criterii de selecție"}</summary><p>{esc(x.get("operations") if is_s else x.get("selectionCriteria"))}</p>' + (f'<p><strong>Când:</strong> {esc(x["recommendedWhen"])}</p>' if x.get('recommendedWhen') else '') + '</details>'
-    return f'<article class="row" id="{esc(x["id"])}"><img class="rimg" src="{x["img"]}" alt="" loading="lazy"><div class="rbody">{grp}<h3><a href="{x["url"]}">{esc(x["name"])}</a></h3><div class="code">{esc(x["id"])} · {"serviciu" if is_s else "produs"}</div>{br}{price}<p>{esc(x["descriptionShort"])} <a class="dlink" href="{x["url"]}">Detalii →</a></p>{det}</div></article>'
+    return f'<article class="row" id="{esc(x["id"])}"><img class="rimg" src="{x["img"]}" alt="" loading="lazy"><div class="rbody">{grp}<h3><a href="{x["url"]}">{esc(x["name"])}</a></h3><div class="code">{esc(x["id"])} · {"serviciu" if is_s else "produs"}</div>{br}{price}<p>{esc(x["descriptionShort"])} <a class="dlink" href="{x["url"]}">{more}</a></p>{det}</div></article>'
 
 def crumbs_ld(base, items):
     return {'@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': n, 'item': base + u} for i, (n, u) in enumerate(items)]}
@@ -398,7 +404,7 @@ def ld_home(fid, d, base):
 def ld_list(fid, kind, xs, base):
     return {'@context': 'https://schema.org', '@graph': [
         {'@type': 'CollectionPage', 'name': kind.capitalize() + ' — ' + CFG['SubtitluFamilie'][fid], 'url': base + f'/{kind}/', 'inLanguage': 'ro', 'publisher': AIVENTURE},
-        {'@type': 'ItemList', 'numberOfItems': len(xs), 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': x['name'], 'url': base + x['url']} for i, x in enumerate(xs)]},
+        {'@type': 'ItemList', 'numberOfItems': len(xs), 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': x['name'], 'url': ABS(base, x['url'])} for i, x in enumerate(xs)]},
         crumbs_ld(base, [('Acasă', '/'), (kind.capitalize(), f'/{kind}/')])]}
 
 def ld_item(fid, x, kind, base):
@@ -432,8 +438,8 @@ def llms(fid, d, S, P, base):
              f'> Catalog de referință pentru {sub.lower()} în București: {len(S)} servicii și {len(P)} produse, fiecare cu cod, grupă, mărci și preț orientativ min / mediu (recomandat) / max în lei cu TVA (estimări nov. 2026). Firma afișată este fictivă; site realizat de AiVenture S.R.L. (CUI RO51415878). Clasa CAEN 4322 (Rev.3); C43221–C43223 sunt coduri interne SCARA.', '',
              '## Pagini principale', f'- [Acasă]({base}/): grupele familiei', f'- [Servicii]({base}/servicii/): toate serviciile cu prețuri', f'- [Produse]({base}/produse/): toate produsele cu mărci și prețuri', f'- [Dicționar de date]({base}/dictionar/): entități, relații, cardinalități', '',
              '## Date pentru mașini', f'- [Catalog JSON]({base}/api/catalog.json)', f'- [Entități]({base}/dictionar/entitati.json)', f'- [Relații]({base}/dictionar/relatii.json)', f'- [Agent card A2A]({base}/.well-known/agent.json)', '',
-             '## Servicii'] + [f'- [{x["name"]}]({base}{x["url"]}): {x["priceMinRON"]}–{x["priceMaxRON"]} lei / {x["priceUnit"]}, recomandat {x["priceAvgRON"]} lei' for x in S] + \
-            ['', '## Produse'] + [f'- [{x["name"]}]({base}{x["url"]}): {x["priceMinRON"]}–{x["priceMaxRON"]} lei / {x["priceUnit"]}, recomandat {x["priceAvgRON"]} lei; mărci: {x.get("brands", "")}' for x in P]
+             '## Servicii'] + [f'- [{x["name"]}]({ABS(base, x["url"])}): {x["priceMinRON"]}–{x["priceMaxRON"]} lei / {x["priceUnit"]}, recomandat {x["priceAvgRON"]} lei' for x in S] + \
+            ['', '## Produse'] + [f'- [{x["name"]}]({ABS(base, x["url"])}): {x["priceMinRON"]}–{x["priceMaxRON"]} lei / {x["priceUnit"]}, recomandat {x["priceAvgRON"]} lei; mărci: {x.get("brands", "")}' for x in P]
     return '\n'.join(lines) + '\n'
 
 def agent_card(fid, d, base):
@@ -475,10 +481,10 @@ function price(x){return '<div class="price"><strong>'+esc(T('price'))+':</stron
 function row(x,compact){
  const href=x.url;
  return '<article class="row" id="'+(compact?'r-':'')+esc(x.id)+'"><img class="rimg" src="'+esc(x.img)+'" alt="" loading="lazy"><div class="rbody">'+
-  (x.sharedFrom?'<span class="grp shared">Comun cu '+esc(x.sharedFrom)+' · '+esc(x.homeGroup)+'</span>':'<span class="grp">'+esc(x.group)+'</span>')+
+  (x.sharedFrom?'<span class="grp shared">Vezi pe site-ul '+esc(x.sharedFrom)+' · '+esc(x.homeGroup)+'</span>':'<span class="grp">'+esc(x.group)+'</span>')+
   '<h3><a href="'+href+'">'+esc(x.name)+'</a></h3><div class="code">'+esc(x.id)+' · '+(x.kind==='servicii'?'serviciu':'produs')+'</div>'+
   (x.kind==='produse'&&x.brands?'<div class="brands"><strong>'+esc(T('brands'))+':</strong> '+esc(x.brands)+'</div>':'')+price(x)+
-  '<p>'+esc(x.descriptionShort)+' <a class="dlink" href="'+href+'">Detalii →</a></p>'+(compact?'':'<details><summary>'+(x.kind==='servicii'?'Operațiuni și recomandări':'Criterii de selecție')+'</summary><p>'+esc(x.kind==='servicii'?x.operations:x.selectionCriteria)+'</p>'+(x.recommendedWhen?'<p><strong>Când:</strong> '+esc(x.recommendedWhen)+'</p>':'')+'</details>')+'</div></article>'}
+  '<p>'+esc(x.descriptionShort)+' <a class="dlink" href="'+href+'">'+(x.external?'Vezi pe site-ul '+esc(x.sharedFrom)+' →':'Detalii →')+'</a></p>'+(compact?'':'<details><summary>'+(x.kind==='servicii'?'Operațiuni și recomandări':'Criterii de selecție')+'</summary><p>'+esc(x.kind==='servicii'?x.operations:x.selectionCriteria)+'</p>'+(x.recommendedWhen?'<p><strong>Când:</strong> '+esc(x.recommendedWhen)+'</p>':'')+'</details>')+'</div></article>'}
 function render(){
  const tokens=norm(q.value).split(/\s+/).filter(Boolean),b=fB.value,g=fG.value,active=tokens.length||b||g;
  let rows=pool.filter(x=>(!b||(x.brandList||[]).includes(b))&&(!g||x.group===g)&&match(x,tokens));
@@ -547,6 +553,8 @@ def main():
         (ROOT / 'etalons/C4322' / (fid + '.mjs')).write_text(f'// GENERAT din etalons/C4322/dictionar (sesiune {ENT["sesiune"]}) de tools/build_c4322.py — nu editați manual; modificați dicționarul.\n// Catalog {fid} — {d["title"]}. Identificatorii C43221-3 sunt interni SCARA, nu subcoduri CAEN oficiale.\nexport const etalon = ' + json.dumps(d, ensure_ascii=False, indent=2) + ';\nexport default etalon;\n', encoding='utf-8')
     for fid in FAMILIES:
         d = load(fid); out = ROOT / 'cloudflare-pages' / fid
+        for k_ in ('servicii', 'produse'):
+            if (out / k_).exists(): shutil.rmtree(out / k_)  # fără pagini vechi rămase
         (out / 'img' / 'grupe').mkdir(parents=True, exist_ok=True)
         S, P = catalog(fid, d)
         for g in dict.fromkeys(d['groups'] + [SHARED_G] + [x.get('homeGroup', x['group']) for x in S + P]):
@@ -571,7 +579,7 @@ def main():
             html_ = html_.replace('<div id="list" class="rows"></div>', '<div id="list" class="rows">' + ''.join(py_row(x, kind) for x in xs) + '</div>', 1)
             (out / kind / 'index.html').write_text(html_, encoding='utf-8')
         for kind, xs in (('servicii', S), ('produse', P)):
-            for x in xs:
+            for x in [y for y in xs if not y.get('external')]:
                 dd = out / x['url'].strip('/'); dd.mkdir(parents=True, exist_ok=True)
                 (dd / 'index.html').write_text(shell(fid, d, 'detail', x['name'], f"{x['name']} ({x['id']}) — {sub}, {FIRM}: ce este, ce presupune, preț min / mediu / max {x['priceMinRON']}–{x['priceMaxRON']} lei / {x['priceUnit']}.", detail(fid, d, x, kind, S, P), 2, x['url'], ld_item(fid, x, kind, base)), encoding='utf-8')
         (out / 'dictionar').mkdir(exist_ok=True)
@@ -579,14 +587,14 @@ def main():
         (out / '404.html').write_text(not_found(fid, d), encoding='utf-8')
         (out / 'favicon.svg').write_text(favicon(fid), encoding='utf-8')
         (out / 'robots.txt').write_text(robots_txt(base), encoding='utf-8')
-        paths = ['/', '/servicii/', '/produse/', '/dictionar/'] + [x['url'] for x in S + P]
+        paths = ['/', '/servicii/', '/produse/', '/dictionar/'] + [x['url'] for x in S + P if not x.get('external')]
         (out / 'sitemap.xml').write_text(sitemap(base, paths), encoding='utf-8')
         (out / 'llms.txt').write_text(llms(fid, d, S, P, base), encoding='utf-8')
         (out / 'api').mkdir(exist_ok=True)
         keep = ('id', 'entityId', 'name', 'group', 'homeGroup', 'sharedFrom', 'descriptionShort', 'operations', 'recommendedWhen', 'selectionCriteria', 'brands', 'uses', 'usedIn', 'priceMinRON', 'priceAvgRON', 'priceMaxRON', 'priceUnit', 'priceBasis', 'priceSource')
         api = {'site': base + '/', 'familie': fid, 'titlu': d['title'], 'subtitlu': sub, 'firma': {'nume': FIRM, 'fictiva': CFG.get('Fictiva', True)}, 'editor': 'AiVenture S.R.L. (RO51415878)',
                'caen': '4322', 'sesiune': ENT['sesiune'], 'versiune': VERSION, 'data': DATE, 'moneda': 'RON, cu TVA', 'grupe': d['groups'],
-               'servicii': [{**{k: x[k] for k in keep if k in x}, 'url': base + x['url']} for x in S], 'produse': [{**{k: x[k] for k in keep if k in x}, 'url': base + x['url']} for x in P]}
+               'servicii': [{**{k: x[k] for k in keep if k in x}, 'url': ABS(base, x['url']), 'trimitere': bool(x.get('external'))} for x in S], 'produse': [{**{k: x[k] for k in keep if k in x}, 'url': ABS(base, x['url']), 'trimitere': bool(x.get('external'))} for x in P]}
         (out / 'api' / 'catalog.json').write_text(json.dumps(api, ensure_ascii=False, indent=1), encoding='utf-8')
         for n_ in ('entitati.json', 'relatii.json'):
             (out / 'dictionar' / n_).write_bytes((DIC_DIR / n_).read_bytes())

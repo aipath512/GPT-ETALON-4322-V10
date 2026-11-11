@@ -81,6 +81,6 @@
 - [Reductor de presiune](https://gpt-etalon-4322-v10-bfs.pages.dev/produse/p-s-32-reductor-de-presiune/): 100–600 lei / buc, recomandat 250 lei; mărci: Honeywell, Caleffi, Watts, Valvex
 - [Fosă septică / microstație de epurare](https://gpt-etalon-4322-v10-bfs.pages.dev/produse/p-s-33-fosa-septica-microstatie-de-epurare/): 2000–15000 lei / buc, recomandat 6000 lei; mărci: Valrom, Roth, Graf, Topas
 - [Aspersoare și programator de irigații](https://gpt-etalon-4322-v10-bfs.pages.dev/produse/p-s-34-aspersoare-si-programator-de-irigatii/): 300–3000 lei / set, recomandat 1000 lei; mărci: Hunter, Rain Bird, Gardena
-- [Boiler electric](https://gpt-etalon-4322-v10-bfs.pages.dev/produse/p-i-13-boiler-electric/): 600–1800 lei / buc, recomandat 1000 lei; mărci: Ariston, Tesy, Electrolux, Gorenje
-- [Vas de expansiune](https://gpt-etalon-4322-v10-bfs.pages.dev/produse/p-i-15-vas-de-expansiune/): 80–400 lei / buc, recomandat 180 lei; mărci: Zilmet, Elbi, Reflex, Fornello
-- [Ventilator de baie](https://gpt-etalon-4322-v10-bfs.pages.dev/produse/p-c-08-ventilator-de-baie/): 80–700 lei / buc, recomandat 250 lei; mărci: Vents, Vortice, Soler & Palau
+- [Boiler electric](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-13-boiler-electric/): 600–1800 lei / buc, recomandat 1000 lei; mărci: Ariston, Tesy, Electrolux, Gorenje
+- [Vas de expansiune](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-15-vas-de-expansiune/): 80–400 lei / buc, recomandat 180 lei; mărci: Zilmet, Elbi, Reflex, Fornello
+- [Ventilator de baie](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-08-ventilator-de-baie/): 80–700 lei / buc, recomandat 250 lei; mărci: Vents, Vortice, Soler & Palau

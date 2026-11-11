@@ -40,7 +40,7 @@
 - [Pre-instalare climatizare în renovare](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-23-pre-instalare-climatizare-in-renovare/): 400–1200 lei / unitate, recomandat 700 lei
 - [Curățare și dezinfecție tubulatură ventilație](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-24-curatare-si-dezinfectie-tubulatura-ventilatie/): 15–60 lei / m, recomandat 30 lei
 - [Intervenții urgente climatizare](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-25-interventii-urgente-climatizare/): 250–800 lei / intervenție, recomandat 450 lei
-- [Montaj pompă de căldură aer-apă](https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-i-11-montaj-pompa-de-caldura-aer-apa/): 3000–12000 lei / lucrare, recomandat 6000 lei
+- [Montaj pompă de căldură aer-apă](https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-11-montaj-pompa-de-caldura-aer-apa/): 3000–12000 lei / lucrare, recomandat 6000 lei
 
 ## Produse
 - [Aer condiționat split 9000 BTU](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-01-aer-conditionat-split-9000-btu/): 1500–4000 lei / buc, recomandat 2300 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG, Samsung, Midea
@@ -71,4 +71,4 @@
 - [Controller central / telecomandă cablată](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-26-controller-central-telecomanda-cablata/): 300–3000 lei / buc, recomandat 800 lei; mărci: Daikin, Mitsubishi Electric, LG, Samsung
 - [Agent frigorific R32 / R410A](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-27-agent-frigorific-r32-r410a/): 80–300 lei / kg, recomandat 150 lei; mărci: Chemours, Honeywell, Daikin
 - [Filtre și consumabile pentru aer condiționat](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-28-filtre-si-consumabile-pentru-aer-conditionat/): 40–250 lei / set, recomandat 100 lei; mărci: Daikin, Mitsubishi Electric, Gree, LG
-- [Pompă de căldură aer-apă](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-i-02-pompa-de-caldura-aer-apa/): 18000–55000 lei / buc, recomandat 32000 lei; mărci: Daikin, Viessmann, Vaillant, Panasonic, Mitsubishi Electric, Samsung
+- [Pompă de căldură aer-apă](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-02-pompa-de-caldura-aer-apa/): 18000–55000 lei / buc, recomandat 32000 lei; mărci: Daikin, Viessmann, Vaillant, Panasonic, Mitsubishi Electric, Samsung

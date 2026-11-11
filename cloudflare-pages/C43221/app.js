@@ -1,4 +1,4 @@
-// SCARA C4322 — v2.1 2026-11-11
+// SCARA C4322 — v2.2 2026-11-11
 (function(){
 'use strict';
 const page=document.body.dataset.page;let lang='ro';
@@ -22,10 +22,10 @@ function price(x){return '<div class="price"><strong>'+esc(T('price'))+':</stron
 function row(x,compact){
  const href=x.url;
  return '<article class="row" id="'+(compact?'r-':'')+esc(x.id)+'"><img class="rimg" src="'+esc(x.img)+'" alt="" loading="lazy"><div class="rbody">'+
-  (x.sharedFrom?'<span class="grp shared">Comun cu '+esc(x.sharedFrom)+' · '+esc(x.homeGroup)+'</span>':'<span class="grp">'+esc(x.group)+'</span>')+
+  (x.sharedFrom?'<span class="grp shared">Vezi pe site-ul '+esc(x.sharedFrom)+' · '+esc(x.homeGroup)+'</span>':'<span class="grp">'+esc(x.group)+'</span>')+
   '<h3><a href="'+href+'">'+esc(x.name)+'</a></h3><div class="code">'+esc(x.id)+' · '+(x.kind==='servicii'?'serviciu':'produs')+'</div>'+
   (x.kind==='produse'&&x.brands?'<div class="brands"><strong>'+esc(T('brands'))+':</strong> '+esc(x.brands)+'</div>':'')+price(x)+
-  '<p>'+esc(x.descriptionShort)+' <a class="dlink" href="'+href+'">Detalii →</a></p>'+(compact?'':'<details><summary>'+(x.kind==='servicii'?'Operațiuni și recomandări':'Criterii de selecție')+'</summary><p>'+esc(x.kind==='servicii'?x.operations:x.selectionCriteria)+'</p>'+(x.recommendedWhen?'<p><strong>Când:</strong> '+esc(x.recommendedWhen)+'</p>':'')+'</details>')+'</div></article>'}
+  '<p>'+esc(x.descriptionShort)+' <a class="dlink" href="'+href+'">'+(x.external?'Vezi pe site-ul '+esc(x.sharedFrom)+' →':'Detalii →')+'</a></p>'+(compact?'':'<details><summary>'+(x.kind==='servicii'?'Operațiuni și recomandări':'Criterii de selecție')+'</summary><p>'+esc(x.kind==='servicii'?x.operations:x.selectionCriteria)+'</p>'+(x.recommendedWhen?'<p><strong>Când:</strong> '+esc(x.recommendedWhen)+'</p>':'')+'</details>')+'</div></article>'}
 function render(){
  const tokens=norm(q.value).split(/\s+/).filter(Boolean),b=fB.value,g=fG.value,active=tokens.length||b||g;
  let rows=pool.filter(x=>(!b||(x.brandList||[]).includes(b))&&(!g||x.group===g)&&match(x,tokens));

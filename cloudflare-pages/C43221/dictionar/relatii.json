@@ -1,7 +1,7 @@
 {
  "dictionar": "C4322",
  "metamodel": "AiVenture Semantic Data Dictionary — ENTITY / PROPERTY / RELATIONSHIP / VALUE / SESSION",
- "versiune": "1.0",
+ "versiune": "1.1",
  "data": "2026-11-11",
  "sesiune": "0006H",
  "regula": "Sursa unică (SSOT) pentru cele trei site-uri C43221/C43222/C43223. Modulele etalons/C4322/C4322x.mjs și paginile sunt GENERATE din acest dicționar.",
@@ -39,8 +39,17 @@
    "sourceType": "Serviciu|Produs",
    "targetType": "Familie",
    "sourceCard": "0..*",
-   "targetCard": "1..*",
-   "descriere": "O fișă apare pe site-ul familiei ei și, dacă e comună, și pe altele — cu același ID"
+   "targetCard": "1",
+   "descriere": "Fiecare fișă are o singură pagină, pe site-ul familiei ei de bază"
+  },
+  {
+   "type": "REFERIT_PE",
+   "inverse": "TRIMITE_LA",
+   "sourceType": "Serviciu|Produs",
+   "targetType": "Familie",
+   "sourceCard": "0..*",
+   "targetCard": "0..*",
+   "descriere": "Fișa apare pe site-ul altei familii doar ca trimitere „Vezi”, cu link spre pagina ei unică"
   },
   {
    "type": "FOLOSESTE_PRODUS",
@@ -7039,74 +7048,74 @@
   },
   {
    "id": "REL-C4322-00775",
-   "type": "AFISAT_PE",
+   "type": "REFERIT_PE",
    "source": "ENT-C4322-0237",
    "target": "ENT-C4322-0002",
    "status": "validat",
-   "provenance": "fișă comună (fost sharedRefs)",
+   "provenance": "trimitere încrucișată „Vezi” (fișă unică pe site-ul familiei de bază)",
    "session": "0006H"
   },
   {
    "id": "REL-C4322-00776",
-   "type": "AFISAT_PE",
+   "type": "REFERIT_PE",
    "source": "ENT-C4322-0251",
    "target": "ENT-C4322-0002",
    "status": "validat",
-   "provenance": "fișă comună (fost sharedRefs)",
+   "provenance": "trimitere încrucișată „Vezi” (fișă unică pe site-ul familiei de bază)",
    "session": "0006H"
   },
   {
    "id": "REL-C4322-00777",
-   "type": "AFISAT_PE",
+   "type": "REFERIT_PE",
    "source": "ENT-C4322-0335",
    "target": "ENT-C4322-0002",
    "status": "validat",
-   "provenance": "fișă comună (fost sharedRefs)",
+   "provenance": "trimitere încrucișată „Vezi” (fișă unică pe site-ul familiei de bază)",
    "session": "0006H"
   },
   {
    "id": "REL-C4322-00778",
-   "type": "AFISAT_PE",
+   "type": "REFERIT_PE",
    "source": "ENT-C4322-0044",
    "target": "ENT-C4322-0013",
    "status": "validat",
-   "provenance": "fișă comună (fost sharedRefs)",
+   "provenance": "trimitere încrucișată „Vezi” (fișă unică pe site-ul familiei de bază)",
    "session": "0006H"
   },
   {
    "id": "REL-C4322-00779",
-   "type": "AFISAT_PE",
+   "type": "REFERIT_PE",
    "source": "ENT-C4322-0077",
    "target": "ENT-C4322-0013",
    "status": "validat",
-   "provenance": "fișă comună (fost sharedRefs)",
+   "provenance": "trimitere încrucișată „Vezi” (fișă unică pe site-ul familiei de bază)",
    "session": "0006H"
   },
   {
    "id": "REL-C4322-00780",
-   "type": "AFISAT_PE",
+   "type": "REFERIT_PE",
    "source": "ENT-C4322-0113",
    "target": "ENT-C4322-0022",
    "status": "validat",
-   "provenance": "fișă comună (fost sharedRefs)",
+   "provenance": "trimitere încrucișată „Vezi” (fișă unică pe site-ul familiei de bază)",
    "session": "0006H"
   },
   {
    "id": "REL-C4322-00781",
-   "type": "AFISAT_PE",
+   "type": "REFERIT_PE",
    "source": "ENT-C4322-0119",
    "target": "ENT-C4322-0022",
    "status": "validat",
-   "provenance": "fișă comună (fost sharedRefs)",
+   "provenance": "trimitere încrucișată „Vezi” (fișă unică pe site-ul familiei de bază)",
    "session": "0006H"
   },
   {
    "id": "REL-C4322-00782",
-   "type": "AFISAT_PE",
+   "type": "REFERIT_PE",
    "source": "ENT-C4322-0219",
    "target": "ENT-C4322-0022",
    "status": "validat",
-   "provenance": "fișă comună (fost sharedRefs)",
+   "provenance": "trimitere încrucișată „Vezi” (fișă unică pe site-ul familiei de bază)",
    "session": "0006H"
   },
   {

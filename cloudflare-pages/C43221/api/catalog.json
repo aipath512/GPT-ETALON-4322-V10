@@ -10,7 +10,7 @@
  "editor": "AiVenture S.R.L. (RO51415878)",
  "caen": "4322",
  "sesiune": "0006H",
- "versiune": "v2.1",
+ "versiune": "v2.2",
  "data": "2026-11-11",
  "moneda": "RON, cu TVA",
  "grupe": [
@@ -46,7 +46,8 @@
    "priceUnit": "vizită",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-01-evaluare-si-dimensionare-instalatie-termica/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-01-evaluare-si-dimensionare-instalatie-termica/",
+   "trimitere": false
   },
   {
    "id": "S-I-02",
@@ -69,7 +70,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-02-montaj-centrala-termica/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-02-montaj-centrala-termica/",
+   "trimitere": false
   },
   {
    "id": "S-I-03",
@@ -91,7 +93,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-03-inlocuire-centrala-termica/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-03-inlocuire-centrala-termica/",
+   "trimitere": false
   },
   {
    "id": "S-I-04",
@@ -111,7 +114,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-04-punere-in-functiune-centrala/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-04-punere-in-functiune-centrala/",
+   "trimitere": false
   },
   {
    "id": "S-I-05",
@@ -130,7 +134,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-05-verificare-tehnica-periodica-centrala/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-05-verificare-tehnica-periodica-centrala/",
+   "trimitere": false
   },
   {
    "id": "S-I-06",
@@ -150,7 +155,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-06-revizie-si-intretinere-centrala/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-06-revizie-si-intretinere-centrala/",
+   "trimitere": false
   },
   {
    "id": "S-I-07",
@@ -171,7 +177,8 @@
    "priceUnit": "intervenție, fără piese",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-07-diagnostic-si-reparatii-centrale/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-07-diagnostic-si-reparatii-centrale/",
+   "trimitere": false
   },
   {
    "id": "S-I-08",
@@ -193,7 +200,8 @@
    "priceUnit": "buc",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-08-montaj-radiatoare-si-calorifere/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-08-montaj-radiatoare-si-calorifere/",
+   "trimitere": false
   },
   {
    "id": "S-I-09",
@@ -213,7 +221,8 @@
    "priceUnit": "buc",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-09-inlocuire-robineti-termostatati/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-09-inlocuire-robineti-termostatati/",
+   "trimitere": false
   },
   {
    "id": "S-I-10",
@@ -234,7 +243,8 @@
    "priceUnit": "m²",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-10-incalzire-in-pardoseala-cu-apa/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-10-incalzire-in-pardoseala-cu-apa/",
+   "trimitere": false
   },
   {
    "id": "S-I-11",
@@ -257,7 +267,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-11-montaj-pompa-de-caldura-aer-apa/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-11-montaj-pompa-de-caldura-aer-apa/",
+   "trimitere": false
   },
   {
    "id": "S-I-12",
@@ -277,7 +288,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-12-montaj-boiler-indirect-si-rezervor-acm/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-12-montaj-boiler-indirect-si-rezervor-acm/",
+   "trimitere": false
   },
   {
    "id": "S-I-13",
@@ -297,7 +309,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-13-spalare-instalatie-termica/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-13-spalare-instalatie-termica/",
+   "trimitere": false
   },
   {
    "id": "S-I-14",
@@ -318,7 +331,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-14-echilibrare-hidraulica/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-14-echilibrare-hidraulica/",
+   "trimitere": false
   },
   {
    "id": "S-I-15",
@@ -339,7 +353,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-15-montaj-termostate-si-automatizari/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-15-montaj-termostate-si-automatizari/",
+   "trimitere": false
   },
   {
    "id": "S-I-16",
@@ -359,7 +374,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-16-montaj-colectoare-solare-termice/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-16-montaj-colectoare-solare-termice/",
+   "trimitere": false
   },
   {
    "id": "S-I-17",
@@ -381,7 +397,8 @@
    "priceUnit": "apartament, fără centrală",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-17-debransare-de-la-termoficare-si-individualizare/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-17-debransare-de-la-termoficare-si-individualizare/",
+   "trimitere": false
   },
   {
    "id": "S-I-18",
@@ -403,7 +420,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-18-montaj-centrala-pe-peleti-sau-lemne/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-18-montaj-centrala-pe-peleti-sau-lemne/",
+   "trimitere": false
   },
   {
    "id": "S-I-19",
@@ -423,7 +441,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-19-montaj-centrala-termica-electrica/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-19-montaj-centrala-termica-electrica/",
+   "trimitere": false
   },
   {
    "id": "S-I-20",
@@ -444,7 +463,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-20-montaj-termosemineu-cu-circuit-de-incalzire/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-20-montaj-termosemineu-cu-circuit-de-incalzire/",
+   "trimitere": false
   },
   {
    "id": "S-I-21",
@@ -464,7 +484,8 @@
    "priceUnit": "buc",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-21-montaj-convectoare-de-incalzire/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-21-montaj-convectoare-de-incalzire/",
+   "trimitere": false
   },
   {
    "id": "S-I-22",
@@ -483,7 +504,8 @@
    "priceUnit": "buc",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-22-montaj-radiatoare-de-baie-si-portprosop/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-22-montaj-radiatoare-de-baie-si-portprosop/",
+   "trimitere": false
   },
   {
    "id": "S-I-23",
@@ -502,7 +524,8 @@
    "priceUnit": "buc",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-23-montaj-aeroterme/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-23-montaj-aeroterme/",
+   "trimitere": false
   },
   {
    "id": "S-I-24",
@@ -522,7 +545,8 @@
    "priceUnit": "m²",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-24-incalzire-electrica-in-pardoseala/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-24-incalzire-electrica-in-pardoseala/",
+   "trimitere": false
   },
   {
    "id": "S-I-25",
@@ -542,7 +566,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-25-montaj-senzori-de-temperatura-exterioara-si-de-camera/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-25-montaj-senzori-de-temperatura-exterioara-si-de-camera/",
+   "trimitere": false
   },
   {
    "id": "S-I-26",
@@ -561,7 +586,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-26-montaj-puffer-rezervor-de-acumulare/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-26-montaj-puffer-rezervor-de-acumulare/",
+   "trimitere": false
   },
   {
    "id": "S-I-27",
@@ -580,7 +606,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-27-montaj-tubulatura-evacuare-gaze-arse/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-27-montaj-tubulatura-evacuare-gaze-arse/",
+   "trimitere": false
   },
   {
    "id": "S-I-28",
@@ -599,7 +626,8 @@
    "priceUnit": "buc",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-28-montaj-contoare-si-repartitoare-de-caldura/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-28-montaj-contoare-si-repartitoare-de-caldura/",
+   "trimitere": false
   },
   {
    "id": "S-I-29",
@@ -619,7 +647,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-29-montaj-vane-de-amestec-si-grupuri-de-pompare/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-29-montaj-vane-de-amestec-si-grupuri-de-pompare/",
+   "trimitere": false
   },
   {
    "id": "S-I-30",
@@ -639,7 +668,8 @@
    "priceUnit": "proiect + execuție",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-30-proiectare-si-executie-instalatie-de-gaze-interioara/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-30-proiectare-si-executie-instalatie-de-gaze-interioara/",
+   "trimitere": false
   },
   {
    "id": "S-I-31",
@@ -658,7 +688,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-31-montaj-detector-de-gaz-cu-electrovalva/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-31-montaj-detector-de-gaz-cu-electrovalva/",
+   "trimitere": false
   },
   {
    "id": "S-I-32",
@@ -678,7 +709,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-32-curatare-chimica-schimbator-si-instalatie/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-32-curatare-chimica-schimbator-si-instalatie/",
+   "trimitere": false
   },
   {
    "id": "S-I-33",
@@ -697,7 +729,8 @@
    "priceUnit": "lucrare",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-33-aerisire-umplere-si-reglare-presiune-instalatie/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-33-aerisire-umplere-si-reglare-presiune-instalatie/",
+   "trimitere": false
   },
   {
    "id": "S-I-34",
@@ -718,7 +751,8 @@
    "priceUnit": "intervenție",
    "priceBasis": "manoperă, fără materiale",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-34-interventii-urgente-incalzire/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/servicii/s-i-34-interventii-urgente-incalzire/",
+   "trimitere": false
   }
  ],
  "produse": [
@@ -747,7 +781,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-01-centrala-termica-murala-in-condensare/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-01-centrala-termica-murala-in-condensare/",
+   "trimitere": false
   },
   {
    "id": "P-I-02",
@@ -767,7 +802,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-02-pompa-de-caldura-aer-apa/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-02-pompa-de-caldura-aer-apa/",
+   "trimitere": false
   },
   {
    "id": "P-I-03",
@@ -786,7 +822,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-03-pompa-de-caldura-monobloc/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-03-pompa-de-caldura-monobloc/",
+   "trimitere": false
   },
   {
    "id": "P-I-04",
@@ -805,7 +842,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-04-pompa-de-caldura-split/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-04-pompa-de-caldura-split/",
+   "trimitere": false
   },
   {
    "id": "P-I-05",
@@ -824,7 +862,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-05-radiator-din-otel/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-05-radiator-din-otel/",
+   "trimitere": false
   },
   {
    "id": "P-I-06",
@@ -843,7 +882,8 @@
    "priceUnit": "element",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-06-radiator-din-aluminiu/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-06-radiator-din-aluminiu/",
+   "trimitere": false
   },
   {
    "id": "P-I-07",
@@ -862,7 +902,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-07-portprosop-baie/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-07-portprosop-baie/",
+   "trimitere": false
   },
   {
    "id": "P-I-08",
@@ -881,7 +922,8 @@
    "priceUnit": "m",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-08-teava-pentru-pardoseala/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-08-teava-pentru-pardoseala/",
+   "trimitere": false
   },
   {
    "id": "P-I-09",
@@ -901,7 +943,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-09-distribuitor-pardoseala/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-09-distribuitor-pardoseala/",
+   "trimitere": false
   },
   {
    "id": "P-I-10",
@@ -921,7 +964,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-10-termostat-programabil/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-10-termostat-programabil/",
+   "trimitere": false
   },
   {
    "id": "P-I-11",
@@ -940,7 +984,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-11-termostat-smart-wi-fi/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-11-termostat-smart-wi-fi/",
+   "trimitere": false
   },
   {
    "id": "P-I-12",
@@ -961,7 +1006,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-12-robinet-termostatic/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-12-robinet-termostatic/",
+   "trimitere": false
   },
   {
    "id": "P-I-13",
@@ -980,7 +1026,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-13-boiler-electric/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-13-boiler-electric/",
+   "trimitere": false
   },
   {
    "id": "P-I-14",
@@ -1000,7 +1047,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-14-boiler-indirect/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-14-boiler-indirect/",
+   "trimitere": false
   },
   {
    "id": "P-I-15",
@@ -1028,7 +1076,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-15-vas-de-expansiune/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-15-vas-de-expansiune/",
+   "trimitere": false
   },
   {
    "id": "P-I-16",
@@ -1051,7 +1100,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-16-pompa-de-circulatie/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-16-pompa-de-circulatie/",
+   "trimitere": false
   },
   {
    "id": "P-I-17",
@@ -1074,7 +1124,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-17-filtru-magnetic-instalatie/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-17-filtru-magnetic-instalatie/",
+   "trimitere": false
   },
   {
    "id": "P-I-18",
@@ -1093,7 +1144,8 @@
    "priceUnit": "panou",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-18-panou-solar-termic/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-18-panou-solar-termic/",
+   "trimitere": false
   },
   {
    "id": "P-I-19",
@@ -1114,7 +1166,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-19-centrala-termica-electrica/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-19-centrala-termica-electrica/",
+   "trimitere": false
   },
   {
    "id": "P-I-20",
@@ -1134,7 +1187,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-20-cazan-pe-peleti/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-20-cazan-pe-peleti/",
+   "trimitere": false
   },
   {
    "id": "P-I-21",
@@ -1153,7 +1207,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-21-cazan-pe-lemne-cu-gazeificare/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-21-cazan-pe-lemne-cu-gazeificare/",
+   "trimitere": false
   },
   {
    "id": "P-I-22",
@@ -1172,7 +1227,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-22-termosemineu/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-22-termosemineu/",
+   "trimitere": false
   },
   {
    "id": "P-I-23",
@@ -1191,7 +1247,8 @@
    "priceUnit": "element",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-23-calorifer-din-fonta/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-23-calorifer-din-fonta/",
+   "trimitere": false
   },
   {
    "id": "P-I-24",
@@ -1210,7 +1267,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-24-convector-de-incalzire/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-24-convector-de-incalzire/",
+   "trimitere": false
   },
   {
    "id": "P-I-25",
@@ -1229,7 +1287,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-25-aeroterma/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-25-aeroterma/",
+   "trimitere": false
   },
   {
    "id": "P-I-26",
@@ -1248,7 +1307,8 @@
    "priceUnit": "m²",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-26-sistem-electric-de-incalzire-in-pardoseala/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-26-sistem-electric-de-incalzire-in-pardoseala/",
+   "trimitere": false
   },
   {
    "id": "P-I-27",
@@ -1267,7 +1327,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-27-senzor-de-temperatura-exterioara/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-27-senzor-de-temperatura-exterioara/",
+   "trimitere": false
   },
   {
    "id": "P-I-28",
@@ -1287,7 +1348,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-28-senzor-de-camera-temperatura-umiditate/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-28-senzor-de-camera-temperatura-umiditate/",
+   "trimitere": false
   },
   {
    "id": "P-I-29",
@@ -1306,7 +1368,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-29-cap-termostatic-smart/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-29-cap-termostatic-smart/",
+   "trimitere": false
   },
   {
    "id": "P-I-30",
@@ -1328,7 +1391,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-30-puffer-rezervor-de-acumulare/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-30-puffer-rezervor-de-acumulare/",
+   "trimitere": false
   },
   {
    "id": "P-I-31",
@@ -1350,7 +1414,8 @@
    "priceUnit": "kit",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-31-kit-evacuare-gaze-arse-coaxial/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-31-kit-evacuare-gaze-arse-coaxial/",
+   "trimitere": false
   },
   {
    "id": "P-I-32",
@@ -1370,7 +1435,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-32-grup-de-pompare-cu-vana-de-amestec/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-32-grup-de-pompare-cu-vana-de-amestec/",
+   "trimitere": false
   },
   {
    "id": "P-I-33",
@@ -1389,7 +1455,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-33-contor-de-energie-termica-repartitor/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-33-contor-de-energie-termica-repartitor/",
+   "trimitere": false
   },
   {
    "id": "P-I-34",
@@ -1410,7 +1477,8 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-34-inhibitor-si-solutie-de-curatare-instalatie/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-34-inhibitor-si-solutie-de-curatare-instalatie/",
+   "trimitere": false
   },
   {
    "id": "P-I-35",
@@ -1431,7 +1499,8 @@
    "priceUnit": "set",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-35-detector-de-gaz-cu-electrovalva/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-35-detector-de-gaz-cu-electrovalva/",
+   "trimitere": false
   },
   {
    "id": "P-I-36",
@@ -1451,13 +1520,14 @@
    "priceUnit": "m de traseu",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-36-teava-de-gaz-si-robinet-de-siguranta/"
+   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-i-36-teava-de-gaz-si-robinet-de-siguranta/",
+   "trimitere": false
   },
   {
    "id": "P-C-13",
    "entityId": "ENT-C4322-0237",
    "name": "Pompă condens",
-   "group": "Comune cu alte familii",
+   "group": "Vezi și — alte familii",
    "homeGroup": "Trasee și accesorii",
    "sharedFrom": "Climatizare",
    "descriptionShort": "Evacuează apa când panta naturală lipsește.",
@@ -1475,13 +1545,14 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-c-13-pompa-condens/"
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-13-pompa-condens/",
+   "trimitere": true
   },
   {
    "id": "P-C-20",
    "entityId": "ENT-C4322-0251",
    "name": "Ventiloconvector",
-   "group": "Comune cu alte familii",
+   "group": "Vezi și — alte familii",
    "homeGroup": "Sisteme comerciale (VRF, chiller)",
    "sharedFrom": "Climatizare",
    "descriptionShort": "Unitate terminală pe apă rece sau caldă.",
@@ -1497,13 +1568,14 @@
    "priceUnit": "buc",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-c-20-ventiloconvector/"
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-20-ventiloconvector/",
+   "trimitere": true
   },
   {
    "id": "P-S-12",
    "entityId": "ENT-C4322-0335",
    "name": "Țevi PEX/PE-RT pentru apă",
-   "group": "Comune cu alte familii",
+   "group": "Vezi și — alte familii",
    "homeGroup": "Alimentare cu apă",
    "sharedFrom": "Sanitare",
    "descriptionShort": "Conducte flexibile pentru distribuția apei.",
@@ -1519,7 +1591,8 @@
    "priceUnit": "m",
    "priceBasis": "echipament / material",
    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
-   "url": "https://gpt-etalon-4322-v10.pages.dev/produse/p-s-12-tevi-pex-pe-rt-pentru-apa/"
+   "url": "https://gpt-etalon-4322-v10-bfs.pages.dev/produse/p-s-12-tevi-pex-pe-rt-pentru-apa/",
+   "trimitere": true
   }
  ]
 }

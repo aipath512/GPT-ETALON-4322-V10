@@ -87,6 +87,6 @@
 - [Inhibitor și soluție de curățare instalație](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-34-inhibitor-si-solutie-de-curatare-instalatie/): 60–250 lei / buc, recomandat 120 lei; mărci: Fernox, Sentinel, Sotin
 - [Detector de gaz cu electrovalvă](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-35-detector-de-gaz-cu-electrovalva/): 250–800 lei / set, recomandat 450 lei; mărci: Seitron, Sinteco, Beca
 - [Țeavă de gaz și robinet de siguranță](https://gpt-etalon-4322-v10.pages.dev/produse/p-i-36-teava-de-gaz-si-robinet-de-siguranta/): 40–150 lei / m de traseu, recomandat 80 lei; mărci: Geberit, Valrom, Kitec
-- [Pompă condens](https://gpt-etalon-4322-v10.pages.dev/produse/p-c-13-pompa-condens/): 250–900 lei / buc, recomandat 450 lei; mărci: Sauermann, Aspen, Charlotte
-- [Ventiloconvector](https://gpt-etalon-4322-v10.pages.dev/produse/p-c-20-ventiloconvector/): 1500–5000 lei / buc, recomandat 2500 lei; mărci: Daikin, Sabiana, Aermec, Galletti
-- [Țevi PEX/PE-RT pentru apă](https://gpt-etalon-4322-v10.pages.dev/produse/p-s-12-tevi-pex-pe-rt-pentru-apa/): 4–15 lei / m, recomandat 8 lei; mărci: Rehau, Uponor, Valrom
+- [Pompă condens](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-13-pompa-condens/): 250–900 lei / buc, recomandat 450 lei; mărci: Sauermann, Aspen, Charlotte
+- [Ventiloconvector](https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-20-ventiloconvector/): 1500–5000 lei / buc, recomandat 2500 lei; mărci: Daikin, Sabiana, Aermec, Galletti
+- [Țevi PEX/PE-RT pentru apă](https://gpt-etalon-4322-v10-bfs.pages.dev/produse/p-s-12-tevi-pex-pe-rt-pentru-apa/): 4–15 lei / m, recomandat 8 lei; mărci: Rehau, Uponor, Valrom

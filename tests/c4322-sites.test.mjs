@@ -1,4 +1,4 @@
-// Teste site-uri de familie SCARA C4322 — v2.1 2026-11-11
+// Teste site-uri de familie SCARA C4322 — v2.2 2026-11-11
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -46,7 +46,9 @@ for (const [fid, f] of Object.entries(FAM)) {
     for (const g of moduleData(fid).groups) assert.ok(home.includes(`>${g} — `), 'grupă pe homepage: ' + g);
     assert.match(home, /href="\/servicii\/\?grupa=/); assert.match(home, /href="\/produse\/\?grupa=/);
     assert.equal(read(`${dir}/robots.txt`).includes('Disallow: /'), !firma.Public);
-    const sm = read(`${dir}/sitemap.xml`); assert.equal((sm.match(/<url>/g) || []).length, 4 + siteCatalog(fid).services.length + siteCatalog(fid).products.length);
+    const sm = read(`${dir}/sitemap.xml`); const own = [...siteCatalog(fid).services, ...siteCatalog(fid).products].filter(x => !x.external);
+    assert.equal((sm.match(/<url>/g) || []).length, 4 + own.length);
+    assert.equal(own.length, moduleData(fid).services.length + moduleData(fid).products.length);
     const card = JSON.parse(read(`${dir}/.well-known/agent.json`)); assert.ok(card.name && card.skills.length);
     const api = JSON.parse(read(`${dir}/api/catalog.json`)); assert.equal(api.servicii.length, siteCatalog(fid).services.length);
     for (const file of ['404.html', 'favicon.svg', 'robots.txt', '_headers', '_routes.json', 'dictionar/index.html', 'sitemap.xml', 'llms.txt', 'api/catalog.json', '.well-known/agent.json', 'dictionar/entitati.json', 'dictionar/relatii.json']) assert.ok(exists(`${dir}/${file}`), file);
@@ -63,7 +65,11 @@ for (const [fid, f] of Object.entries(FAM)) {
       assert.ok(exists(`${dir}${x.img}`), 'imagine ' + x.img);
     }
     for (const x of c.products) assert.ok(x.brands && x.brandList.length, x.id);
-    for (const x of [...c.services, ...c.products]) {
+    for (const x of [...c.services, ...c.products].filter(x => x.external)) {
+      assert.match(x.url, /^https:\/\//, 'trimitere cu link absolut ' + x.id);
+      assert.ok(!exists(`${dir}/${x.url.split('/').slice(3).join('/')}index.html`), 'fără pagină dublată ' + x.id);
+    }
+    for (const x of [...c.services, ...c.products].filter(x => !x.external)) {
       const html = read(`${dir}${x.url}index.html`);
       assert.ok(html.includes(x.name) && html.includes(x.id), 'pagină detaliu ' + x.url);
       assert.match(html, /Cât costă/); assert.match(html, /class="pricebig"/);

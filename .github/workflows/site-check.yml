@@ -1,4 +1,4 @@
-name: C4322B site validation
+name: SCARA C4322 — validare site-uri de familie
 on:
   push:
     branches: [main]
@@ -12,4 +12,4 @@ jobs:
         with:
           node-version: '22'
       - name: Validate all pages, catalogs, assets and interaction wiring
-        run: node --test tests/site.test.mjs tests/c4322-dictionar.test.mjs tests/c4322-sites.test.mjs etalons/C4322/C4322.test.mjs
+        run: node --test tests/c4322-dictionar.test.mjs tests/c4322-sites.test.mjs etalons/C4322/C4322.test.mjs

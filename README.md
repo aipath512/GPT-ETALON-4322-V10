@@ -1,3 +1,16 @@
+# SCARA C4322 — trei etaloane autonome, o singură fabrică
+
+**Stare (11 nov 2026, v2.2):** trei site-uri independente, unul pe subclasă internă SCARA, sub clasa-părinte comună CAEN 4322 (Rev.3):
+- C43221 Încălzire → proiect Cloudflare `scara-c43221` → https://gpt-etalon-4322-v10.pages.dev (output `cloudflare-pages/C43221`)
+- C43222 Climatizare → `scara-c43222` → https://gpt-etalon-4322-v10-88z.pages.dev (output `cloudflare-pages/C43222`)
+- C43223 Sanitare → `scara-c43223` → https://gpt-etalon-4322-v10-bfs.pages.dev (output `cloudflare-pages/C43223`)
+
+Comune: dicționarul entitate–relație (`etalons/C4322/dictionar/`), ID-urile canonice, generatorul (`tools/build_c4322.py`), configurația firmei (`etalons/C4322/firma.json`), regulile de deduplicare și validare (teste în `tests/`).
+Fiecare fișă are **o singură pagină**, pe site-ul familiei ei; pe celelalte site-uri apare doar ca trimitere „Vezi pe site-ul X →” (relația REFERIT_PE).
+Site-ul combinat vechi C4322B nu mai este publicat; fișierele lui sunt în `arhiva/C4322B/` (istoric, inclusiv descrierea de mai jos).
+
+---
+
 # C4322B — Website-etalon B2C București
 
 **Prototip funcțional al unui site modern pentru o firmă fictivă CAEN 4322.** Încălzire, climatizare și instalații sanitare pentru apartamente și case.
@@ -131,3 +144,8 @@ Site static HTML/CSS/JS (regenerat și verificat pe 8 noiembrie 2026): `style.cs
 - Public: meta robots index, `robots.txt` cu permisiune explicită pentru boți AI (GPTBot, ClaudeBot, PerplexityBot, Google-Extended…), `sitemap.xml`, `canonical`, Open Graph, liste `/servicii/` și `/produse/` randate static.
 - Schema.org JSON-LD pe fiecare pagină: WebSite, CollectionPage + ItemList, Service / Product (preț orientativ ca proprietăți), BreadcrumbList, Dataset (dicționar). Fără Offer și fără LocalBusiness cât timp firma este fictivă.
 - AI: `/llms.txt` cu toate fișele și prețurile. A2A: `/.well-known/agent.json` (și `agent-card.json`), `/api/catalog.json`, `/dictionar/entitati.json` și `relatii.json`.
+
+## v2.2 (11 noiembrie 2026) — fișe unice + trimiteri încrucișate, C4322B arhivat
+- AFISAT_PE devine 0..* : 1 (fiecare fișă are exact un site); fișele comune devin REFERIT_PE (8 trimiteri „Vezi”), cu link absolut spre pagina unică.
+- Pagini: Încălzire 74, Climatizare 57, Sanitare 68 = 4 × 3 pagini generale + 187 pagini de fișă unice.
+- Fișierele C4322B (pagini, admin, functions, migrations, testul vechi) mutate în `arhiva/C4322B/`.
