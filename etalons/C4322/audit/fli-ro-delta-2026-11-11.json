@@ -980,5 +980,148 @@
       "fallback": "Nu sunt încă disponibile certificate verificate public pentru această firmă."
     },
     "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "autorizatiiISCIR_ANRE": {
+    "capturedAt": "2026-11-11",
+    "source": "Două pagini FLI «Autorizații I.S.C.I.R.» și «Autorizații A.N.R.E.» furnizate de utilizator",
+    "sourceVerification": "declarațiile și domeniile FLI nu sunt verificate prin certificate originale",
+    "kind": "FIRM_CREDENTIALS_REGULATED_CAPABILITIES",
+    "iscir": {
+      "prescriptions": [
+        {
+          "code": "PT A1",
+          "domainFromFLI": "aparate și cazane până la 400 kW; cazane de abur joasă presiune până la 0,6 t/h",
+          "activitiesFromFLI": [
+            "instalare",
+            "montare",
+            "reparare",
+            "întreținere",
+            "verificări tehnice în utilizare"
+          ]
+        },
+        {
+          "code": "PT C1",
+          "domainFromFLI": "cazane abur max 16 bar, 15 t/h, 350°C; apă fierbinte max 16 bar, 10 Gcal/h",
+          "activitiesFromFLI": [
+            "instalare",
+            "montare",
+            "reparare"
+          ]
+        },
+        {
+          "code": "PT C2",
+          "domainFromFLI": "arzătoare gaze/lichide până la 4000 kW",
+          "activitiesFromFLI": [
+            "instalare",
+            "montare",
+            "reparare",
+            "întreținere",
+            "verificare"
+          ]
+        },
+        {
+          "code": "PT C4",
+          "domainFromFLI": "întreținere regim chimic cazane",
+          "validationNote": "ATENȚIE: PT C4-2010 privește recipientele metalice stabile sub presiune; asocierea FLI cu regimul chimic al cazanelor pare greșită și nu trebuie reprodusă."
+        },
+        {
+          "code": "PT C6",
+          "domainFromFLI": "conducte metalice abur/apă fierbinte max 25 bar și 250°C",
+          "validationNote": "ATENȚIE: PT C6 este pentru conducte metalice sub presiune pentru fluide; verificați separat limitele și încadrarea."
+        },
+        {
+          "code": "PT C7",
+          "domainFromFLI": "dispozitive de siguranță max 20 bar, DN 65 mm"
+        },
+        {
+          "code": "PT C9",
+          "domainFromFLI": "cazane apă caldă max 4,5 Gcal/h și abur joasă presiune max 4 t/h"
+        },
+        {
+          "code": "PT C10",
+          "domainFromFLI": "conducte metalice fluide max 200 bar, -40°C până la +400°C",
+          "validationNote": "ATENȚIE: PT C10-2010 privește conductele de abur și apă fierbinte sub presiune; descrierea FLI a conductelor pentru fluide poate corespunde altui cod."
+        },
+        {
+          "code": "PT C11",
+          "domainFromFLI": "instalații de ardere și automatizare aferente centralelor termice/cazanelor"
+        },
+        {
+          "code": "RSVTI",
+          "domainFromFLI": "supraveghere și verificare echipamente ISCIR la deținător/utilizator",
+          "validationNote": "Funcția/autorizația RSVTI trebuie modelată distinct de autorizările pentru lucrările pe echipamente."
+        }
+      ],
+      "warnings": [
+        "Nu accepta limitele tehnice numerice ca verificate până la consultarea autorizațiilor ISCIR efective.",
+        "Nu afirma că o firmă privată eliberează autorizații în numele ISCIR; precizați responsabilitatea și documentul emis în fluxul legal aplicabil.",
+        "Domeniul autorizării este per tip activitate, tip echipament și limită tehnică; valabilitate și titular de verificat."
+      ],
+      "primaryChecks": [
+        "https://legislatie.just.ro/",
+        "https://iscir.ro/"
+      ]
+    },
+    "anre": {
+      "authorizations": [
+        {
+          "code": "PDIB",
+          "activity": "proiectare",
+          "domain": "instalații de utilizare gaze naturale, presiune medie/redusă/joasă"
+        },
+        {
+          "code": "EDIB",
+          "activity": "execuție",
+          "domain": "instalații de utilizare gaze naturale, presiune medie/redusă/joasă",
+          "additionalScope": "verificare/revizie instalații de utilizare gaze în condițiile procedurii aplicabile"
+        }
+      ],
+      "verifiedUsing": [
+        "https://anre.ro/consumatori/gaze-naturale/care-sunt-operatorii-economici-autorizati-pentru-efectuarea-verificarilor-la-instalatiile-de-gaze/",
+        "https://legislatie.just.ro/Public/DetaliiDocumentAfis/269180"
+      ],
+      "rules": [
+        "PDIB nu echivalează cu EDIB; proiectarea și execuția sunt capabilități separate.",
+        "ANRE gaz nu este același regim cu ISCIR centrală.",
+        "Valabilitatea fiecărei autorizații și titularul trebuie verificată în registrele ANRE."
+      ]
+    },
+    "ssotExtension": {
+      "entityType": "AutorizatieProfesionala",
+      "requiredFields": [
+        "cuiTitular",
+        "autoritate",
+        "codAutorizatie",
+        "numarDocument",
+        "tipActivitate",
+        "tipEchipament",
+        "limiteTehnice",
+        "dataEmiterii",
+        "dataExpirarii",
+        "statutRegistru",
+        "documentDovada",
+        "sursaVerificare",
+        "verificatLa"
+      ],
+      "relations": [
+        "FIRMA_DETINE_AUTORIZATIE",
+        "AUTORIZATIE_ACOPERA_ACTIVITATE",
+        "AUTORIZATIE_ACOPERA_ECHIPAMENT",
+        "AUTORIZATIE_PERMITE_SERVICIU"
+      ],
+      "gate": "Firma poate publica un serviciu reglementat ca ofertă proprie doar dacă tipul de activitate, echipamentul, limitele și starea autorizării sunt validate."
+    },
+    "pageModel": {
+      "page": "Certificări și autorizații",
+      "sections": [
+        "Autorizații ISCIR",
+        "Autorizații ANRE",
+        "ISO și poliță de răspundere civilă",
+        "Domeniu autorizat, limitări și valabilitate",
+        "Documente de verificare"
+      ],
+      "default": "Nu afirma autorizații fără dovezi verificate"
+    },
+    "status": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
   }
 }
