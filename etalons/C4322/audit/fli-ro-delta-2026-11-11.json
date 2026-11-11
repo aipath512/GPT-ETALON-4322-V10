@@ -298,7 +298,7 @@
       ]
     }
   ],
-  "revisedInterpretation": "Pagina suplimentară confirmă majoritatea serviciilor de încălzire deja existente în dicționar; diferența majoră este în configurarea formularului, a mărcilor, ariei geografice, dovezilor și CTA. Nu adaugă automat 10 servicii noi. Revizia de conținut nu trebuie să imite afirmațiile sau textul FLI.",
+  "revisedInterpretation": "Pagina de mentenanță consolidează serviciul existent S-I-06 și introduce operațiuni/checklist, plan contractual și SLA ca proprietăți configurabile; nu necesită o nouă fișă tehnică duplicată. Menține verificările de gaz separate de VTP centrală și nu transformă prețurile/obligațiile/SLA FLI în afirmații SCARA.",
   "consultantaTehnicaCentrale": {
     "source": "Text pagina FLI «Consultanță Tehnică Centrale» furnizat de utilizator",
     "capturedAt": "2026-11-11",
@@ -406,5 +406,142 @@
       "Consultanță și calcul orientativ nu sunt echivalente unui proiect tehnic avizat."
     ],
     "implementationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "mentenantaSiInterventiiCentrale": {
+    "source": "Text «Mentenanță și Intervenții Centrale Termice — Future Line Instal», furnizat de utilizator",
+    "capturedAt": "2026-11-11",
+    "sourceVerification": "user_supplied_not_independently_verified",
+    "canonicalService": {
+      "code": "S-I-06",
+      "name": "Revizie și întreținere centrală",
+      "status": "EXISTS_EXTEND_DETAILS_NO_DUPLICATE"
+    },
+    "otherExistingServiceLinks": [
+      {
+        "code": "S-I-05",
+        "name": "Verificare tehnică periodică centrală"
+      },
+      {
+        "code": "S-I-07",
+        "name": "Diagnostic și reparații centrale"
+      },
+      {
+        "code": "S-I-03",
+        "name": "Înlocuire centrală termică"
+      },
+      {
+        "code": "S-I-02",
+        "name": "Montaj centrală termică"
+      },
+      {
+        "code": "S-I-04",
+        "name": "Punere în funcțiune centrală"
+      }
+    ],
+    "maintenanceOperationsFromCompetitor": [
+      "verificarea etanșeității instalației de gaz (numai personal autorizat pentru operațiunea aplicabilă)",
+      "controlul presiunii vasului de expansiune",
+      "curățare arzător",
+      "curățare schimbător de căldură",
+      "testare termostat și sisteme de siguranță",
+      "analiza gazelor arse",
+      "control presiune apă",
+      "verificare temperatură agent termic",
+      "remedierea defecțiunilor minore"
+    ],
+    "commercialContracts": [
+      "pachet personalizat de mentenanță preventivă",
+      "prioritate contractuală la intervenții urgente",
+      "discount contractual la piese de schimb",
+      "reparații cu piese originale când sunt disponibile",
+      "garanție pentru reparații conform contractului",
+      "înlocuire centrală și consultanță pentru noul echipament"
+    ],
+    "competitorClaimsNotReusable": [
+      {
+        "claim": "Revizie anuală obligatorie",
+        "caveat": "NU publica automat «obligatorie»: verificarea tehnică periodică (VTP/VTU) și întreținerea anuală contractuală sunt proceduri diferite; temeiul legal și condițiile producătorului trebuie verificate."
+      },
+      {
+        "claim": "Intervenție în maximum 24 ore",
+        "caveat": "SLA FLI neconfirmat contractual; nu este disponibilitate implicită pentru SCARA."
+      },
+      {
+        "claim": "De la 250 lei/an",
+        "caveat": "Preț concurent, nu ofertă sau tarif implicit al firmei generate."
+      },
+      {
+        "claim": "Tehnicieni autorizați ISCIR",
+        "caveat": "Trebuie verificată autorizarea fiecărei firme."
+      },
+      {
+        "claim": "Economii de energie și prelungirea duratei de viață",
+        "caveat": "Beneficii potențiale, nu rezultate garantate."
+      }
+    ],
+    "serviceAreaCompetitorOnly": [
+      "București",
+      "Ilfov",
+      "Călărași",
+      "Dâmbovița",
+      "Ialomița",
+      "Giurgiu",
+      "Prahova",
+      "Teleorman"
+    ],
+    "proposedFieldModel": {
+      "maintenanceChecklist": [
+        {
+          "key": "operation",
+          "type": "string"
+        },
+        {
+          "key": "requiredCompetence",
+          "type": "string"
+        },
+        {
+          "key": "applicability",
+          "type": "enum:all/conditional"
+        },
+        {
+          "key": "documentedResult",
+          "type": "string"
+        }
+      ],
+      "contract": {
+        "planName": "string",
+        "annualPriceRON": "nullable",
+        "visitsPerYear": "nullable",
+        "prioritySLAHours": "nullable",
+        "partsDiscountPct": "nullable",
+        "coveredBrands": "array",
+        "coveredModels": "array",
+        "serviceArea": "array",
+        "warrantyTerms": "string",
+        "active": "false by default"
+      },
+      "leadForm": [
+        "nume",
+        "telefon",
+        "email",
+        "marca",
+        "model",
+        "cod_eroare",
+        "simptome",
+        "localitate",
+        "tip solicitare (revizie/intervenție/contract/înlocuire)",
+        "consimțământ"
+      ]
+    },
+    "additionalQAForEVA": [
+      "Care este diferența dintre revizia anuală și verificarea tehnică periodică?",
+      "Ce verificări cuprinde mentenanța?",
+      "Când se curăță arzătorul și schimbătorul?",
+      "Ce informații trebuie trimise pentru intervenție?",
+      "Există contract anual și ce include?",
+      "Care este timpul de răspuns în localitatea mea?",
+      "Când este mai economică înlocuirea decât reparația?"
+    ],
+    "status": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
   }
 }
