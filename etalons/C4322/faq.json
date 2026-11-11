@@ -1,0 +1,164 @@
+{
+  "schema": "scara.c4322.faq.v1",
+  "language": "ro",
+  "updatedAt": "2026-11-11",
+  "policy": "FAQ originale, explicative, identice în HTML și JSON-LD; nu declară autorizări, tarife sau servicii ale firmei fictive.",
+  "families": {
+    "C43221": [
+      {
+        "id": "FAQ-C43221-01",
+        "question": "Cum aleg puterea potrivită pentru centrala termică?",
+        "answer": "Puterea se stabilește după pierderile de căldură ale locuinței, izolație, suprafață și necesarul de apă caldă. Cereți o evaluare tehnică înainte de cumpărare."
+      },
+      {
+        "id": "FAQ-C43221-02",
+        "question": "Ce diferență este între montajul centralei și punerea în funcțiune (PIF)?",
+        "answer": "Montajul presupune instalarea și racordările; PIF verifică prima funcționare în condițiile prevăzute de producător și de reglementările aplicabile. Pot necesita prestatori autorizați diferit."
+      },
+      {
+        "id": "FAQ-C43221-03",
+        "question": "Când trebuie făcută verificarea tehnică periodică a centralei?",
+        "answer": "Pentru echipamentele aflate sub PT A1-2010, verificarea tehnică periodică se efectuează la doi ani de un operator autorizat pentru domeniul respectiv. Verificați actele și termenul aparatului."
+      },
+      {
+        "id": "FAQ-C43221-04",
+        "question": "Revizia anuală este același lucru cu verificarea ISCIR?",
+        "answer": "Nu. Întreținerea preventivă urmează instrucțiunile producătorului, iar verificarea tehnică periodică este o procedură distinctă, reglementată pentru echipamentele aplicabile."
+      },
+      {
+        "id": "FAQ-C43221-05",
+        "question": "Ce informații sunt necesare pentru o reparație de centrală?",
+        "answer": "Comunicați marca, modelul, codul erorii, simptomele, localitatea și un număr de telefon. Nu interveniți asupra instalației de gaz; în caz de miros de gaz urmați instrucțiunile de urgență ale distribuitorului."
+      },
+      {
+        "id": "FAQ-C43221-06",
+        "question": "Ce este inclus într-un abonament de mentenanță?",
+        "answer": "Conținutul depinde de contract: verificări preventive, număr de vizite, manoperă, deplasare și timp de răspuns. Cereți lista exactă a serviciilor, excluderile și prețul final."
+      },
+      {
+        "id": "FAQ-C43221-07",
+        "question": "Pot monta o pompă de căldură într-o casă existentă?",
+        "answer": "Da, în multe situații, dar trebuie evaluate izolația, necesarul termic, radiatoarele sau încălzirea în pardoseală și alimentarea electrică. Soluția se dimensionează pentru clădire."
+      },
+      {
+        "id": "FAQ-C43221-08",
+        "question": "Cum se stabilește prețul montajului unei centrale?",
+        "answer": "Depinde de echipament, trasee, evacuare, modificările instalației, materiale și operațiunile autorizate. Solicitați un deviz care distinge echipamentul, manopera și serviciile suplimentare."
+      },
+      {
+        "id": "FAQ-C43221-09",
+        "question": "Ce trebuie să verific înainte de a solicita un serviciu pentru gaze?",
+        "answer": "Verificați autorizațiile ANRE ale operatorului pentru activitatea concretă. Proiectarea, execuția și verificările instalației de gaze nu sunt echivalente cu revizia centralei."
+      },
+      {
+        "id": "FAQ-C43221-10",
+        "question": "Garanția extinsă este inclusă automat la cumpărarea centralei?",
+        "answer": "Nu. Garanțiile comerciale extinse depind de producător, model, data PIF, contract și întreținerea prevăzută. Solicitați condițiile scrise; drepturile legale ale consumatorului rămân distincte."
+      }
+    ],
+    "C43222": [
+      {
+        "id": "FAQ-C43222-01",
+        "question": "Cum aleg capacitatea potrivită a aparatului de aer condiționat?",
+        "answer": "Capacitatea se estimează după suprafață, volum, izolație, ferestre, orientare și încărcarea termică. Un instalator poate recomanda puterea potrivită înainte de achiziție."
+      },
+      {
+        "id": "FAQ-C43222-02",
+        "question": "Ce include montajul standard al unui aparat split?",
+        "answer": "De regulă include fixarea unităților, traseul frigorific și evacuarea condensului în limitele ofertei, probe și explicații de utilizare. Materialele și lungimile suplimentare trebuie precizate în deviz."
+      },
+      {
+        "id": "FAQ-C43222-03",
+        "question": "Cât de des trebuie întreținut aerul condiționat?",
+        "answer": "Frecvența depinde de utilizare, mediu și instrucțiunile producătorului. Curățarea filtrelor și reviziile periodice contribuie la funcționare igienică și eficientă."
+      },
+      {
+        "id": "FAQ-C43222-04",
+        "question": "Când trebuie chemat service-ul pentru aerul condiționat?",
+        "answer": "Solicitați diagnostic dacă apar erori, răcire slabă, zgomote neobișnuite, scurgeri de apă sau mirosuri persistente. Opriți echipamentul dacă există risc electric."
+      },
+      {
+        "id": "FAQ-C43222-05",
+        "question": "Este normal să fie necesară completarea frecventă a agentului frigorific?",
+        "answer": "Nu. Un circuit etanș nu necesită completări regulate. Pierderile se diagnostichează și se remediază înaintea încărcării, de personal certificat atunci când reglementările o cer."
+      },
+      {
+        "id": "FAQ-C43222-06",
+        "question": "Ce certificări sunt necesare pentru lucrări la circuitul frigorific?",
+        "answer": "Anumite operațiuni la echipamente de climatizare și pompe de căldură necesită certificarea F-gaze a personalului și, după caz, a firmei, conform echipamentului și agentului frigorific."
+      },
+      {
+        "id": "FAQ-C43222-07",
+        "question": "Aerul condiționat poate încălzi locuința iarna?",
+        "answer": "Multe aparate cu pompă de căldură pot încălzi, dar randamentul și limitele de temperatură diferă după model. Consultați fișa tehnică și necesarul termic al spațiului."
+      },
+      {
+        "id": "FAQ-C43222-08",
+        "question": "Ce este un sistem multisplit?",
+        "answer": "Este un sistem în care o unitate exterioară deservește mai multe unități interioare compatibile. Configurația se alege după încăperi, puteri și traseele permise."
+      },
+      {
+        "id": "FAQ-C43222-09",
+        "question": "Când este utilă ventilația cu recuperare de căldură?",
+        "answer": "Este utilă în clădiri bine etanșate, unde se dorește aer proaspăt cu pierderi termice reduse. Sunt importante debitele, filtrarea, zgomotul și întreținerea."
+      },
+      {
+        "id": "FAQ-C43222-10",
+        "question": "Cum obțin un preț final pentru instalarea climatizării?",
+        "answer": "Trimiteți localitatea, tipul clădirii, suprafața, modelul ales și fotografii cu locurile de montaj. Oferta trebuie să precizeze traseele, materialele, accesul și eventualele lucrări suplimentare."
+      }
+    ],
+    "C43223": [
+      {
+        "id": "FAQ-C43223-01",
+        "question": "Ce include refacerea instalației sanitare a unei băi?",
+        "answer": "Poate include conductele de apă rece și caldă, canalizarea, robineții, racordurile și montajul obiectelor sanitare. Lucrările exacte se stabilesc după o evaluare."
+      },
+      {
+        "id": "FAQ-C43223-02",
+        "question": "Cum identific o pierdere ascunsă de apă?",
+        "answer": "Semnele pot fi petele de umezeală, scăderea presiunii sau creșterea consumului. Un specialist poate efectua verificări și localizare înainte de spargeri."
+      },
+      {
+        "id": "FAQ-C43223-03",
+        "question": "Când trebuie înlocuite conductele vechi?",
+        "answer": "La coroziune, scurgeri repetate, depuneri importante sau renovări majore poate fi justificată înlocuirea. Decizia se ia după inspecția traseelor existente."
+      },
+      {
+        "id": "FAQ-C43223-04",
+        "question": "Care este diferența dintre un boiler electric și un încălzitor instant?",
+        "answer": "Boilerul stochează apă caldă într-un rezervor, în timp ce încălzitorul instant o prepară la cerere. Alegerea depinde de consum, spațiu și capacitatea instalației electrice."
+      },
+      {
+        "id": "FAQ-C43223-05",
+        "question": "Ce trebuie verificat înainte de montarea unui boiler electric?",
+        "answer": "Sunt importante capacitatea, rezistența peretelui, presiunea apei, supapele de siguranță și alimentarea electrică adecvată. Racordarea electrică trebuie făcută de personal competent."
+      },
+      {
+        "id": "FAQ-C43223-06",
+        "question": "Când este util un hidrofor?",
+        "answer": "Un hidrofor poate ajuta la alimentarea cu apă și menținerea presiunii în sisteme compatibile. Dimensionarea ține de sursa de apă, debit, înălțime și consumatori."
+      },
+      {
+        "id": "FAQ-C43223-07",
+        "question": "Cum pot preveni înfundarea scurgerilor?",
+        "answer": "Evitați evacuarea grăsimilor, șervețelelor și obiectelor solide; folosiți site și întreținere adecvată. Pentru blocaje recurente, verificați panta și starea conductelor."
+      },
+      {
+        "id": "FAQ-C43223-08",
+        "question": "Se poate monta o cabină de duș fără modificări majore?",
+        "answer": "Uneori da, dacă există spațiu suficient, evacuare corectă și hidroizolație adecvată. O vizită tehnică stabilește modificările necesare."
+      },
+      {
+        "id": "FAQ-C43223-09",
+        "question": "Ce beneficii are un dedurizator de apă?",
+        "answer": "Poate reduce depunerile de calcar în instalații și echipamente, dacă apa este dură. Alegerea necesită analiza apei și estimarea consumului."
+      },
+      {
+        "id": "FAQ-C43223-10",
+        "question": "Ce date trimit pentru o ofertă de instalații sanitare?",
+        "answer": "Precizați localitatea, tipul lucrării, numărul obiectelor sanitare, materialele existente și fotografii. Solicitați o ofertă cu manoperă, materiale și condiții separate."
+      }
+    ]
+  }
+}
