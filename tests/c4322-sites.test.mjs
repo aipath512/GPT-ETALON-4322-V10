@@ -78,3 +78,27 @@ for (const [fid, f] of Object.entries(FAM)) {
     for (const js of ['app.js', 'catalog.js']) execFileSync(process.execPath, ['--check', path.join(root, dir, js)]);
   });
 }
+
+// FAQ vizibile și structurate trebuie să provină din aceeași sursă.
+test('10 FAQ per familie, vizibile pe Acasă / Servicii / Produse și identice cu FAQPage JSON-LD', () => {
+  const faq = JSON.parse(read('etalons/C4322/faq.json'));
+  assert.deepEqual(Object.keys(faq.families).sort(), Object.keys(FAM).sort());
+  for (const fid of Object.keys(FAM)) {
+    const qa = faq.families[fid];
+    assert.equal(qa.length, 10);
+    for (const page of ['index.html', 'servicii/index.html', 'produse/index.html']) {
+      const html = read(`cloudflare-pages/${fid}/${page}`);
+      assert.match(html, /<section class="section" id="faq">/);
+      assert.equal((html.match(/<details class="dblock" id="FAQ-/g)||[]).length, 10);
+      const graphs = [...html.matchAll(/<script type="application\\/ld\\+json">(.*?)<\\/script>/gs)].map(m => JSON.parse(m[1]));
+      const ld = graphs.flatMap(g => g['@graph']||[]).find(g => g['@type']==='FAQPage');
+      assert.ok(ld, `${fid} ${page}: FAQPage absent`);
+      assert.equal(ld.mainEntity.length, 10);
+      for (let i=0;i<10;i++) {
+        assert.equal(ld.mainEntity[i].name, qa[i].question);
+        assert.equal(ld.mainEntity[i].acceptedAnswer.text, qa[i].answer);
+        assert.ok(html.includes(qa[i].question.replaceAll('&','&amp;')));
+      }
+    }
+  }
+});
