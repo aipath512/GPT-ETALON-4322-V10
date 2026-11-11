@@ -1123,5 +1123,84 @@
       "default": "Nu afirma autorizații fără dovezi verificate"
     },
     "status": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "autorizatieAGFR": {
+    "capturedAt": "2026-11-11",
+    "source": "Text FLI «Autorizație A.G.F.R.» transmis de utilizator",
+    "statusOfCompetitorDocument": "DECLARED_NOT_VERIFIED",
+    "credentialType": "CERTIFICARE_F_GAZE_FIRMA",
+    "category": "C43222 Climatizare",
+    "domainClaimed": "instalare, reparare, întreținere și service echipamente staționare de refrigerare, climatizare și pompe de căldură cu gaze fluorurate cu efect de seră",
+    "regulatoryFramework": [
+      {
+        "act": "Regulamentul (UE) 2024/573",
+        "url": "https://eur-lex.europa.eu/eli/reg/2024/573/oj?locale=ro",
+        "note": "certificarea persoanelor fizice și juridice; acoperă după caz agenți frigorifici alternativi"
+      },
+      {
+        "act": "Regulamentul de punere în aplicare (UE) 2024/2215",
+        "url": "https://eur-lex.europa.eu/legal-content/ro/TXT/?uri=CELEX%3A32024R2215",
+        "note": "cerințe de certificare pentru refrigerare staționară, climatizare și pompe de căldură; a abrogat (UE) 2015/2067"
+      }
+    ],
+    "crosswalk": {
+      "existing": [
+        {
+          "code": "S-C-02",
+          "service": "Montaj AC split"
+        },
+        {
+          "code": "S-C-09",
+          "service": "Diagnostic și reparații AC"
+        },
+        {
+          "code": "S-C-11",
+          "service": "Încărcare agent frigorific"
+        },
+        {
+          "code": "S-I-11",
+          "service": "Montaj pompă de căldură aer-apă"
+        }
+      ],
+      "logic": "Nu adăuga dubluri; certificarea limitează eligibilitatea prestării, nu constituie ea însăși serviciu.",
+      "verifyCodesAgainstSSOT": true
+    },
+    "requirements": [
+      "Verificarea separat a certificării persoanei juridice și a certificatelor personalului care execută efectiv lucrările",
+      "Domeniu exact: tip echipament, activități, substanțe/categorii și eventual limite cantitative",
+      "Certificare/organism emitent, număr, titular CUI, dată, statut, dovadă, posibilitate verificare",
+      "Nu publica autorizări sau competențe de firmă doar din apartenența la CAEN 4322",
+      "Nu confunda certificarea AGFR/F-gaze cu ISCIR, ANRE sau certificări ISO"
+    ],
+    "suggestedFields": {
+      "entity": "AutorizatieProfesionala",
+      "authorityOrBody": "AGFR / organism competent, de confirmat pe document",
+      "regulatoryRegime": "F_GAZE",
+      "scopeActivities": [
+        "instalare",
+        "reparare",
+        "întreținere",
+        "service"
+      ],
+      "equipmentClasses": [
+        "refrigerare staționară",
+        "climatizare staționară",
+        "pompe de căldură"
+      ],
+      "substanceCategories": "de completat după document",
+      "holderType": "persoană juridică / persoană fizică",
+      "certificateId": null,
+      "issueDate": null,
+      "expiryDate": null,
+      "status": "pending_document",
+      "verifiedAt": null
+    },
+    "websitePresentation": {
+      "section": "Certificări și autorizații > F-gaze / AGFR",
+      "visibility": "doar după validare",
+      "cta": "Solicită intervenție climatizare",
+      "noDefaultClaim": true
+    },
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
   }
 }
