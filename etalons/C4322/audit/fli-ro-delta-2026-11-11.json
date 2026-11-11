@@ -179,5 +179,124 @@
     "requireAuthorizationProofForRegulatedServices": true,
     "doNotInventPricesOrGuarantees": true
   },
-  "nextStep": "Revizuire tehnică și juridică, alocare coduri canonice noi, completare entități și relații, regenerare prin tools/build_c4322.py, rulare teste și verificare live pe cele trei domenii."
+  "nextStep": "Revizuire tehnică și juridică, alocare coduri canonice noi, completare entități și relații, regenerare prin tools/build_c4322.py, rulare teste și verificare live pe cele trei domenii.",
+  "sourceEvidenceAdded": {
+    "origin": "Textul paginii «Reparații centrale termice» furnizat de utilizator, 2026-11-11",
+    "type": "user_supplied_page_content",
+    "verifiedLive": false,
+    "service": "Reparații centrale termice",
+    "competitorClaimOnly": true,
+    "commercialPositioning": [
+      "experiență peste 30 ani (afirmație FLI)",
+      "personal certificat ISCIR (afirmație FLI)",
+      "program dispecerat 08:00–20:00",
+      "preț întreținere anuală de la 250 lei/an (afirmație FLI, nu preț SCARA)",
+      "intervenții rapide, tarife transparente (fără SLA/preț concret pentru reparație)"
+    ],
+    "brandsMentioned": [
+      "Ariston",
+      "Beretta",
+      "Ferroli",
+      "Immergas",
+      "Viessmann",
+      "Vaillant",
+      "Chaffoteaux"
+    ],
+    "geographiesMentioned": {
+      "core": [
+        "București, sectoarele 1–6",
+        "Ilfov"
+      ],
+      "counties": [
+        "Călărași",
+        "Dâmbovița",
+        "Ialomița",
+        "Giurgiu",
+        "Prahova",
+        "Teleorman"
+      ],
+      "policy": "Acoperirea FLI nu devine implicit aria firmei generate de SCARA."
+    },
+    "contactFormFields": [
+      "nume",
+      "email",
+      "telefon",
+      "mesaj/defecțiune/marcă/model"
+    ],
+    "cta": "Vreau",
+    "crossSell": [
+      "întreținere anuală",
+      "service centrale",
+      "consultanță termică",
+      "mentenanță și intervenții",
+      "AF / VTU",
+      "punere în funcțiune",
+      "instalare și montaj",
+      "proiectare și execuție"
+    ],
+    "additionalCompetitorServices": [
+      "instalații electrice",
+      "ventilație",
+      "canalizare",
+      "apă-canal"
+    ],
+    "note": "Serviciile electrice nu se adaugă automat în CAEN 4322; verificare CAEN și autorizații."
+  },
+  "productRecommendationsForScara": [
+    {
+      "type": "FIELD_EXTENSIONS",
+      "target": "Diagnostic și reparații centrale",
+      "fields": [
+        "marca",
+        "model",
+        "cod_eroare",
+        "simptome_defectiune",
+        "vechime_echipament",
+        "localitate",
+        "interval_contact",
+        "fotografii_optional"
+      ],
+      "note": "Datele sunt input pentru cererea de ofertă, nu proprietăți ale fiecărei fișe generice."
+    },
+    {
+      "type": "CONVERSION",
+      "target": "Servicii / reparații",
+      "features": [
+        "CTA Solicită reparație",
+        "formular contextual",
+        "click-to-call",
+        "captare lead cu consimțământ GDPR"
+      ],
+      "status": "propunere, nu funcționalitate implementată"
+    },
+    {
+      "type": "GEOGRAPHIC",
+      "target": "FIRMA_OFERA + arie acoperire",
+      "features": [
+        "zone explicite selectate per firmă",
+        "localități filtrabile",
+        "fără copiere automată a județelor FLI"
+      ]
+    },
+    {
+      "type": "TRUST",
+      "target": "firm profile",
+      "features": [
+        "autorizări ISCIR verificabile",
+        "mărci deservite confirmate de firmă",
+        "orar real dispecerat",
+        "garanții reale fără afirmații inventate"
+      ]
+    },
+    {
+      "type": "MONETIZATION",
+      "target": "mentenanță anuală",
+      "features": [
+        "preț personalizat/cerere ofertă",
+        "abonamente opționale validate",
+        "niciun preț FLI copiat drept tarif SCARA"
+      ]
+    }
+  ],
+  "revisedInterpretation": "Pagina suplimentară confirmă majoritatea serviciilor de încălzire deja existente în dicționar; diferența majoră este în configurarea formularului, a mărcilor, ariei geografice, dovezilor și CTA. Nu adaugă automat 10 servicii noi. Revizia de conținut nu trebuie să imite afirmațiile sau textul FLI."
 }
