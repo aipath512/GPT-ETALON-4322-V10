@@ -8,6 +8,11 @@ on:
       - 'etalons/C4322/**'
       - 'tools/build_c4322.py'
       - 'img/products/**'
+  pull_request:
+    paths:
+      - 'etalons/C4322/**'
+      - 'tools/build_c4322.py'
+      - 'tests/c4322-sites.test.mjs'
   workflow_dispatch:
 permissions:
   contents: write
@@ -27,6 +32,7 @@ jobs:
       - name: Teste
         run: node --test tests/c4322-dictionar.test.mjs tests/c4322-sites.test.mjs etalons/C4322/C4322.test.mjs
       - name: Urcare modificări
+        if: github.event_name == 'push'
         run: |
           if [ -n "$(git status --porcelain cloudflare-pages)" ]; then
             git config user.name "github-actions[bot]"
