@@ -298,7 +298,7 @@
       ]
     }
   ],
-  "revisedInterpretation": "S-I-05 acoperă VTP; AF inițial trebuie modelată ca proces/document/serviciu distinct după verificare juridică. Nu duplica VTP, nu confunda cu ANRE gaz sau mentenanța anuală, nu reutiliza amenda ori anularea garanției ca fapt verificat.",
+  "revisedInterpretation": "Pagina nouă confirmă că S-I-04 acoperă PIF; se adaugă detalii și câmpuri de cerere, fără duplicare. PIF, AF și VTP sunt concepte separate, iar simplul CAEN 4322 nu conferă dreptul de a executa orice PIF.",
   "consultantaTehnicaCentrale": {
     "source": "Text pagina FLI «Consultanță Tehnică Centrale» furnizat de utilizator",
     "capturedAt": "2026-11-11",
@@ -648,5 +648,127 @@
     },
     "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED",
     "disclaimer": "Nu acorda certificat ISCIR și nu atribui autorizări firmelor generate fără documente verificabile."
+  },
+  "punereInFunctiuneCentralaTermica": {
+    "source": "Text «Punere în Funcțiune Centrală Termică / PIF Centrale Termice» transmis de utilizator",
+    "capturedAt": "2026-11-11",
+    "independentWebsiteVerification": false,
+    "canonicalMatch": {
+      "code": "S-I-04",
+      "name": "Punere în funcțiune centrală",
+      "status": "ALREADY_EXISTS_EXTEND_WITHOUT_DUPLICATING"
+    },
+    "relatedServices": [
+      {
+        "code": "S-I-02",
+        "name": "Montaj centrală termică"
+      },
+      {
+        "code": "S-I-05",
+        "name": "Verificare tehnică periodică centrală"
+      },
+      {
+        "code": "S-I-06",
+        "name": "Revizie și întreținere centrală"
+      }
+    ],
+    "distinctConcepts": [
+      {
+        "term": "PIF",
+        "name": "Punere în funcțiune",
+        "meaning": "Operațiuni la prima utilizare a aparatului nou, în condițiile prescripției tehnice și instrucțiunilor producătorului",
+        "notEquivalentTo": "Montajul fizic, autorizarea de funcționare sau VTP ulterioară"
+      },
+      {
+        "term": "AF",
+        "name": "Autorizarea funcționării",
+        "meaning": "Procedura/documentația aplicabilă autorizării inițiale în regimul tehnic corespunzător",
+        "notEquivalentTo": "PIF; pot exista legături procedural-juridice care trebuie verificate"
+      },
+      {
+        "term": "VTP/VTU",
+        "name": "Verificare tehnică periodică / în utilizare",
+        "meaning": "Control tehnic după punerea în exploatare, la intervalele aplicabile",
+        "notEquivalentTo": "PIF inițial sau verificarea instalației de gaze reglementată ANRE"
+      }
+    ],
+    "technicalChecklistCandidate": [
+      "identificarea mărcii, modelului, seriei și puterii echipamentului",
+      "verificarea documentației și a condițiilor de instalare",
+      "verificarea parametrilor circuitului termic și evacuării gazelor arse, după echipament",
+      "verificări de siguranță și de funcționare conform manualului producătorului și prescripțiilor aplicabile",
+      "reglaje și testarea regimurilor de funcționare numai de personal competent/autorizat",
+      "înregistrarea rezultatelor și predarea documentației corespunzătoare utilizatorului",
+      "explicarea utilizării sigure și întreținerii, conform producătorului"
+    ],
+    "brandSignals": [
+      "Ariston",
+      "Viessmann",
+      "Bosch",
+      "Motan",
+      "Buderus"
+    ],
+    "brandPolicy": "Enumerarea mărcilor de către FLI nu dovedește că firma generată prin SCARA este partener service ori autorizată de producător.",
+    "leadFormFields": [
+      "nume",
+      "telefon",
+      "email",
+      "localitate",
+      "marca",
+      "model",
+      "serie_echipament_optional",
+      "putere_kW_optional",
+      "combustibil",
+      "data_montajului",
+      "documente_disponibile",
+      "mesaj",
+      "consimtamant"
+    ],
+    "evaQuestions": [
+      "Ce este PIF și când se efectuează?",
+      "Care este diferența dintre PIF, AF și VTP/VTU?",
+      "PIF este același lucru cu montajul?",
+      "Ce documente trebuie pregătite pentru punerea în funcțiune?",
+      "Firma poate efectua PIF pentru marca și modelul meu?",
+      "Ce urmează după punerea în funcțiune?",
+      "Este necesară verificarea separată a instalației de gaze?"
+    ],
+    "sourceClaimsToValidate": [
+      {
+        "claim": "Executăm PIF pentru toată gama de produse conform CAEN 4322",
+        "status": "DO_NOT_REUSE",
+        "reason": "CAEN nu conferă automat autorizări ISCIR/ANRE sau agreere de producător; eligibilitatea este per firmă, echipament și operațiune."
+      },
+      {
+        "claim": "Tehnicieni autorizați ISCIR",
+        "status": "VERIFY_PER_FIRM",
+        "reason": "Nu afirma autorizare fără documente verificabile."
+      },
+      {
+        "claim": "PT A1-2010 definește PIF",
+        "status": "VERIFY_CURRENT_APPLICABILITY",
+        "reason": "Verifică domeniul prescripției și versiunea aplicabilă fiecărui aparat; nu extinde automat la toate tipurile."
+      },
+      {
+        "claim": "Prescripții comune tiraj natural și forțat, document .doc",
+        "status": "SOURCE_DOCUMENT_MISSING",
+        "reason": "Textul menționează un document descărcabil, dar acesta nu a fost furnizat; nu se poate integra ca sursă primară."
+      }
+    ],
+    "designRecommendation": {
+      "targetService": "S-I-04",
+      "cta": "Solicită punerea în funcțiune",
+      "sections": [
+        "Ce este PIF",
+        "Când aveți nevoie de PIF",
+        "Etapele verificării",
+        "Acte și informații necesare",
+        "Mărci și modele eligibile confirmate",
+        "PIF versus AF versus VTP",
+        "Solicită programare"
+      ],
+      "offerVisibility": "only after firm confirms eligibility and authorizations"
+    },
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
   }
 }
