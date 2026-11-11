@@ -1,0 +1,1131 @@
+{
+ "site": "https://gpt-etalon-4322-v10-88z.pages.dev/",
+ "familie": "C43222",
+ "titlu": "Climatizare",
+ "subtitlu": "Instalații de climatizare",
+ "firma": {
+  "nume": "TCE INSTAL SRL",
+  "fictiva": true
+ },
+ "editor": "AiVenture S.R.L. (RO51415878)",
+ "caen": "4322",
+ "sesiune": "0006H",
+ "versiune": "v2.1",
+ "data": "2026-11-11",
+ "moneda": "RON, cu TVA",
+ "grupe": [
+  "Aer condiționat split",
+  "Multisplit, casetă, duct, consolă",
+  "Sisteme comerciale (VRF, chiller)",
+  "Ventilație și recuperare",
+  "Calitatea aerului",
+  "Trasee și accesorii",
+  "Automatizări și control",
+  "Service și igienizare"
+ ],
+ "servicii": [
+  {
+   "id": "S-C-01",
+   "entityId": "ENT-C4322-0184",
+   "name": "Consultanță și dimensionare aer condiționat",
+   "group": "Aer condiționat split",
+   "descriptionShort": "Alegerea puterii și poziției corecte pentru încăperea ta.",
+   "operations": "Evaluare suprafață, orientare, izolație, traseu frigorific și electric.",
+   "recommendedWhen": "Înainte de cumpărarea aparatului.",
+   "uses": [
+    "P-C-01",
+    "P-C-02",
+    "P-C-03",
+    "P-C-04",
+    "P-C-05"
+   ],
+   "priceMinRON": 0,
+   "priceAvgRON": 150,
+   "priceMaxRON": 300,
+   "priceUnit": "vizită",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-01-consultanta-si-dimensionare-aer-conditionat/"
+  },
+  {
+   "id": "S-C-02",
+   "entityId": "ENT-C4322-0185",
+   "name": "Montaj AC split 9000–12000 BTU",
+   "group": "Aer condiționat split",
+   "descriptionShort": "Răcire și încălzire suplimentară pentru o cameră.",
+   "operations": "Unitate interioară/exterioară, traseu, vidare, evacuare condens și probă.",
+   "recommendedWhen": "Dormitoare și livinguri potrivite ca volum.",
+   "uses": [
+    "P-C-01",
+    "P-C-02",
+    "P-C-11",
+    "P-C-12"
+   ],
+   "priceMinRON": 600,
+   "priceAvgRON": 800,
+   "priceMaxRON": 1100,
+   "priceUnit": "buc",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-02-montaj-ac-split-900012000-btu/"
+  },
+  {
+   "id": "S-C-03",
+   "entityId": "ENT-C4322-0186",
+   "name": "Montaj AC split 18000–24000 BTU",
+   "group": "Aer condiționat split",
+   "descriptionShort": "Climatizare pentru spații mai mari, dacă dimensionarea o permite.",
+   "operations": "Amplasare, console, legături frigorifice, protecții și testare.",
+   "recommendedWhen": "Living mare sau spațiu open space.",
+   "uses": [
+    "P-C-03",
+    "P-C-04",
+    "P-C-11",
+    "P-C-12"
+   ],
+   "priceMinRON": 900,
+   "priceAvgRON": 1100,
+   "priceMaxRON": 1500,
+   "priceUnit": "buc",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-03-montaj-ac-split-1800024000-btu/"
+  },
+  {
+   "id": "S-C-04",
+   "entityId": "ENT-C4322-0187",
+   "name": "Montaj multisplit",
+   "group": "Multisplit, casetă, duct, consolă",
+   "descriptionShort": "Climatizarea a două sau mai multe camere cu sistem comun.",
+   "operations": "Dimensionare, trasee separate, montaj și teste.",
+   "recommendedWhen": "Apartamente cu mai multe camere.",
+   "uses": [
+    "P-C-05",
+    "P-C-16",
+    "P-C-11"
+   ],
+   "priceMinRON": 600,
+   "priceAvgRON": 800,
+   "priceMaxRON": 1200,
+   "priceUnit": "unitate interioară",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-04-montaj-multisplit/"
+  },
+  {
+   "id": "S-C-05",
+   "entityId": "ENT-C4322-0188",
+   "name": "Montaj aer condiționat tip casetă / duct",
+   "group": "Multisplit, casetă, duct, consolă",
+   "descriptionShort": "Distribuție discretă a aerului în configurații speciale.",
+   "operations": "Integrare în plafon și trasee, cu verificarea accesului la mentenanță.",
+   "recommendedWhen": "Case cu tavane adecvate.",
+   "uses": [
+    "P-C-06",
+    "P-C-07",
+    "P-C-22"
+   ],
+   "priceMinRON": 1500,
+   "priceAvgRON": 2500,
+   "priceMaxRON": 4500,
+   "priceUnit": "buc",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-05-montaj-aer-conditionat-tip-caseta-duct/"
+  },
+  {
+   "id": "S-C-06",
+   "entityId": "ENT-C4322-0189",
+   "name": "Montaj sisteme VRF / VRV",
+   "group": "Sisteme comerciale (VRF, chiller)",
+   "descriptionShort": "Controlul mai multor zone cu o soluție centralizată.",
+   "operations": "Proiectare specializată, rețea frigorifică, control și probe.",
+   "recommendedWhen": "Locuințe mari, cu multe zone.",
+   "uses": [
+    "P-C-18",
+    "P-C-26"
+   ],
+   "priceMinRON": 1200,
+   "priceAvgRON": 2000,
+   "priceMaxRON": 3500,
+   "priceUnit": "unitate interioară",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-06-montaj-sisteme-vrf-vrv/"
+  },
+  {
+   "id": "S-C-07",
+   "entityId": "ENT-C4322-0190",
+   "name": "Montaj ventilație cu recuperare de căldură",
+   "group": "Ventilație și recuperare",
+   "descriptionShort": "Aer proaspăt cu reducerea pierderilor termice.",
+   "operations": "Tubulaturi, unitate recuperare, filtre, prize aer și reglaje.",
+   "recommendedWhen": "Case etanșe și renovări aprofundate.",
+   "uses": [
+    "P-C-09",
+    "P-C-22"
+   ],
+   "priceMinRON": 3000,
+   "priceAvgRON": 6000,
+   "priceMaxRON": 12000,
+   "priceUnit": "lucrare",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-07-montaj-ventilatie-cu-recuperare-de-caldura/"
+  },
+  {
+   "id": "S-C-08",
+   "entityId": "ENT-C4322-0191",
+   "name": "Igienizare și curățare AC",
+   "group": "Service și igienizare",
+   "descriptionShort": "Curățarea componentelor expuse la praf și umezeală.",
+   "operations": "Filtre, evaporator, tavă de condens, evacuare și produse compatibile.",
+   "recommendedWhen": "Întreținere periodică sau miros neplăcut.",
+   "uses": [
+    "P-C-28"
+   ],
+   "priceMinRON": 150,
+   "priceAvgRON": 250,
+   "priceMaxRON": 400,
+   "priceUnit": "buc",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-08-igienizare-si-curatare-ac/"
+  },
+  {
+   "id": "S-C-09",
+   "entityId": "ENT-C4322-0192",
+   "name": "Revizie periodică AC",
+   "group": "Service și igienizare",
+   "descriptionShort": "Verificarea eficienței și funcționării înainte de sezon.",
+   "operations": "Inspecție electrică/vizuală, parametri, condens, curățare după necesitate.",
+   "recommendedWhen": "Primăvara și în perioadele de utilizare intensă.",
+   "uses": [
+    "P-C-28",
+    "P-C-27"
+   ],
+   "priceMinRON": 200,
+   "priceAvgRON": 300,
+   "priceMaxRON": 450,
+   "priceUnit": "buc",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-09-revizie-periodica-ac/"
+  },
+  {
+   "id": "S-C-10",
+   "entityId": "ENT-C4322-0193",
+   "name": "Diagnostic și reparații AC",
+   "group": "Service și igienizare",
+   "descriptionShort": "Remedierea defecțiunilor de răcire, zgomot sau eroare.",
+   "operations": "Diagnostic, identificare piesă și deviz înainte de reparație.",
+   "recommendedWhen": "Când apar simptome anormale.",
+   "uses": [
+    "P-C-27"
+   ],
+   "priceMinRON": 150,
+   "priceAvgRON": 300,
+   "priceMaxRON": 600,
+   "priceUnit": "intervenție, fără piese",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-10-diagnostic-si-reparatii-ac/"
+  },
+  {
+   "id": "S-C-11",
+   "entityId": "ENT-C4322-0194",
+   "name": "Verificare pierderi agent frigorific",
+   "group": "Service și igienizare",
+   "descriptionShort": "Identificarea scurgerilor înaintea încărcării instalației.",
+   "operations": "Test etanșeitate, remediere și operațiuni de agent frigorific prin personal competent.",
+   "recommendedWhen": "Când răcirea scade sau presiunile sunt incorecte.",
+   "uses": [
+    "P-C-27"
+   ],
+   "priceMinRON": 150,
+   "priceAvgRON": 250,
+   "priceMaxRON": 500,
+   "priceUnit": "lucrare",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-11-verificare-pierderi-agent-frigorific/"
+  },
+  {
+   "id": "S-C-12",
+   "entityId": "ENT-C4322-0195",
+   "name": "Încărcare agent frigorific",
+   "group": "Service și igienizare",
+   "descriptionShort": "Restabilirea cantității necesare după rezolvarea cauzei pierderii.",
+   "operations": "Verificări, încărcare tip/cantitate prescrisă și teste finale.",
+   "recommendedWhen": "Doar după diagnostic, nu ca remediu automat.",
+   "uses": [
+    "P-C-27"
+   ],
+   "priceMinRON": 250,
+   "priceAvgRON": 450,
+   "priceMaxRON": 800,
+   "priceUnit": "lucrare, cu agent",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-12-incarcare-agent-frigorific/"
+  },
+  {
+   "id": "S-C-13",
+   "entityId": "ENT-C4322-0196",
+   "name": "Demontare și relocare AC",
+   "group": "Service și igienizare",
+   "descriptionShort": "Mutarea aparatului fără deteriorarea componentelor.",
+   "operations": "Recuperare agent unde este cazul, demontare și remontare, teste.",
+   "recommendedWhen": "Renovare sau schimbare locuință.",
+   "uses": [
+    "P-C-11",
+    "P-C-12"
+   ],
+   "priceMinRON": 200,
+   "priceAvgRON": 500,
+   "priceMaxRON": 900,
+   "priceUnit": "buc",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-13-demontare-si-relocare-ac/"
+  },
+  {
+   "id": "S-C-14",
+   "entityId": "ENT-C4322-0197",
+   "name": "Traseu frigorific și evacuare condens",
+   "group": "Trasee și accesorii",
+   "descriptionShort": "Realizarea corectă a legăturilor dintre unități.",
+   "operations": "Țevi, izolație, cablu, condens și străpungeri conform situației.",
+   "recommendedWhen": "Montaj nou sau refacerea traseului.",
+   "uses": [
+    "P-C-11",
+    "P-C-13"
+   ],
+   "priceMinRON": 100,
+   "priceAvgRON": 130,
+   "priceMaxRON": 180,
+   "priceUnit": "m",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-14-traseu-frigorific-si-evacuare-condens/"
+  },
+  {
+   "id": "S-C-15",
+   "entityId": "ENT-C4322-0198",
+   "name": "Automatizări climatizare și Wi-Fi",
+   "group": "Automatizări și control",
+   "descriptionShort": "Programarea confortului și controlul de pe telefon.",
+   "operations": "Configurare termostate, telecomenzi și module compatibile.",
+   "recommendedWhen": "Locuințe cu control pe zone.",
+   "uses": [
+    "P-C-14",
+    "P-C-26"
+   ],
+   "priceMinRON": 100,
+   "priceAvgRON": 200,
+   "priceMaxRON": 400,
+   "priceUnit": "buc",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-15-automatizari-climatizare-si-wi-fi/"
+  },
+  {
+   "id": "S-C-16",
+   "entityId": "ENT-C4322-0199",
+   "name": "Montaj aer condiționat tip consolă",
+   "group": "Multisplit, casetă, duct, consolă",
+   "descriptionShort": "Unitate interioară montată jos, pe perete sau pardoseală.",
+   "operations": "Fixare, traseu frigorific, condens, vidare, probe.",
+   "recommendedWhen": "Mansarde, ferestre mari, spații fără perete liber sus.",
+   "uses": [
+    "P-C-15",
+    "P-C-11"
+   ],
+   "priceMinRON": 800,
+   "priceAvgRON": 1100,
+   "priceMaxRON": 1500,
+   "priceUnit": "buc",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-16-montaj-aer-conditionat-tip-consola/"
+  },
+  {
+   "id": "S-C-17",
+   "entityId": "ENT-C4322-0200",
+   "name": "Montaj perdele de aer",
+   "group": "Sisteme comerciale (VRF, chiller)",
+   "descriptionShort": "Separarea climatică a intrărilor în spații comerciale.",
+   "operations": "Suspendare deasupra ușii, alimentare, comandă, reglaj.",
+   "recommendedWhen": "Magazine, recepții, intrări cu trafic mare.",
+   "uses": [
+    "P-C-21"
+   ],
+   "priceMinRON": 400,
+   "priceAvgRON": 800,
+   "priceMaxRON": 1500,
+   "priceUnit": "buc",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-17-montaj-perdele-de-aer/"
+  },
+  {
+   "id": "S-C-18",
+   "entityId": "ENT-C4322-0201",
+   "name": "Montaj chiller și ventiloconvectoare",
+   "group": "Sisteme comerciale (VRF, chiller)",
+   "descriptionShort": "Răcire și încălzire centralizată cu apă.",
+   "operations": "Amplasare chiller, trasee de apă, ventiloconvectoare, echilibrare, punere în funcțiune.",
+   "recommendedWhen": "Clădiri de birouri, hoteluri, spații mari.",
+   "uses": [
+    "P-C-19",
+    "P-C-20"
+   ],
+   "priceMinRON": 8000,
+   "priceAvgRON": 20000,
+   "priceMaxRON": 60000,
+   "priceUnit": "lucrare",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-18-montaj-chiller-si-ventiloconvectoare/"
+  },
+  {
+   "id": "S-C-19",
+   "entityId": "ENT-C4322-0202",
+   "name": "Montaj sisteme rooftop pentru spații comerciale",
+   "group": "Sisteme comerciale (VRF, chiller)",
+   "descriptionShort": "Unități compacte pe acoperiș pentru hale și magazine.",
+   "operations": "Ridicare, racorduri de aer, alimentare, comenzi, punere în funcțiune.",
+   "recommendedWhen": "Hale, supermarketuri, spații comerciale mari.",
+   "uses": [
+    "P-C-22"
+   ],
+   "priceMinRON": 5000,
+   "priceAvgRON": 12000,
+   "priceMaxRON": 30000,
+   "priceUnit": "lucrare",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-19-montaj-sisteme-rooftop-pentru-spatii-comerciale/"
+  },
+  {
+   "id": "S-C-20",
+   "entityId": "ENT-C4322-0203",
+   "name": "Montaj ventilatoare de extracție baie și bucătărie",
+   "group": "Ventilație și recuperare",
+   "descriptionShort": "Evacuarea umidității și a mirosurilor.",
+   "operations": "Străpungere, tubulatură, clapetă antiretur, alimentare, temporizare.",
+   "recommendedWhen": "Băi fără geam, bucătării, spații cu mucegai.",
+   "uses": [
+    "P-C-08",
+    "P-C-23"
+   ],
+   "priceMinRON": 150,
+   "priceAvgRON": 300,
+   "priceMaxRON": 600,
+   "priceUnit": "buc",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-20-montaj-ventilatoare-de-extractie-baie-si-bucatarie/"
+  },
+  {
+   "id": "S-C-21",
+   "entityId": "ENT-C4322-0204",
+   "name": "Montaj dezumidificatoare și umidificatoare",
+   "group": "Calitatea aerului",
+   "descriptionShort": "Controlul umidității aerului în locuință.",
+   "operations": "Amplasare, evacuare condens sau alimentare apă, setare umiditate.",
+   "recommendedWhen": "Subsoluri, case noi, aer prea uscat iarna.",
+   "uses": [
+    "P-C-24",
+    "P-C-25"
+   ],
+   "priceMinRON": 100,
+   "priceAvgRON": 250,
+   "priceMaxRON": 600,
+   "priceUnit": "buc",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-21-montaj-dezumidificatoare-si-umidificatoare/"
+  },
+  {
+   "id": "S-C-22",
+   "entityId": "ENT-C4322-0205",
+   "name": "Montaj pompă de condens",
+   "group": "Trasee și accesorii",
+   "descriptionShort": "Evacuarea condensului când nu se poate gravitațional.",
+   "operations": "Montaj pompă, traseu, racord la canalizare, probă.",
+   "recommendedWhen": "Unități montate departe de un punct de scurgere.",
+   "uses": [
+    "P-C-13"
+   ],
+   "priceMinRON": 150,
+   "priceAvgRON": 250,
+   "priceMaxRON": 400,
+   "priceUnit": "buc",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-22-montaj-pompa-de-condens/"
+  },
+  {
+   "id": "S-C-23",
+   "entityId": "ENT-C4322-0206",
+   "name": "Pre-instalare climatizare în renovare",
+   "group": "Trasee și accesorii",
+   "descriptionShort": "Trasee îngropate înainte de finisaje.",
+   "operations": "Trasee frigorifice și de condens, cablu, cutii de așteptare, probe de presiune.",
+   "recommendedWhen": "Renovări și case noi, înainte de tencuială.",
+   "uses": [
+    "P-C-11",
+    "P-C-13"
+   ],
+   "priceMinRON": 400,
+   "priceAvgRON": 700,
+   "priceMaxRON": 1200,
+   "priceUnit": "unitate",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-23-pre-instalare-climatizare-in-renovare/"
+  },
+  {
+   "id": "S-C-24",
+   "entityId": "ENT-C4322-0207",
+   "name": "Curățare și dezinfecție tubulatură ventilație",
+   "group": "Service și igienizare",
+   "descriptionShort": "Igienizarea canalelor de aer și a grilelor.",
+   "operations": "Inspecție, periere, aspirare, dezinfecție, raport.",
+   "recommendedWhen": "Ventilații vechi, mirosuri, spații publice.",
+   "uses": [
+    "P-C-22"
+   ],
+   "priceMinRON": 15,
+   "priceAvgRON": 30,
+   "priceMaxRON": 60,
+   "priceUnit": "m",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-24-curatare-si-dezinfectie-tubulatura-ventilatie/"
+  },
+  {
+   "id": "S-C-25",
+   "entityId": "ENT-C4322-0208",
+   "name": "Intervenții urgente climatizare",
+   "group": "Service și igienizare",
+   "descriptionShort": "Defecțiuni în sezonul cald sau la echipamente critice.",
+   "operations": "Diagnostic, remediere sau soluție provizorie, ofertă pentru piese.",
+   "recommendedWhen": "Camere de servere, cabinete, valuri de căldură.",
+   "uses": [
+    "P-C-27"
+   ],
+   "priceMinRON": 250,
+   "priceAvgRON": 450,
+   "priceMaxRON": 800,
+   "priceUnit": "intervenție",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-c-25-interventii-urgente-climatizare/"
+  },
+  {
+   "id": "S-I-11",
+   "entityId": "ENT-C4322-0044",
+   "name": "Montaj pompă de căldură aer-apă",
+   "group": "Comune cu alte familii",
+   "homeGroup": "Pompe de căldură",
+   "sharedFrom": "Încălzire",
+   "descriptionShort": "Încălzire eficientă cu echipament adaptat clădirii.",
+   "operations": "Analiză termică, amplasare, integrare hidraulică/electrică, teste și PIF conform cerințelor.",
+   "recommendedWhen": "Case izolate bine și modernizări planificate.",
+   "uses": [
+    "P-I-02",
+    "P-I-03",
+    "P-I-04",
+    "P-I-30",
+    "P-I-15"
+   ],
+   "priceMinRON": 3000,
+   "priceAvgRON": 6000,
+   "priceMaxRON": 12000,
+   "priceUnit": "lucrare",
+   "priceBasis": "manoperă, fără materiale",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/servicii/s-i-11-montaj-pompa-de-caldura-aer-apa/"
+  }
+ ],
+ "produse": [
+  {
+   "id": "P-C-01",
+   "entityId": "ENT-C4322-0209",
+   "name": "Aer condiționat split 9000 BTU",
+   "group": "Aer condiționat split",
+   "descriptionShort": "Climatizare pentru spații mici, după dimensionare.",
+   "selectionCriteria": "Capacitate la condiții reale, SEER/SCOP și zgomot.",
+   "brands": "Daikin, Mitsubishi Electric, Gree, LG, Samsung, Midea",
+   "usedIn": [
+    "S-C-01",
+    "S-C-02"
+   ],
+   "priceMinRON": 1500,
+   "priceAvgRON": 2300,
+   "priceMaxRON": 4000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-01-aer-conditionat-split-9000-btu/"
+  },
+  {
+   "id": "P-C-02",
+   "entityId": "ENT-C4322-0212",
+   "name": "Aer condiționat split 12000 BTU",
+   "group": "Aer condiționat split",
+   "descriptionShort": "Aparat pentru camere de dimensiune medie.",
+   "selectionCriteria": "Clasa energetică, poziționare, consum, filtrare.",
+   "brands": "Daikin, Mitsubishi Electric, Gree, LG, Samsung, Midea",
+   "usedIn": [
+    "S-C-01",
+    "S-C-02"
+   ],
+   "priceMinRON": 1700,
+   "priceAvgRON": 2700,
+   "priceMaxRON": 4500,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-02-aer-conditionat-split-12000-btu/"
+  },
+  {
+   "id": "P-C-03",
+   "entityId": "ENT-C4322-0213",
+   "name": "Aer condiționat split 18000 BTU",
+   "group": "Aer condiționat split",
+   "descriptionShort": "Aparat pentru zone mai mari.",
+   "selectionCriteria": "Dimensionare, lungime traseu și poziția unităților.",
+   "brands": "Daikin, Mitsubishi Electric, Gree, LG, Samsung",
+   "usedIn": [
+    "S-C-01",
+    "S-C-03"
+   ],
+   "priceMinRON": 2700,
+   "priceAvgRON": 4000,
+   "priceMaxRON": 7000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-03-aer-conditionat-split-18000-btu/"
+  },
+  {
+   "id": "P-C-04",
+   "entityId": "ENT-C4322-0214",
+   "name": "Aer condiționat split 24000 BTU",
+   "group": "Aer condiționat split",
+   "descriptionShort": "Aparat de capacitate mare pentru spații compatibile.",
+   "selectionCriteria": "Alimentare electrică, debit și instalare.",
+   "brands": "Daikin, Mitsubishi Electric, Gree, LG, Samsung",
+   "usedIn": [
+    "S-C-01",
+    "S-C-03"
+   ],
+   "priceMinRON": 3200,
+   "priceAvgRON": 5000,
+   "priceMaxRON": 8500,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-04-aer-conditionat-split-24000-btu/"
+  },
+  {
+   "id": "P-C-05",
+   "entityId": "ENT-C4322-0215",
+   "name": "Sistem multisplit",
+   "group": "Multisplit, casetă, duct, consolă",
+   "descriptionShort": "Mai multe unități interioare, o configurație comună exterioară.",
+   "selectionCriteria": "Combinații admise de producător și trasee.",
+   "brands": "Daikin, Mitsubishi Electric, LG, Samsung, Gree",
+   "usedIn": [
+    "S-C-01",
+    "S-C-04"
+   ],
+   "priceMinRON": 6000,
+   "priceAvgRON": 10000,
+   "priceMaxRON": 18000,
+   "priceUnit": "sistem (2 unități)",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-05-sistem-multisplit/"
+  },
+  {
+   "id": "P-C-06",
+   "entityId": "ENT-C4322-0216",
+   "name": "Aer condiționat tip casetă",
+   "group": "Multisplit, casetă, duct, consolă",
+   "descriptionShort": "Distribuie aerul prin grile într-un plafon.",
+   "selectionCriteria": "Înălțime disponibilă și acces service.",
+   "brands": "Daikin, Mitsubishi Electric, Gree, Toshiba",
+   "usedIn": [
+    "S-C-05"
+   ],
+   "priceMinRON": 5000,
+   "priceAvgRON": 8500,
+   "priceMaxRON": 15000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-06-aer-conditionat-tip-caseta/"
+  },
+  {
+   "id": "P-C-07",
+   "entityId": "ENT-C4322-0218",
+   "name": "Aer condiționat duct",
+   "group": "Multisplit, casetă, duct, consolă",
+   "descriptionShort": "Distribuție prin canale, cu unitatea ascunsă.",
+   "selectionCriteria": "Presiune disponibilă, zgomot și filtrare.",
+   "brands": "Daikin, Mitsubishi Electric, Gree, Toshiba",
+   "usedIn": [
+    "S-C-05"
+   ],
+   "priceMinRON": 5000,
+   "priceAvgRON": 9000,
+   "priceMaxRON": 16000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-07-aer-conditionat-duct/"
+  },
+  {
+   "id": "P-C-08",
+   "entityId": "ENT-C4322-0219",
+   "name": "Ventilator de baie",
+   "group": "Ventilație și recuperare",
+   "descriptionShort": "Ajută la evacuarea aerului umed.",
+   "selectionCriteria": "Debit, protecție electrică, nivel sonor.",
+   "brands": "Vents, Vortice, Soler & Palau",
+   "usedIn": [
+    "S-C-20"
+   ],
+   "priceMinRON": 80,
+   "priceAvgRON": 250,
+   "priceMaxRON": 700,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-08-ventilator-de-baie/"
+  },
+  {
+   "id": "P-C-09",
+   "entityId": "ENT-C4322-0223",
+   "name": "Recuperator de căldură",
+   "group": "Ventilație și recuperare",
+   "descriptionShort": "Ventilație cu transfer parțial de energie între fluxuri.",
+   "selectionCriteria": "Randament, filtre, debit și îngheț.",
+   "brands": "Zehnder, Komfovent, Vents, Blauberg",
+   "usedIn": [
+    "S-C-07"
+   ],
+   "priceMinRON": 2500,
+   "priceAvgRON": 6000,
+   "priceMaxRON": 15000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-09-recuperator-de-caldura/"
+  },
+  {
+   "id": "P-C-10",
+   "entityId": "ENT-C4322-0226",
+   "name": "Purificator / filtru de aer",
+   "group": "Calitatea aerului",
+   "descriptionShort": "Reduce particulele pentru care este proiectat.",
+   "selectionCriteria": "CADR, tip filtru și cost consumabile.",
+   "brands": "Philips, Xiaomi, Daikin, Blueair",
+   "usedIn": [],
+   "priceMinRON": 400,
+   "priceAvgRON": 1200,
+   "priceMaxRON": 4000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-10-purificator-filtru-de-aer/"
+  },
+  {
+   "id": "P-C-11",
+   "entityId": "ENT-C4322-0230",
+   "name": "Traseu frigorific cupru",
+   "group": "Trasee și accesorii",
+   "descriptionShort": "Transportă agentul între unitățile AC.",
+   "selectionCriteria": "Diametru, izolație, lungime maximă.",
+   "brands": "Halcor, KME, Wieland",
+   "usedIn": [
+    "S-C-02",
+    "S-C-03",
+    "S-C-04",
+    "S-C-13",
+    "S-C-14",
+    "S-C-16",
+    "S-C-23"
+   ],
+   "priceMinRON": 40,
+   "priceAvgRON": 70,
+   "priceMaxRON": 120,
+   "priceUnit": "m",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-11-traseu-frigorific-cupru/"
+  },
+  {
+   "id": "P-C-12",
+   "entityId": "ENT-C4322-0234",
+   "name": "Kit console AC",
+   "group": "Trasee și accesorii",
+   "descriptionShort": "Fixează unitatea exterioară pe suport adecvat.",
+   "selectionCriteria": "Sarcină, vibrații și ancorare.",
+   "brands": "Sauermann, Fischer",
+   "usedIn": [
+    "S-C-02",
+    "S-C-03",
+    "S-C-13"
+   ],
+   "priceMinRON": 60,
+   "priceAvgRON": 100,
+   "priceMaxRON": 200,
+   "priceUnit": "set",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-12-kit-console-ac/"
+  },
+  {
+   "id": "P-C-13",
+   "entityId": "ENT-C4322-0237",
+   "name": "Pompă condens",
+   "group": "Trasee și accesorii",
+   "descriptionShort": "Evacuează apa când panta naturală lipsește.",
+   "selectionCriteria": "Debit, nivel sonor și mentenanță.",
+   "brands": "Sauermann, Aspen, Charlotte",
+   "usedIn": [
+    "S-I-02",
+    "S-C-14",
+    "S-C-22",
+    "S-C-23"
+   ],
+   "priceMinRON": 250,
+   "priceAvgRON": 450,
+   "priceMaxRON": 900,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-13-pompa-condens/"
+  },
+  {
+   "id": "P-C-14",
+   "entityId": "ENT-C4322-0240",
+   "name": "Modul Wi-Fi climatizare",
+   "group": "Automatizări și control",
+   "descriptionShort": "Permite controlul aparatului de la distanță.",
+   "selectionCriteria": "Compatibilitate și securitatea contului.",
+   "brands": "Daikin, Mitsubishi Electric, Gree, LG",
+   "usedIn": [
+    "S-C-15"
+   ],
+   "priceMinRON": 150,
+   "priceAvgRON": 300,
+   "priceMaxRON": 600,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-14-modul-wi-fi-climatizare/"
+  },
+  {
+   "id": "P-C-15",
+   "entityId": "ENT-C4322-0241",
+   "name": "Aer condiționat consolă",
+   "group": "Multisplit, casetă, duct, consolă",
+   "descriptionShort": "Unitate interioară de pardoseală.",
+   "selectionCriteria": "Capacitate BTU, înălțime, zgomot.",
+   "brands": "Daikin, Mitsubishi Electric, Fujitsu",
+   "usedIn": [
+    "S-C-16"
+   ],
+   "priceMinRON": 3500,
+   "priceAvgRON": 5500,
+   "priceMaxRON": 9000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-15-aer-conditionat-consola/"
+  },
+  {
+   "id": "P-C-16",
+   "entityId": "ENT-C4322-0243",
+   "name": "Unitate exterioară multisplit",
+   "group": "Multisplit, casetă, duct, consolă",
+   "descriptionShort": "Alimentează mai multe unități interioare.",
+   "selectionCriteria": "Număr de racorduri, capacitate totală, clasă energetică.",
+   "brands": "Daikin, Mitsubishi Electric, LG, Samsung",
+   "usedIn": [
+    "S-C-04"
+   ],
+   "priceMinRON": 4000,
+   "priceAvgRON": 7000,
+   "priceMaxRON": 13000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-16-unitate-exterioara-multisplit/"
+  },
+  {
+   "id": "P-C-17",
+   "entityId": "ENT-C4322-0244",
+   "name": "Aer condiționat mobil",
+   "group": "Aer condiționat split",
+   "descriptionShort": "Răcire fără montaj fix.",
+   "selectionCriteria": "Capacitate, tub de evacuare, zgomot.",
+   "brands": "De'Longhi, Electrolux, Midea",
+   "usedIn": [],
+   "priceMinRON": 1200,
+   "priceAvgRON": 2000,
+   "priceMaxRON": 3500,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-17-aer-conditionat-mobil/"
+  },
+  {
+   "id": "P-C-18",
+   "entityId": "ENT-C4322-0246",
+   "name": "Sistem VRF / VRV",
+   "group": "Sisteme comerciale (VRF, chiller)",
+   "descriptionShort": "Climatizare pentru clădiri cu multe zone.",
+   "selectionCriteria": "Capacitate, număr unități interioare, recuperare de căldură.",
+   "brands": "Daikin, Mitsubishi Electric, LG, Samsung",
+   "usedIn": [
+    "S-C-06"
+   ],
+   "priceMinRON": 40000,
+   "priceAvgRON": 90000,
+   "priceMaxRON": 250000,
+   "priceUnit": "sistem",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-18-sistem-vrf-vrv/"
+  },
+  {
+   "id": "P-C-19",
+   "entityId": "ENT-C4322-0247",
+   "name": "Chiller",
+   "group": "Sisteme comerciale (VRF, chiller)",
+   "descriptionShort": "Produce apă răcită pentru ventiloconvectoare.",
+   "selectionCriteria": "Capacitate, agent frigorific, zgomot.",
+   "brands": "Daikin, Carrier, Trane, Clivet",
+   "usedIn": [
+    "S-C-18"
+   ],
+   "priceMinRON": 30000,
+   "priceAvgRON": 70000,
+   "priceMaxRON": 200000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-19-chiller/"
+  },
+  {
+   "id": "P-C-20",
+   "entityId": "ENT-C4322-0251",
+   "name": "Ventiloconvector",
+   "group": "Sisteme comerciale (VRF, chiller)",
+   "descriptionShort": "Unitate terminală pe apă rece sau caldă.",
+   "selectionCriteria": "Tip montaj, debit de aer, comandă.",
+   "brands": "Daikin, Sabiana, Aermec, Galletti",
+   "usedIn": [
+    "S-I-21",
+    "S-C-18"
+   ],
+   "priceMinRON": 1500,
+   "priceAvgRON": 2500,
+   "priceMaxRON": 5000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-20-ventiloconvector/"
+  },
+  {
+   "id": "P-C-21",
+   "entityId": "ENT-C4322-0255",
+   "name": "Perdea de aer",
+   "group": "Sisteme comerciale (VRF, chiller)",
+   "descriptionShort": "Barieră de aer deasupra ușii.",
+   "selectionCriteria": "Lățime ușă, cu sau fără încălzire, debit.",
+   "brands": "Sonniger, Frico, Flowair",
+   "usedIn": [
+    "S-C-17"
+   ],
+   "priceMinRON": 800,
+   "priceAvgRON": 2000,
+   "priceMaxRON": 5000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-21-perdea-de-aer/"
+  },
+  {
+   "id": "P-C-22",
+   "entityId": "ENT-C4322-0257",
+   "name": "Tubulatură de ventilație și grile",
+   "group": "Ventilație și recuperare",
+   "descriptionShort": "Distribuția aerului în încăperi.",
+   "selectionCriteria": "Diametru, material, izolație, grile reglabile.",
+   "brands": "Vents, Systemair, Lindab",
+   "usedIn": [
+    "S-C-05",
+    "S-C-07",
+    "S-C-19",
+    "S-C-24"
+   ],
+   "priceMinRON": 30,
+   "priceAvgRON": 60,
+   "priceMaxRON": 120,
+   "priceUnit": "m",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-22-tubulatura-de-ventilatie-si-grile/"
+  },
+  {
+   "id": "P-C-23",
+   "entityId": "ENT-C4322-0260",
+   "name": "Ventilator de extracție pe canal",
+   "group": "Ventilație și recuperare",
+   "descriptionShort": "Extracție pentru bucătării și spații tehnice.",
+   "selectionCriteria": "Debit, presiune, zgomot.",
+   "brands": "Vents, Systemair, Soler & Palau",
+   "usedIn": [
+    "S-C-20"
+   ],
+   "priceMinRON": 300,
+   "priceAvgRON": 700,
+   "priceMaxRON": 1800,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-23-ventilator-de-extractie-pe-canal/"
+  },
+  {
+   "id": "P-C-24",
+   "entityId": "ENT-C4322-0261",
+   "name": "Dezumidificator",
+   "group": "Calitatea aerului",
+   "descriptionShort": "Reduce umiditatea aerului.",
+   "selectionCriteria": "Litri pe zi, suprafață, evacuare condens.",
+   "brands": "De'Longhi, Meaco, Trotec",
+   "usedIn": [
+    "S-C-21"
+   ],
+   "priceMinRON": 700,
+   "priceAvgRON": 1300,
+   "priceMaxRON": 3000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-24-dezumidificator/"
+  },
+  {
+   "id": "P-C-25",
+   "entityId": "ENT-C4322-0264",
+   "name": "Umidificator",
+   "group": "Calitatea aerului",
+   "descriptionShort": "Crește umiditatea aerului uscat.",
+   "selectionCriteria": "Tip (ultrasonic, evaporativ), rezervor, suprafață.",
+   "brands": "Philips, Boneco, Beurer",
+   "usedIn": [
+    "S-C-21"
+   ],
+   "priceMinRON": 200,
+   "priceAvgRON": 500,
+   "priceMaxRON": 1500,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-25-umidificator/"
+  },
+  {
+   "id": "P-C-26",
+   "entityId": "ENT-C4322-0267",
+   "name": "Controller central / telecomandă cablată",
+   "group": "Automatizări și control",
+   "descriptionShort": "Comandă unitară pentru mai multe unități.",
+   "selectionCriteria": "Compatibilitate, număr de unități, programare.",
+   "brands": "Daikin, Mitsubishi Electric, LG, Samsung",
+   "usedIn": [
+    "S-C-06",
+    "S-C-15"
+   ],
+   "priceMinRON": 300,
+   "priceAvgRON": 800,
+   "priceMaxRON": 3000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-26-controller-central-telecomanda-cablata/"
+  },
+  {
+   "id": "P-C-27",
+   "entityId": "ENT-C4322-0268",
+   "name": "Agent frigorific R32 / R410A",
+   "group": "Trasee și accesorii",
+   "descriptionShort": "Încărcare și completare circuite frigorifice.",
+   "selectionCriteria": "Tip agent compatibil, cantitate, manipulare certificată F-gaze.",
+   "brands": "Chemours, Honeywell, Daikin",
+   "usedIn": [
+    "S-C-09",
+    "S-C-10",
+    "S-C-11",
+    "S-C-12",
+    "S-C-25"
+   ],
+   "priceMinRON": 80,
+   "priceAvgRON": 150,
+   "priceMaxRON": 300,
+   "priceUnit": "kg",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-27-agent-frigorific-r32-r410a/"
+  },
+  {
+   "id": "P-C-28",
+   "entityId": "ENT-C4322-0270",
+   "name": "Filtre și consumabile pentru aer condiționat",
+   "group": "Service și igienizare",
+   "descriptionShort": "Filtre de schimb și soluții de igienizare.",
+   "selectionCriteria": "Model compatibil, tip filtru.",
+   "brands": "Daikin, Mitsubishi Electric, Gree, LG",
+   "usedIn": [
+    "S-C-08",
+    "S-C-09"
+   ],
+   "priceMinRON": 40,
+   "priceAvgRON": 100,
+   "priceMaxRON": 250,
+   "priceUnit": "set",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-c-28-filtre-si-consumabile-pentru-aer-conditionat/"
+  },
+  {
+   "id": "P-I-02",
+   "entityId": "ENT-C4322-0077",
+   "name": "Pompă de căldură aer-apă",
+   "group": "Comune cu alte familii",
+   "homeGroup": "Pompe de căldură",
+   "sharedFrom": "Încălzire",
+   "descriptionShort": "Folosește energia aerului pentru încălzire și uneori răcire.",
+   "selectionCriteria": "SCOP, temperatură tur, zgomot, necesar termic și alimentare electrică.",
+   "brands": "Daikin, Viessmann, Vaillant, Panasonic, Mitsubishi Electric, Samsung",
+   "usedIn": [
+    "S-I-01",
+    "S-I-11"
+   ],
+   "priceMinRON": 18000,
+   "priceAvgRON": 32000,
+   "priceMaxRON": 55000,
+   "priceUnit": "buc",
+   "priceBasis": "echipament / material",
+   "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat",
+   "url": "https://gpt-etalon-4322-v10-88z.pages.dev/produse/p-i-02-pompa-de-caldura-aer-apa/"
+  }
+ ]
+}

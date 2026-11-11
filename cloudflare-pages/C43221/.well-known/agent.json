@@ -1,0 +1,50 @@
+{
+ "protocolVersion": "0.3.0",
+ "name": "SCARA C43221 — Instalații de încălzire (demonstrativ)",
+ "description": "Catalog de referință instalații de încălzire în București: servicii, produse, mărci și prețuri orientative min / mediu / max. Firma afișată (TCE INSTAL SRL) este fictivă. Acces numai citire, prin resurse JSON statice.",
+ "url": "https://gpt-etalon-4322-v10.pages.dev/",
+ "version": "v2.1",
+ "provider": {
+  "organization": "AiVenture S.R.L.",
+  "url": "https://5thelement.ai"
+ },
+ "capabilities": {
+  "streaming": false,
+  "pushNotifications": false
+ },
+ "defaultInputModes": [
+  "text/plain"
+ ],
+ "defaultOutputModes": [
+  "application/json",
+  "text/html"
+ ],
+ "skills": [
+  {
+   "id": "catalog",
+   "name": "Catalog servicii și produse",
+   "description": "Lista completă a serviciilor și produselor, cu cod, grupă, mărci, relații serviciu–produs și preț min / mediu / max: https://gpt-etalon-4322-v10.pages.dev/api/catalog.json",
+   "tags": [
+    "CAEN 4322",
+    "instalații",
+    "Instalații de încălzire",
+    "București",
+    "prețuri"
+   ],
+   "examples": [
+    "Cât costă montajul unei centrale termice în București?",
+    "Ce mărci de centrale în condensare există?"
+   ]
+  },
+  {
+   "id": "dictionar",
+   "name": "Dicționar entitate–relație",
+   "description": "Entități și relații cu cardinalități (sesiune 0006H): https://gpt-etalon-4322-v10.pages.dev/dictionar/entitati.json, https://gpt-etalon-4322-v10.pages.dev/dictionar/relatii.json",
+   "tags": [
+    "dicționar de date",
+    "knowledge graph"
+   ]
+  }
+ ],
+ "documentationUrl": "https://gpt-etalon-4322-v10.pages.dev/llms.txt"
+}

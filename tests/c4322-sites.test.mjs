@@ -1,4 +1,4 @@
-// Teste site-uri de familie SCARA C4322 — v2.0 2026-11-11
+// Teste site-uri de familie SCARA C4322 — v2.1 2026-11-11
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -31,7 +31,10 @@ for (const [fid, f] of Object.entries(FAM)) {
       const html = read(`${dir}/${page}`);
       assert.doesNotMatch(html, /undefined|subclas/i, page);
       assert.ok(html.includes(firma.NumeFirma) && html.includes(f.sub), page);
-      assert.match(html, /name="robots" content="noindex,nofollow"/);
+      assert.ok(html.includes(firma.Public ? 'content="index,follow' : 'content="noindex,nofollow"'), page + ' robots');
+      assert.ok(html.includes(`<link rel="canonical" href="${firma.URL[fid]}/`), page + ' canonical');
+      for (const m of html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)) JSON.parse(m[1]);
+      assert.match(html, /application\/ld\+json/);
       for (const id of ['themeToggle', 'langSel', 'q', 'fBrand', 'fGroup', 'list']) assert.match(html, new RegExp(`id="${id}"`), page + ' ' + id);
       assert.equal((html.match(/<option value="[a-z]{2}">/g) || []).length, 24, page);
       assert.match(html, /sesiune 0006H/);
@@ -42,7 +45,11 @@ for (const [fid, f] of Object.entries(FAM)) {
     assert.ok(home.includes(JSON.stringify(firma.CUI)));
     for (const g of moduleData(fid).groups) assert.ok(home.includes(`>${g} — `), 'grupă pe homepage: ' + g);
     assert.match(home, /href="\/servicii\/\?grupa=/); assert.match(home, /href="\/produse\/\?grupa=/);
-    for (const file of ['404.html', 'favicon.svg', 'robots.txt', '_headers', '_routes.json', 'dictionar/index.html']) assert.ok(exists(`${dir}/${file}`), file);
+    assert.equal(read(`${dir}/robots.txt`).includes('Disallow: /'), !firma.Public);
+    const sm = read(`${dir}/sitemap.xml`); assert.equal((sm.match(/<url>/g) || []).length, 4 + siteCatalog(fid).services.length + siteCatalog(fid).products.length);
+    const card = JSON.parse(read(`${dir}/.well-known/agent.json`)); assert.ok(card.name && card.skills.length);
+    const api = JSON.parse(read(`${dir}/api/catalog.json`)); assert.equal(api.servicii.length, siteCatalog(fid).services.length);
+    for (const file of ['404.html', 'favicon.svg', 'robots.txt', '_headers', '_routes.json', 'dictionar/index.html', 'sitemap.xml', 'llms.txt', 'api/catalog.json', '.well-known/agent.json', 'dictionar/entitati.json', 'dictionar/relatii.json']) assert.ok(exists(`${dir}/${file}`), file);
   });
 
   test(`${fid} — catalogul publicat = fișe proprii + comune, cu preț, mărci și imagini`, () => {

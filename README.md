@@ -125,3 +125,9 @@ Site static HTML/CSS/JS (regenerat și verificat pe 8 noiembrie 2026): `style.cs
 - Tipuri: CAEN_ARE_FAMILIE 1:1..*, FAMILIE_ARE_GRUPA 1:1..*, GRUPA_CONTINE 1:0..*, AFISAT_PE 0..*:1..*, FOLOSESTE_PRODUS 0..*:0..* (propuse, de validat), ARE_MARCA 0..*:1..*, FIRMA_OFERA 0..*:0..* (pentru SCARA per CUI).
 - Modulele `etalons/C4322/C4322x.mjs` și toate paginile sunt **generate** din dicționar; nu se editează manual. Generatorul și testele opresc publicarea dacă o cardinalitate sau un tip de relație e încălcat.
 - Pagina `/dictionar/` pe fiecare site arată entitățile și relațiile (directe și inverse).
+
+## v2.1 (11 noiembrie 2026) — site-uri publice pentru teste (Google, AI, A2A)
+- Comutator în `etalons/C4322/firma.json`: `"Public": true` = indexabile; `false` = redevin interne (noindex, robots blocat) la următoarea regenerare automată.
+- Public: meta robots index, `robots.txt` cu permisiune explicită pentru boți AI (GPTBot, ClaudeBot, PerplexityBot, Google-Extended…), `sitemap.xml`, `canonical`, Open Graph, liste `/servicii/` și `/produse/` randate static.
+- Schema.org JSON-LD pe fiecare pagină: WebSite, CollectionPage + ItemList, Service / Product (preț orientativ ca proprietăți), BreadcrumbList, Dataset (dicționar). Fără Offer și fără LocalBusiness cât timp firma este fictivă.
+- AI: `/llms.txt` cu toate fișele și prețurile. A2A: `/.well-known/agent.json` (și `agent-card.json`), `/api/catalog.json`, `/dictionar/entitati.json` și `relatii.json`.

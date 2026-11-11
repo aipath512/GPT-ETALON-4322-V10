@@ -1,0 +1,4847 @@
+{
+ "dictionar": "C4322",
+ "metamodel": "AiVenture Semantic Data Dictionary — ENTITY / PROPERTY / RELATIONSHIP / VALUE / SESSION",
+ "versiune": "1.0",
+ "data": "2026-11-11",
+ "sesiune": "0006H",
+ "regula": "Sursa unică (SSOT) pentru cele trei site-uri C43221/C43222/C43223. Modulele etalons/C4322/C4322x.mjs și paginile sunt GENERATE din acest dicționar.",
+ "entitati": [
+  {
+   "id": "ENT-C4322-0001",
+   "type": "ClasaCAEN",
+   "name": "Lucrări de instalații sanitare, de încălzire și de aer condiționat",
+   "code": "4322",
+   "properties": {
+    "caen": "4322",
+    "revizie": "CAEN Rev.3",
+    "nivel": "clasă"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0002",
+   "type": "Familie",
+   "name": "Încălzire",
+   "code": "C43221",
+   "properties": {
+    "codIntern": "C43221",
+    "notaCod": "cod intern SCARA, nu cod CAEN oficial",
+    "piata": "București",
+    "note": "Catalog etalon sectorial; serviciile și produsele concrete ale firmei sunt confirmate individual. Nu reprezintă stoc, ofertă contractuală ori certificare."
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0003",
+   "type": "Grupa",
+   "name": "Centrale termice",
+   "properties": {
+    "intro": "Centrala termică produce căldura pentru calorifere și, de obicei, apa caldă pentru baie și bucătărie. Alegerea corectă a puterii și montajul făcut ca la carte decid cât plătiți la gaz în fiecare iarnă.",
+    "pret": "Prețul depinde de putere (kW), de tipul centralei (în condensare, electrică, pe combustibil solid), de distanța până la coș sau perete și de cât de mult trebuie modificată instalația existentă.",
+    "reguli": "Montajul, punerea în funcțiune (PIF) și verificarea tehnică periodică la 2 ani se fac doar de firme autorizate ISCIR. Fără PIF, garanția centralei nu este valabilă.",
+    "sfat": "Cereți dimensionarea după necesarul real de căldură al locuinței, nu după centrala vecinului: o centrală prea mare pornește și se oprește des și consumă mai mult.",
+    "ordine": 1
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0004",
+   "type": "Grupa",
+   "name": "Pompe de căldură",
+   "properties": {
+    "intro": "Pompa de căldură ia căldura din aerul de afară și o mută în casă. Cu 1 kWh de curent produce de obicei 3–4 kWh de căldură, de aceea costă mai puțin în exploatare decât încălzirea electrică directă.",
+    "pret": "Prețul depinde de putere, de tipul pompei (monobloc sau split), de temperatura de lucru a instalației (pardoseală sau calorifere) și de lucrările electrice și hidraulice necesare.",
+    "reguli": "Montajul circuitului frigorific (la modelele split) se face de personal certificat pentru gaze fluorurate (F-gaze). Puterea electrică disponibilă a locuinței trebuie verificată înainte.",
+    "sfat": "Pompa de căldură dă cel mai bun randament cu încălzire în pardoseală sau cu calorifere mari, la temperaturi joase. Verificați izolația casei înainte de a alege puterea.",
+    "ordine": 2
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0005",
+   "type": "Grupa",
+   "name": "Calorifere și corpuri de încălzire",
+   "properties": {
+    "intro": "Caloriferele (radiatoarele) transmit în cameră căldura produsă de centrală. Mărimea și poziția lor decid dacă o cameră se încălzește uniform sau rămâne rece la geam.",
+    "pret": "Prețul depinde de numărul de calorifere, de dimensiunea lor, de material (oțel, aluminiu, fontă) și de cât de departe sunt de traseele existente.",
+    "reguli": "",
+    "sfat": "Montați caloriferul sub fereastră, pe toată lățimea ei dacă se poate, și puneți robinet termostatic pe fiecare: veți regla fiecare cameră separat.",
+    "ordine": 3
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0006",
+   "type": "Grupa",
+   "name": "Încălzire în pardoseală",
+   "properties": {
+    "intro": "Încălzirea în pardoseală încălzește camera de jos în sus, uniform, fără calorifere pe pereți. Lucrează la temperatură joasă, deci se potrivește foarte bine cu centralele în condensare și cu pompele de căldură.",
+    "pret": "Prețul se calculează pe metru pătrat și depinde de tipul sistemului (cu apă sau electric), de izolația de sub țevi, de numărul de circuite și de finisajul ales (gresie sau parchet).",
+    "reguli": "",
+    "sfat": "Decizia se ia înainte de șapă și finisaje. Cereți un plan de circuite pe camere și o probă de presiune înainte să se toarne șapa.",
+    "ordine": 4
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0007",
+   "type": "Grupa",
+   "name": "Termostate, senzori și automatizări",
+   "properties": {
+    "intro": "Termostatul și senzorii spun centralei sau pompei de căldură când să pornească și cât să încălzească. Un control bun înseamnă confort constant și o factură mai mică.",
+    "pret": "Prețul depinde de tipul de comandă (simplu, programabil, smart pe telefon), de numărul de zone sau camere și de cablare sau montajul wireless.",
+    "reguli": "",
+    "sfat": "Un senzor de temperatură exterioară plus un termostat în camera de zi aduc cea mai mare economie la o centrală în condensare, cu cost mic.",
+    "ordine": 5
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0008",
+   "type": "Grupa",
+   "name": "Apă caldă menajeră",
+   "properties": {
+    "intro": "Apa caldă menajeră este apa caldă de la duș și de la chiuvete. Poate fi produsă de centrală, de un boiler electric sau de un boiler indirect încălzit de centrală, pompă de căldură ori panouri solare.",
+    "pret": "Prețul depinde de volumul boilerului, de tipul lui (electric sau indirect), de locul de montaj și de racordurile necesare.",
+    "reguli": "Boilerul trebuie montat cu supapă de siguranță funcțională; nu se blochează niciodată scurgerea ei.",
+    "sfat": "Pentru o familie de 3–4 persoane cu cadă, un boiler de 120–150 de litri evită lipsa apei calde la dușuri succesive.",
+    "ordine": 6
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0009",
+   "type": "Grupa",
+   "name": "Solar termic",
+   "properties": {
+    "intro": "Panourile solare termice încălzesc apa cu energia soarelui. Vara pot acoperi aproape toată apa caldă, iar în restul anului o preîncălzesc și reduc consumul centralei.",
+    "pret": "Prețul depinde de numărul de panouri, de boilerul solar, de traseul pe acoperiș și de automatizarea circuitului.",
+    "reguli": "",
+    "sfat": "Orientarea spre sud și înclinarea corectă contează mai mult decât marca panoului.",
+    "ordine": 7
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0010",
+   "type": "Grupa",
+   "name": "Componente instalație",
+   "properties": {
+    "intro": "Componentele (vas de expansiune, pompe, filtre, vane, tubulatură de evacuare) sunt piesele care țin instalația sigură, curată și echilibrată. Nu se văd, dar se simt când lipsesc.",
+    "pret": "Prețul depinde de piesa aleasă, de mărimea instalației și de accesul la locul de montaj.",
+    "reguli": "Tubulatura de evacuare a gazelor arse se montează conform normelor și cerințelor producătorului centralei.",
+    "sfat": "Un filtru magnetic montat la centrală prelungește viața schimbătorului și a pompei; se curăță la fiecare revizie.",
+    "ordine": 8
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0011",
+   "type": "Grupa",
+   "name": "Instalații de gaze",
+   "properties": {
+    "intro": "Instalația de gaze aduce gazul de la contor la centrală și aragaz. Este o instalație de siguranță, care se proiectează și se execută doar de firme autorizate.",
+    "pret": "Prețul depinde de lungimea traseului, de numărul de consumatori, de proiect și de avizele necesare de la operatorul de distribuție.",
+    "reguli": "Proiectarea și execuția instalației de utilizare gaze naturale se fac doar de firme autorizate ANRE, cu recepție la operatorul de distribuție.",
+    "sfat": "Un detector de gaz cu electrovalvă costă puțin și oprește automat gazul la o scurgere: merită în orice bucătărie cu centrală sau aragaz.",
+    "ordine": 9
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0012",
+   "type": "Grupa",
+   "name": "Service, revizii și ISCIR",
+   "properties": {
+    "intro": "Revizia și verificările periodice țin centrala sigură și eficientă. O centrală curată consumă mai puțin și se strică mai rar.",
+    "pret": "Prețul depinde de tipul lucrării (revizie, verificare ISCIR, reparație), de marca centralei și de piesele necesare; piesele se plătesc separat.",
+    "reguli": "Verificarea tehnică periodică a centralei se face la 2 ani, de firme autorizate ISCIR. Revizia anuală este recomandată de producători.",
+    "sfat": "Programați revizia toamna, înainte de sezonul rece: veți evita așteptarea din prima săptămână de frig.",
+    "ordine": 10
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0013",
+   "type": "Familie",
+   "name": "Climatizare",
+   "code": "C43222",
+   "properties": {
+    "codIntern": "C43222",
+    "notaCod": "cod intern SCARA, nu cod CAEN oficial",
+    "piata": "București",
+    "note": "Catalog etalon sectorial; serviciile și produsele concrete ale firmei sunt confirmate individual. Nu reprezintă stoc, ofertă contractuală ori certificare."
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0014",
+   "type": "Grupa",
+   "name": "Aer condiționat split",
+   "properties": {
+    "intro": "Aerul condiționat split are o unitate în cameră și una afară. Răcește vara, iar cu modelele inverter încălzește eficient și primăvara sau toamna.",
+    "pret": "Prețul depinde de puterea aparatului (BTU), de lungimea traseului frigorific, de locul unității exterioare și de lucrările speciale (alpinism, suporturi).",
+    "reguli": "Montajul și încărcarea cu agent frigorific se fac de personal certificat pentru gaze fluorurate (F-gaze).",
+    "sfat": "Ca reper, 9.000 BTU acoperă aproximativ 20–25 m², iar 12.000 BTU aproximativ 25–35 m², în funcție de izolație și de expunerea la soare.",
+    "ordine": 1
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0015",
+   "type": "Grupa",
+   "name": "Multisplit, casetă, duct, consolă",
+   "properties": {
+    "intro": "Aceste sisteme climatizează mai multe camere sau spații mari, cu unități interioare mai discrete: pe tavan, ascunse în plafon sau jos pe perete.",
+    "pret": "Prețul depinde de numărul și tipul unităților interioare, de lungimea traseelor, de plafonul fals și de comandă.",
+    "reguli": "Montajul circuitului frigorific se face de personal certificat F-gaze.",
+    "sfat": "Un multisplit economisește spațiu pe fațadă, dar dacă se defectează unitatea exterioară rămân fără răcire toate camerele.",
+    "ordine": 2
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0016",
+   "type": "Grupa",
+   "name": "Sisteme comerciale (VRF, chiller)",
+   "properties": {
+    "intro": "Sistemele VRF și chillerele climatizează clădiri întregi: birouri, hoteluri, magazine. Fiecare zonă se poate regla separat, dintr-un singur sistem.",
+    "pret": "Prețul se stabilește pe proiect și depinde de capacitate, de numărul de zone, de trasee și de automatizare.",
+    "reguli": "Se execută după proiect de specialitate, de personal certificat F-gaze, cu documentația de recepție a lucrării.",
+    "sfat": "Cereți simularea consumului anual, nu doar prețul echipamentului: diferența se vede în facturi.",
+    "ordine": 3
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0017",
+   "type": "Grupa",
+   "name": "Ventilație și recuperare",
+   "properties": {
+    "intro": "Ventilația scoate aerul viciat și umezeala și aduce aer proaspăt. Cu recuperare de căldură, aerul nou este încălzit de cel evacuat, fără să pierdeți căldura casei.",
+    "pret": "Prețul depinde de debitul de aer, de lungimea tubulaturii, de numărul de guri de aer și de tipul recuperatorului.",
+    "reguli": "",
+    "sfat": "În casele noi, foarte bine izolate, ventilația controlată previne mucegaiul și aerul greu dimineața.",
+    "ordine": 4
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0018",
+   "type": "Grupa",
+   "name": "Calitatea aerului",
+   "properties": {
+    "intro": "Purificatoarele, dezumidificatoarele și umidificatoarele țin aerul curat și cu umiditatea potrivită, adică aproximativ 40–60%.",
+    "pret": "Prețul depinde de suprafață, de capacitatea aparatului și de filtre.",
+    "reguli": "",
+    "sfat": "Măsurați întâi umiditatea cu un higrometru ieftin: nu cumpărați dezumidificator dacă problema este de fapt aerisirea.",
+    "ordine": 5
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0019",
+   "type": "Grupa",
+   "name": "Trasee și accesorii",
+   "properties": {
+    "intro": "Traseele frigorifice, suporturile și evacuarea condensului sunt partea ascunsă a unui aer condiționat bine montat.",
+    "pret": "Prețul depinde de metrii de traseu, de străpungeri, de mascarea traseului și de necesitatea unei pompe de condens.",
+    "reguli": "",
+    "sfat": "În renovare, pregătiți traseele înainte de tencuială: montajul ulterior devine mai simplu și mai ieftin.",
+    "ordine": 6
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0020",
+   "type": "Grupa",
+   "name": "Automatizări și control",
+   "properties": {
+    "intro": "Modulele Wi-Fi și comenzile centrale vă lasă să porniți și să programați climatizarea de pe telefon sau dintr-un singur loc.",
+    "pret": "Prețul depinde de compatibilitatea cu aparatul și de numărul de unități controlate.",
+    "reguli": "",
+    "sfat": "Porniți răcirea cu 20–30 de minute înainte să ajungeți acasă, nu lăsați aparatul pornit toată ziua.",
+    "ordine": 7
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0021",
+   "type": "Grupa",
+   "name": "Service și igienizare",
+   "properties": {
+    "intro": "Igienizarea și revizia păstrează aerul curat, randamentul aparatului și garanția. Un aparat murdar răcește mai slab și consumă mai mult.",
+    "pret": "Prețul depinde de tipul unității, de accesul la unitatea exterioară și de eventualele piese sau agent frigorific.",
+    "reguli": "Verificarea etanșeității și intervențiile pe circuitul frigorific se fac de personal certificat F-gaze.",
+    "sfat": "Igienizați primăvara, înainte de sezon, și curățați filtrele interioare singur, lunar, vara.",
+    "ordine": 8
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0022",
+   "type": "Familie",
+   "name": "Sanitare",
+   "code": "C43223",
+   "properties": {
+    "codIntern": "C43223",
+    "notaCod": "cod intern SCARA, nu cod CAEN oficial",
+    "piata": "București",
+    "note": "Catalog etalon sectorial; serviciile și produsele concrete ale firmei sunt confirmate individual. Nu reprezintă stoc, ofertă contractuală ori certificare."
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0023",
+   "type": "Grupa",
+   "name": "Alimentare cu apă",
+   "properties": {
+    "intro": "Instalația de alimentare aduce apa rece și caldă la fiecare robinet. Țevile bune, montate corect, nu se mai ating zeci de ani.",
+    "pret": "Prețul se calculează de obicei pe punct de apă (un robinet sau un obiect sanitar) și depinde de material (PPR, PEX), de trasee și de demolări.",
+    "reguli": "După montaj se face probă de presiune, înainte de închiderea pereților.",
+    "sfat": "Montați un robinet de închidere pe fiecare cameră sau obiect: la o avarie nu mai opriți apa în toată casa.",
+    "ordine": 1
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0024",
+   "type": "Grupa",
+   "name": "Canalizare și scurgeri",
+   "properties": {
+    "intro": "Canalizarea duce apa uzată din casă spre rețeaua publică sau spre fosă. Pantele și diametrele corecte previn înfundările și mirosurile.",
+    "pret": "Prețul depinde de numărul de puncte de scurgere, de lungime, de pantă și de lucrările de demolare.",
+    "reguli": "",
+    "sfat": "La dușurile fără cădiță, rigola și hidroizolația se montează împreună; o rigolă fără hidroizolație bună ajunge la vecinul de jos.",
+    "ordine": 2
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0025",
+   "type": "Grupa",
+   "name": "Obiecte sanitare",
+   "properties": {
+    "intro": "Obiectele sanitare sunt WC-ul, lavoarul, cada, cabina de duș, bideul și mobilierul de baie. Montajul corect înseamnă fără scurgeri, fără mirosuri și fără fisuri.",
+    "pret": "Prețul se dă pe obiect și depinde de tip (suspendat sau pe pardoseală), de cadru, de racorduri și de finisaje.",
+    "reguli": "",
+    "sfat": "La WC-ul suspendat, alegeți un cadru de marcă cunoscută: piesele de schimb pentru rezervor se găsesc ani de zile.",
+    "ordine": 3
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0026",
+   "type": "Grupa",
+   "name": "Baterii și robineți",
+   "properties": {
+    "intro": "Bateriile și robineții controlează apa la fiecare punct. O baterie termostatică la duș păstrează temperatura constantă, chiar dacă altcineva deschide apa în bucătărie.",
+    "pret": "Prețul depinde de tipul bateriei (simplă, termostatică, încastrată) și de starea racordurilor existente.",
+    "reguli": "",
+    "sfat": "Dacă apa e dură, alegeți baterii cu aeratoare ușor de curățat și montați un filtru la intrarea în casă.",
+    "ordine": 4
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0027",
+   "type": "Grupa",
+   "name": "Apă caldă",
+   "properties": {
+    "intro": "Boilerele și încălzitoarele instant asigură apa caldă acolo unde nu ajunge centrala sau unde ea nu există.",
+    "pret": "Prețul depinde de volum sau de putere, de circuitul electric necesar și de locul de montaj.",
+    "reguli": "Încălzitoarele instant de putere mare cer circuit electric dedicat, verificat de electrician.",
+    "sfat": "Pentru o chiuvetă folosită rar, un boiler mic sub chiuvetă sau un instant evită trasee lungi de apă caldă.",
+    "ordine": 5
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0028",
+   "type": "Grupa",
+   "name": "Tratare apă",
+   "properties": {
+    "intro": "Filtrele, dedurizatoarele și osmoza inversă reduc calcarul și impuritățile. Protejează aparatele și îmbunătățesc gustul apei.",
+    "pret": "Prețul depinde de debitul casei, de duritatea apei și de tipul de tratare.",
+    "reguli": "",
+    "sfat": "Măsurați duritatea apei înainte; în multe zone din București un dedurizator prelungește vizibil viața centralei și a boilerului.",
+    "ordine": 6
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0029",
+   "type": "Grupa",
+   "name": "Pompe și hidrofoare",
+   "properties": {
+    "intro": "Hidrofoarele și pompele asigură presiunea apei sau scot apa uzată de unde nu poate curge singură, de exemplu de la demisol.",
+    "pret": "Prețul depinde de debit, de înălțimea de pompare și de racordurile electrice și hidraulice.",
+    "reguli": "",
+    "sfat": "Alegeți hidroforul după debitul real al casei; unul prea mic pornește și se oprește des și se uzează repede.",
+    "ordine": 7
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0030",
+   "type": "Grupa",
+   "name": "Contorizare și presiune",
+   "properties": {
+    "intro": "Apometrele măsoară consumul, iar reductoarele de presiune protejează instalația și aparatele de presiunea prea mare din rețea.",
+    "pret": "Prețul depinde de diametru, de tipul contorului și de accesul la locul de montaj.",
+    "reguli": "Apometrele de facturare trebuie să fie verificate metrologic și sigilate.",
+    "sfat": "O presiune peste 4–5 bar în apartament grăbește uzura bateriilor și a mașinii de spălat; un reductor se amortizează rapid.",
+    "ordine": 8
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0031",
+   "type": "Grupa",
+   "name": "Racorduri electrocasnice",
+   "properties": {
+    "intro": "Racordarea mașinii de spălat și a mașinii de vase la apă și la scurgere, făcută corect, evită inundațiile de la furtunuri slăbite.",
+    "pret": "Prețul depinde de existența prizelor de apă și de scurgere aproape de aparat.",
+    "reguli": "",
+    "sfat": "Montați un robinet dedicat pentru fiecare aparat și închideți-l când plecați în concediu.",
+    "ordine": 9
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0032",
+   "type": "Grupa",
+   "name": "Exterior și instalații speciale",
+   "properties": {
+    "intro": "Branșamentele, fosele septice, irigațiile și hidranții sunt lucrări de curte sau de clădire, cu reguli și avize proprii.",
+    "pret": "Prețul se stabilește pe proiect și depinde de lungimi, de săpătură, de avize și de echipamente.",
+    "reguli": "Branșamentul la rețeaua publică se face cu avizul operatorului de apă-canal. Instalațiile de stingere a incendiului se execută după proiect și cu documentația de securitate la incendiu.",
+    "sfat": "Cereți toate avizele înainte de săpătură: refacerea unei lucrări îngropate costă mai mult decât lucrarea.",
+    "ordine": 10
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0033",
+   "type": "Grupa",
+   "name": "Urgențe și reparații",
+   "properties": {
+    "intro": "Scurgerile, țevile sparte și înfundările nu așteaptă. O intervenție rapidă limitează paguba la dumneavoastră și la vecini.",
+    "pret": "Prețul depinde de ora intervenției, de accesul la țeavă, de piesele necesare și de refacerea finisajelor.",
+    "reguli": "",
+    "sfat": "Aflați acum unde este robinetul general de apă și verificați că se închide: în caz de avarie, primul pas este oprirea apei.",
+    "ordine": 11
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0034",
+   "type": "Serviciu",
+   "name": "Evaluare și dimensionare instalație termică",
+   "code": "S-I-01",
+   "properties": {
+    "descriptionShort": "Stabilim soluția potrivită pentru suprafață, izolație și numărul de camere.",
+    "operations": "Vizită tehnică, măsurători, calcul orientativ al necesarului, recomandare de configurație.",
+    "recommendedWhen": "Înainte de achiziția centralei, pompei de căldură sau de renovarea sistemului.",
+    "priceMinRON": 150,
+    "priceAvgRON": 250,
+    "priceMaxRON": 500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "vizită",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0035",
+   "type": "Serviciu",
+   "name": "Montaj centrală termică",
+   "code": "S-I-02",
+   "properties": {
+    "descriptionShort": "Înlocuirea sau instalarea sursei de încălzire pentru calorifere și apă caldă.",
+    "operations": "Pregătire amplasament, montaj, racordări și probe; operațiunile reglementate se execută numai de personal autorizat.",
+    "recommendedWhen": "La modernizare sau într-o locuință nouă.",
+    "priceMinRON": 800,
+    "priceAvgRON": 1200,
+    "priceMaxRON": 2000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0036",
+   "type": "Serviciu",
+   "name": "Înlocuire centrală termică",
+   "code": "S-I-03",
+   "properties": {
+    "descriptionShort": "Trecere de la o centrală veche la una potrivită necesarului actual.",
+    "operations": "Demontare, verificarea traseelor existente, adaptări, instalare și pregătire de PIF.",
+    "recommendedWhen": "Defecțiuni repetate sau consum ridicat.",
+    "priceMinRON": 600,
+    "priceAvgRON": 1000,
+    "priceMaxRON": 1600,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0037",
+   "type": "Serviciu",
+   "name": "Punere în funcțiune centrală",
+   "code": "S-I-04",
+   "properties": {
+    "descriptionShort": "Verificări inițiale și reglaje pentru utilizarea echipamentului în siguranță.",
+    "operations": "Operațiuni conform cerințelor producătorului, de operator autorizat când este obligatoriu; documentație predată.",
+    "recommendedWhen": "După instalare sau schimbarea centralei.",
+    "priceMinRON": 250,
+    "priceAvgRON": 350,
+    "priceMaxRON": 500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0038",
+   "type": "Serviciu",
+   "name": "Verificare tehnică periodică centrală",
+   "code": "S-I-05",
+   "properties": {
+    "descriptionShort": "Verificarea echipamentului conform regimului tehnic aplicabil.",
+    "operations": "Controale și acte de verificare doar prin operatori abilitați pentru categoria relevantă.",
+    "recommendedWhen": "La termenele legale și conform echipamentului.",
+    "priceMinRON": 250,
+    "priceAvgRON": 400,
+    "priceMaxRON": 600,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0039",
+   "type": "Serviciu",
+   "name": "Revizie și întreținere centrală",
+   "code": "S-I-06",
+   "properties": {
+    "descriptionShort": "Curățarea și verificarea componentelor pentru funcționare stabilă.",
+    "operations": "Inspecție, curățare, diagnostic și recomandări; verificările legale distincte se ofertează separat.",
+    "recommendedWhen": "Înaintea sezonului rece.",
+    "priceMinRON": 200,
+    "priceAvgRON": 300,
+    "priceMaxRON": 450,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0040",
+   "type": "Serviciu",
+   "name": "Diagnostic și reparații centrale",
+   "code": "S-I-07",
+   "properties": {
+    "descriptionShort": "Identificarea erorilor, scăderilor de presiune și lipsei apei calde.",
+    "operations": "Diagnostic tehnic, deviz separat și reparație aprobată, cu piese compatibile.",
+    "recommendedWhen": "La apariția defecțiunilor.",
+    "priceMinRON": 150,
+    "priceAvgRON": 350,
+    "priceMaxRON": 900,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "intervenție, fără piese",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0041",
+   "type": "Serviciu",
+   "name": "Montaj radiatoare și calorifere",
+   "code": "S-I-08",
+   "properties": {
+    "descriptionShort": "Căldură în camere prin corpuri de încălzire dimensionate corect.",
+    "operations": "Console, robineți, racorduri, aerisire, probe de etanșeitate.",
+    "recommendedWhen": "Renovare sau adăugare cameră.",
+    "priceMinRON": 250,
+    "priceAvgRON": 400,
+    "priceMaxRON": 600,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0042",
+   "type": "Serviciu",
+   "name": "Înlocuire robineți termostatați",
+   "code": "S-I-09",
+   "properties": {
+    "descriptionShort": "Control mai bun al temperaturii în fiecare cameră.",
+    "operations": "Alegere componente compatibile, montaj și verificare circuit.",
+    "recommendedWhen": "Când reglajul temperaturii este dificil.",
+    "priceMinRON": 80,
+    "priceAvgRON": 150,
+    "priceMaxRON": 250,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0043",
+   "type": "Serviciu",
+   "name": "Încălzire în pardoseală cu apă",
+   "code": "S-I-10",
+   "properties": {
+    "descriptionShort": "Confort uniform, cu suprafețe de pardoseală încălzite.",
+    "operations": "Izolație, circuite, distribuitoare, teste de presiune; șapa și finisajele se bugetează separat.",
+    "recommendedWhen": "Case noi și renovări majore.",
+    "priceMinRON": 60,
+    "priceAvgRON": 90,
+    "priceMaxRON": 140,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "m²",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0044",
+   "type": "Serviciu",
+   "name": "Montaj pompă de căldură aer-apă",
+   "code": "S-I-11",
+   "properties": {
+    "descriptionShort": "Încălzire eficientă cu echipament adaptat clădirii.",
+    "operations": "Analiză termică, amplasare, integrare hidraulică/electrică, teste și PIF conform cerințelor.",
+    "recommendedWhen": "Case izolate bine și modernizări planificate.",
+    "priceMinRON": 3000,
+    "priceAvgRON": 6000,
+    "priceMaxRON": 12000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0045",
+   "type": "Serviciu",
+   "name": "Montaj boiler indirect și rezervor ACM",
+   "code": "S-I-12",
+   "properties": {
+    "descriptionShort": "Apă caldă pentru baie și bucătărie, cu rezervă dimensionată corect.",
+    "operations": "Montaj, supape de siguranță, racorduri, verificarea presiunii și a sursei de energie.",
+    "recommendedWhen": "Familii cu consum mare de apă caldă.",
+    "priceMinRON": 500,
+    "priceAvgRON": 900,
+    "priceMaxRON": 1500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0046",
+   "type": "Serviciu",
+   "name": "Spălare instalație termică",
+   "code": "S-I-13",
+   "properties": {
+    "descriptionShort": "Curățarea depunerilor din țevi și radiatoare.",
+    "operations": "Curățare cu tehnică compatibilă și verificări ulterioare.",
+    "recommendedWhen": "Calorifere parțial reci sau circuit murdar.",
+    "priceMinRON": 600,
+    "priceAvgRON": 1000,
+    "priceMaxRON": 1800,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0047",
+   "type": "Serviciu",
+   "name": "Echilibrare hidraulică",
+   "code": "S-I-14",
+   "properties": {
+    "descriptionShort": "Distribuirea corectă a debitului între calorifere și circuite.",
+    "operations": "Reglarea robineților și distribuitoarelor, verificarea parametrilor.",
+    "recommendedWhen": "Camere care se încălzesc neuniform.",
+    "priceMinRON": 300,
+    "priceAvgRON": 600,
+    "priceMaxRON": 1200,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0048",
+   "type": "Serviciu",
+   "name": "Montaj termostate și automatizări",
+   "code": "S-I-15",
+   "properties": {
+    "descriptionShort": "Control inteligent al temperaturii și al programelor de încălzire.",
+    "operations": "Termostate, senzori, zone, integrare compatibilă și instruire.",
+    "recommendedWhen": "Control la distanță sau economie de energie.",
+    "priceMinRON": 150,
+    "priceAvgRON": 250,
+    "priceMaxRON": 500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0049",
+   "type": "Serviciu",
+   "name": "Montaj colectoare solare termice",
+   "code": "S-I-16",
+   "properties": {
+    "descriptionShort": "Prepararea apei calde cu ajutorul energiei solare.",
+    "operations": "Montaj colectoare, rezervor, circuit, protecții și reglaje.",
+    "recommendedWhen": "Case cu suprafață potrivită pentru colectoare.",
+    "priceMinRON": 1500,
+    "priceAvgRON": 3000,
+    "priceMaxRON": 6000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0050",
+   "type": "Serviciu",
+   "name": "Debranșare de la termoficare și individualizare",
+   "code": "S-I-17",
+   "properties": {
+    "descriptionShort": "Trecerea apartamentului de la termoficare la centrală proprie.",
+    "operations": "Documentație, debranșare, centrală, trasee noi, avize de gaze și ISCIR.",
+    "recommendedWhen": "Apartamente racordate la rețeaua de termoficare.",
+    "priceMinRON": 2500,
+    "priceAvgRON": 5000,
+    "priceMaxRON": 8000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "apartament, fără centrală",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0051",
+   "type": "Serviciu",
+   "name": "Montaj centrală pe peleți sau lemne",
+   "code": "S-I-18",
+   "properties": {
+    "descriptionShort": "Instalarea cazanelor pe combustibil solid pentru case.",
+    "operations": "Amplasare, racord la coș, vas de expansiune, puffer, protecții la supratemperatură.",
+    "recommendedWhen": "Case fără gaz sau cu combustibil local ieftin.",
+    "priceMinRON": 1100,
+    "priceAvgRON": 1800,
+    "priceMaxRON": 3500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0052",
+   "type": "Serviciu",
+   "name": "Montaj centrală termică electrică",
+   "code": "S-I-19",
+   "properties": {
+    "descriptionShort": "Încălzire fără gaz, cu racordare electrică dedicată.",
+    "operations": "Montaj, circuit electric dedicat verificat, racord hidraulic, probe.",
+    "recommendedWhen": "Unde nu există gaz sau pentru spații mici.",
+    "priceMinRON": 500,
+    "priceAvgRON": 800,
+    "priceMaxRON": 1300,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0053",
+   "type": "Serviciu",
+   "name": "Montaj termosemineu cu circuit de încălzire",
+   "code": "S-I-20",
+   "properties": {
+    "descriptionShort": "Racordarea șemineului la calorifere sau la puffer.",
+    "operations": "Racord hidraulic, protecții, vas de expansiune, pompă, legătură la coș.",
+    "recommendedWhen": "Case cu șemineu folosit și pentru încălzire.",
+    "priceMinRON": 1500,
+    "priceAvgRON": 3000,
+    "priceMaxRON": 5000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0054",
+   "type": "Serviciu",
+   "name": "Montaj convectoare de încălzire",
+   "code": "S-I-21",
+   "properties": {
+    "descriptionShort": "Corpuri de încălzire cu răspuns rapid și gabarit redus.",
+    "operations": "Fixare, racord, aerisire, legătură la automatizare.",
+    "recommendedWhen": "Spații mari, vitrine, încălzire cu temperatură joasă.",
+    "priceMinRON": 150,
+    "priceAvgRON": 300,
+    "priceMaxRON": 500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0055",
+   "type": "Serviciu",
+   "name": "Montaj radiatoare de baie și portprosop",
+   "code": "S-I-22",
+   "properties": {
+    "descriptionShort": "Încălzirea băii cu radiatoare dedicate.",
+    "operations": "Fixare, racord hidraulic sau electric, robineți, aerisire.",
+    "recommendedWhen": "Renovări de baie.",
+    "priceMinRON": 200,
+    "priceAvgRON": 300,
+    "priceMaxRON": 450,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0056",
+   "type": "Serviciu",
+   "name": "Montaj aeroterme",
+   "code": "S-I-23",
+   "properties": {
+    "descriptionShort": "Încălzire rapidă pentru hale, ateliere și garaje.",
+    "operations": "Suspendare, racord apă caldă sau gaz, termostat, protecții.",
+    "recommendedWhen": "Spații înalte, industriale sau comerciale.",
+    "priceMinRON": 400,
+    "priceAvgRON": 800,
+    "priceMaxRON": 1500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0057",
+   "type": "Serviciu",
+   "name": "Încălzire electrică în pardoseală",
+   "code": "S-I-24",
+   "properties": {
+    "descriptionShort": "Folie sau cablu încălzitor sub gresie ori parchet.",
+    "operations": "Măsurare, pozare, termostat cu senzor de pardoseală, probe de izolație.",
+    "recommendedWhen": "Băi, bucătării, renovări fără instalație de apă.",
+    "priceMinRON": 40,
+    "priceAvgRON": 70,
+    "priceMaxRON": 120,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "m²",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0058",
+   "type": "Serviciu",
+   "name": "Montaj senzori de temperatură exterioară și de cameră",
+   "code": "S-I-25",
+   "properties": {
+    "descriptionShort": "Reglare automată după vreme și după temperatura reală din camere.",
+    "operations": "Amplasare senzori, cablare sau asociere wireless, configurare curbă de încălzire.",
+    "recommendedWhen": "Centrale în condensare și pompe de căldură.",
+    "priceMinRON": 100,
+    "priceAvgRON": 200,
+    "priceMaxRON": 400,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0059",
+   "type": "Serviciu",
+   "name": "Montaj puffer (rezervor de acumulare)",
+   "code": "S-I-26",
+   "properties": {
+    "descriptionShort": "Stocarea căldurii pentru cazane și pompe de căldură.",
+    "operations": "Amplasare, racorduri, izolație, vane, legătură la automatizare.",
+    "recommendedWhen": "Cazane pe combustibil solid, pompe de căldură, solar.",
+    "priceMinRON": 800,
+    "priceAvgRON": 1500,
+    "priceMaxRON": 2500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0060",
+   "type": "Serviciu",
+   "name": "Montaj tubulatură evacuare gaze arse",
+   "code": "S-I-27",
+   "properties": {
+    "descriptionShort": "Evacuare coaxială sau separată conform normelor.",
+    "operations": "Traseu, străpungeri, terminal, etanșări, verificare tiraj.",
+    "recommendedWhen": "La orice centrală nouă sau mutată.",
+    "priceMinRON": 300,
+    "priceAvgRON": 600,
+    "priceMaxRON": 1200,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0061",
+   "type": "Serviciu",
+   "name": "Montaj contoare și repartitoare de căldură",
+   "code": "S-I-28",
+   "properties": {
+    "descriptionShort": "Măsurarea consumului de căldură pe apartament sau pe calorifer.",
+    "operations": "Montaj, sigilare, citire inițială, predare documente.",
+    "recommendedWhen": "Blocuri cu termoficare sau centrale de bloc.",
+    "priceMinRON": 80,
+    "priceAvgRON": 150,
+    "priceMaxRON": 300,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0062",
+   "type": "Serviciu",
+   "name": "Montaj vane de amestec și grupuri de pompare",
+   "code": "S-I-29",
+   "properties": {
+    "descriptionShort": "Separarea circuitelor de temperatură diferită.",
+    "operations": "Montaj grup, pompă, vană cu servomotor, reglaj.",
+    "recommendedWhen": "Pardoseală + calorifere sau mai multe zone.",
+    "priceMinRON": 400,
+    "priceAvgRON": 700,
+    "priceMaxRON": 1200,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0063",
+   "type": "Serviciu",
+   "name": "Proiectare și execuție instalație de gaze interioară",
+   "code": "S-I-30",
+   "properties": {
+    "descriptionShort": "Instalația de utilizare gaze naturale pentru centrală și aragaz.",
+    "operations": "Proiect, traseu, probe de etanșeitate, recepție cu operatorul de distribuție (firmă autorizată ANRE).",
+    "recommendedWhen": "Centrale noi, debranșări, modificări de traseu.",
+    "priceMinRON": 2500,
+    "priceAvgRON": 4500,
+    "priceMaxRON": 8000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "proiect + execuție",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0064",
+   "type": "Serviciu",
+   "name": "Montaj detector de gaz cu electrovalvă",
+   "code": "S-I-31",
+   "properties": {
+    "descriptionShort": "Oprirea automată a gazului la scurgeri.",
+    "operations": "Montaj detector, electrovalvă pe racord, probă de funcționare.",
+    "recommendedWhen": "Obligatoriu în multe situații la centrale și aragaze.",
+    "priceMinRON": 200,
+    "priceAvgRON": 350,
+    "priceMaxRON": 600,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0065",
+   "type": "Serviciu",
+   "name": "Curățare chimică schimbător și instalație",
+   "code": "S-I-32",
+   "properties": {
+    "descriptionShort": "Îndepărtarea calcarului și a nămolului din centrală și circuit.",
+    "operations": "Pompare soluție, neutralizare, clătire, inhibitor, verificare debit.",
+    "recommendedWhen": "Randament scăzut, zgomote, calorifere reci jos.",
+    "priceMinRON": 300,
+    "priceAvgRON": 500,
+    "priceMaxRON": 900,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0066",
+   "type": "Serviciu",
+   "name": "Aerisire, umplere și reglare presiune instalație",
+   "code": "S-I-33",
+   "properties": {
+    "descriptionShort": "Readucerea instalației la presiunea de lucru.",
+    "operations": "Aerisire calorifere, completare apă, verificare vas de expansiune.",
+    "recommendedWhen": "Calorifere reci sus, pierderi de presiune.",
+    "priceMinRON": 150,
+    "priceAvgRON": 250,
+    "priceMaxRON": 400,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0067",
+   "type": "Serviciu",
+   "name": "Intervenții urgente încălzire",
+   "code": "S-I-34",
+   "properties": {
+    "descriptionShort": "Avarii la centrală sau la circuitul de încălzire.",
+    "operations": "Diagnostic la fața locului, oprire avarie, remediere dacă piesele permit.",
+    "recommendedWhen": "Fără căldură sau apă caldă iarna, pierderi de apă.",
+    "priceMinRON": 250,
+    "priceAvgRON": 450,
+    "priceMaxRON": 800,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "intervenție",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0068",
+   "type": "Produs",
+   "name": "Centrală termică murală în condensare",
+   "code": "P-I-01",
+   "properties": {
+    "descriptionShort": "Sursă compactă de încălzire și, după model, apă caldă.",
+    "selectionCriteria": "Putere, modulare, consum, evacuare și compatibilitate cu instalația.",
+    "priceMinRON": 5000,
+    "priceAvgRON": 7500,
+    "priceMaxRON": 12000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0069",
+   "type": "Marca",
+   "name": "Viessmann",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0070",
+   "type": "Marca",
+   "name": "Vaillant",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0071",
+   "type": "Marca",
+   "name": "Bosch",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0072",
+   "type": "Marca",
+   "name": "Ariston",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0073",
+   "type": "Marca",
+   "name": "Baxi",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0074",
+   "type": "Marca",
+   "name": "Immergas",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0075",
+   "type": "Marca",
+   "name": "Buderus",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0076",
+   "type": "Marca",
+   "name": "Motan",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0077",
+   "type": "Produs",
+   "name": "Pompă de căldură aer-apă",
+   "code": "P-I-02",
+   "properties": {
+    "descriptionShort": "Folosește energia aerului pentru încălzire și uneori răcire.",
+    "selectionCriteria": "SCOP, temperatură tur, zgomot, necesar termic și alimentare electrică.",
+    "priceMinRON": 18000,
+    "priceAvgRON": 32000,
+    "priceMaxRON": 55000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0078",
+   "type": "Marca",
+   "name": "Daikin",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0079",
+   "type": "Marca",
+   "name": "Panasonic",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0080",
+   "type": "Marca",
+   "name": "Mitsubishi Electric",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0081",
+   "type": "Marca",
+   "name": "Samsung",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0082",
+   "type": "Produs",
+   "name": "Pompă de căldură monobloc",
+   "code": "P-I-03",
+   "properties": {
+    "descriptionShort": "Soluție cu circuit frigorific în unitatea exterioară.",
+    "selectionCriteria": "Protecția la îngheț, integrarea hidraulică și spațiul exterior.",
+    "priceMinRON": 16000,
+    "priceAvgRON": 28000,
+    "priceMaxRON": 45000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0083",
+   "type": "Marca",
+   "name": "LG",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0084",
+   "type": "Produs",
+   "name": "Pompă de căldură split",
+   "code": "P-I-04",
+   "properties": {
+    "descriptionShort": "Unități separate pentru adaptarea montajului.",
+    "selectionCriteria": "Trasee frigorifice, agenți frigorifici și instalare calificată.",
+    "priceMinRON": 20000,
+    "priceAvgRON": 35000,
+    "priceMaxRON": 55000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0085",
+   "type": "Produs",
+   "name": "Radiator din oțel",
+   "code": "P-I-05",
+   "properties": {
+    "descriptionShort": "Corp de încălzire versatil pentru apartamente.",
+    "selectionCriteria": "Dimensiuni, putere la temperatura de tur și racorduri.",
+    "priceMinRON": 300,
+    "priceAvgRON": 500,
+    "priceMaxRON": 900,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0086",
+   "type": "Marca",
+   "name": "Purmo",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0087",
+   "type": "Marca",
+   "name": "Kermi",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0088",
+   "type": "Marca",
+   "name": "Radel",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0089",
+   "type": "Marca",
+   "name": "Ferroli",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0090",
+   "type": "Produs",
+   "name": "Radiator din aluminiu",
+   "code": "P-I-06",
+   "properties": {
+    "descriptionShort": "Corp modular de încălzire, ușor și compact.",
+    "selectionCriteria": "Compatibilitatea chimică a circuitului și presiunea.",
+    "priceMinRON": 40,
+    "priceAvgRON": 60,
+    "priceMaxRON": 110,
+    "priceBasis": "echipament / material",
+    "priceUnit": "element",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0091",
+   "type": "Marca",
+   "name": "Global",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0092",
+   "type": "Marca",
+   "name": "Fondital",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0093",
+   "type": "Produs",
+   "name": "Portprosop baie",
+   "code": "P-I-07",
+   "properties": {
+    "descriptionShort": "Încălzire și uscare prosoape în baie.",
+    "selectionCriteria": "Putere, dimensiuni și tipul de racordare.",
+    "priceMinRON": 200,
+    "priceAvgRON": 450,
+    "priceMaxRON": 1200,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0094",
+   "type": "Marca",
+   "name": "Zehnder",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0095",
+   "type": "Produs",
+   "name": "Țeavă pentru pardoseală",
+   "code": "P-I-08",
+   "properties": {
+    "descriptionShort": "Circuit de încălzire ascuns în șapă.",
+    "selectionCriteria": "Barieră oxigen, diametru și pas de montaj.",
+    "priceMinRON": 3,
+    "priceAvgRON": 5,
+    "priceMaxRON": 9,
+    "priceBasis": "echipament / material",
+    "priceUnit": "m",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0096",
+   "type": "Marca",
+   "name": "Rehau",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0097",
+   "type": "Marca",
+   "name": "Uponor",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0098",
+   "type": "Marca",
+   "name": "Valrom",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0099",
+   "type": "Marca",
+   "name": "Kan-therm",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0100",
+   "type": "Produs",
+   "name": "Distribuitor pardoseală",
+   "code": "P-I-09",
+   "properties": {
+    "descriptionShort": "Reglează debitele fiecărui circuit.",
+    "selectionCriteria": "Număr circuite, debitmetre, acces mentenanță.",
+    "priceMinRON": 400,
+    "priceAvgRON": 900,
+    "priceMaxRON": 2000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0101",
+   "type": "Marca",
+   "name": "Herz",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0102",
+   "type": "Produs",
+   "name": "Termostat programabil",
+   "code": "P-I-10",
+   "properties": {
+    "descriptionShort": "Controlează automat temperatura interioară.",
+    "selectionCriteria": "Compatibilitate centrală, zonare, alimentare.",
+    "priceMinRON": 120,
+    "priceAvgRON": 250,
+    "priceMaxRON": 450,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0103",
+   "type": "Marca",
+   "name": "Salus",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0104",
+   "type": "Marca",
+   "name": "Computherm",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0105",
+   "type": "Marca",
+   "name": "Honeywell",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0106",
+   "type": "Marca",
+   "name": "Tech",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0107",
+   "type": "Produs",
+   "name": "Termostat smart Wi-Fi",
+   "code": "P-I-11",
+   "properties": {
+    "descriptionShort": "Controlul temperaturii de pe telefon.",
+    "selectionCriteria": "Conectivitate, confidențialitate și funcționare offline.",
+    "priceMinRON": 300,
+    "priceAvgRON": 600,
+    "priceMaxRON": 1200,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0108",
+   "type": "Marca",
+   "name": "Netatmo",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0109",
+   "type": "Marca",
+   "name": "tado°",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0110",
+   "type": "Produs",
+   "name": "Robinet termostatic",
+   "code": "P-I-12",
+   "properties": {
+    "descriptionShort": "Reglaj individual al radiatoarelor.",
+    "selectionCriteria": "Compatibilitate corp robinet și senzor.",
+    "priceMinRON": 60,
+    "priceAvgRON": 120,
+    "priceMaxRON": 250,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0111",
+   "type": "Marca",
+   "name": "Danfoss",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0112",
+   "type": "Marca",
+   "name": "Giacomini",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0113",
+   "type": "Produs",
+   "name": "Boiler electric",
+   "code": "P-I-13",
+   "properties": {
+    "descriptionShort": "Rezervă de apă caldă independentă.",
+    "selectionCriteria": "Volum, consum, izolație și spațiul de instalare.",
+    "priceMinRON": 600,
+    "priceAvgRON": 1000,
+    "priceMaxRON": 1800,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0114",
+   "type": "Marca",
+   "name": "Tesy",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0115",
+   "type": "Marca",
+   "name": "Electrolux",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0116",
+   "type": "Marca",
+   "name": "Gorenje",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0117",
+   "type": "Produs",
+   "name": "Boiler indirect",
+   "code": "P-I-14",
+   "properties": {
+    "descriptionShort": "Rezervor ACM încălzit de altă sursă.",
+    "selectionCriteria": "Suprafață serpentină și compatibilitate.",
+    "priceMinRON": 1800,
+    "priceAvgRON": 3000,
+    "priceMaxRON": 5000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0118",
+   "type": "Marca",
+   "name": "Dražice",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0119",
+   "type": "Produs",
+   "name": "Vas de expansiune",
+   "code": "P-I-15",
+   "properties": {
+    "descriptionShort": "Compensează dilatarea apei în circuitele închise.",
+    "selectionCriteria": "Volum, presiune de preîncărcare și normare.",
+    "priceMinRON": 80,
+    "priceAvgRON": 180,
+    "priceMaxRON": 400,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0120",
+   "type": "Marca",
+   "name": "Zilmet",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0121",
+   "type": "Marca",
+   "name": "Elbi",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0122",
+   "type": "Marca",
+   "name": "Reflex",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0123",
+   "type": "Marca",
+   "name": "Fornello",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0124",
+   "type": "Produs",
+   "name": "Pompă de circulație",
+   "code": "P-I-16",
+   "properties": {
+    "descriptionShort": "Asigură debitul apei în instalația termică.",
+    "selectionCriteria": "Înălțime pompare, debit și consum.",
+    "priceMinRON": 400,
+    "priceAvgRON": 800,
+    "priceMaxRON": 1500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0125",
+   "type": "Marca",
+   "name": "Grundfos",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0126",
+   "type": "Marca",
+   "name": "Wilo",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0127",
+   "type": "Marca",
+   "name": "IBO",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0128",
+   "type": "Marca",
+   "name": "DAB",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0129",
+   "type": "Produs",
+   "name": "Filtru magnetic instalație",
+   "code": "P-I-17",
+   "properties": {
+    "descriptionShort": "Reține particulele feromagnetice din circuit.",
+    "selectionCriteria": "Debit, pierderi de presiune și curățare.",
+    "priceMinRON": 150,
+    "priceAvgRON": 300,
+    "priceMaxRON": 600,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0130",
+   "type": "Marca",
+   "name": "Fernox",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0131",
+   "type": "Marca",
+   "name": "Sentinel",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0132",
+   "type": "Produs",
+   "name": "Panou solar termic",
+   "code": "P-I-18",
+   "properties": {
+    "descriptionShort": "Captează energia solară pentru apă caldă.",
+    "selectionCriteria": "Orientare, suprafață, rezervor și protecții.",
+    "priceMinRON": 1500,
+    "priceAvgRON": 2500,
+    "priceMaxRON": 4500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "panou",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0133",
+   "type": "Marca",
+   "name": "Sunsystem",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0134",
+   "type": "Produs",
+   "name": "Centrală termică electrică",
+   "code": "P-I-19",
+   "properties": {
+    "descriptionShort": "Încălzire și, opțional, apă caldă fără gaz.",
+    "selectionCriteria": "Putere, putere electrică disponibilă, trepte de funcționare.",
+    "priceMinRON": 1800,
+    "priceAvgRON": 3000,
+    "priceMaxRON": 5500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0135",
+   "type": "Marca",
+   "name": "Kospel",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0136",
+   "type": "Marca",
+   "name": "Protherm",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0137",
+   "type": "Produs",
+   "name": "Cazan pe peleți",
+   "code": "P-I-20",
+   "properties": {
+    "descriptionShort": "Ardere automată a peleților pentru case.",
+    "selectionCriteria": "Putere, buncăr, automatizare, curățare.",
+    "priceMinRON": 8000,
+    "priceAvgRON": 15000,
+    "priceMaxRON": 30000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0138",
+   "type": "Marca",
+   "name": "Burnit",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0139",
+   "type": "Marca",
+   "name": "Kostrzewa",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0140",
+   "type": "Produs",
+   "name": "Cazan pe lemne cu gazeificare",
+   "code": "P-I-21",
+   "properties": {
+    "descriptionShort": "Randament mare pe combustibil solid.",
+    "selectionCriteria": "Putere, volum focar, necesar de puffer.",
+    "priceMinRON": 6000,
+    "priceAvgRON": 11000,
+    "priceMaxRON": 20000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0141",
+   "type": "Marca",
+   "name": "Atmos",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0142",
+   "type": "Produs",
+   "name": "Termosemineu",
+   "code": "P-I-22",
+   "properties": {
+    "descriptionShort": "Șemineu cu schimbător de căldură pe apă.",
+    "selectionCriteria": "Putere pe apă, vizibilitate foc, siguranțe.",
+    "priceMinRON": 5000,
+    "priceAvgRON": 9000,
+    "priceMaxRON": 18000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0143",
+   "type": "Marca",
+   "name": "Thermorossi",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0144",
+   "type": "Marca",
+   "name": "Edilkamin",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0145",
+   "type": "Marca",
+   "name": "Ravelli",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0146",
+   "type": "Produs",
+   "name": "Calorifer din fontă",
+   "code": "P-I-23",
+   "properties": {
+    "descriptionShort": "Inerție termică mare și aspect clasic.",
+    "selectionCriteria": "Putere pe element, greutate, aspect.",
+    "priceMinRON": 80,
+    "priceAvgRON": 150,
+    "priceMaxRON": 300,
+    "priceBasis": "echipament / material",
+    "priceUnit": "element",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0147",
+   "type": "Marca",
+   "name": "Viadrus",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0148",
+   "type": "Marca",
+   "name": "Carron",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0149",
+   "type": "Produs",
+   "name": "Convector de încălzire",
+   "code": "P-I-24",
+   "properties": {
+    "descriptionShort": "Corp de încălzire cu convecție, răspuns rapid.",
+    "selectionCriteria": "Putere, zgomot, comandă.",
+    "priceMinRON": 800,
+    "priceAvgRON": 1600,
+    "priceMaxRON": 3500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0150",
+   "type": "Marca",
+   "name": "Jaga",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0151",
+   "type": "Produs",
+   "name": "Aerotermă",
+   "code": "P-I-25",
+   "properties": {
+    "descriptionShort": "Aer cald pentru spații mari.",
+    "selectionCriteria": "Putere, debit de aer, sursă (apă sau gaz).",
+    "priceMinRON": 1500,
+    "priceAvgRON": 3000,
+    "priceMaxRON": 6000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0152",
+   "type": "Marca",
+   "name": "Sonniger",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0153",
+   "type": "Marca",
+   "name": "Flowair",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0154",
+   "type": "Marca",
+   "name": "Reventon",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0155",
+   "type": "Marca",
+   "name": "Kampmann",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0156",
+   "type": "Produs",
+   "name": "Sistem electric de încălzire în pardoseală",
+   "code": "P-I-26",
+   "properties": {
+    "descriptionShort": "Folie sau cablu încălzitor.",
+    "selectionCriteria": "Putere pe m², tip pardoseală, termostat inclus.",
+    "priceMinRON": 70,
+    "priceAvgRON": 110,
+    "priceMaxRON": 180,
+    "priceBasis": "echipament / material",
+    "priceUnit": "m²",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0157",
+   "type": "Marca",
+   "name": "Thermoval",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0158",
+   "type": "Marca",
+   "name": "Raychem",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0159",
+   "type": "Produs",
+   "name": "Senzor de temperatură exterioară",
+   "code": "P-I-27",
+   "properties": {
+    "descriptionShort": "Permite reglarea centralei după vreme.",
+    "selectionCriteria": "Compatibilitate cu centrala, montaj cu fir sau wireless.",
+    "priceMinRON": 60,
+    "priceAvgRON": 120,
+    "priceMaxRON": 250,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0160",
+   "type": "Produs",
+   "name": "Senzor de cameră temperatură-umiditate",
+   "code": "P-I-28",
+   "properties": {
+    "descriptionShort": "Măsoară condițiile reale din fiecare cameră.",
+    "selectionCriteria": "Precizie, protocol wireless, alimentare.",
+    "priceMinRON": 80,
+    "priceAvgRON": 150,
+    "priceMaxRON": 350,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0161",
+   "type": "Marca",
+   "name": "Aqara",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0162",
+   "type": "Produs",
+   "name": "Cap termostatic smart",
+   "code": "P-I-29",
+   "properties": {
+    "descriptionShort": "Control pe cameră din aplicație.",
+    "selectionCriteria": "Compatibilitate filet, hub necesar, baterie.",
+    "priceMinRON": 200,
+    "priceAvgRON": 350,
+    "priceMaxRON": 600,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0163",
+   "type": "Produs",
+   "name": "Puffer (rezervor de acumulare)",
+   "code": "P-I-30",
+   "properties": {
+    "descriptionShort": "Stochează căldura în instalație.",
+    "selectionCriteria": "Volum, izolație, număr de racorduri, serpentine.",
+    "priceMinRON": 2000,
+    "priceAvgRON": 3500,
+    "priceMaxRON": 6000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0164",
+   "type": "Produs",
+   "name": "Kit evacuare gaze arse coaxial",
+   "code": "P-I-31",
+   "properties": {
+    "descriptionShort": "Tubulatura pentru centrală în condensare.",
+    "selectionCriteria": "Diametru, lungime, compatibilitate cu marca.",
+    "priceMinRON": 150,
+    "priceAvgRON": 300,
+    "priceMaxRON": 600,
+    "priceBasis": "echipament / material",
+    "priceUnit": "kit",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0165",
+   "type": "Marca",
+   "name": "Ricom",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0166",
+   "type": "Produs",
+   "name": "Grup de pompare cu vană de amestec",
+   "code": "P-I-32",
+   "properties": {
+    "descriptionShort": "Separarea și reglajul unui circuit de încălzire.",
+    "selectionCriteria": "Debit, tip vană, servomotor.",
+    "priceMinRON": 1200,
+    "priceAvgRON": 2200,
+    "priceMaxRON": 4000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0167",
+   "type": "Marca",
+   "name": "Watts",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0168",
+   "type": "Marca",
+   "name": "Meibes",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0169",
+   "type": "Marca",
+   "name": "Afriso",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0170",
+   "type": "Produs",
+   "name": "Contor de energie termică / repartitor",
+   "code": "P-I-33",
+   "properties": {
+    "descriptionShort": "Măsoară căldura consumată.",
+    "selectionCriteria": "Tip montaj, citire la distanță, metrologie.",
+    "priceMinRON": 80,
+    "priceAvgRON": 300,
+    "priceMaxRON": 900,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0171",
+   "type": "Marca",
+   "name": "Techem",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0172",
+   "type": "Marca",
+   "name": "ista",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0173",
+   "type": "Marca",
+   "name": "Kamstrup",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0174",
+   "type": "Marca",
+   "name": "Siemens",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0175",
+   "type": "Produs",
+   "name": "Inhibitor și soluție de curățare instalație",
+   "code": "P-I-34",
+   "properties": {
+    "descriptionShort": "Protejează instalația de calcar și coroziune.",
+    "selectionCriteria": "Compatibilitate materiale, volum instalație.",
+    "priceMinRON": 60,
+    "priceAvgRON": 120,
+    "priceMaxRON": 250,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0176",
+   "type": "Marca",
+   "name": "Sotin",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0177",
+   "type": "Produs",
+   "name": "Detector de gaz cu electrovalvă",
+   "code": "P-I-35",
+   "properties": {
+    "descriptionShort": "Oprește gazul la detectarea scurgerilor.",
+    "selectionCriteria": "Tip gaz, certificare, diametrul electrovalvei.",
+    "priceMinRON": 250,
+    "priceAvgRON": 450,
+    "priceMaxRON": 800,
+    "priceBasis": "echipament / material",
+    "priceUnit": "set",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0178",
+   "type": "Marca",
+   "name": "Seitron",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0179",
+   "type": "Marca",
+   "name": "Sinteco",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0180",
+   "type": "Marca",
+   "name": "Beca",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0181",
+   "type": "Produs",
+   "name": "Țeavă de gaz și robinet de siguranță",
+   "code": "P-I-36",
+   "properties": {
+    "descriptionShort": "Componente pentru instalația de utilizare gaze.",
+    "selectionCriteria": "Material omologat, diametru, certificare.",
+    "priceMinRON": 40,
+    "priceAvgRON": 80,
+    "priceMaxRON": 150,
+    "priceBasis": "echipament / material",
+    "priceUnit": "m de traseu",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0182",
+   "type": "Marca",
+   "name": "Geberit",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0183",
+   "type": "Marca",
+   "name": "Kitec",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0184",
+   "type": "Serviciu",
+   "name": "Consultanță și dimensionare aer condiționat",
+   "code": "S-C-01",
+   "properties": {
+    "descriptionShort": "Alegerea puterii și poziției corecte pentru încăperea ta.",
+    "operations": "Evaluare suprafață, orientare, izolație, traseu frigorific și electric.",
+    "recommendedWhen": "Înainte de cumpărarea aparatului.",
+    "priceMinRON": 0,
+    "priceAvgRON": 150,
+    "priceMaxRON": 300,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "vizită",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0185",
+   "type": "Serviciu",
+   "name": "Montaj AC split 9000–12000 BTU",
+   "code": "S-C-02",
+   "properties": {
+    "descriptionShort": "Răcire și încălzire suplimentară pentru o cameră.",
+    "operations": "Unitate interioară/exterioară, traseu, vidare, evacuare condens și probă.",
+    "recommendedWhen": "Dormitoare și livinguri potrivite ca volum.",
+    "priceMinRON": 600,
+    "priceAvgRON": 800,
+    "priceMaxRON": 1100,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0186",
+   "type": "Serviciu",
+   "name": "Montaj AC split 18000–24000 BTU",
+   "code": "S-C-03",
+   "properties": {
+    "descriptionShort": "Climatizare pentru spații mai mari, dacă dimensionarea o permite.",
+    "operations": "Amplasare, console, legături frigorifice, protecții și testare.",
+    "recommendedWhen": "Living mare sau spațiu open space.",
+    "priceMinRON": 900,
+    "priceAvgRON": 1100,
+    "priceMaxRON": 1500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0187",
+   "type": "Serviciu",
+   "name": "Montaj multisplit",
+   "code": "S-C-04",
+   "properties": {
+    "descriptionShort": "Climatizarea a două sau mai multe camere cu sistem comun.",
+    "operations": "Dimensionare, trasee separate, montaj și teste.",
+    "recommendedWhen": "Apartamente cu mai multe camere.",
+    "priceMinRON": 600,
+    "priceAvgRON": 800,
+    "priceMaxRON": 1200,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "unitate interioară",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0188",
+   "type": "Serviciu",
+   "name": "Montaj aer condiționat tip casetă / duct",
+   "code": "S-C-05",
+   "properties": {
+    "descriptionShort": "Distribuție discretă a aerului în configurații speciale.",
+    "operations": "Integrare în plafon și trasee, cu verificarea accesului la mentenanță.",
+    "recommendedWhen": "Case cu tavane adecvate.",
+    "priceMinRON": 1500,
+    "priceAvgRON": 2500,
+    "priceMaxRON": 4500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0189",
+   "type": "Serviciu",
+   "name": "Montaj sisteme VRF / VRV",
+   "code": "S-C-06",
+   "properties": {
+    "descriptionShort": "Controlul mai multor zone cu o soluție centralizată.",
+    "operations": "Proiectare specializată, rețea frigorifică, control și probe.",
+    "recommendedWhen": "Locuințe mari, cu multe zone.",
+    "priceMinRON": 1200,
+    "priceAvgRON": 2000,
+    "priceMaxRON": 3500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "unitate interioară",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0190",
+   "type": "Serviciu",
+   "name": "Montaj ventilație cu recuperare de căldură",
+   "code": "S-C-07",
+   "properties": {
+    "descriptionShort": "Aer proaspăt cu reducerea pierderilor termice.",
+    "operations": "Tubulaturi, unitate recuperare, filtre, prize aer și reglaje.",
+    "recommendedWhen": "Case etanșe și renovări aprofundate.",
+    "priceMinRON": 3000,
+    "priceAvgRON": 6000,
+    "priceMaxRON": 12000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0191",
+   "type": "Serviciu",
+   "name": "Igienizare și curățare AC",
+   "code": "S-C-08",
+   "properties": {
+    "descriptionShort": "Curățarea componentelor expuse la praf și umezeală.",
+    "operations": "Filtre, evaporator, tavă de condens, evacuare și produse compatibile.",
+    "recommendedWhen": "Întreținere periodică sau miros neplăcut.",
+    "priceMinRON": 150,
+    "priceAvgRON": 250,
+    "priceMaxRON": 400,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0192",
+   "type": "Serviciu",
+   "name": "Revizie periodică AC",
+   "code": "S-C-09",
+   "properties": {
+    "descriptionShort": "Verificarea eficienței și funcționării înainte de sezon.",
+    "operations": "Inspecție electrică/vizuală, parametri, condens, curățare după necesitate.",
+    "recommendedWhen": "Primăvara și în perioadele de utilizare intensă.",
+    "priceMinRON": 200,
+    "priceAvgRON": 300,
+    "priceMaxRON": 450,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0193",
+   "type": "Serviciu",
+   "name": "Diagnostic și reparații AC",
+   "code": "S-C-10",
+   "properties": {
+    "descriptionShort": "Remedierea defecțiunilor de răcire, zgomot sau eroare.",
+    "operations": "Diagnostic, identificare piesă și deviz înainte de reparație.",
+    "recommendedWhen": "Când apar simptome anormale.",
+    "priceMinRON": 150,
+    "priceAvgRON": 300,
+    "priceMaxRON": 600,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "intervenție, fără piese",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0194",
+   "type": "Serviciu",
+   "name": "Verificare pierderi agent frigorific",
+   "code": "S-C-11",
+   "properties": {
+    "descriptionShort": "Identificarea scurgerilor înaintea încărcării instalației.",
+    "operations": "Test etanșeitate, remediere și operațiuni de agent frigorific prin personal competent.",
+    "recommendedWhen": "Când răcirea scade sau presiunile sunt incorecte.",
+    "priceMinRON": 150,
+    "priceAvgRON": 250,
+    "priceMaxRON": 500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0195",
+   "type": "Serviciu",
+   "name": "Încărcare agent frigorific",
+   "code": "S-C-12",
+   "properties": {
+    "descriptionShort": "Restabilirea cantității necesare după rezolvarea cauzei pierderii.",
+    "operations": "Verificări, încărcare tip/cantitate prescrisă și teste finale.",
+    "recommendedWhen": "Doar după diagnostic, nu ca remediu automat.",
+    "priceMinRON": 250,
+    "priceAvgRON": 450,
+    "priceMaxRON": 800,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare, cu agent",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0196",
+   "type": "Serviciu",
+   "name": "Demontare și relocare AC",
+   "code": "S-C-13",
+   "properties": {
+    "descriptionShort": "Mutarea aparatului fără deteriorarea componentelor.",
+    "operations": "Recuperare agent unde este cazul, demontare și remontare, teste.",
+    "recommendedWhen": "Renovare sau schimbare locuință.",
+    "priceMinRON": 200,
+    "priceAvgRON": 500,
+    "priceMaxRON": 900,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0197",
+   "type": "Serviciu",
+   "name": "Traseu frigorific și evacuare condens",
+   "code": "S-C-14",
+   "properties": {
+    "descriptionShort": "Realizarea corectă a legăturilor dintre unități.",
+    "operations": "Țevi, izolație, cablu, condens și străpungeri conform situației.",
+    "recommendedWhen": "Montaj nou sau refacerea traseului.",
+    "priceMinRON": 100,
+    "priceAvgRON": 130,
+    "priceMaxRON": 180,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "m",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0198",
+   "type": "Serviciu",
+   "name": "Automatizări climatizare și Wi-Fi",
+   "code": "S-C-15",
+   "properties": {
+    "descriptionShort": "Programarea confortului și controlul de pe telefon.",
+    "operations": "Configurare termostate, telecomenzi și module compatibile.",
+    "recommendedWhen": "Locuințe cu control pe zone.",
+    "priceMinRON": 100,
+    "priceAvgRON": 200,
+    "priceMaxRON": 400,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0199",
+   "type": "Serviciu",
+   "name": "Montaj aer condiționat tip consolă",
+   "code": "S-C-16",
+   "properties": {
+    "descriptionShort": "Unitate interioară montată jos, pe perete sau pardoseală.",
+    "operations": "Fixare, traseu frigorific, condens, vidare, probe.",
+    "recommendedWhen": "Mansarde, ferestre mari, spații fără perete liber sus.",
+    "priceMinRON": 800,
+    "priceAvgRON": 1100,
+    "priceMaxRON": 1500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0200",
+   "type": "Serviciu",
+   "name": "Montaj perdele de aer",
+   "code": "S-C-17",
+   "properties": {
+    "descriptionShort": "Separarea climatică a intrărilor în spații comerciale.",
+    "operations": "Suspendare deasupra ușii, alimentare, comandă, reglaj.",
+    "recommendedWhen": "Magazine, recepții, intrări cu trafic mare.",
+    "priceMinRON": 400,
+    "priceAvgRON": 800,
+    "priceMaxRON": 1500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0201",
+   "type": "Serviciu",
+   "name": "Montaj chiller și ventiloconvectoare",
+   "code": "S-C-18",
+   "properties": {
+    "descriptionShort": "Răcire și încălzire centralizată cu apă.",
+    "operations": "Amplasare chiller, trasee de apă, ventiloconvectoare, echilibrare, punere în funcțiune.",
+    "recommendedWhen": "Clădiri de birouri, hoteluri, spații mari.",
+    "priceMinRON": 8000,
+    "priceAvgRON": 20000,
+    "priceMaxRON": 60000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0202",
+   "type": "Serviciu",
+   "name": "Montaj sisteme rooftop pentru spații comerciale",
+   "code": "S-C-19",
+   "properties": {
+    "descriptionShort": "Unități compacte pe acoperiș pentru hale și magazine.",
+    "operations": "Ridicare, racorduri de aer, alimentare, comenzi, punere în funcțiune.",
+    "recommendedWhen": "Hale, supermarketuri, spații comerciale mari.",
+    "priceMinRON": 5000,
+    "priceAvgRON": 12000,
+    "priceMaxRON": 30000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0203",
+   "type": "Serviciu",
+   "name": "Montaj ventilatoare de extracție baie și bucătărie",
+   "code": "S-C-20",
+   "properties": {
+    "descriptionShort": "Evacuarea umidității și a mirosurilor.",
+    "operations": "Străpungere, tubulatură, clapetă antiretur, alimentare, temporizare.",
+    "recommendedWhen": "Băi fără geam, bucătării, spații cu mucegai.",
+    "priceMinRON": 150,
+    "priceAvgRON": 300,
+    "priceMaxRON": 600,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0204",
+   "type": "Serviciu",
+   "name": "Montaj dezumidificatoare și umidificatoare",
+   "code": "S-C-21",
+   "properties": {
+    "descriptionShort": "Controlul umidității aerului în locuință.",
+    "operations": "Amplasare, evacuare condens sau alimentare apă, setare umiditate.",
+    "recommendedWhen": "Subsoluri, case noi, aer prea uscat iarna.",
+    "priceMinRON": 100,
+    "priceAvgRON": 250,
+    "priceMaxRON": 600,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0205",
+   "type": "Serviciu",
+   "name": "Montaj pompă de condens",
+   "code": "S-C-22",
+   "properties": {
+    "descriptionShort": "Evacuarea condensului când nu se poate gravitațional.",
+    "operations": "Montaj pompă, traseu, racord la canalizare, probă.",
+    "recommendedWhen": "Unități montate departe de un punct de scurgere.",
+    "priceMinRON": 150,
+    "priceAvgRON": 250,
+    "priceMaxRON": 400,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0206",
+   "type": "Serviciu",
+   "name": "Pre-instalare climatizare în renovare",
+   "code": "S-C-23",
+   "properties": {
+    "descriptionShort": "Trasee îngropate înainte de finisaje.",
+    "operations": "Trasee frigorifice și de condens, cablu, cutii de așteptare, probe de presiune.",
+    "recommendedWhen": "Renovări și case noi, înainte de tencuială.",
+    "priceMinRON": 400,
+    "priceAvgRON": 700,
+    "priceMaxRON": 1200,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "unitate",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0207",
+   "type": "Serviciu",
+   "name": "Curățare și dezinfecție tubulatură ventilație",
+   "code": "S-C-24",
+   "properties": {
+    "descriptionShort": "Igienizarea canalelor de aer și a grilelor.",
+    "operations": "Inspecție, periere, aspirare, dezinfecție, raport.",
+    "recommendedWhen": "Ventilații vechi, mirosuri, spații publice.",
+    "priceMinRON": 15,
+    "priceAvgRON": 30,
+    "priceMaxRON": 60,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "m",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0208",
+   "type": "Serviciu",
+   "name": "Intervenții urgente climatizare",
+   "code": "S-C-25",
+   "properties": {
+    "descriptionShort": "Defecțiuni în sezonul cald sau la echipamente critice.",
+    "operations": "Diagnostic, remediere sau soluție provizorie, ofertă pentru piese.",
+    "recommendedWhen": "Camere de servere, cabinete, valuri de căldură.",
+    "priceMinRON": 250,
+    "priceAvgRON": 450,
+    "priceMaxRON": 800,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "intervenție",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0209",
+   "type": "Produs",
+   "name": "Aer condiționat split 9000 BTU",
+   "code": "P-C-01",
+   "properties": {
+    "descriptionShort": "Climatizare pentru spații mici, după dimensionare.",
+    "selectionCriteria": "Capacitate la condiții reale, SEER/SCOP și zgomot.",
+    "priceMinRON": 1500,
+    "priceAvgRON": 2300,
+    "priceMaxRON": 4000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0210",
+   "type": "Marca",
+   "name": "Gree",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0211",
+   "type": "Marca",
+   "name": "Midea",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0212",
+   "type": "Produs",
+   "name": "Aer condiționat split 12000 BTU",
+   "code": "P-C-02",
+   "properties": {
+    "descriptionShort": "Aparat pentru camere de dimensiune medie.",
+    "selectionCriteria": "Clasa energetică, poziționare, consum, filtrare.",
+    "priceMinRON": 1700,
+    "priceAvgRON": 2700,
+    "priceMaxRON": 4500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0213",
+   "type": "Produs",
+   "name": "Aer condiționat split 18000 BTU",
+   "code": "P-C-03",
+   "properties": {
+    "descriptionShort": "Aparat pentru zone mai mari.",
+    "selectionCriteria": "Dimensionare, lungime traseu și poziția unităților.",
+    "priceMinRON": 2700,
+    "priceAvgRON": 4000,
+    "priceMaxRON": 7000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0214",
+   "type": "Produs",
+   "name": "Aer condiționat split 24000 BTU",
+   "code": "P-C-04",
+   "properties": {
+    "descriptionShort": "Aparat de capacitate mare pentru spații compatibile.",
+    "selectionCriteria": "Alimentare electrică, debit și instalare.",
+    "priceMinRON": 3200,
+    "priceAvgRON": 5000,
+    "priceMaxRON": 8500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0215",
+   "type": "Produs",
+   "name": "Sistem multisplit",
+   "code": "P-C-05",
+   "properties": {
+    "descriptionShort": "Mai multe unități interioare, o configurație comună exterioară.",
+    "selectionCriteria": "Combinații admise de producător și trasee.",
+    "priceMinRON": 6000,
+    "priceAvgRON": 10000,
+    "priceMaxRON": 18000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "sistem (2 unități)",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0216",
+   "type": "Produs",
+   "name": "Aer condiționat tip casetă",
+   "code": "P-C-06",
+   "properties": {
+    "descriptionShort": "Distribuie aerul prin grile într-un plafon.",
+    "selectionCriteria": "Înălțime disponibilă și acces service.",
+    "priceMinRON": 5000,
+    "priceAvgRON": 8500,
+    "priceMaxRON": 15000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0217",
+   "type": "Marca",
+   "name": "Toshiba",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0218",
+   "type": "Produs",
+   "name": "Aer condiționat duct",
+   "code": "P-C-07",
+   "properties": {
+    "descriptionShort": "Distribuție prin canale, cu unitatea ascunsă.",
+    "selectionCriteria": "Presiune disponibilă, zgomot și filtrare.",
+    "priceMinRON": 5000,
+    "priceAvgRON": 9000,
+    "priceMaxRON": 16000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0219",
+   "type": "Produs",
+   "name": "Ventilator de baie",
+   "code": "P-C-08",
+   "properties": {
+    "descriptionShort": "Ajută la evacuarea aerului umed.",
+    "selectionCriteria": "Debit, protecție electrică, nivel sonor.",
+    "priceMinRON": 80,
+    "priceAvgRON": 250,
+    "priceMaxRON": 700,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0220",
+   "type": "Marca",
+   "name": "Vents",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0221",
+   "type": "Marca",
+   "name": "Vortice",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0222",
+   "type": "Marca",
+   "name": "Soler & Palau",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0223",
+   "type": "Produs",
+   "name": "Recuperator de căldură",
+   "code": "P-C-09",
+   "properties": {
+    "descriptionShort": "Ventilație cu transfer parțial de energie între fluxuri.",
+    "selectionCriteria": "Randament, filtre, debit și îngheț.",
+    "priceMinRON": 2500,
+    "priceAvgRON": 6000,
+    "priceMaxRON": 15000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0224",
+   "type": "Marca",
+   "name": "Komfovent",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0225",
+   "type": "Marca",
+   "name": "Blauberg",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0226",
+   "type": "Produs",
+   "name": "Purificator / filtru de aer",
+   "code": "P-C-10",
+   "properties": {
+    "descriptionShort": "Reduce particulele pentru care este proiectat.",
+    "selectionCriteria": "CADR, tip filtru și cost consumabile.",
+    "priceMinRON": 400,
+    "priceAvgRON": 1200,
+    "priceMaxRON": 4000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0227",
+   "type": "Marca",
+   "name": "Philips",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0228",
+   "type": "Marca",
+   "name": "Xiaomi",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0229",
+   "type": "Marca",
+   "name": "Blueair",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0230",
+   "type": "Produs",
+   "name": "Traseu frigorific cupru",
+   "code": "P-C-11",
+   "properties": {
+    "descriptionShort": "Transportă agentul între unitățile AC.",
+    "selectionCriteria": "Diametru, izolație, lungime maximă.",
+    "priceMinRON": 40,
+    "priceAvgRON": 70,
+    "priceMaxRON": 120,
+    "priceBasis": "echipament / material",
+    "priceUnit": "m",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0231",
+   "type": "Marca",
+   "name": "Halcor",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0232",
+   "type": "Marca",
+   "name": "KME",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0233",
+   "type": "Marca",
+   "name": "Wieland",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0234",
+   "type": "Produs",
+   "name": "Kit console AC",
+   "code": "P-C-12",
+   "properties": {
+    "descriptionShort": "Fixează unitatea exterioară pe suport adecvat.",
+    "selectionCriteria": "Sarcină, vibrații și ancorare.",
+    "priceMinRON": 60,
+    "priceAvgRON": 100,
+    "priceMaxRON": 200,
+    "priceBasis": "echipament / material",
+    "priceUnit": "set",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0235",
+   "type": "Marca",
+   "name": "Sauermann",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0236",
+   "type": "Marca",
+   "name": "Fischer",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0237",
+   "type": "Produs",
+   "name": "Pompă condens",
+   "code": "P-C-13",
+   "properties": {
+    "descriptionShort": "Evacuează apa când panta naturală lipsește.",
+    "selectionCriteria": "Debit, nivel sonor și mentenanță.",
+    "priceMinRON": 250,
+    "priceAvgRON": 450,
+    "priceMaxRON": 900,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0238",
+   "type": "Marca",
+   "name": "Aspen",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0239",
+   "type": "Marca",
+   "name": "Charlotte",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0240",
+   "type": "Produs",
+   "name": "Modul Wi-Fi climatizare",
+   "code": "P-C-14",
+   "properties": {
+    "descriptionShort": "Permite controlul aparatului de la distanță.",
+    "selectionCriteria": "Compatibilitate și securitatea contului.",
+    "priceMinRON": 150,
+    "priceAvgRON": 300,
+    "priceMaxRON": 600,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0241",
+   "type": "Produs",
+   "name": "Aer condiționat consolă",
+   "code": "P-C-15",
+   "properties": {
+    "descriptionShort": "Unitate interioară de pardoseală.",
+    "selectionCriteria": "Capacitate BTU, înălțime, zgomot.",
+    "priceMinRON": 3500,
+    "priceAvgRON": 5500,
+    "priceMaxRON": 9000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0242",
+   "type": "Marca",
+   "name": "Fujitsu",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0243",
+   "type": "Produs",
+   "name": "Unitate exterioară multisplit",
+   "code": "P-C-16",
+   "properties": {
+    "descriptionShort": "Alimentează mai multe unități interioare.",
+    "selectionCriteria": "Număr de racorduri, capacitate totală, clasă energetică.",
+    "priceMinRON": 4000,
+    "priceAvgRON": 7000,
+    "priceMaxRON": 13000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0244",
+   "type": "Produs",
+   "name": "Aer condiționat mobil",
+   "code": "P-C-17",
+   "properties": {
+    "descriptionShort": "Răcire fără montaj fix.",
+    "selectionCriteria": "Capacitate, tub de evacuare, zgomot.",
+    "priceMinRON": 1200,
+    "priceAvgRON": 2000,
+    "priceMaxRON": 3500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0245",
+   "type": "Marca",
+   "name": "De'Longhi",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0246",
+   "type": "Produs",
+   "name": "Sistem VRF / VRV",
+   "code": "P-C-18",
+   "properties": {
+    "descriptionShort": "Climatizare pentru clădiri cu multe zone.",
+    "selectionCriteria": "Capacitate, număr unități interioare, recuperare de căldură.",
+    "priceMinRON": 40000,
+    "priceAvgRON": 90000,
+    "priceMaxRON": 250000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "sistem",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0247",
+   "type": "Produs",
+   "name": "Chiller",
+   "code": "P-C-19",
+   "properties": {
+    "descriptionShort": "Produce apă răcită pentru ventiloconvectoare.",
+    "selectionCriteria": "Capacitate, agent frigorific, zgomot.",
+    "priceMinRON": 30000,
+    "priceAvgRON": 70000,
+    "priceMaxRON": 200000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0248",
+   "type": "Marca",
+   "name": "Carrier",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0249",
+   "type": "Marca",
+   "name": "Trane",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0250",
+   "type": "Marca",
+   "name": "Clivet",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0251",
+   "type": "Produs",
+   "name": "Ventiloconvector",
+   "code": "P-C-20",
+   "properties": {
+    "descriptionShort": "Unitate terminală pe apă rece sau caldă.",
+    "selectionCriteria": "Tip montaj, debit de aer, comandă.",
+    "priceMinRON": 1500,
+    "priceAvgRON": 2500,
+    "priceMaxRON": 5000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0252",
+   "type": "Marca",
+   "name": "Sabiana",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0253",
+   "type": "Marca",
+   "name": "Aermec",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0254",
+   "type": "Marca",
+   "name": "Galletti",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0255",
+   "type": "Produs",
+   "name": "Perdea de aer",
+   "code": "P-C-21",
+   "properties": {
+    "descriptionShort": "Barieră de aer deasupra ușii.",
+    "selectionCriteria": "Lățime ușă, cu sau fără încălzire, debit.",
+    "priceMinRON": 800,
+    "priceAvgRON": 2000,
+    "priceMaxRON": 5000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0256",
+   "type": "Marca",
+   "name": "Frico",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0257",
+   "type": "Produs",
+   "name": "Tubulatură de ventilație și grile",
+   "code": "P-C-22",
+   "properties": {
+    "descriptionShort": "Distribuția aerului în încăperi.",
+    "selectionCriteria": "Diametru, material, izolație, grile reglabile.",
+    "priceMinRON": 30,
+    "priceAvgRON": 60,
+    "priceMaxRON": 120,
+    "priceBasis": "echipament / material",
+    "priceUnit": "m",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0258",
+   "type": "Marca",
+   "name": "Systemair",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0259",
+   "type": "Marca",
+   "name": "Lindab",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0260",
+   "type": "Produs",
+   "name": "Ventilator de extracție pe canal",
+   "code": "P-C-23",
+   "properties": {
+    "descriptionShort": "Extracție pentru bucătării și spații tehnice.",
+    "selectionCriteria": "Debit, presiune, zgomot.",
+    "priceMinRON": 300,
+    "priceAvgRON": 700,
+    "priceMaxRON": 1800,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0261",
+   "type": "Produs",
+   "name": "Dezumidificator",
+   "code": "P-C-24",
+   "properties": {
+    "descriptionShort": "Reduce umiditatea aerului.",
+    "selectionCriteria": "Litri pe zi, suprafață, evacuare condens.",
+    "priceMinRON": 700,
+    "priceAvgRON": 1300,
+    "priceMaxRON": 3000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0262",
+   "type": "Marca",
+   "name": "Meaco",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0263",
+   "type": "Marca",
+   "name": "Trotec",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0264",
+   "type": "Produs",
+   "name": "Umidificator",
+   "code": "P-C-25",
+   "properties": {
+    "descriptionShort": "Crește umiditatea aerului uscat.",
+    "selectionCriteria": "Tip (ultrasonic, evaporativ), rezervor, suprafață.",
+    "priceMinRON": 200,
+    "priceAvgRON": 500,
+    "priceMaxRON": 1500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0265",
+   "type": "Marca",
+   "name": "Boneco",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0266",
+   "type": "Marca",
+   "name": "Beurer",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0267",
+   "type": "Produs",
+   "name": "Controller central / telecomandă cablată",
+   "code": "P-C-26",
+   "properties": {
+    "descriptionShort": "Comandă unitară pentru mai multe unități.",
+    "selectionCriteria": "Compatibilitate, număr de unități, programare.",
+    "priceMinRON": 300,
+    "priceAvgRON": 800,
+    "priceMaxRON": 3000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0268",
+   "type": "Produs",
+   "name": "Agent frigorific R32 / R410A",
+   "code": "P-C-27",
+   "properties": {
+    "descriptionShort": "Încărcare și completare circuite frigorifice.",
+    "selectionCriteria": "Tip agent compatibil, cantitate, manipulare certificată F-gaze.",
+    "priceMinRON": 80,
+    "priceAvgRON": 150,
+    "priceMaxRON": 300,
+    "priceBasis": "echipament / material",
+    "priceUnit": "kg",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0269",
+   "type": "Marca",
+   "name": "Chemours",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0270",
+   "type": "Produs",
+   "name": "Filtre și consumabile pentru aer condiționat",
+   "code": "P-C-28",
+   "properties": {
+    "descriptionShort": "Filtre de schimb și soluții de igienizare.",
+    "selectionCriteria": "Model compatibil, tip filtru.",
+    "priceMinRON": 40,
+    "priceAvgRON": 100,
+    "priceMaxRON": 250,
+    "priceBasis": "echipament / material",
+    "priceUnit": "set",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0271",
+   "type": "Serviciu",
+   "name": "Instalații de alimentare cu apă",
+   "code": "S-S-01",
+   "properties": {
+    "descriptionShort": "Distribuirea apei reci și calde către baie și bucătărie.",
+    "operations": "Conducte, distribuitoare, robineți de izolare, probe de presiune.",
+    "recommendedWhen": "Locuințe noi și renovări.",
+    "priceMinRON": 150,
+    "priceAvgRON": 250,
+    "priceMaxRON": 400,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "punct de apă",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0272",
+   "type": "Serviciu",
+   "name": "Instalații de canalizare interioară",
+   "code": "S-S-02",
+   "properties": {
+    "descriptionShort": "Evacuarea apelor uzate fără mirosuri și blocaje.",
+    "operations": "Țevi, pante, sifoane, racorduri, verificare etanșare.",
+    "recommendedWhen": "Renovare baie sau bucătărie.",
+    "priceMinRON": 150,
+    "priceAvgRON": 250,
+    "priceMaxRON": 400,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "punct de scurgere",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0273",
+   "type": "Serviciu",
+   "name": "Montaj WC și rezervor încastrat",
+   "code": "S-S-03",
+   "properties": {
+    "descriptionShort": "Instalare obiecte sanitare cu aspect curat și funcționare corectă.",
+    "operations": "Cadru, rezervor, vas, evacuare, racorduri și test.",
+    "recommendedWhen": "Băi renovate.",
+    "priceMinRON": 500,
+    "priceAvgRON": 600,
+    "priceMaxRON": 800,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0274",
+   "type": "Serviciu",
+   "name": "Montaj lavoar și chiuvetă",
+   "code": "S-S-04",
+   "properties": {
+    "descriptionShort": "Racordarea sigură a obiectelor sanitare.",
+    "operations": "Fixare, baterie, sifon, alimentare, etanșări.",
+    "recommendedWhen": "Baie și bucătărie.",
+    "priceMinRON": 130,
+    "priceAvgRON": 200,
+    "priceMaxRON": 310,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0275",
+   "type": "Serviciu",
+   "name": "Montaj cadă și cabină de duș",
+   "code": "S-S-05",
+   "properties": {
+    "descriptionShort": "Spațiu de baie confortabil cu drenaj și etanșare corecte.",
+    "operations": "Montaj, racorduri, sifoane, siliconare; hidroizolația poate necesita lucrare distinctă.",
+    "recommendedWhen": "Amenajare sau renovare baie.",
+    "priceMinRON": 400,
+    "priceAvgRON": 550,
+    "priceMaxRON": 900,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0276",
+   "type": "Serviciu",
+   "name": "Montaj baterii, robineți și accesorii",
+   "code": "S-S-06",
+   "properties": {
+    "descriptionShort": "Înlocuirea rapidă a pieselor sanitare uzate.",
+    "operations": "Demontare, montaj, garnituri, racorduri și verificare scurgeri.",
+    "recommendedWhen": "Picurări sau renovare.",
+    "priceMinRON": 80,
+    "priceAvgRON": 120,
+    "priceMaxRON": 200,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0277",
+   "type": "Serviciu",
+   "name": "Montaj boiler electric",
+   "code": "S-S-07",
+   "properties": {
+    "descriptionShort": "Apă caldă în zone fără sursă centrală sau ca soluție dedicată.",
+    "operations": "Fixare sigură, supape și racord electric de către specialist competent.",
+    "recommendedWhen": "Băi sau bucătării cu necesar separat.",
+    "priceMinRON": 200,
+    "priceAvgRON": 300,
+    "priceMaxRON": 500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0278",
+   "type": "Serviciu",
+   "name": "Montaj filtre și dedurizatoare de apă",
+   "code": "S-S-08",
+   "properties": {
+    "descriptionShort": "Protecția instalațiilor și ameliorarea caracteristicilor apei.",
+    "operations": "Selecție după analiza apei, montaj by-pass și mentenanță filtre.",
+    "recommendedWhen": "Apă dură sau impurități.",
+    "priceMinRON": 200,
+    "priceAvgRON": 400,
+    "priceMaxRON": 800,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0279",
+   "type": "Serviciu",
+   "name": "Detectare scurgeri de apă",
+   "code": "S-S-09",
+   "properties": {
+    "descriptionShort": "Găsirea cauzelor umezelii și pierderilor de presiune.",
+    "operations": "Inspecție și metode adecvate de diagnostic, deviz reparație separat.",
+    "recommendedWhen": "Pereți umezi, consum neobișnuit.",
+    "priceMinRON": 300,
+    "priceAvgRON": 500,
+    "priceMaxRON": 1000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0280",
+   "type": "Serviciu",
+   "name": "Reparații țevi și fitinguri",
+   "code": "S-S-10",
+   "properties": {
+    "descriptionShort": "Oprirea pierderilor de apă și refacerea conexiunilor.",
+    "operations": "Izolare circuit, înlocuire componentă, probe.",
+    "recommendedWhen": "Avarii sau fisuri.",
+    "priceMinRON": 150,
+    "priceAvgRON": 300,
+    "priceMaxRON": 600,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "intervenție",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0281",
+   "type": "Serviciu",
+   "name": "Desfundare scurgeri și canalizare",
+   "code": "S-S-11",
+   "properties": {
+    "descriptionShort": "Restabilirea evacuării apei din baie sau bucătărie.",
+    "operations": "Diagnostic și desfundare mecanică/hidrodinamică după caz.",
+    "recommendedWhen": "Scurgere lentă sau blocată.",
+    "priceMinRON": 150,
+    "priceAvgRON": 300,
+    "priceMaxRON": 600,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "intervenție",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0282",
+   "type": "Serviciu",
+   "name": "Montaj pompe de ridicare, evacuare și tocătoare",
+   "code": "S-S-12",
+   "properties": {
+    "descriptionShort": "Evacuare ape din zone unde panta naturală nu este suficientă.",
+    "operations": "Alegere pompă, montaj, protecții și probe.",
+    "recommendedWhen": "Subsol sau băi în zone joase.",
+    "priceMinRON": 300,
+    "priceAvgRON": 500,
+    "priceMaxRON": 900,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0283",
+   "type": "Serviciu",
+   "name": "Racordare mașină de spălat și mașină de vase",
+   "code": "S-S-13",
+   "properties": {
+    "descriptionShort": "Legături sigure pentru electrocasnice.",
+    "operations": "Alimentare, evacuare, robinet și test contra scurgerilor.",
+    "recommendedWhen": "Bucătărie sau baie nou amenajată.",
+    "priceMinRON": 100,
+    "priceAvgRON": 150,
+    "priceMaxRON": 250,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0284",
+   "type": "Serviciu",
+   "name": "Înlocuire coloane și conducte în apartament",
+   "code": "S-S-14",
+   "properties": {
+    "descriptionShort": "Modernizarea traseelor vechi de apă și canalizare.",
+    "operations": "Planificare oprire apă, demontare, montare și teste; părțile comune necesită acorduri.",
+    "recommendedWhen": "Renovări în bloc.",
+    "priceMinRON": 1500,
+    "priceAvgRON": 3000,
+    "priceMaxRON": 5000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "coloană",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0285",
+   "type": "Serviciu",
+   "name": "Intervenții sanitare urgente",
+   "code": "S-S-15",
+   "properties": {
+    "descriptionShort": "Limitarea pagubelor la scurgeri și defecțiuni neprevăzute.",
+    "operations": "Evaluare telefonică, oprire pierdere, remediere dacă materialele și accesul permit.",
+    "recommendedWhen": "Urgențe — disponibilitatea se confirmă la solicitare.",
+    "priceMinRON": 200,
+    "priceAvgRON": 400,
+    "priceMaxRON": 700,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "intervenție",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0286",
+   "type": "Serviciu",
+   "name": "Instalație sanitară completă baie",
+   "code": "S-S-16",
+   "properties": {
+    "descriptionShort": "Trasee noi de apă rece, apă caldă și canalizare pentru baie.",
+    "operations": "Proiectare trasee, țevi, colectoare, probe de presiune, montaj obiecte.",
+    "recommendedWhen": "Renovări complete și construcții noi.",
+    "priceMinRON": 1900,
+    "priceAvgRON": 2300,
+    "priceMaxRON": 3500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "baie",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0287",
+   "type": "Serviciu",
+   "name": "Instalație sanitară bucătărie",
+   "code": "S-S-17",
+   "properties": {
+    "descriptionShort": "Alimentare și scurgere pentru chiuvetă și electrocasnice.",
+    "operations": "Trasee, robineți de colț, sifoane, racorduri, probe.",
+    "recommendedWhen": "Mobilier nou de bucătărie, renovări.",
+    "priceMinRON": 750,
+    "priceAvgRON": 1000,
+    "priceMaxRON": 1400,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "bucătărie",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0288",
+   "type": "Serviciu",
+   "name": "Montaj sifon de pardoseală și rigolă de duș",
+   "code": "S-S-18",
+   "properties": {
+    "descriptionShort": "Scurgere în pardoseală pentru dușuri fără cădiță.",
+    "operations": "Pantă, hidroizolație la racord, sifon, probă de scurgere.",
+    "recommendedWhen": "Dușuri walk-in, băi moderne.",
+    "priceMinRON": 200,
+    "priceAvgRON": 350,
+    "priceMaxRON": 600,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0289",
+   "type": "Serviciu",
+   "name": "Inspecție video canalizare",
+   "code": "S-S-19",
+   "properties": {
+    "descriptionShort": "Localizarea înfundărilor și a defectelor din conducte.",
+    "operations": "Cameră în conductă, înregistrare, raport cu recomandări.",
+    "recommendedWhen": "Înfundări repetate, mirosuri, înainte de renovare.",
+    "priceMinRON": 300,
+    "priceAvgRON": 500,
+    "priceMaxRON": 900,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0290",
+   "type": "Serviciu",
+   "name": "Montaj bideu și pisoar",
+   "code": "S-S-20",
+   "properties": {
+    "descriptionShort": "Obiecte sanitare suplimentare pentru baie sau spații publice.",
+    "operations": "Fixare, alimentare, sifon, etanșare, probe.",
+    "recommendedWhen": "Băi complete, birouri, spații comerciale.",
+    "priceMinRON": 150,
+    "priceAvgRON": 250,
+    "priceMaxRON": 400,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0291",
+   "type": "Serviciu",
+   "name": "Montaj mobilier de baie cu lavoar și oglindă",
+   "code": "S-S-21",
+   "properties": {
+    "descriptionShort": "Montajul complet al mobilierului cu racordurile lui.",
+    "operations": "Fixare, lavoar, baterie, sifon, oglindă, etanșări.",
+    "recommendedWhen": "Renovări de baie.",
+    "priceMinRON": 150,
+    "priceAvgRON": 250,
+    "priceMaxRON": 400,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "set",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0292",
+   "type": "Serviciu",
+   "name": "Montaj cadă și cabină cu hidromasaj",
+   "code": "S-S-22",
+   "properties": {
+    "descriptionShort": "Instalare cu racord de apă, scurgere și alimentare electrică.",
+    "operations": "Nivelare, racorduri, legătură la priza dedicată, probe de funcționare.",
+    "recommendedWhen": "Băi spațioase, renovări premium.",
+    "priceMinRON": 700,
+    "priceAvgRON": 925,
+    "priceMaxRON": 1500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0293",
+   "type": "Serviciu",
+   "name": "Montaj încălzitor instant de apă",
+   "code": "S-S-23",
+   "properties": {
+    "descriptionShort": "Apă caldă la cerere, fără rezervor.",
+    "operations": "Montaj, racord apă, circuit electric dedicat verificat, probe.",
+    "recommendedWhen": "Bucătării, băi mici, case de vacanță.",
+    "priceMinRON": 150,
+    "priceAvgRON": 250,
+    "priceMaxRON": 400,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0294",
+   "type": "Serviciu",
+   "name": "Montaj sistem de osmoză inversă",
+   "code": "S-S-24",
+   "properties": {
+    "descriptionShort": "Apă de băut filtrată direct la robinet.",
+    "operations": "Montaj sub chiuvetă, robinet dedicat, racord scurgere, spălare membrană.",
+    "recommendedWhen": "Apă cu gust neplăcut, familii cu copii mici.",
+    "priceMinRON": 200,
+    "priceAvgRON": 300,
+    "priceMaxRON": 500,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0295",
+   "type": "Serviciu",
+   "name": "Montaj hidrofor și stație de pompare",
+   "code": "S-S-25",
+   "properties": {
+    "descriptionShort": "Presiune constantă când rețeaua sau puțul nu asigură debit.",
+    "operations": "Montaj pompă, vas, presostat, racorduri, setare presiune.",
+    "recommendedWhen": "Case cu puț, etaje superioare cu presiune slabă.",
+    "priceMinRON": 300,
+    "priceAvgRON": 500,
+    "priceMaxRON": 900,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0296",
+   "type": "Serviciu",
+   "name": "Montaj apometre și reductoare de presiune",
+   "code": "S-S-26",
+   "properties": {
+    "descriptionShort": "Contorizare și protecția instalației la presiune mare.",
+    "operations": "Montaj apometru, reductor, filtru, robineți, sigilare.",
+    "recommendedWhen": "Apartamente noi, presiune prea mare în rețea.",
+    "priceMinRON": 100,
+    "priceAvgRON": 180,
+    "priceMaxRON": 300,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0297",
+   "type": "Serviciu",
+   "name": "Branșament apă și canalizare în curte",
+   "code": "S-S-27",
+   "properties": {
+    "descriptionShort": "Legătura casei la rețeaua publică.",
+    "operations": "Săpătură, țevi, cămin de apometru, racord la canalizare, probe.",
+    "recommendedWhen": "Case noi, schimbarea branșamentului vechi.",
+    "priceMinRON": 1500,
+    "priceAvgRON": 3500,
+    "priceMaxRON": 7000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0298",
+   "type": "Serviciu",
+   "name": "Montaj fosă septică sau microstație de epurare",
+   "code": "S-S-28",
+   "properties": {
+    "descriptionShort": "Canalizare pentru case fără rețea publică.",
+    "operations": "Amplasare, săpătură, racorduri, aerisire, punere în funcțiune.",
+    "recommendedWhen": "Zone fără canalizare publică.",
+    "priceMinRON": 1500,
+    "priceAvgRON": 3500,
+    "priceMaxRON": 7000,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "lucrare",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0299",
+   "type": "Serviciu",
+   "name": "Montaj sistem de irigații pentru grădină",
+   "code": "S-S-29",
+   "properties": {
+    "descriptionShort": "Udare automată prin aspersoare sau picurare.",
+    "operations": "Proiect zone, țevi, aspersoare, electrovalve, programator.",
+    "recommendedWhen": "Grădini, gazon, spații verzi.",
+    "priceMinRON": 15,
+    "priceAvgRON": 30,
+    "priceMaxRON": 60,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "m²",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0300",
+   "type": "Serviciu",
+   "name": "Montaj hidranți și sprinklere",
+   "code": "S-S-30",
+   "properties": {
+    "descriptionShort": "Instalații de stingere cu apă pentru clădiri.",
+    "operations": "Trasee, hidranți, capete sprinkler, probe de presiune, documentație.",
+    "recommendedWhen": "Spații comerciale, birouri, cerințe de securitate la incendiu.",
+    "priceMinRON": 150,
+    "priceAvgRON": 300,
+    "priceMaxRON": 600,
+    "priceBasis": "manoperă, fără materiale",
+    "priceUnit": "punct",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0301",
+   "type": "Produs",
+   "name": "Vas WC suspendat",
+   "code": "P-S-01",
+   "properties": {
+    "descriptionShort": "Obiect sanitar montat pe cadru încastrat.",
+    "selectionCriteria": "Dimensiuni, întreținere și compatibilitate cadru.",
+    "priceMinRON": 400,
+    "priceAvgRON": 800,
+    "priceMaxRON": 2000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0302",
+   "type": "Marca",
+   "name": "Ideal Standard",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0303",
+   "type": "Marca",
+   "name": "Villeroy & Boch",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0304",
+   "type": "Marca",
+   "name": "Roca",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0305",
+   "type": "Marca",
+   "name": "Cersanit",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0306",
+   "type": "Produs",
+   "name": "Rezervor WC încastrat",
+   "code": "P-S-02",
+   "properties": {
+    "descriptionShort": "Rezervor ascuns în perete cu acces service.",
+    "selectionCriteria": "Acces clapetă și disponibilitate piese.",
+    "priceMinRON": 600,
+    "priceAvgRON": 1100,
+    "priceMaxRON": 2000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0307",
+   "type": "Marca",
+   "name": "Grohe",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0308",
+   "type": "Marca",
+   "name": "TECE",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0309",
+   "type": "Produs",
+   "name": "Lavoar ceramic",
+   "code": "P-S-03",
+   "properties": {
+    "descriptionShort": "Chiuvetă pentru baie în mai multe configurații.",
+    "selectionCriteria": "Dimensiuni, fixare și poziția sifonului.",
+    "priceMinRON": 150,
+    "priceAvgRON": 400,
+    "priceMaxRON": 1200,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0310",
+   "type": "Produs",
+   "name": "Baterie lavoar",
+   "code": "P-S-04",
+   "properties": {
+    "descriptionShort": "Reglează debitul și temperatura apei.",
+    "selectionCriteria": "Cartuș, finisaj, economie apă.",
+    "priceMinRON": 150,
+    "priceAvgRON": 400,
+    "priceMaxRON": 1200,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0311",
+   "type": "Marca",
+   "name": "Hansgrohe",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0312",
+   "type": "Marca",
+   "name": "Ferro",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0313",
+   "type": "Marca",
+   "name": "Hansa",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0314",
+   "type": "Produs",
+   "name": "Baterie termostatică duș",
+   "code": "P-S-05",
+   "properties": {
+    "descriptionShort": "Menține temperatura în limitele configurate.",
+    "selectionCriteria": "Presiune, filtre și protecție anti-opărire.",
+    "priceMinRON": 400,
+    "priceAvgRON": 900,
+    "priceMaxRON": 2500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0315",
+   "type": "Produs",
+   "name": "Cadă de baie",
+   "code": "P-S-06",
+   "properties": {
+    "descriptionShort": "Soluție pentru îmbăiere în spații potrivite.",
+    "selectionCriteria": "Dimensiuni, material și acces sifon.",
+    "priceMinRON": 500,
+    "priceAvgRON": 1200,
+    "priceMaxRON": 4000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0316",
+   "type": "Marca",
+   "name": "Ravak",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0317",
+   "type": "Marca",
+   "name": "Riho",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0318",
+   "type": "Marca",
+   "name": "Kaldewei",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0319",
+   "type": "Produs",
+   "name": "Cădiță de duș",
+   "code": "P-S-07",
+   "properties": {
+    "descriptionShort": "Bază pentru zona de duș.",
+    "selectionCriteria": "Panta, înălțime, hidroizolație.",
+    "priceMinRON": 300,
+    "priceAvgRON": 700,
+    "priceMaxRON": 2000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0320",
+   "type": "Marca",
+   "name": "Radaway",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0321",
+   "type": "Produs",
+   "name": "Cabină de duș",
+   "code": "P-S-08",
+   "properties": {
+    "descriptionShort": "Separă zona umedă și controlează stropirea.",
+    "selectionCriteria": "Etanșări, sticlă, profile, acces curățare.",
+    "priceMinRON": 800,
+    "priceAvgRON": 1800,
+    "priceMaxRON": 5000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0322",
+   "type": "Produs",
+   "name": "Sifon de pardoseală",
+   "code": "P-S-09",
+   "properties": {
+    "descriptionShort": "Colectează și evacuează apa.",
+    "selectionCriteria": "Debit, gardă hidraulică și întreținere.",
+    "priceMinRON": 50,
+    "priceAvgRON": 120,
+    "priceMaxRON": 300,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0323",
+   "type": "Marca",
+   "name": "Viega",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0324",
+   "type": "Marca",
+   "name": "HL",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0325",
+   "type": "Marca",
+   "name": "Kessel",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0326",
+   "type": "Produs",
+   "name": "Chiuvetă bucătărie",
+   "code": "P-S-10",
+   "properties": {
+    "descriptionShort": "Zonă de spălare pentru mobilierul de bucătărie.",
+    "selectionCriteria": "Material, decupaj și scurgere.",
+    "priceMinRON": 250,
+    "priceAvgRON": 600,
+    "priceMaxRON": 1800,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0327",
+   "type": "Marca",
+   "name": "Blanco",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0328",
+   "type": "Marca",
+   "name": "Franke",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0329",
+   "type": "Marca",
+   "name": "Teka",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0330",
+   "type": "Marca",
+   "name": "Schock",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0331",
+   "type": "Produs",
+   "name": "Țevi PPR",
+   "code": "P-S-11",
+   "properties": {
+    "descriptionShort": "Conducte folosite în instalații de apă.",
+    "selectionCriteria": "Diametru, presiune, dilatare și temperatură.",
+    "priceMinRON": 3,
+    "priceAvgRON": 6,
+    "priceMaxRON": 12,
+    "priceBasis": "echipament / material",
+    "priceUnit": "m",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0332",
+   "type": "Marca",
+   "name": "Wavin",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0333",
+   "type": "Marca",
+   "name": "Aquatherm",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0334",
+   "type": "Marca",
+   "name": "Ekoplastik",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0335",
+   "type": "Produs",
+   "name": "Țevi PEX/PE-RT pentru apă",
+   "code": "P-S-12",
+   "properties": {
+    "descriptionShort": "Conducte flexibile pentru distribuția apei.",
+    "selectionCriteria": "Compatibilitate fitinguri și utilizare declarată.",
+    "priceMinRON": 4,
+    "priceAvgRON": 8,
+    "priceMaxRON": 15,
+    "priceBasis": "echipament / material",
+    "priceUnit": "m",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0336",
+   "type": "Produs",
+   "name": "Fitinguri și robineți",
+   "code": "P-S-13",
+   "properties": {
+    "descriptionShort": "Conectarea, izolarea și întreținerea circuitelor.",
+    "selectionCriteria": "Material, compatibilitate și presiune.",
+    "priceMinRON": 10,
+    "priceAvgRON": 40,
+    "priceMaxRON": 150,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0337",
+   "type": "Marca",
+   "name": "Valvex",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0338",
+   "type": "Produs",
+   "name": "Filtru apă sub chiuvetă",
+   "code": "P-S-14",
+   "properties": {
+    "descriptionShort": "Filtrare la punctul de consum, potrivit scopului declarat.",
+    "selectionCriteria": "Certificări reale de performanță și cartușe.",
+    "priceMinRON": 150,
+    "priceAvgRON": 400,
+    "priceMaxRON": 1000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0339",
+   "type": "Marca",
+   "name": "Brita",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0340",
+   "type": "Marca",
+   "name": "Aquafilter",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0341",
+   "type": "Marca",
+   "name": "Atlas Filtri",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0342",
+   "type": "Produs",
+   "name": "Dedurizator",
+   "code": "P-S-15",
+   "properties": {
+    "descriptionShort": "Reduce duritatea apei prin tehnologia aleasă.",
+    "selectionCriteria": "Analiza apei, sare, regenerare și mentenanță.",
+    "priceMinRON": 2000,
+    "priceAvgRON": 4000,
+    "priceMaxRON": 8000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0343",
+   "type": "Marca",
+   "name": "BWT",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0344",
+   "type": "Marca",
+   "name": "EcoWater",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0345",
+   "type": "Produs",
+   "name": "Pompă de evacuare",
+   "code": "P-S-16",
+   "properties": {
+    "descriptionShort": "Ajută evacuarea apei din subsol sau spații joase.",
+    "selectionCriteria": "Debit, înălțime pompare și protecții.",
+    "priceMinRON": 300,
+    "priceAvgRON": 700,
+    "priceMaxRON": 1500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0346",
+   "type": "Marca",
+   "name": "Pedrollo",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0347",
+   "type": "Produs",
+   "name": "Boiler instant / încălzitor apă",
+   "code": "P-S-17",
+   "properties": {
+    "descriptionShort": "Prepară apă caldă în funcție de capacitatea modelului.",
+    "selectionCriteria": "Putere, debit, protecții și cerințe electrice.",
+    "priceMinRON": 300,
+    "priceAvgRON": 800,
+    "priceMaxRON": 2000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0348",
+   "type": "Marca",
+   "name": "Clage",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0349",
+   "type": "Marca",
+   "name": "Stiebel Eltron",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0350",
+   "type": "Produs",
+   "name": "Vas WC pe pardoseală",
+   "code": "P-S-18",
+   "properties": {
+    "descriptionShort": "Varianta clasică, cu rezervor la vedere.",
+    "selectionCriteria": "Evacuare orizontală sau verticală, capac, rezervor.",
+    "priceMinRON": 300,
+    "priceAvgRON": 600,
+    "priceMaxRON": 1500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0351",
+   "type": "Produs",
+   "name": "Bideu",
+   "code": "P-S-19",
+   "properties": {
+    "descriptionShort": "Obiect sanitar pentru igienă.",
+    "selectionCriteria": "Montaj suspendat sau pe pardoseală, baterie.",
+    "priceMinRON": 250,
+    "priceAvgRON": 500,
+    "priceMaxRON": 1200,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0352",
+   "type": "Produs",
+   "name": "Pisoar",
+   "code": "P-S-20",
+   "properties": {
+    "descriptionShort": "Obiect sanitar pentru spații publice.",
+    "selectionCriteria": "Comandă (manuală sau senzor), consum de apă.",
+    "priceMinRON": 300,
+    "priceAvgRON": 700,
+    "priceMaxRON": 2000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0353",
+   "type": "Produs",
+   "name": "Mobilier de baie cu lavoar",
+   "code": "P-S-21",
+   "properties": {
+    "descriptionShort": "Dulap cu lavoar integrat.",
+    "selectionCriteria": "Dimensiune, rezistență la umiditate, sertare.",
+    "priceMinRON": 600,
+    "priceAvgRON": 1500,
+    "priceMaxRON": 4000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "set",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0354",
+   "type": "Marca",
+   "name": "Kolpa-San",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0355",
+   "type": "Produs",
+   "name": "Cadă cu hidromasaj",
+   "code": "P-S-22",
+   "properties": {
+    "descriptionShort": "Cadă cu jeturi de apă și aer.",
+    "selectionCriteria": "Dimensiune, număr de jeturi, putere pompă.",
+    "priceMinRON": 2500,
+    "priceAvgRON": 5000,
+    "priceMaxRON": 12000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0356",
+   "type": "Marca",
+   "name": "Teuco",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0357",
+   "type": "Produs",
+   "name": "Rigolă de duș",
+   "code": "P-S-23",
+   "properties": {
+    "descriptionShort": "Scurgere liniară pentru duș walk-in.",
+    "selectionCriteria": "Lungime, debit, înălțime sifon.",
+    "priceMinRON": 200,
+    "priceAvgRON": 500,
+    "priceMaxRON": 1200,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0358",
+   "type": "Marca",
+   "name": "Alcaplast",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0359",
+   "type": "Produs",
+   "name": "Țevi de canalizare PP / PVC",
+   "code": "P-S-24",
+   "properties": {
+    "descriptionShort": "Conducte de scurgere interioare și exterioare.",
+    "selectionCriteria": "Diametru, utilizare (interior/exterior), îmbinare.",
+    "priceMinRON": 8,
+    "priceAvgRON": 15,
+    "priceMaxRON": 40,
+    "priceBasis": "echipament / material",
+    "priceUnit": "m",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0360",
+   "type": "Marca",
+   "name": "Pipelife",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0361",
+   "type": "Marca",
+   "name": "Ostendorf",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0362",
+   "type": "Produs",
+   "name": "Coloană de duș / set de duș",
+   "code": "P-S-25",
+   "properties": {
+    "descriptionShort": "Sistem complet de duș.",
+    "selectionCriteria": "Termostat, tip pară, materiale.",
+    "priceMinRON": 400,
+    "priceAvgRON": 1000,
+    "priceMaxRON": 3000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0363",
+   "type": "Produs",
+   "name": "Baterie bucătărie",
+   "code": "P-S-26",
+   "properties": {
+    "descriptionShort": "Robinet pentru chiuveta de bucătărie.",
+    "selectionCriteria": "Tip pipă, duș extractibil, montaj.",
+    "priceMinRON": 150,
+    "priceAvgRON": 450,
+    "priceMaxRON": 1500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0364",
+   "type": "Produs",
+   "name": "Robinet de colț și de trecere",
+   "code": "P-S-27",
+   "properties": {
+    "descriptionShort": "Închiderea apei pe fiecare consumator.",
+    "selectionCriteria": "Diametru, material, calitate garnituri.",
+    "priceMinRON": 20,
+    "priceAvgRON": 45,
+    "priceMaxRON": 120,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0365",
+   "type": "Produs",
+   "name": "Sistem de osmoză inversă",
+   "code": "P-S-28",
+   "properties": {
+    "descriptionShort": "Filtrare avansată a apei de băut.",
+    "selectionCriteria": "Număr de trepte, debit, robinet dedicat.",
+    "priceMinRON": 700,
+    "priceAvgRON": 1500,
+    "priceMaxRON": 3500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0366",
+   "type": "Produs",
+   "name": "Hidrofor",
+   "code": "P-S-29",
+   "properties": {
+    "descriptionShort": "Asigură presiunea apei din puț sau rețea.",
+    "selectionCriteria": "Debit, presiune, volum vas.",
+    "priceMinRON": 700,
+    "priceAvgRON": 1500,
+    "priceMaxRON": 3500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0367",
+   "type": "Produs",
+   "name": "Pompă tocător sanitară",
+   "code": "P-S-30",
+   "properties": {
+    "descriptionShort": "Evacuare ape uzate prin pompare.",
+    "selectionCriteria": "Număr de racorduri, înălțime de refulare.",
+    "priceMinRON": 1000,
+    "priceAvgRON": 1800,
+    "priceMaxRON": 3500,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0368",
+   "type": "Marca",
+   "name": "SFA Sanibroyeur",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0369",
+   "type": "Produs",
+   "name": "Apometru",
+   "code": "P-S-31",
+   "properties": {
+    "descriptionShort": "Contor de apă rece sau caldă.",
+    "selectionCriteria": "Diametru, citire la distanță, clasă metrologică.",
+    "priceMinRON": 50,
+    "priceAvgRON": 120,
+    "priceMaxRON": 300,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0370",
+   "type": "Marca",
+   "name": "Zenner",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0371",
+   "type": "Marca",
+   "name": "Apator",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0372",
+   "type": "Marca",
+   "name": "Itron",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0373",
+   "type": "Marca",
+   "name": "Diehl",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0374",
+   "type": "Produs",
+   "name": "Reductor de presiune",
+   "code": "P-S-32",
+   "properties": {
+    "descriptionShort": "Limitează presiunea apei în instalație.",
+    "selectionCriteria": "Diametru, domeniu de reglaj, manometru.",
+    "priceMinRON": 100,
+    "priceAvgRON": 250,
+    "priceMaxRON": 600,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0375",
+   "type": "Marca",
+   "name": "Caleffi",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0376",
+   "type": "Produs",
+   "name": "Fosă septică / microstație de epurare",
+   "code": "P-S-33",
+   "properties": {
+    "descriptionShort": "Tratarea apelor uzate fără rețea publică.",
+    "selectionCriteria": "Număr de persoane, volum, întreținere.",
+    "priceMinRON": 2000,
+    "priceAvgRON": 6000,
+    "priceMaxRON": 15000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "buc",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0377",
+   "type": "Marca",
+   "name": "Roth",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0378",
+   "type": "Marca",
+   "name": "Graf",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0379",
+   "type": "Marca",
+   "name": "Topas",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0380",
+   "type": "Produs",
+   "name": "Aspersoare și programator de irigații",
+   "code": "P-S-34",
+   "properties": {
+    "descriptionShort": "Componente pentru udarea automată.",
+    "selectionCriteria": "Rază, număr de zone, senzor de ploaie.",
+    "priceMinRON": 300,
+    "priceAvgRON": 1000,
+    "priceMaxRON": 3000,
+    "priceBasis": "echipament / material",
+    "priceUnit": "set",
+    "priceSource": "Estimare orientativă nov. 2026 (repere: Hornbach, Altex, eMAG, brig.ro, instalatori București) — de validat"
+   },
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0381",
+   "type": "Marca",
+   "name": "Hunter",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0382",
+   "type": "Marca",
+   "name": "Rain Bird",
+   "properties": {},
+   "session": "0006H"
+  },
+  {
+   "id": "ENT-C4322-0383",
+   "type": "Marca",
+   "name": "Gardena",
+   "properties": {},
+   "session": "0006H"
+  }
+ ]
+}

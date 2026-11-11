@@ -1,5 +1,5 @@
 {
-  "_comentariu": "Parametri comuni celor trei site-uri C43221/C43222/C43223. Modificați aici; GitHub Actions regenerează paginile automat.",
+  "_comentariu": "Parametri comuni celor trei site-uri C43221/C43222/C43223. Public=true: site-urile se pot indexa (Google, AI, A2A); Public=false: redevin interne (noindex). Modificați aici; GitHub Actions regenerează paginile automat.",
   "NumeFirma": "TCE INSTAL SRL",
   "Fictiva": true,
   "CUI": "12345678",
@@ -9,5 +9,11 @@
     "C43221": "Instalații de încălzire",
     "C43222": "Instalații de climatizare",
     "C43223": "Instalații sanitare"
+  },
+  "Public": true,
+  "URL": {
+    "C43221": "https://gpt-etalon-4322-v10.pages.dev",
+    "C43222": "https://gpt-etalon-4322-v10-88z.pages.dev",
+    "C43223": "https://gpt-etalon-4322-v10-bfs.pages.dev"
   }
 }
