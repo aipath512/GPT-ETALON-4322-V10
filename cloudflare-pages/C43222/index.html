@@ -25,10 +25,11 @@ nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;font-size:13
 summary{cursor:pointer;font-weight:700}.empty{padding:40px;color:#647a73;background:#fff;border-radius:14px}
 footer{background:#0b2528;color:#d1e9df;padding:42px 0;font-size:13px;line-height:1.6}.notice{border:1px solid #e8dfbd;background:#fff9e7;color:#65552b;border-radius:14px;padding:17px;margin:30px 0;font-size:13px}
 @media(max-width:700px){header .bar{align-items:start;flex-direction:column;padding:15px 0}.hero{padding:65px 0}.hero h1{letter-spacing:-2px}.section{padding:45px 0}}
+.cui-box{margin:0 0 26px;padding:14px 16px;border:1px solid #ffffff33;border-radius:14px;background:#ffffff14;max-width:620px}.cui-box form{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.cui-box input{flex:1;min-width:150px;padding:10px 12px;border-radius:10px;border:1px solid #ffffff55;background:#0b2528;color:#fff}.cui-box button{padding:10px 16px;border:none;border-radius:10px;background:#bdf2dc;color:#08322f;font-weight:800;cursor:pointer}.cui-val{font-size:22px;font-weight:850;letter-spacing:.5px}.cui-ok{color:#91ddd0}.cui-bad{color:#ffb4a8}
 </style></head>
 <body>
 <header><div class="container bar"><div class="logo">SCARA <span style="color:#29816d">C43222</span><small>ETALON CAEN 4322</small></div><nav><a href="#acasa">Acasă</a><a href="#catalog">Servicii și produse</a><a href="#despre">Despre</a></nav></div></header>
-<main><section class="hero" id="acasa"><div class="container"><div class="eyebrow">C43222 · Climatizare · București</div><h1>Climatizare</h1><p>Aer condiționat, ventilație și confort în fiecare sezon</p><a class="btn" href="#catalog">Explorează cataloagele</a><div class="meta"><span>❄ 15 servicii</span><span>14 produse</span><span>ETALON INDEPENDENT</span></div></div></section>
+<main><section class="hero" id="acasa"><div class="container"><div class="eyebrow">C43222 · Climatizare · București</div><h1>Climatizare</h1><p>Aer condiționat, ventilație și confort în fiecare sezon</p><div class="cui-box" id="cuiBox" aria-live="polite"><div class="eyebrow">Firma afișată</div><div id="cuiView" class="cui-val">Fără CUI</div><div id="cuiMsg" style="font-size:13px;opacity:.85">Introduceți CUI-ul firmei pentru a-l afișa pe acest etalon.</div><form id="cuiForm"><input id="cuiInput" inputmode="numeric" autocomplete="off" placeholder="CUI, ex. RO51415878" aria-label="CUI firmă"><button type="submit">Afișează</button></form></div><a class="btn" href="#catalog">Explorează cataloagele</a><div class="meta"><span>❄ 15 servicii</span><span>14 produse</span><span>ETALON INDEPENDENT</span></div></div></section>
 <section class="section" id="catalog"><div class="container"><div class="eyebrow" style="color:#187660">CATALOG MODULAR</div><h2>Servicii și produse climatizare</h2><p class="muted">Fișe de referință structurate, filtrabile și fără prețuri inventate.</p>
 <div class="tabs"><button id="tab-services" class="tab active" type="button">Servicii (15)</button><button id="tab-products" class="tab" type="button">Produse (14)</button></div>
 <input class="search" id="search" placeholder="Caută după denumire, descriere sau operațiune…" aria-label="Caută în catalog">
@@ -52,4 +53,22 @@ function render(){
 for(const t of ['services','products'])document.getElementById('tab-'+t).addEventListener('click',()=>{mode=t;for(const x of ['services','products'])document.getElementById('tab-'+x).classList.toggle('active',x===t);render()});
 document.getElementById('search').addEventListener('input',render);
 render();
+
+// CUI firmă — v1.0 2026-11-11: citit din ?cui=, validat cu cifra de control oficială (cheia 753217532); nu interoghează ANAF/ONRC
+(function(){
+  const clean=s=>String(s||'').toUpperCase().replace(/^RO/,'').replace(/\D/g,'');
+  const valid=c=>{if(!/^\d{2,10}$/.test(c))return false;const k='753217532',b=c.slice(0,-1).padStart(9,'0');let s=0;for(let i=0;i<9;i++)s+=b[i]*k[i];let r=s*10%11;if(r===10)r=0;return r===+c.slice(-1)};
+  const view=document.getElementById('cuiView'),msg=document.getElementById('cuiMsg'),inp=document.getElementById('cuiInput');
+  const baseTitle=document.title;
+  function show(raw){
+    const c=clean(raw);
+    if(!c){view.textContent='Fără CUI';view.className='cui-val';msg.textContent='Introduceți CUI-ul firmei pentru a-l afișa pe acest etalon.';document.title=baseTitle;return}
+    inp.value=c;view.textContent='CUI '+c;
+    if(valid(c)){view.className='cui-val cui-ok';msg.textContent='Cifra de control este corectă. Identitatea firmei nu este verificată aici (ONRC/ANAF).'}
+    else{view.className='cui-val cui-bad';msg.textContent='Atenție: cifra de control nu corespunde — CUI probabil greșit.'}
+    document.title='CUI '+c+' · '+baseTitle;
+  }
+  document.getElementById('cuiForm').addEventListener('submit',e=>{e.preventDefault();const c=clean(inp.value);const u=new URL(location.href);c?u.searchParams.set('cui',c):u.searchParams.delete('cui');history.replaceState(null,'',u);show(c)});
+  show(new URLSearchParams(location.search).get('cui'));
+})();
 </script></body></html>
