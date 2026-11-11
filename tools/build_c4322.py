@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generator SCARA C4322 — v1.1 2026-11-11.
+"""Generator SCARA C4322 — v1.3 2026-11-11.
 
 Reconstruiește cele trei site-uri de familie (cloudflare-pages/C43221..C43223)
 din modulele de date etalons/C4322/C4322x.mjs. Rulare: python3 tools/build_c4322.py
@@ -8,42 +8,43 @@ C43221/C43222/C43223 sunt coduri interne SCARA; codul CAEN oficial (Rev.3) este 
 import json, html, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-VERSION = 'v1.1'
+VERSION = 'v1.3'
 DATE = '2026-11-11'
 SESSION = '0001C'
-FIRM = 'TCE INSTAL SRL'
+CFG = json.loads((ROOT / 'etalons/C4322/firma.json').read_text(encoding='utf-8'))
+FIRM = CFG['NumeFirma']
 FAMILIES = {
     'C43221': {'icon': '♨', 'subtitle': 'Soluții de încălzire pentru apartamente și case'},
     'C43222': {'icon': '❄', 'subtitle': 'Aer condiționat, ventilație și confort în fiecare sezon'},
     'C43223': {'icon': '◉', 'subtitle': 'Instalații de apă, baie și canalizare pentru locuințe'},
 }
 LANGS = {
- 'ro':('Română',['Acasă','Servicii și produse','Despre','Servicii','Produse','Caută după denumire, descriere sau operațiune…','Afișează','Preț min / mediu / max','de completat','din','fișe','Nu există rezultate.']),
- 'en':('English',['Home','Services & products','About','Services','Products','Search by name, description or operation…','Show','Price min / avg / max','to be completed','of','entries','No results.']),
- 'fr':('Français',['Accueil','Services et produits','À propos','Services','Produits','Rechercher par nom, description ou opération…','Afficher','Prix min / moyen / max','à compléter','sur','fiches','Aucun résultat.']),
- 'de':('Deutsch',['Startseite','Leistungen und Produkte','Über uns','Leistungen','Produkte','Suche nach Name, Beschreibung oder Arbeitsgang…','Anzeigen','Preis min / mittel / max','auszufüllen','von','Einträge','Keine Ergebnisse.']),
- 'it':('Italiano',['Home','Servizi e prodotti','Chi siamo','Servizi','Prodotti','Cerca per nome, descrizione o operazione…','Mostra','Prezzo min / medio / max','da completare','di','schede','Nessun risultato.']),
- 'es':('Español',['Inicio','Servicios y productos','Quiénes somos','Servicios','Productos','Buscar por nombre, descripción u operación…','Mostrar','Precio mín / medio / máx','por completar','de','fichas','Sin resultados.']),
- 'pt':('Português',['Início','Serviços e produtos','Sobre','Serviços','Produtos','Pesquisar por nome, descrição ou operação…','Mostrar','Preço mín / médio / máx','a preencher','de','fichas','Sem resultados.']),
- 'nl':('Nederlands',['Home','Diensten en producten','Over ons','Diensten','Producten','Zoek op naam, beschrijving of handeling…','Tonen','Prijs min / gem / max','nog in te vullen','van','fiches','Geen resultaten.']),
- 'pl':('Polski',['Strona główna','Usługi i produkty','O nas','Usługi','Produkty','Szukaj według nazwy, opisu lub czynności…','Pokaż','Cena min / śr. / maks.','do uzupełnienia','z','kart','Brak wyników.']),
- 'cs':('Čeština',['Domů','Služby a produkty','O nás','Služby','Produkty','Hledat podle názvu, popisu nebo úkonu…','Zobrazit','Cena min / prům. / max','k doplnění','z','karet','Žádné výsledky.']),
- 'sk':('Slovenčina',['Domov','Služby a produkty','O nás','Služby','Produkty','Hľadať podľa názvu, popisu alebo úkonu…','Zobraziť','Cena min / priem. / max','na doplnenie','z','kariet','Žiadne výsledky.']),
- 'sl':('Slovenščina',['Domov','Storitve in izdelki','O nas','Storitve','Izdelki','Iskanje po imenu, opisu ali opravilu…','Prikaži','Cena min / povp. / maks.','za dopolnitev','od','kartic','Ni rezultatov.']),
- 'hr':('Hrvatski',['Početna','Usluge i proizvodi','O nama','Usluge','Proizvodi','Traži po nazivu, opisu ili radnji…','Prikaži','Cijena min / prosj. / maks.','za dopunu','od','kartica','Nema rezultata.']),
- 'hu':('Magyar',['Főoldal','Szolgáltatások és termékek','Rólunk','Szolgáltatások','Termékek','Keresés név, leírás vagy művelet szerint…','Megjelenítés','Ár min / átl. / max','kitöltendő','/','adatlap','Nincs találat.']),
- 'bg':('Български',['Начало','Услуги и продукти','За нас','Услуги','Продукти','Търсене по име, описание или операция…','Покажи','Цена мин / ср. / макс','за попълване','от','карти','Няма резултати.']),
- 'el':('Ελληνικά',['Αρχική','Υπηρεσίες και προϊόντα','Σχετικά','Υπηρεσίες','Προϊόντα','Αναζήτηση με όνομα, περιγραφή ή εργασία…','Εμφάνιση','Τιμή ελάχ. / μέση / μέγ.','προς συμπλήρωση','από','καρτέλες','Κανένα αποτέλεσμα.']),
- 'da':('Dansk',['Forside','Ydelser og produkter','Om os','Ydelser','Produkter','Søg efter navn, beskrivelse eller opgave…','Vis','Pris min / gns. / maks.','udfyldes senere','af','kort','Ingen resultater.']),
- 'sv':('Svenska',['Hem','Tjänster och produkter','Om oss','Tjänster','Produkter','Sök på namn, beskrivning eller moment…','Visa','Pris min / medel / max','fylls i senare','av','kort','Inga resultat.']),
- 'fi':('Suomi',['Etusivu','Palvelut ja tuotteet','Tietoa meistä','Palvelut','Tuotteet','Hae nimellä, kuvauksella tai työvaiheella…','Näytä','Hinta min / keski / maks','täydennetään','/','korttia','Ei tuloksia.']),
- 'et':('Eesti',['Avaleht','Teenused ja tooted','Meist','Teenused','Tooted','Otsi nime, kirjelduse või toimingu järgi…','Näita','Hind min / kesk / max','täitmata','/','kaarti','Tulemusi pole.']),
- 'lv':('Latviešu',['Sākums','Pakalpojumi un produkti','Par mums','Pakalpojumi','Produkti','Meklēt pēc nosaukuma, apraksta vai darbības…','Rādīt','Cena min. / vid. / maks.','jāaizpilda','no','kartītes','Nav rezultātu.']),
- 'lt':('Lietuvių',['Pradžia','Paslaugos ir produktai','Apie mus','Paslaugos','Produktai','Ieškoti pagal pavadinimą, aprašymą ar operaciją…','Rodyti','Kaina min. / vid. / maks.','bus papildyta','iš','kortelių','Rezultatų nėra.']),
- 'ga':('Gaeilge',['Baile','Seirbhísí agus táirgí','Fúinn','Seirbhísí','Táirgí','Cuardaigh de réir ainm, tuairisc nó oibríocht…','Taispeáin','Praghas íos / meán / uas','le comhlánú','as','cártaí','Gan torthaí.']),
- 'mt':('Malti',['Paġna ewlenija','Servizzi u prodotti','Dwarna','Servizzi','Prodotti','Fittex skont isem, deskrizzjoni jew operazzjoni…','Uri','Prezz min / medju / mass','għad irid jimtela','minn','skedi','L-ebda riżultat.']),
+ 'ro':('Română',['Acasă','Servicii și produse','Despre','Servicii','Produse','Caută după denumire, descriere sau operațiune…','Afișează','Preț min / recomandat / max','de completat','din','fișe','Nu există rezultate.','Toate','Mărci','recomandat']),
+ 'en':('English',['Home','Services & products','About','Services','Products','Search by name, description or operation…','Show','Price min / avg / max','to be completed','of','entries','No results.','All','Brands','recommended']),
+ 'fr':('Français',['Accueil','Services et produits','À propos','Services','Produits','Rechercher par nom, description ou opération…','Afficher','Prix min / moyen / max','à compléter','sur','fiches','Aucun résultat.','Tout','Marques','recommandé']),
+ 'de':('Deutsch',['Startseite','Leistungen und Produkte','Über uns','Leistungen','Produkte','Suche nach Name, Beschreibung oder Arbeitsgang…','Anzeigen','Preis min / mittel / max','auszufüllen','von','Einträge','Keine Ergebnisse.','Alle','Marken','empfohlen']),
+ 'it':('Italiano',['Home','Servizi e prodotti','Chi siamo','Servizi','Prodotti','Cerca per nome, descrizione o operazione…','Mostra','Prezzo min / medio / max','da completare','di','schede','Nessun risultato.','Tutti','Marche','consigliato']),
+ 'es':('Español',['Inicio','Servicios y productos','Quiénes somos','Servicios','Productos','Buscar por nombre, descripción u operación…','Mostrar','Precio mín / medio / máx','por completar','de','fichas','Sin resultados.','Todos','Marcas','recomendado']),
+ 'pt':('Português',['Início','Serviços e produtos','Sobre','Serviços','Produtos','Pesquisar por nome, descrição ou operação…','Mostrar','Preço mín / médio / máx','a preencher','de','fichas','Sem resultados.','Todos','Marcas','recomendado']),
+ 'nl':('Nederlands',['Home','Diensten en producten','Over ons','Diensten','Producten','Zoek op naam, beschrijving of handeling…','Tonen','Prijs min / gem / max','nog in te vullen','van','fiches','Geen resultaten.','Alle','Merken','aanbevolen']),
+ 'pl':('Polski',['Strona główna','Usługi i produkty','O nas','Usługi','Produkty','Szukaj według nazwy, opisu lub czynności…','Pokaż','Cena min / śr. / maks.','do uzupełnienia','z','kart','Brak wyników.','Wszystkie','Marki','zalecana']),
+ 'cs':('Čeština',['Domů','Služby a produkty','O nás','Služby','Produkty','Hledat podle názvu, popisu nebo úkonu…','Zobrazit','Cena min / prům. / max','k doplnění','z','karet','Žádné výsledky.','Vše','Značky','doporučená']),
+ 'sk':('Slovenčina',['Domov','Služby a produkty','O nás','Služby','Produkty','Hľadať podľa názvu, popisu alebo úkonu…','Zobraziť','Cena min / priem. / max','na doplnenie','z','kariet','Žiadne výsledky.','Všetko','Značky','odporúčaná']),
+ 'sl':('Slovenščina',['Domov','Storitve in izdelki','O nas','Storitve','Izdelki','Iskanje po imenu, opisu ali opravilu…','Prikaži','Cena min / povp. / maks.','za dopolnitev','od','kartic','Ni rezultatov.','Vse','Znamke','priporočena']),
+ 'hr':('Hrvatski',['Početna','Usluge i proizvodi','O nama','Usluge','Proizvodi','Traži po nazivu, opisu ili radnji…','Prikaži','Cijena min / prosj. / maks.','za dopunu','od','kartica','Nema rezultata.','Sve','Marke','preporučena']),
+ 'hu':('Magyar',['Főoldal','Szolgáltatások és termékek','Rólunk','Szolgáltatások','Termékek','Keresés név, leírás vagy művelet szerint…','Megjelenítés','Ár min / átl. / max','kitöltendő','/','adatlap','Nincs találat.','Összes','Márkák','ajánlott']),
+ 'bg':('Български',['Начало','Услуги и продукти','За нас','Услуги','Продукти','Търсене по име, описание или операция…','Покажи','Цена мин / ср. / макс','за попълване','от','карти','Няма резултати.','Всички','Марки','препоръчана']),
+ 'el':('Ελληνικά',['Αρχική','Υπηρεσίες και προϊόντα','Σχετικά','Υπηρεσίες','Προϊόντα','Αναζήτηση με όνομα, περιγραφή ή εργασία…','Εμφάνιση','Τιμή ελάχ. / μέση / μέγ.','προς συμπλήρωση','από','καρτέλες','Κανένα αποτέλεσμα.','Όλα','Μάρκες','προτεινόμενη']),
+ 'da':('Dansk',['Forside','Ydelser og produkter','Om os','Ydelser','Produkter','Søg efter navn, beskrivelse eller opgave…','Vis','Pris min / gns. / maks.','udfyldes senere','af','kort','Ingen resultater.','Alle','Mærker','anbefalet']),
+ 'sv':('Svenska',['Hem','Tjänster och produkter','Om oss','Tjänster','Produkter','Sök på namn, beskrivning eller moment…','Visa','Pris min / medel / max','fylls i senare','av','kort','Inga resultat.','Alla','Märken','rekommenderat']),
+ 'fi':('Suomi',['Etusivu','Palvelut ja tuotteet','Tietoa meistä','Palvelut','Tuotteet','Hae nimellä, kuvauksella tai työvaiheella…','Näytä','Hinta min / keski / maks','täydennetään','/','korttia','Ei tuloksia.','Kaikki','Merkit','suositeltu']),
+ 'et':('Eesti',['Avaleht','Teenused ja tooted','Meist','Teenused','Tooted','Otsi nime, kirjelduse või toimingu järgi…','Näita','Hind min / kesk / max','täitmata','/','kaarti','Tulemusi pole.','Kõik','Kaubamärgid','soovitatav']),
+ 'lv':('Latviešu',['Sākums','Pakalpojumi un produkti','Par mums','Pakalpojumi','Produkti','Meklēt pēc nosaukuma, apraksta vai darbības…','Rādīt','Cena min. / vid. / maks.','jāaizpilda','no','kartītes','Nav rezultātu.','Visi','Zīmoli','ieteicamā']),
+ 'lt':('Lietuvių',['Pradžia','Paslaugos ir produktai','Apie mus','Paslaugos','Produktai','Ieškoti pagal pavadinimą, aprašymą ar operaciją…','Rodyti','Kaina min. / vid. / maks.','bus papildyta','iš','kortelių','Rezultatų nėra.','Visi','Prekės ženklai','rekomenduojama']),
+ 'ga':('Gaeilge',['Baile','Seirbhísí agus táirgí','Fúinn','Seirbhísí','Táirgí','Cuardaigh de réir ainm, tuairisc nó oibríocht…','Taispeáin','Praghas íos / meán / uas','le comhlánú','as','cártaí','Gan torthaí.','Gach rud','Brandaí','molta']),
+ 'mt':('Malti',['Paġna ewlenija','Servizzi u prodotti','Dwarna','Servizzi','Prodotti','Fittex skont isem, deskrizzjoni jew operazzjoni…','Uri','Prezz min / medju / mass','għad irid jimtela','minn','skedi','L-ebda riżultat.','Kollha','Marki','rakkomandat']),
 }
-KEYS = ['home','catalog','about','services','products','search','show','price','tofill','of','sheets','noresults']
+KEYS = ['home','catalog','about','services','products','search','show','price','tofill','of','sheets','noresults','all','brands','rec']
 
 CSS = """:root{--bg:#071a1c;--surface:#0f2a2c;--surface2:#13363a;--text:#ffffff;--muted:#a9c4bd;--border:#1f4446;--accent:#91ddd0;--btn:#bdf2dc;--btntext:#08322f;--hero:linear-gradient(90deg,#0b2528 0%,#0b292aef 48%,#185255aa),radial-gradient(circle at 82% 35%,#5f9e8d 0,#194748 58%,#0b2528 95%)}
 body.light-mode{--bg:#f6f7f4;--surface:#ffffff;--surface2:#e6efea;--text:#0a0a0a;--muted:#0a0a0a;--border:#cfddd5;--accent:#164e47;--hero:linear-gradient(135deg,#e5f3ea,#b7dacc)}
@@ -74,7 +75,10 @@ body.light-mode .cui-box input{background:#ffffff}
 .card{border:1px solid var(--border);background:var(--surface);border-radius:19px;overflow:hidden}
 .visual{height:150px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#e5f3ea,#b7dacc);font-size:55px;color:#164e47}.visual img{max-height:130px;max-width:90%}
 .content{padding:22px}.code{font-size:11px;letter-spacing:1px;color:var(--accent);font-weight:800}.card h3{font-size:20px;line-height:1.2;margin:10px 0}.card p{color:var(--muted);font-size:14px;line-height:1.55}
-.price{font-size:13px;border:1px dashed var(--border);border-radius:10px;padding:8px 10px;margin-top:10px}
+.price{font-size:13px;border:1px dashed var(--border);border-radius:10px;padding:8px 10px;margin-top:10px;line-height:1.5}.price b{font-size:16px;color:var(--accent)}.price small{display:block;opacity:.8}
+.brands{font-size:12.5px;margin-top:8px}.grp{display:inline-block;font-size:11px;font-weight:800;padding:3px 8px;border-radius:6px;background:var(--surface2);margin-bottom:6px}.shared{background:#ffd36b;color:#3a2a00}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 18px}.chip{padding:8px 12px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:13px;font-weight:700;cursor:pointer}.chip.active{background:var(--btn);color:#08322f;border-color:var(--btn)}
+.hero .subfam{font-size:clamp(16px,2.2vw,20px);font-weight:700;color:#bdf2dc;margin:4px 0 12px}.hero .chips .chip{background:#ffffff14;color:#fff;border-color:#ffffff33}
 .card details{border-top:1px solid var(--border);padding-top:12px;margin-top:14px;font-size:13px}summary{cursor:pointer;font-weight:700}
 .empty{padding:40px;background:var(--surface);border-radius:14px}
 .notice{border:1px solid #e8dfbd;background:#fff9e7;color:#65552b;border-radius:14px;padding:17px;margin:30px 0;font-size:13px}
@@ -90,9 +94,29 @@ def load(fid):
     s = (ROOT / 'etalons/C4322' / (fid + '.mjs')).read_text(encoding='utf-8')
     return json.loads(s[s.index('{'):s.rindex('}') + 1])
 
+ALL = {}
+def find(kind, iid):
+    for ofid in FAMILIES:
+        for x in load(ofid)[kind]:
+            if x['id'] == iid: return ofid, x
+    raise KeyError(iid)
+
+def items(fid, d, kind):
+    out = [dict(x) for x in d[kind]]
+    for iid in d.get('sharedRefs', {}).get(kind, []):
+        ofid, x = find(kind, iid); x = dict(x)
+        x['sharedFrom'] = load(ofid)['title']; x['homeGroup'] = x['group']; x['group'] = 'Comune cu alte familii'
+        out.append(x)
+    return out
+
 def page(fid, d):
-    f = FAMILIES[fid]; title = d['title']; ns, npd = len(d['services']), len(d['products'])
-    data = {'services': d['services'], 'products': d['products']}
+    f = FAMILIES[fid]; title = d['title']
+    data = {'services': items(fid, d, 'services'), 'products': items(fid, d, 'products')}
+    ns, npd = len(data['services']), len(data['products'])
+    groups = list(d['groups']) + (['Comune cu alte familii'] if d.get('sharedRefs', {}).get('services') or d.get('sharedRefs', {}).get('products') else [])
+    sub = CFG['SubtitluFamilie'][fid]
+    hero_chips = ''.join(f'<button class="chip" type="button" data-group="{esc(g)}">{esc(g)}</button>' for g in d['groups'])
+    cat_chips = '<button class="chip active" type="button" data-group="" data-i18n="all">Toate</button>' + ''.join(f'<button class="chip" type="button" data-group="{esc(g)}">{esc(g)}</button>' for g in groups)
     i18n = {k: dict(zip(KEYS, v[1])) for k, v in LANGS.items()}
     opts = ''.join(f'<option value="{k}">{esc(v[0])}</option>' for k, v in LANGS.items())
     js_data = json.dumps(data, ensure_ascii=False).replace('<', '\\u003c')
@@ -101,22 +125,24 @@ def page(fid, d):
 <html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#071a1c">
 <title>{esc(title)} | {FIRM} · Etalon SCARA {fid}</title>
-<meta name="description" content="Etalon intern SCARA {fid} ({esc(title)}), CAEN 4322 — firmă fictivă {FIRM}: {ns} servicii și {npd} produse.">
+<meta name="description" content="Etalon intern SCARA {fid} — {FIRM}, {esc(sub)}: {ns} servicii și {npd} produse cu prețuri orientative min / recomandat / max, București.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>
 {CSS}</style></head>
 <body>
 <button id="themeToggle" type="button" aria-label="Schimbă tema"><b id="themeIcon">☀</b><span id="themeLabel">Light</span></button>
-<header><div class="container bar"><div class="logo" id="logoFirm">{FIRM}<small>FIRMĂ FICTIVĂ · SCARA {fid} · CAEN 4322</small></div>
+<header><div class="container bar"><div class="logo" id="logoFirm">{FIRM}<small>{esc(sub).upper()} · FIRMĂ FICTIVĂ · CAEN 4322</small></div>
 <nav><a href="#acasa" data-i18n="home">Acasă</a><a href="#catalog" data-i18n="catalog">Servicii și produse</a><a href="#despre" data-i18n="about">Despre</a></nav>
 <div class="tools"><select id="langSel" aria-label="Limba">{opts}</select><span id="clock"></span><span>{VERSION} · {DATE} · sesiune {SESSION}</span></div></div></header>
 <main><section class="hero" id="acasa"><div class="container"><div class="eyebrow">{fid} · {esc(title)} · București</div>
 <div class="firm"><span id="firmName">{FIRM}</span><small>FICTIV</small></div>
+<div class="subfam">{esc(sub)}</div><div class="chips" aria-label="Grupe">{hero_chips}</div>
 <h1>{esc(title)}</h1><p>{esc(f['subtitle'])}</p>
 <div class="cui-box" id="cuiBox" aria-live="polite"><div class="eyebrow">CUI firmă</div><div id="cuiView" class="cui-val">Fără CUI</div><div id="cuiMsg" style="font-size:13px;opacity:.85">Introduceți CUI-ul firmei pentru a-l afișa pe acest etalon.</div><form id="cuiForm"><input id="cuiInput" inputmode="numeric" autocomplete="off" placeholder="CUI, ex. RO51415878" aria-label="CUI firmă"><button type="submit" data-i18n="show">Afișează</button></form></div>
 <a class="btn" href="#catalog" data-i18n="catalog">Servicii și produse</a><div class="meta"><span>{f['icon']} {ns} servicii</span><span>{npd} produse</span><span>ETALON INDEPENDENT</span></div></div></section>
-<section class="section" id="catalog"><div class="container"><div class="eyebrow">CATALOG {fid}</div><h2>{esc(title)} — servicii și produse</h2><p class="muted">Fișe de referință. Prețurile min / mediu / max sunt câmpuri pregătite, de completat după validare.</p>
+<section class="section" id="catalog"><div class="container"><div class="eyebrow">CATALOG {fid}</div><h2>{esc(title)} — servicii și produse</h2><p class="muted">Prețuri orientative în lei, cu TVA: min / <strong>recomandat</strong> (media pieței) / max. Serviciile = manoperă fără materiale. Estimări din nov. 2026, de validat.</p>
 <div class="tabs"><button id="tab-services" class="tab active" type="button"><span data-i18n="services">Servicii</span> ({ns})</button><button id="tab-products" class="tab" type="button"><span data-i18n="products">Produse</span> ({npd})</button></div>
+<div class="chips" id="groupChips" aria-label="Filtru grupe">{cat_chips}</div>
 <input class="search" id="search" placeholder="Caută după denumire, descriere sau operațiune…" aria-label="Caută în catalog">
 <p id="count" class="muted" aria-live="polite"></p><div class="grid" id="grid"></div>
 <div class="notice"><strong>{FIRM} este o firmă fictivă.</strong> Etalon intern SCARA, nu site-ul unei firme reale. Serviciile, prețurile și certificările se confirmă pentru fiecare firmă reală. Conținutul catalogului este în limba română; selectorul de limbă traduce interfața.</div>
@@ -127,19 +153,22 @@ def page(fid, d):
 const DATA={js_data};
 const I18N={js_i18n};
 const ICON="{f['icon']}";
-let mode='services',lang='ro';
+let mode='services',lang='ro',group='';
 const T=k=>(I18N[lang]||I18N.ro)[k]||I18N.ro[k];
 const normalize=s=>String(s||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase();
 const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
-const priceTxt=r=>(r.priceMinRON==null&&r.priceAvgRON==null&&r.priceMaxRON==null)?T('tofill'):[r.priceMinRON,r.priceAvgRON,r.priceMaxRON].map(v=>v==null?'—':v+' lei').join(' / ');
+const fmt=v=>v==null?'—':Number(v).toLocaleString('ro-RO');
+const priceTxt=r=>(r.priceMinRON==null&&r.priceAvgRON==null&&r.priceMaxRON==null)?escapeHtml(T('tofill')):fmt(r.priceMinRON)+' – <b>'+fmt(r.priceAvgRON)+'</b> – '+fmt(r.priceMaxRON)+' lei / '+escapeHtml(r.priceUnit||'')+'<small>'+escapeHtml(T('rec'))+': '+fmt(r.priceAvgRON)+' lei · '+escapeHtml(r.priceBasis||'')+'</small>';
 function render(){{
   const q=normalize(document.getElementById('search').value);
-  const rows=DATA[mode].filter(r=>normalize(Object.values(r).join(' ')).includes(q));
+  const rows=DATA[mode].filter(r=>(!group||r.group===group)&&normalize(Object.values(r).join(' ')).includes(q));
   document.getElementById('count').textContent=rows.length+' '+T('of')+' '+DATA[mode].length+' '+T('sheets');
-  document.getElementById('grid').innerHTML=rows.length?rows.map(r=>'<article class="card"><div class="visual" aria-hidden="true">'+(mode==='products'?'<img src="img/'+escapeHtml(r.id)+'.svg" alt="" loading="lazy" onerror="this.replaceWith(ICON)">':ICON)+'</div><div class="content"><div class="code">'+escapeHtml(r.id)+'</div><h3>'+escapeHtml(r.name)+'</h3><p>'+escapeHtml(r.descriptionShort)+'</p><div class="price"><strong>'+escapeHtml(T('price'))+':</strong> '+escapeHtml(priceTxt(r))+'</div><details><summary>'+(mode==='services'?'Operațiuni și recomandări':'Criterii de selecție')+'</summary><p>'+escapeHtml(mode==='services'?r.operations:r.selectionCriteria)+'</p>'+(r.recommendedWhen?'<p><strong>Când:</strong> '+escapeHtml(r.recommendedWhen)+'</p>':'')+'</details></div></article>').join(''):'<div class="empty">'+escapeHtml(T('noresults'))+'</div>';
+  document.getElementById('grid').innerHTML=rows.length?rows.map(r=>'<article class="card"><div class="visual" aria-hidden="true">'+(mode==='products'?'<img src="img/'+escapeHtml(r.id)+'.svg" alt="" loading="lazy" onerror="this.replaceWith(ICON)">':ICON)+'</div><div class="content">'+(r.sharedFrom?'<span class="grp shared">Comun cu '+escapeHtml(r.sharedFrom)+' · '+escapeHtml(r.homeGroup)+'</span>':'<span class="grp">'+escapeHtml(r.group)+'</span>')+'<div class="code">'+escapeHtml(r.id)+'</div><h3>'+escapeHtml(r.name)+'</h3><p>'+escapeHtml(r.descriptionShort)+'</p><div class="price"><strong>'+escapeHtml(T('price'))+':</strong> '+priceTxt(r)+'</div>'+(r.brands?'<div class="brands"><strong>'+escapeHtml(T('brands'))+':</strong> '+escapeHtml(r.brands)+'</div>':'')+'<details><summary>'+(mode==='services'?'Operațiuni și recomandări':'Criterii de selecție')+'</summary><p>'+escapeHtml(mode==='services'?r.operations:r.selectionCriteria)+'</p>'+(r.recommendedWhen?'<p><strong>Când:</strong> '+escapeHtml(r.recommendedWhen)+'</p>':'')+'</details></div></article>').join(''):'<div class="empty">'+escapeHtml(T('noresults'))+'</div>';
 }}
 for(const t of ['services','products'])document.getElementById('tab-'+t).addEventListener('click',()=>{{mode=t;for(const x of ['services','products'])document.getElementById('tab-'+x).classList.toggle('active',x===t);render()}});
 document.getElementById('search').addEventListener('input',render);
+function setGroup(g){{group=g;document.querySelectorAll('#groupChips .chip').forEach(c=>c.classList.toggle('active',c.dataset.group===g));render()}}
+document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{{setGroup(c.dataset.group);if(c.closest('.hero'))document.getElementById('catalog').scrollIntoView({{behavior:'smooth'}})}}));
 function applyLang(l){{lang=I18N[l]?l:'ro';document.documentElement.lang=lang;document.getElementById('langSel').value=lang;document.querySelectorAll('[data-i18n]').forEach(e=>e.textContent=T(e.dataset.i18n));document.getElementById('search').placeholder=T('search');try{{localStorage.setItem('scara-lang',lang)}}catch(e){{}}render()}}
 document.getElementById('langSel').addEventListener('change',e=>applyLang(e.target.value));
 function applyTheme(m){{document.body.classList.toggle('light-mode',m==='light');document.getElementById('themeIcon').textContent=m==='light'?'☾':'☀';document.getElementById('themeLabel').textContent=m==='light'?'Dark':'Light';try{{localStorage.setItem('scara-theme',m)}}catch(e){{}}}}
@@ -155,8 +184,10 @@ const clock=()=>{{document.getElementById('clock').textContent=new Date().toLoca
   const valid=c=>{{if(!/^\\d{{2,10}}$/.test(c))return false;const k='753217532',b=c.slice(0,-1).padStart(9,'0');let s=0;for(let i=0;i<9;i++)s+=b[i]*k[i];let r=s*10%11;if(r===10)r=0;return r===+c.slice(-1)}};
   const view=document.getElementById('cuiView'),msg=document.getElementById('cuiMsg'),inp=document.getElementById('cuiInput');
   const baseTitle=document.title;
+  const DEF={json.dumps(CFG['CUI'])},DEF_EX={'true' if CFG.get('CUIExemplu') else 'false'};
   function show(raw){{
     const c=clean(raw);
+    if(c&&c===clean(DEF)&&DEF_EX){{inp.value=c;view.textContent='CUI '+c;view.className='cui-val';msg.textContent='CUI exemplu — parametru comun celor trei site-uri, de înlocuit în firma.json.';document.title=baseTitle;return}}
     if(!c){{view.textContent='Fără CUI';view.className='cui-val';msg.textContent='Introduceți CUI-ul firmei pentru a-l afișa pe acest etalon.';document.title=baseTitle;return}}
     inp.value=c;view.textContent='CUI '+c;
     if(valid(c)){{view.className='cui-val cui-ok';msg.textContent='Cifra de control este corectă. Identitatea firmei nu este verificată aici (ONRC/ANAF).'}}
@@ -164,7 +195,7 @@ const clock=()=>{{document.getElementById('clock').textContent=new Date().toLoca
     document.title='CUI '+c+' · '+baseTitle;
   }}
   document.getElementById('cuiForm').addEventListener('submit',e=>{{e.preventDefault();const c=clean(inp.value);const u=new URL(location.href);c?u.searchParams.set('cui',c):u.searchParams.delete('cui');history.replaceState(null,'',u);show(c)}});
-  show(new URLSearchParams(location.search).get('cui'));
+  show(new URLSearchParams(location.search).get('cui')||DEF);
 }})();
 </script></body></html>
 """
@@ -172,6 +203,9 @@ const clock=()=>{{document.getElementById('clock').textContent=new Date().toLoca
 def not_found(fid, d):
     return f"""<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Pagină inexistentă | {FIRM} · {fid}</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><style>body{{margin:0;font-family:Inter,system-ui,sans-serif;background:#071a1c;color:#fff;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:24px}}a{{color:#08322f;background:#bdf2dc;padding:12px 20px;border-radius:12px;text-decoration:none;font-weight:800}}</style></head><body><div><p style="letter-spacing:2px;color:#91ddd0;font-weight:800">404 · {fid} · {esc(d['title'])}</p><h1>Pagina nu există.</h1><p>{FIRM} (firmă fictivă) — etalon intern SCARA.</p><p><a href="/">Înapoi la {esc(d['title'])}</a></p></div></body></html>
 """
+
+def gen_svg(iid, name, fid):
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 470"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e5f3ea"/><stop offset="1" stop-color="#b7dacc"/></linearGradient></defs><rect width="560" height="470" fill="url(#g)"/><circle cx="470" cy="70" r="70" fill="#ffffff" opacity=".35"/><rect x="200" y="110" width="160" height="160" rx="24" fill="#f6f7f4" stroke="#7fb5a5" stroke-width="4"/><text x="280" y="215" font-family="Arial,sans-serif" font-size="64" font-weight="bold" fill="#3d8b78" text-anchor="middle">{FAMILIES[fid]["icon"]}</text><rect x="20" y="370" width="520" height="90" fill="#0b2528"/><rect x="20" y="370" width="8" height="90" fill="#d9822b"/><text x="40" y="401" fill="#a9d4c9" font-family="Arial,sans-serif" font-size="17" font-weight="bold">{iid} · {fid} · {FIRM} · FICTIV</text><text x="40" y="440" fill="#fff" font-family="Arial,sans-serif" font-size="22" font-weight="bold">{esc(name)[:40]}</text></svg>\n'
 
 def favicon(fid):
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0b2528"/><text x="32" y="30" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#91ddd0" text-anchor="middle">TCE</text><text x="32" y="50" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">{fid[-1]}</text></svg>\n'
@@ -199,8 +233,11 @@ def main():
         (out / 'robots.txt').write_text('User-agent: *\nDisallow: /\n', encoding='utf-8')
         (out / '_headers').write_text(HEADERS, encoding='utf-8')
         (out / '_routes.json').write_text(ROUTES, encoding='utf-8')
-        for p in d['products']:
-            svg = (ROOT / 'img/products' / (p['id'] + '.svg')).read_text(encoding='utf-8')
+        for p in items(fid, d, 'products'):
+            src = ROOT / 'img/products' / (p['id'] + '.svg')
+            if not src.exists():
+                (out / 'img' / (p['id'] + '.svg')).write_text(gen_svg(p['id'], p['name'], fid), encoding='utf-8'); continue
+            svg = src.read_text(encoding='utf-8')
             svg = svg.replace('C4322B · EXEMPLU', fid + ' · ' + FIRM + ' · FICTIV')
             (out / 'img' / (p['id'] + '.svg')).write_text(svg, encoding='utf-8')
         print(fid, len(d['services']), 'servicii,', len(d['products']), 'produse')

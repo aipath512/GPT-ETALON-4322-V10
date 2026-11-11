@@ -1,0 +1,13 @@
+{
+  "_comentariu": "Parametri comuni celor trei site-uri C43221/C43222/C43223. Modificați aici; GitHub Actions regenerează paginile automat.",
+  "NumeFirma": "TCE INSTAL SRL",
+  "Fictiva": true,
+  "CUI": "12345678",
+  "CUIExemplu": true,
+  "Oras": "București",
+  "SubtitluFamilie": {
+    "C43221": "Instalații de încălzire",
+    "C43222": "Instalații de climatizare",
+    "C43223": "Instalații sanitare"
+  }
+}

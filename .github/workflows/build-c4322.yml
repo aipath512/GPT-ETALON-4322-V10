@@ -1,0 +1,39 @@
+name: SCARA C4322 — regenerare site-uri de familie
+# Când se modifică firma.json, catalogul (etalons/C4322) sau generatorul, paginile din
+# cloudflare-pages/C4322x sunt regenerate și urcate automat; Cloudflare le publică apoi.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'etalons/C4322/**'
+      - 'tools/build_c4322.py'
+      - 'img/products/**'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Regenerare pagini
+        run: python3 tools/build_c4322.py
+      - name: Teste
+        run: node --test tests/c4322-sites.test.mjs etalons/C4322/C4322.test.mjs
+      - name: Urcare modificări
+        run: |
+          if [ -n "$(git status --porcelain cloudflare-pages)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add cloudflare-pages
+            git commit -m "C4322x: pagini regenerate automat din firma.json / catalog"
+            git push
+          else
+            echo "Paginile sunt deja la zi."
+          fi

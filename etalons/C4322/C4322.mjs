@@ -26,10 +26,24 @@ function uniqueCatalog(items, category) {
   }
   return [...byId.values()];
 }
+// Fișe proprii + fișe partajate din alte familii (același cod, fără copie); un cod apare o singură dată.
+export function findItem(kind, id) {
+  for (const e of Object.values(SUBCLASSES)) { const x = e[kind].find(i => i.id === id); if (x) return x; }
+  throw new Error(kind + ': referință partajată inexistentă: ' + id);
+}
+export function withShared(selected, kind) {
+  const seen = new Map();
+  for (const e of selected) {
+    for (const x of e[kind]) seen.set(x.id, x);
+    for (const id of (e.sharedRefs?.[kind] || [])) if (!seen.has(id)) seen.set(id, findItem(kind, id));
+  }
+  return [...seen.values()];
+}
 export function validateEtalon(etalon) {
   if (etalon.caen !== CAEN_4322 || etalon.parentClassId !== 'C4322') throw new Error('Etalon incompatibil cu C4322');
   uniqueCatalog(etalon.services, 'services');
   uniqueCatalog(etalon.products, 'products');
+  for (const kind of ['services','products']) for (const id of (etalon.sharedRefs?.[kind] || [])) findItem(kind, id);
   return {classId:etalon.classId, services:etalon.services.length, products:etalon.products.length, valid:true};
 }
 export function composeC4322({ CUI, CAEN = CAEN_4322, NumeFirma, SubtitluFirma = '', activeClasses, activeServices, activeProducts, ...company }) {
@@ -42,8 +56,8 @@ export function composeC4322({ CUI, CAEN = CAEN_4322, NumeFirma, SubtitluFirma =
       activeClasses.some(id => !SUBCLASSES[id])) throw new Error('Selectati 1-3 subclase valide, fara dubluri');
   const selected = activeClasses.map(id => SUBCLASSES[id]);
   selected.forEach(validateEtalon);
-  const allServices = uniqueCatalog(selected.flatMap(x => x.services), 'services');
-  const allProducts = uniqueCatalog(selected.flatMap(x => x.products), 'products');
+  const allServices = uniqueCatalog(withShared(selected, 'services'), 'services');
+  const allProducts = uniqueCatalog(withShared(selected, 'products'), 'products');
   const serviceIds = activeServices == null ? allServices.map(x=>x.id) : activeServices;
   const productIds = activeProducts == null ? allProducts.map(x=>x.id) : activeProducts;
   if (!Array.isArray(serviceIds) || !Array.isArray(productIds) ||
@@ -55,7 +69,7 @@ export function composeC4322({ CUI, CAEN = CAEN_4322, NumeFirma, SubtitluFirma =
     throw new Error('Catalog activ incompatibil cu subclasele selectate');
   }
   return {
-    kind:'SCARA_C4322_SITE_CONFIG', version:'1.0.0-draft',
+    kind:'SCARA_C4322_SITE_CONFIG', version:'1.3.0-draft',
     key:{CAEN:CAEN_4322,CUI:cui},
     company:{NumeFirma:String(NumeFirma).trim(),SubtitluFirma:String(SubtitluFirma).trim(),...company},
     activeClasses:[...activeClasses],

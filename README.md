@@ -103,3 +103,9 @@ Site static HTML/CSS/JS (regenerat și verificat pe 8 noiembrie 2026): `style.cs
 - Sursa datelor: `etalons/C4322/C4322x.mjs` (cu câmpuri `priceMinRON` / `priceAvgRON` / `priceMaxRON`, încă necompletate).
 - Paginile se regenerează din module cu `python3 tools/build_c4322.py`; testele `tests/c4322-sites.test.mjs` rulează în GitHub Actions.
 - Antet: comutator Dark/Light, selector 24 limbi UE (traduce interfața; catalogul rămâne în română), dată/oră, versiune, sesiune 0001C.
+
+## v1.3 (11 noiembrie 2026) — catalog extins, grupe, prețuri, mărci, fără dubluri
+- Catalog: Încălzire 34 servicii + 36 produse, Climatizare 25 + 28, Sanitare 30 + 34 = **187 fișe unice** (cod și denumire unice în toate familiile).
+- O fișă relevantă pentru două familii există o singură dată și apare pe ambele site-uri prin `sharedRefs` (ex. P-I-13 Boiler electric și la Sanitare).
+- Fiecare fișă are grupă (filtre pe pagină), preț **min / recomandat (media) / max** în lei cu TVA, unitate, bază (manoperă sau echipament) și sursă; produsele au mărci uzuale. Prețurile sunt **estimări orientative nov. 2026, de validat**.
+- Parametri comuni în `etalons/C4322/firma.json` (NumeFirma, CUI, subtitluri de familie). La orice modificare, acțiunea `build-c4322.yml` regenerează paginile automat.
