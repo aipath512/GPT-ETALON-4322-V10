@@ -1692,5 +1692,176 @@
       "Ce se întâmplă dacă renunț la întreținerea anuală?"
     ],
     "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
+  },
+  "ofertaLuniiFLI": {
+    "capturedAt": "2026-11-11",
+    "source": "Textul paginii «Alege oferta lunii» furnizat de utilizator",
+    "independentlyVerified": false,
+    "classification": "COMPETITOR_PRODUCT_BUNDLES_AND_ECOMMERCE",
+    "currency": "RON",
+    "pricesAreCompetitorSnapshot": true,
+    "offerItems": [
+      {
+        "id": "FLI-OFFER-01",
+        "type": "equipment_installation_bundle",
+        "brand": "Ariston",
+        "label": "Clas One Plus WiFi 24 kW + kit evacuare + montaj",
+        "listedPriceRON": 4580,
+        "productCode": "3302123 (apare în text, de verificat)",
+        "notes": "Denumirea de prezentare conține și «Clas One WiFi»; verificați identitatea exactă a modelului și prețul componentei centrală."
+      },
+      {
+        "id": "FLI-OFFER-02",
+        "type": "equipment_installation_bundle",
+        "brand": "Ariston",
+        "label": "Cares S 24 kW + kit evacuare + montaj",
+        "listedPriceRON": 3920
+      },
+      {
+        "id": "FLI-OFFER-03",
+        "type": "equipment_installation_bundle",
+        "brand": "Beretta",
+        "label": "CIAO X 30 C + kit evacuare + montaj",
+        "productCode": "20187765",
+        "listedPriceRON": 4880
+      },
+      {
+        "id": "FLI-OFFER-04",
+        "type": "equipment_installation_bundle",
+        "brand": "Beretta",
+        "label": "CIAO X 25 + kit evacuare + montaj",
+        "productCode": "20187761",
+        "listedPriceRON": 4020
+      },
+      {
+        "id": "FLI-OFFER-05",
+        "type": "equipment_only",
+        "brand": "Homplex",
+        "label": "Termostat inteligent NX1 Black Edition",
+        "listedPriceRON": 560
+      },
+      {
+        "id": "FLI-OFFER-06",
+        "type": "equipment_installation_bundle",
+        "brand": "Ariston",
+        "label": "PRIOS / KIOS 35, 12000 BTU, R32, + montaj + kit instalare",
+        "originalPriceRON": 2950,
+        "listedPriceRON": 2750,
+        "notes": "Denumirea PRIOS / KIOS este ambiguă; modelul exact trebuie verificat."
+      },
+      {
+        "id": "FLI-OFFER-07",
+        "type": "equipment_only",
+        "brand": "Homplex",
+        "label": "Termostat inteligent NX1 Cream White",
+        "listedPriceRON": 560
+      },
+      {
+        "id": "FLI-OFFER-08",
+        "type": "equipment_only",
+        "brand": "Homplex",
+        "label": "Termostat inteligent NX1 Graphite Gray",
+        "listedPriceRON": 560
+      },
+      {
+        "id": "FLI-OFFER-09",
+        "type": "equipment_only",
+        "brand": "Salus",
+        "label": "iT500 termostat cu control prin internet",
+        "originalPriceRON": 845,
+        "listedPriceRON": 710
+      }
+    ],
+    "existingCatalogRelation": {
+      "families": [
+        "C43221 Încălzire",
+        "C43222 Climatizare"
+      ],
+      "categories": [
+        "centrală în condensare",
+        "termostat inteligent",
+        "aparat aer condiționat"
+      ],
+      "policy": "Corespondența se stabilește întâi la nivelul familiei de produs și serviciu existent, apoi SKU individual distinct numai dacă există dovadă.",
+      "noDuplicateServices": true
+    },
+    "proposedModel": {
+      "entities": [
+        "OfertaComerciala",
+        "LinieOferta",
+        "SKUProdus",
+        "PachetProdusServiciu",
+        "Promotie"
+      ],
+      "fields": [
+        "offerId",
+        "firmCUI",
+        "sku",
+        "manufacturer",
+        "model",
+        "manufacturerCode",
+        "productId",
+        "serviceIds",
+        "bundleComponents",
+        "priceRON",
+        "currency",
+        "originalPriceRON",
+        "taxStatus",
+        "installationIncluded",
+        "installationScope",
+        "installationLocationEligibility",
+        "materialsIncluded",
+        "materialsExcluded",
+        "warrantyTerms",
+        "stockStatus",
+        "imageEvidence",
+        "sourceURL",
+        "validFrom",
+        "validUntil",
+        "lastChecked",
+        "provenance",
+        "verificationStatus"
+      ],
+      "relations": [
+        "FIRMA_PUBLICA_OFERTA",
+        "OFERTA_INCLUDE_PRODUS",
+        "OFERTA_INCLUDE_SERVICIU",
+        "OFERTA_VALABILA_IN_ZONA",
+        "OFERTA_ARE_PROMOTIE"
+      ]
+    },
+    "safetyAndQuality": [
+      "Montaj inclus numai în aria declarată și verificată a firmei; nu transfera zona FLI la firme SCARA.",
+      "Nu atribui disponibilitate în stoc ori preț final fără verificare actuală.",
+      "Nu deduce sau inventa prețul separat al echipamentului dacă sursa indică doar prețul pachetului.",
+      "Nu inventa TVA, valabilitate promoțională, durata garanției, consumabile incluse sau condiții de montaj.",
+      "Prețuri de referință FLI, nu prețuri standard sau recomandate pentru site-urile SCARA.",
+      "Comenzile și plata cu cardul necesită backend, termeni contractuali și prestator de plăți confirmat; «Adaugă în coș» nu înseamnă că SCARA are magazin funcțional."
+    ],
+    "proposedFrontend": {
+      "pages": [
+        "Oferte",
+        "Produse"
+      ],
+      "features": [
+        "card de produs cu imagine, marcă, model și cod",
+        "preț curent și vechi dacă promoția e verificată",
+        "etichete «montaj inclus» și condiții clare",
+        "localitate eligibilă pentru montaj",
+        "cerere de ofertă / intenție comandă",
+        "actualizare promoții din surse publice prin HOLMES, cu proveniență și dată verificare"
+      ],
+      "status": "PROPOSED_NOT_IMPLEMENTED"
+    },
+    "evaQuestions": [
+      "Montajul este inclus în prețul pachetului?",
+      "În ce localități este valabilă oferta cu montaj?",
+      "Ce include kitul de evacuare sau instalare?",
+      "Care este modelul și codul exact al centralei?",
+      "Care este prețul final cu TVA și materiale suplimentare?",
+      "Oferta mai este valabilă și produsul este în stoc?",
+      "Ce garanție se acordă produsului și montajului?"
+    ],
+    "publicationStatus": "AUDIT_ONLY_NOT_IN_SSOT_NOT_PUBLISHED"
   }
 }
