@@ -1,4 +1,4 @@
-// SCARA C4322 — v1.4 2026-11-11
+// SCARA C4322 — v1.5 2026-11-11
 (function(){
 'use strict';
 const page=document.body.dataset.page;let lang='ro';
@@ -11,6 +11,7 @@ const SYN={ac:['aer conditionat','split'],clima:['climatizare','aer conditionat'
  robinet:['baterie','robinet'],baterie:['robinet'],desfundare:['canalizare','scurgere'],freon:['agent frigorific'],iscir:['verificare tehnica','revizie']};
 const all=[...CAT.services.map(x=>({...x,kind:'servicii'})),...CAT.products.map(x=>({...x,kind:'produse'}))];
 all.forEach(x=>x._h=norm([x.id,x.name,x.group,x.homeGroup,x.sharedFrom,(x.brandList||[]).join(' '),x.descriptionShort,x.operations,x.selectionCriteria,x.recommendedWhen].join(' ')));
+const homeLike=page==='home'||page==='detail';
 const pool=page==='servicii'?all.filter(x=>x.kind==='servicii'):page==='produse'?all.filter(x=>x.kind==='produse'):all;
 const brands=[...new Set(pool.flatMap(x=>x.brandList||[]))].sort((a,b)=>a.localeCompare(b,'ro'));
 const fB=document.getElementById('fBrand'),fG=document.getElementById('fGroup'),q=document.getElementById('q');
@@ -19,20 +20,20 @@ function match(x,tokens){return tokens.every(t=>x._h.includes(t)||(SYN[t]||[]).s
 function score(x,tokens){const n=norm(x.name);return tokens.reduce((s,t)=>s+(n.includes(t)?2:0),0)}
 function price(x){return '<div class="price"><strong>'+esc(T('price'))+':</strong> '+fmt(x.priceMinRON)+' – <b>'+fmt(x.priceAvgRON)+'</b> – '+fmt(x.priceMaxRON)+' lei / '+esc(x.priceUnit||'')+'<small>'+esc(T('rec'))+': '+fmt(x.priceAvgRON)+' lei · '+esc(x.priceBasis||'')+'</small></div>'}
 function row(x,compact){
- const href=(page==='home'||compact)?'/'+x.kind+'/#'+x.id:'#'+x.id;
+ const href=x.url;
  return '<article class="row" id="'+(compact?'r-':'')+esc(x.id)+'"><img class="rimg" src="'+esc(x.img)+'" alt="" loading="lazy"><div class="rbody">'+
   (x.sharedFrom?'<span class="grp shared">Comun cu '+esc(x.sharedFrom)+' · '+esc(x.homeGroup)+'</span>':'<span class="grp">'+esc(x.group)+'</span>')+
   '<h3><a href="'+href+'">'+esc(x.name)+'</a></h3><div class="code">'+esc(x.id)+' · '+(x.kind==='servicii'?'serviciu':'produs')+'</div>'+
   (x.kind==='produse'&&x.brands?'<div class="brands"><strong>'+esc(T('brands'))+':</strong> '+esc(x.brands)+'</div>':'')+price(x)+
-  '<p>'+esc(x.descriptionShort)+'</p>'+(compact?'':'<details><summary>'+(x.kind==='servicii'?'Operațiuni și recomandări':'Criterii de selecție')+'</summary><p>'+esc(x.kind==='servicii'?x.operations:x.selectionCriteria)+'</p>'+(x.recommendedWhen?'<p><strong>Când:</strong> '+esc(x.recommendedWhen)+'</p>':'')+'</details>')+'</div></article>'}
+  '<p>'+esc(x.descriptionShort)+' <a class="dlink" href="'+href+'">Detalii →</a></p>'+(compact?'':'<details><summary>'+(x.kind==='servicii'?'Operațiuni și recomandări':'Criterii de selecție')+'</summary><p>'+esc(x.kind==='servicii'?x.operations:x.selectionCriteria)+'</p>'+(x.recommendedWhen?'<p><strong>Când:</strong> '+esc(x.recommendedWhen)+'</p>':'')+'</details>')+'</div></article>'}
 function render(){
  const tokens=norm(q.value).split(/\s+/).filter(Boolean),b=fB.value,g=fG.value,active=tokens.length||b||g;
  let rows=pool.filter(x=>(!b||(x.brandList||[]).includes(b))&&(!g||x.group===g)&&match(x,tokens));
  if(tokens.length)rows.sort((a,c)=>score(c,tokens)-score(a,tokens));
  const list=document.getElementById('list'),count=document.getElementById('count');
- if(page==='home'&&!active){list.innerHTML='';count.textContent='';return}
+ if(homeLike&&!active){list.innerHTML='';count.textContent='';return}
  count.textContent=rows.length+' '+T('of')+' '+pool.length+' '+T('sheets');
- list.innerHTML=rows.length?rows.map(x=>row(x,page==='home')).join(''):'<div class="empty">'+esc(T('noresults'))+'</div>';
+ list.innerHTML=rows.length?rows.map(x=>row(x,homeLike)).join(''):'<div class="empty">'+esc(T('noresults'))+'</div>';
  const u=new URL(location.href);[['q',q.value],['marca',b],['grupa',g]].forEach(([k,v])=>v?u.searchParams.set(k,v):u.searchParams.delete(k));history.replaceState(null,'',u);
 }
 const P=new URLSearchParams(location.search);q.value=P.get('q')||'';fB.value=P.get('marca')||'';fG.value=P.get('grupa')||'';

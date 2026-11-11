@@ -114,3 +114,8 @@ Site static HTML/CSS/JS (regenerat și verificat pe 8 noiembrie 2026): `style.cs
 - Fiecare site de familie are 3 pagini: `/` (grupele familiei, câte 3 exemple + „Vezi mai multe”), `/servicii/` și `/produse/` (toate fișele, în format rând: imagine, nume, cod, mărci, preț min / mediu / max, descriere).
 - Căutare pe toate paginile: cuvinte-cheie (fără diacritice, cu sinonime: AC, calorifer, PDC, ACM…) + filtru de marcă + filtru de grupă, combinabile; parametri în adresă `?q=&marca=&grupa=`.
 - Fotografii pe grupe: puneți `img/grupe/<grupa>.jpg` (ex. `img/grupe/centrale-termice.jpg`) în repo; acțiunea GitHub le preia automat în locul ilustrațiilor.
+
+## v1.5 (11 noiembrie 2026) — pagini de detaliu pe fiecare fișă
+- Fiecare serviciu și produs are pagina lui, pe înțelesul clientului: `/servicii/<cod-nume>/` și `/produse/<cod-nume>/` (195 de pagini pe cele trei site-uri).
+- Conținut: pe scurt, când aveți nevoie / cum alegeți, ce presupune lucrarea (pași), cât costă (min / recomandat / max, ce influențează prețul), mărci, reguli și siguranță (ISCIR, ANRE, F-gaze), sfatul instalatorului, servicii și produse legate.
+- Textele pe grupe sunt în `etalons/C4322/grupe-texte.json` — editabile din GitHub; paginile se regenerează automat.

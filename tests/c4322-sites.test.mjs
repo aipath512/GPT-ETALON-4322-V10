@@ -1,4 +1,4 @@
-// Teste site-uri de familie SCARA C4322 — v1.4 2026-11-11
+// Teste site-uri de familie SCARA C4322 — v1.5 2026-11-11
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -56,6 +56,12 @@ for (const [fid, f] of Object.entries(FAM)) {
       assert.ok(exists(`${dir}${x.img}`), 'imagine ' + x.img);
     }
     for (const x of c.products) assert.ok(x.brands && x.brandList.length, x.id);
+    for (const x of [...c.services, ...c.products]) {
+      const html = read(`${dir}${x.url}index.html`);
+      assert.ok(html.includes(x.name) && html.includes(x.id), 'pagină detaliu ' + x.url);
+      assert.match(html, /Cât costă/); assert.match(html, /class="pricebig"/);
+      assert.doesNotMatch(html, /undefined/);
+    }
     for (const js of ['app.js', 'catalog.js']) execFileSync(process.execPath, ['--check', path.join(root, dir, js)]);
   });
 }

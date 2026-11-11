@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
-"""Generator SCARA C4322 — v1.4 2026-11-11.
+"""Generator SCARA C4322 — v1.5 2026-11-11.
 
 Reconstruiește cele trei site-uri de familie (cloudflare-pages/C43221..C43223)
 din modulele de date etalons/C4322/C4322x.mjs. Rulare: python3 tools/build_c4322.py
 C43221/C43222/C43223 sunt coduri interne SCARA; codul CAEN oficial (Rev.3) este clasa 4322.
 """
-import json, html, pathlib
+import json, html, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-VERSION = 'v1.4'
+VERSION = 'v1.5'
 DATE = '2026-11-11'
 SESSION = '0001C'
 CFG = json.loads((ROOT / 'etalons/C4322/firma.json').read_text(encoding='utf-8'))
+GT = json.loads((ROOT / 'etalons/C4322/grupe-texte.json').read_text(encoding='utf-8'))
 FIRM = CFG['NumeFirma']
 FAMILIES = {
     'C43221': {'icon': '♨', 'subtitle': 'Soluții de încălzire pentru apartamente și case'},
@@ -155,6 +156,8 @@ def catalog(fid, d):
         by_group.setdefault(x.get('homeGroup', x['group']), set()).update(x['brandList'])
     for x in S:
         x['brandList'] = sorted(by_group.get(x.get('homeGroup', x['group']), set()))
+    for x in S: x['url'] = '/servicii/' + SLUG(x['id'] + ' ' + x['name']) + '/'
+    for x in P: x['url'] = '/produse/' + SLUG(x['id'] + ' ' + x['name']) + '/'
     for x in S + P:
         g = x.get('homeGroup', x['group'])
         x['gimg'] = '/img/grupe/' + SLUG(g) + '.' + ('jpg' if (ROOT / 'img/grupe' / (SLUG(g) + '.jpg')).exists() else 'svg')
@@ -218,6 +221,44 @@ def home(fid, d, S, P):
 <div class="meta"><span>{f['icon']} {len(S)} servicii</span><span>{len(P)} produse</span><span>{len(d['groups'])} grupe</span></div></div></section>
 <section class="section"><div class="container"><div class="eyebrow">GRUPE · {esc(title).upper()}</div><h2>{esc(sub)}</h2><div class="rows">{''.join(rows)}</div></div></section>"""
 
+def fmt_ro(v):
+    return f'{v:,}'.replace(',', '.')
+
+def steps(text):
+    parts = [t.strip().rstrip('.') for t in re.split(r',| și ', text or '') if t.strip()]
+    return ''.join(f'<li>{esc(t[0].upper() + t[1:])}</li>' for t in parts)
+
+def detail(fid, d, x, kind, S, P):
+    sub = CFG['SubtitluFamilie'][fid]; g = x.get('homeGroup', x['group']); gt = GT.get(g, {})
+    is_s = kind == 'servicii'; label = 'Serviciu' if is_s else 'Produs'
+    mn, av, mx, u = fmt_ro(x['priceMinRON']), fmt_ro(x['priceAvgRON']), fmt_ro(x['priceMaxRON']), x['priceUnit']
+    basis = ('Prețul este pentru manoperă: materialele, piesele și echipamentul se plătesc separat.' if is_s
+             else 'Prețul este pentru echipament sau material, fără montaj; montajul îl găsiți mai jos, la serviciile legate.')
+    other = P if is_s else S
+    rel = [y for y in other if y.get('homeGroup', y['group']) == g][:6]
+    same = [y for y in (S if is_s else P) if y.get('homeGroup', y['group']) == g and y['id'] != x['id']][:6]
+    li = lambda ys: ''.join(f'<li><a href="{y["url"]}">{esc(y["name"])}</a> <span class="muted">· {esc(y["id"])} · {fmt_ro(y["priceAvgRON"])} lei / {esc(y["priceUnit"])}</span></li>' for y in ys)
+    brands = ''.join(f'<a class="chip" href="/produse/?marca={esc(b)}">{esc(b)}</a>' for b in x.get('brandList', []))
+    shared = f'<span class="grp shared">Comun cu {esc(x["sharedFrom"])}</span> ' if x.get('sharedFrom') else ''
+    blocks = [f'<div class="dblock"><h2>Pe scurt</h2><p class="lead">{esc(x["descriptionShort"])}</p>{"<p><strong>Despre " + esc(g.lower()) + ":</strong> " + esc(gt["intro"]) + "</p>" if gt.get("intro") else ""}</div>']
+    if is_s:
+        blocks.append(f'<div class="dblock"><h2>Când aveți nevoie</h2><p>{esc(x.get("recommendedWhen", ""))}</p></div>')
+        blocks.append(f'<div class="dblock"><h2>Ce presupune lucrarea</h2><ol class="steps">{steps(x.get("operations"))}</ol></div>')
+    else:
+        blocks.append(f'<div class="dblock"><h2>Cum alegeți</h2><p>Criteriile care contează: {esc(x.get("selectionCriteria", ""))}</p></div>')
+        if brands: blocks.append(f'<div class="dblock"><h2>Mărci</h2><div class="chips">{brands}</div><p class="muted">Mărci uzuale în București; disponibilitatea și modelele se confirmă la ofertare.</p></div>')
+    blocks.append(f'<div class="dblock"><h2>Cât costă</h2><div class="pricebig"><span>min<b>{mn}</b></span><span class="rec">recomandat<b>{av}</b></span><span>max<b>{mx}</b></span></div><p class="muted">lei / {esc(u)}, cu TVA</p><p>{basis} Prețul recomandat este media orientativă din București; intervalul min–max arată diferența dintre o lucrare simplă și una complexă. Prețul final se stabilește după evaluare.</p>{"<p><strong>Ce influențează prețul:</strong> " + esc(gt["pret"]) + "</p>" if gt.get("pret") else ""}<p class="muted">{esc(x.get("priceSource", ""))}</p></div>')
+    if gt.get('reguli'): blocks.append(f'<div class="dblock"><h2>Reguli și siguranță</h2><p>{esc(gt["reguli"])}</p></div>')
+    if gt.get('sfat'): blocks.append(f'<div class="dblock tip"><h2>Sfatul instalatorului</h2><p>{esc(gt["sfat"])}</p></div>')
+    if rel: blocks.append(f'<div class="dblock"><h2>{"Produse folosite" if is_s else "Servicii pentru acest produs"}</h2><ul class="rel">{li(rel)}</ul></div>')
+    if same: blocks.append(f'<div class="dblock"><h2>Alte {"servicii" if is_s else "produse"} din grupa {esc(g)}</h2><ul class="rel">{li(same)}</ul></div>')
+    crumbs = f'<nav class="crumbs" aria-label="Navigare"><a href="/" data-i18n="home">Acasă</a> › <a href="/{kind}/">{label if False else ("Servicii" if is_s else "Produse")}</a> › <a href="/{kind}/?grupa={esc(x["group"])}">{esc(x["group"])}</a> › <span>{esc(x["name"])}</span></nav>'
+    return f"""<section class="hero small"><div class="container">{crumbs}
+<div class="eyebrow">{label} · {esc(x["id"])} · {fid}</div><div class="dhead"><img class="dimg" src="{x["img"]}" alt=""><div>{shared}<span class="grp">{esc(g)}</span>
+<h1>{esc(x["name"])}</h1><p>{esc(x["descriptionShort"])}</p><p class="dprice">{mn} – <b>{av}</b> – {mx} lei / {esc(u)}</p></div></div></div></section>
+<section class="section"><div class="container detail">{''.join(blocks)}
+<p><a class="btn" href="/{kind}/">← Toate {"serviciile" if is_s else "produsele"}</a></p></div></section>"""
+
 def listing(fid, d, kind, S, P):
     sub = CFG['SubtitluFamilie'][fid]; n = len(S) if kind == 'servicii' else len(P)
     return f"""<section class="hero small"><div class="container"><div class="eyebrow">{fid} · {esc(d['title'])}</div>
@@ -236,6 +277,7 @@ const SYN={ac:['aer conditionat','split'],clima:['climatizare','aer conditionat'
  robinet:['baterie','robinet'],baterie:['robinet'],desfundare:['canalizare','scurgere'],freon:['agent frigorific'],iscir:['verificare tehnica','revizie']};
 const all=[...CAT.services.map(x=>({...x,kind:'servicii'})),...CAT.products.map(x=>({...x,kind:'produse'}))];
 all.forEach(x=>x._h=norm([x.id,x.name,x.group,x.homeGroup,x.sharedFrom,(x.brandList||[]).join(' '),x.descriptionShort,x.operations,x.selectionCriteria,x.recommendedWhen].join(' ')));
+const homeLike=page==='home'||page==='detail';
 const pool=page==='servicii'?all.filter(x=>x.kind==='servicii'):page==='produse'?all.filter(x=>x.kind==='produse'):all;
 const brands=[...new Set(pool.flatMap(x=>x.brandList||[]))].sort((a,b)=>a.localeCompare(b,'ro'));
 const fB=document.getElementById('fBrand'),fG=document.getElementById('fGroup'),q=document.getElementById('q');
@@ -244,20 +286,20 @@ function match(x,tokens){return tokens.every(t=>x._h.includes(t)||(SYN[t]||[]).s
 function score(x,tokens){const n=norm(x.name);return tokens.reduce((s,t)=>s+(n.includes(t)?2:0),0)}
 function price(x){return '<div class="price"><strong>'+esc(T('price'))+':</strong> '+fmt(x.priceMinRON)+' – <b>'+fmt(x.priceAvgRON)+'</b> – '+fmt(x.priceMaxRON)+' lei / '+esc(x.priceUnit||'')+'<small>'+esc(T('rec'))+': '+fmt(x.priceAvgRON)+' lei · '+esc(x.priceBasis||'')+'</small></div>'}
 function row(x,compact){
- const href=(page==='home'||compact)?'/'+x.kind+'/#'+x.id:'#'+x.id;
+ const href=x.url;
  return '<article class="row" id="'+(compact?'r-':'')+esc(x.id)+'"><img class="rimg" src="'+esc(x.img)+'" alt="" loading="lazy"><div class="rbody">'+
   (x.sharedFrom?'<span class="grp shared">Comun cu '+esc(x.sharedFrom)+' · '+esc(x.homeGroup)+'</span>':'<span class="grp">'+esc(x.group)+'</span>')+
   '<h3><a href="'+href+'">'+esc(x.name)+'</a></h3><div class="code">'+esc(x.id)+' · '+(x.kind==='servicii'?'serviciu':'produs')+'</div>'+
   (x.kind==='produse'&&x.brands?'<div class="brands"><strong>'+esc(T('brands'))+':</strong> '+esc(x.brands)+'</div>':'')+price(x)+
-  '<p>'+esc(x.descriptionShort)+'</p>'+(compact?'':'<details><summary>'+(x.kind==='servicii'?'Operațiuni și recomandări':'Criterii de selecție')+'</summary><p>'+esc(x.kind==='servicii'?x.operations:x.selectionCriteria)+'</p>'+(x.recommendedWhen?'<p><strong>Când:</strong> '+esc(x.recommendedWhen)+'</p>':'')+'</details>')+'</div></article>'}
+  '<p>'+esc(x.descriptionShort)+' <a class="dlink" href="'+href+'">Detalii →</a></p>'+(compact?'':'<details><summary>'+(x.kind==='servicii'?'Operațiuni și recomandări':'Criterii de selecție')+'</summary><p>'+esc(x.kind==='servicii'?x.operations:x.selectionCriteria)+'</p>'+(x.recommendedWhen?'<p><strong>Când:</strong> '+esc(x.recommendedWhen)+'</p>':'')+'</details>')+'</div></article>'}
 function render(){
  const tokens=norm(q.value).split(/\s+/).filter(Boolean),b=fB.value,g=fG.value,active=tokens.length||b||g;
  let rows=pool.filter(x=>(!b||(x.brandList||[]).includes(b))&&(!g||x.group===g)&&match(x,tokens));
  if(tokens.length)rows.sort((a,c)=>score(c,tokens)-score(a,tokens));
  const list=document.getElementById('list'),count=document.getElementById('count');
- if(page==='home'&&!active){list.innerHTML='';count.textContent='';return}
+ if(homeLike&&!active){list.innerHTML='';count.textContent='';return}
  count.textContent=rows.length+' '+T('of')+' '+pool.length+' '+T('sheets');
- list.innerHTML=rows.length?rows.map(x=>row(x,page==='home')).join(''):'<div class="empty">'+esc(T('noresults'))+'</div>';
+ list.innerHTML=rows.length?rows.map(x=>row(x,homeLike)).join(''):'<div class="empty">'+esc(T('noresults'))+'</div>';
  const u=new URL(location.href);[['q',q.value],['marca',b],['grupa',g]].forEach(([k,v])=>v?u.searchParams.set(k,v):u.searchParams.delete(k));history.replaceState(null,'',u);
 }
 const P=new URLSearchParams(location.search);q.value=P.get('q')||'';fB.value=P.get('marca')||'';fG.value=P.get('grupa')||'';
@@ -300,6 +342,12 @@ body.light-mode .rows{background:#ffffff}
 .searchbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.searchbar input{flex:2;min-width:200px;padding:14px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text)}
 .searchbar select{flex:1;min-width:140px;padding:12px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text)}
 .hero.small{padding:46px 0}.hero.small h1{font-size:clamp(34px,6vw,64px)}
+.crumbs{font-size:13px;margin-bottom:14px;color:#c4dfda}.crumbs a{color:#bdf2dc}
+.dhead{display:flex;gap:22px;align-items:flex-start;margin-top:10px}.dimg{width:180px;height:180px;border-radius:22px;object-fit:cover;flex:0 0 180px;background:#e5f3ea}.dprice{font-size:20px}.dprice b{color:#bdf2dc}
+.detail{max-width:860px}.dblock{border:1px solid var(--border);background:var(--surface);border-radius:18px;padding:20px 22px;margin:0 0 16px}.dblock h2{font-size:22px;margin:0 0 10px;letter-spacing:-.4px}.dblock p{line-height:1.65}.lead{font-size:18px;font-weight:600}
+.steps{line-height:1.8;padding-left:22px}.rel{line-height:1.9;padding-left:20px}.tip{border-color:var(--accent)}
+.pricebig{display:flex;gap:10px;flex-wrap:wrap}.pricebig span{flex:1;min-width:0;border:1px solid var(--border);border-radius:14px;padding:12px 6px;text-align:center;font-size:10.5px;text-transform:uppercase;letter-spacing:.3px;overflow-wrap:anywhere}.pricebig b{display:block;font-size:26px;letter-spacing:0;text-transform:none;margin-top:4px}.pricebig .rec{border-color:var(--accent);background:var(--surface2)}.pricebig .rec b{color:var(--accent)}
+@media(max-width:700px){.dhead{flex-direction:column}.dimg{width:120px;height:120px;flex-basis:120px}}
 nav a[aria-current=page]{text-decoration:underline;text-underline-offset:5px}
 @media(max-width:700px){.row{gap:14px;padding:16px}.rimg{width:92px;height:92px;flex-basis:92px;border-radius:16px}}
 """
@@ -327,6 +375,10 @@ def main():
         for kind, n in (('servicii', len(S)), ('produse', len(P))):
             (out / kind).mkdir(exist_ok=True)
             (out / kind / 'index.html').write_text(shell(fid, d, kind, kind.capitalize(), f'{FIRM} — {sub}: toate cele {n} {kind}, cu cod, mărci și preț min / mediu / max. Etalon intern SCARA {fid}.', listing(fid, d, kind, S, P), 1), encoding='utf-8')
+        for kind, xs in (('servicii', S), ('produse', P)):
+            for x in xs:
+                dd = out / x['url'].strip('/'); dd.mkdir(parents=True, exist_ok=True)
+                (dd / 'index.html').write_text(shell(fid, d, 'detail', x['name'], f"{x['name']} ({x['id']}) — {sub}, {FIRM}: ce este, ce presupune, preț min / mediu / max {x['priceMinRON']}–{x['priceMaxRON']} lei / {x['priceUnit']}.", detail(fid, d, x, kind, S, P), 2), encoding='utf-8')
         (out / '404.html').write_text(not_found(fid, d), encoding='utf-8')
         (out / 'favicon.svg').write_text(favicon(fid), encoding='utf-8')
         (out / 'robots.txt').write_text('User-agent: *\nDisallow: /\n', encoding='utf-8')
